@@ -11,24 +11,25 @@ boot_task -> source_preflight -> task_intake -> decision_safety
 Routes:
 
 ```text
+source surface check: sltd_source_fidelity_anti_compression -> source_surface_check -> node_checkpoint
 calibration case: sltd_calibration_discipline -> relevant calibration sample -> node_checkpoint
 agentic iteration: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
 iteration checkpoint: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
 role entry: ROLE_ENTRY_INDEX -> roles/<requested_role>.md -> sltd_role_boundary_contracts -> node_checkpoint
-chapter status: chapter_readiness_check -> mindmap_review -> node_checkpoint
-packet review: context_brief -> audit_story_arc -> mindmap_review -> editorial_director_review -> node_checkpoint
+chapter status: source_surface_check if current source unclear -> chapter_readiness_check -> mindmap_review -> node_checkpoint
+packet review: sltd_source_fidelity_anti_compression -> context_brief -> audit_story_arc -> mindmap_review -> editorial_director_review -> node_checkpoint
 repair priority: editorial_director -> editorial_director_review -> node_checkpoint
-underreached scene: intensity_editor -> intensity_pass -> sltd_underreach_gate -> node_checkpoint
-scene rewrite: canon_guard -> sltd_editorial_hooks -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
-line edit: vietnamese_line_editor -> sltd_canon_guard -> vietnamese_prose rules -> sltd_copyedit_proofread
-line surgery: line_surgery -> sltd_vietnamese_line_surgery -> line_surgery_pass -> node_checkpoint
-copyedit: copyeditor -> sltd_copyedit_proofread -> node_checkpoint
-proofread: proofreader -> sltd_copyedit_proofread -> node_checkpoint
-webnovel benchmark: sltd_webnovel_momentum_benchmark -> webnovel_packet_benchmark -> node_checkpoint -> result_report
+underreached scene: source_surface_check if exact scene missing -> intensity_editor -> intensity_pass -> sltd_underreach_gate -> node_checkpoint
+scene rewrite: source_surface_check -> canon_guard -> sltd_editorial_hooks -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
+line edit: source_surface_check -> vietnamese_line_editor -> sltd_canon_guard -> vietnamese_prose rules -> sltd_copyedit_proofread
+line surgery: source_surface_check -> line_surgery -> sltd_vietnamese_line_surgery -> line_surgery_pass -> node_checkpoint
+copyedit: source_surface_check -> copyeditor -> sltd_copyedit_proofread -> node_checkpoint
+proofread: source_surface_check -> proofreader -> sltd_copyedit_proofread -> node_checkpoint
+webnovel benchmark: sltd_source_fidelity_anti_compression -> sltd_webnovel_momentum_benchmark -> webnovel_packet_benchmark -> node_checkpoint -> result_report
 review mode: sltd_review_modes -> review_mode_pass -> node_checkpoint
 role boundary check: ROLE_ENTRY_INDEX -> sltd_role_boundary_contracts -> node_checkpoint
 node check: mindmap_review -> node_checkpoint
-readiness: publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
+readiness: source_surface_check -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
 ```
 
 Role boundary rule:
@@ -53,6 +54,14 @@ Calibration rule:
 If the user rejects an output or asks to learn from an error, return a calibration candidate.
 Do not write calibration cases unless the user explicitly requests a write action.
 Use existing calibration files before proposing new files.
+```
+
+Source fidelity rule:
+
+```text
+If the task requires exact prose, exact status, exact patch, or current lock, verify source surface first.
+Do not line edit, line surgery, copyedit, proofread, rewrite, or patch from digest, summary, or chat memory.
+If source surface is missing, downgrade to map/packet risk scan or request exact source.
 ```
 
 Gap output:
