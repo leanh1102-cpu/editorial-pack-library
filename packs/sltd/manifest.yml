@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.7.0"
+version: "1.8.0"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -25,6 +25,10 @@ allowed_tasks:
   - editorial_director_review
   - mindmap_review
   - node_checkpoint
+  - task_intake
+  - result_report
+  - decision_safety
+  - task_router
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -56,7 +60,11 @@ required_files:
   - rules/sltd_publishing_readiness.md
   - rules/sltd_node_traversal.md
   - rules/sltd_notion_update_discipline.md
+  - rules/sltd_task_router.md
+  - rules/sltd_decision_safety.md
   - prompts/boot_task.md
+  - prompts/task_intake.md
+  - prompts/result_report.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
   - prompts/audit_story_arc.md
