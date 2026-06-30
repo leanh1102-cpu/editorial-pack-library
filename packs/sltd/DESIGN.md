@@ -14,7 +14,7 @@ It should help the agent:
 - choose the right skill;
 - keep canon stable;
 - avoid AI-looking Vietnamese prose;
-- work by chapter, scene, packet, and node;
+- work by chapter, scene, packet, role, and node;
 - leave evidence, checkpoints, and handoff;
 - avoid creating extra management structure.
 
@@ -22,7 +22,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline
+GitHub = editorial rules, skills, router, evidence discipline, role boundaries
 User instruction = current task and final authority for writes
 ```
 
@@ -33,6 +33,7 @@ Legacy Google Docs or Workdecks may be useful as history. They are not current m
 ```text
 AI_ENTRY.md
   -> packs/sltd/manifest.yml
+  -> packs/sltd/DESIGN.md
   -> packs/sltd/PACK.md
   -> packs/sltd/AGENT_IDENTITY.md
   -> packs/sltd/ENTRY_FAST_PATH.md
@@ -46,6 +47,7 @@ The pack is split into:
 - source discipline;
 - task router;
 - competency map;
+- role boundary contracts;
 - mindmap and node traversal;
 - context-window strategy;
 - evidence discipline;
@@ -62,6 +64,7 @@ task_intake
 task_router
 decision_safety
 task-specific prompt
+role boundary check when multiple roles overlap
 node_checkpoint
 result_report
 ```
@@ -80,6 +83,7 @@ scope
 local chapter or scene
 relevant canon
 active skills
+active role and boundary
 node ledger
 open loops
 ```
@@ -94,12 +98,15 @@ The main editorial roles are:
 - Story Doctor;
 - Intensity Editor;
 - Vietnamese Line Editor;
+- Line Surgery;
 - Copyeditor;
 - Proofreader;
 - Publishing Readiness Reviewer;
 - Editorial Director.
 
 Roles should be routed by task. Do not run every role for every request.
+
+Each role has start conditions, may-do limits, must-not-do limits, done criteria, handoff, and stop conditions in `rules/sltd_role_boundary_contracts.md`.
 
 ## Mindmap and node traversal
 
@@ -121,6 +128,26 @@ Claims about Chapter Index, Human Chapter Pass, Publication Lock, Scene Bank rea
 
 Chat memory, old audit, old Google Doc, or a prior assistant claim is not enough.
 
+## Role boundary discipline
+
+Role boundaries prevent the agent from mixing tasks or polishing the wrong layer.
+
+```text
+source and canon before story
+story before intensity
+intensity before line surgery
+line surgery before copyedit
+copyedit before proofread
+proofread before readiness
+readiness before publication lock claim
+```
+
+If a later role discovers an earlier-layer failure, stop and hand back.
+
+Review modes are lenses, not roles.
+
+Learned taste and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
+
 ## Healthcheck discipline
 
 Before adding a new skill, run entry healthcheck.
@@ -131,6 +158,7 @@ Check:
 - required files;
 - allowed tasks;
 - route coverage;
+- role boundary coverage;
 - evidence coverage;
 - orphan risk;
 - changelog.
@@ -139,7 +167,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, role boundaries, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -177,7 +205,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, context brief, node checkpoint, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, context brief, node checkpoint, role handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -190,6 +218,7 @@ These rules should remain stable across versions:
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
 - AI uses fast path for normal tasks.
+- AI respects role boundaries.
 - AI splits large work by node.
 - Manifest is machine-readable entry.
 - Design is human-readable architecture contract.
