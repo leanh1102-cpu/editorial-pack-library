@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.2"
+version: "1.10.3"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -34,6 +34,7 @@ allowed_tasks:
   - session_handoff
   - entry_healthcheck
   - evidence_check
+  - review_mode_pass
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -76,12 +77,14 @@ required_files:
   - rules/sltd_retrieval_budget.md
   - rules/sltd_pack_healthcheck.md
   - rules/sltd_evidence_discipline.md
+  - rules/sltd_review_modes.md
   - prompts/boot_task.md
   - prompts/task_intake.md
   - prompts/result_report.md
   - prompts/context_brief.md
   - prompts/session_handoff.md
   - prompts/entry_healthcheck.md
+  - prompts/review_mode_pass.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
   - prompts/audit_story_arc.md
