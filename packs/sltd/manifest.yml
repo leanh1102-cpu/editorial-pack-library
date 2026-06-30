@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.2.0"
+version: "1.3.0"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -13,6 +13,8 @@ allowed_tasks:
   - flow_pass
   - seam_pass
   - story_arc_audit
+  - intensity_pass
+  - consequence_pass
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -28,9 +30,12 @@ required_files:
   - rules/sltd_style_rules.md
   - rules/sltd_canon_guard.md
   - rules/sltd_story_momentum.md
+  - rules/sltd_intensity_rules.md
+  - rules/sltd_intensity_targets.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
   - prompts/audit_story_arc.md
+  - prompts/intensity_pass.md
 priority:
   - user_current_instruction
   - notion_locked_decision
