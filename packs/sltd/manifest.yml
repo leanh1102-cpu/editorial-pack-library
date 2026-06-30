@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.4"
+version: "1.10.5"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -10,6 +10,7 @@ allowed_tasks:
   - audit_scene
   - rewrite_scene
   - line_edit
+  - line_surgery_pass
   - flow_pass
   - seam_pass
   - story_arc_audit
@@ -80,6 +81,7 @@ required_files:
   - rules/sltd_evidence_discipline.md
   - rules/sltd_review_modes.md
   - rules/sltd_webnovel_momentum_benchmark.md
+  - rules/sltd_vietnamese_line_surgery.md
   - prompts/boot_task.md
   - prompts/task_intake.md
   - prompts/result_report.md
@@ -88,6 +90,7 @@ required_files:
   - prompts/entry_healthcheck.md
   - prompts/review_mode_pass.md
   - prompts/webnovel_packet_benchmark.md
+  - prompts/line_surgery_pass.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
   - prompts/audit_story_arc.md
