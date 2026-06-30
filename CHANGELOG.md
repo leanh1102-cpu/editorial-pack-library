@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.10.7
+
+- Added SLTD role entry index.
+- Added role entry cards for Canon Guard, Story Doctor, Intensity Editor, Vietnamese Line Editor, Line Surgery, Copyeditor, Proofreader, Publishing Readiness Reviewer, and Editorial Director.
+- Added role_entry_check to allowed tasks.
+- Synced DESIGN.md with role entry discipline.
+- Synced ENTRY_FAST_PATH.md with role entry route.
+- Synced task router with role card routes.
+- Synced competency map with role entry pointers.
+- Synced pack healthcheck and entry healthcheck with role entry checks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.6
 
 - Added SLTD role boundary contracts.
