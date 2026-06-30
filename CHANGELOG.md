@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.10.11
+
+- Added SLTD handoff continuity protocol.
+- Upgraded session handoff into a continuity handoff with source, role, node, decision, patch, and error ledgers.
+- Added handoff_continuity_check to allowed tasks.
+- Synced DESIGN.md with handoff continuity model.
+- Synced ENTRY_FAST_PATH.md with handoff continuity route.
+- Synced task router with handoff continuity route and transfer rule.
+- Synced pack healthcheck and entry healthcheck with handoff continuity checks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.10
 
 - Added SLTD source fidelity and anti-compression gate.
