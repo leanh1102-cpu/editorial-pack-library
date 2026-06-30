@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.6.0"
+version: "1.7.0"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -23,6 +23,8 @@ allowed_tasks:
   - proofread
   - publishing_readiness
   - editorial_director_review
+  - mindmap_review
+  - node_checkpoint
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -35,6 +37,7 @@ required_files:
   - AGENT_IDENTITY.md
   - AUTHOR_WORKING_PROFILE.md
   - EDITORIAL_COMPETENCY_MAP.md
+  - EDITORIAL_MINDMAP.md
   - ../../core/job_packet/EDITORIAL_JOB_PACKET.md
   - ../../core/job_packet/ACCEPTANCE_CRITERIA.md
   - ../../core/job_packet/RED_FLAGS.md
@@ -51,6 +54,8 @@ required_files:
   - rules/sltd_developmental_editing.md
   - rules/sltd_copyedit_proofread.md
   - rules/sltd_publishing_readiness.md
+  - rules/sltd_node_traversal.md
+  - rules/sltd_notion_update_discipline.md
   - prompts/boot_task.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
@@ -60,6 +65,8 @@ required_files:
   - prompts/command_recipes.md
   - prompts/editorial_director_review.md
   - prompts/chapter_readiness_check.md
+  - prompts/mindmap_review.md
+  - prompts/node_checkpoint.md
 priority:
   - user_current_instruction
   - notion_live_source
