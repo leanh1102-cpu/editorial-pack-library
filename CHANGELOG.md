@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.10.6
+
+- Added SLTD role boundary contracts.
+- Added role_boundary_check to allowed tasks.
+- Synced DESIGN.md with role boundary discipline.
+- Synced ENTRY_FAST_PATH.md with current fast paths.
+- Synced task router with line surgery, webnovel benchmark, review mode, and role boundary routes.
+- Synced competency map with Line Surgery and role-boundary pointer.
+- Synced pack healthcheck and entry healthcheck with role boundary checks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.5
 
 - Added SLTD Vietnamese line surgery rule.
