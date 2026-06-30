@@ -11,6 +11,8 @@ boot_task -> source_preflight -> task_intake -> decision_safety
 Routes:
 
 ```text
+agentic iteration: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
+iteration checkpoint: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
 role entry: ROLE_ENTRY_INDEX -> roles/<requested_role>.md -> sltd_role_boundary_contracts -> node_checkpoint
 chapter status: chapter_readiness_check -> mindmap_review -> node_checkpoint
 packet review: context_brief -> audit_story_arc -> mindmap_review -> editorial_director_review -> node_checkpoint
@@ -34,6 +36,14 @@ Role boundary rule:
 If multiple roles are active, run role boundary check before execution.
 If a later role finds an earlier-layer blocker, stop and hand back.
 If a user names a role directly, read the role entry card before running the task-specific route.
+```
+
+Iteration rule:
+
+```text
+If the user asks to continue, loop, iterate, batch, patch, verify, or proceed node by node, run agentic iteration.
+The loop must end with NEXT NODE or STOP.
+The loop may not continue indefinitely without user permission.
 ```
 
 Gap output:
