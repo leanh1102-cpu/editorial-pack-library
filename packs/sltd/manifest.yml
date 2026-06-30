@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.7"
+version: "1.10.8"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -39,6 +39,8 @@ allowed_tasks:
   - webnovel_momentum_benchmark
   - role_boundary_check
   - role_entry_check
+  - agentic_iteration_loop
+  - iteration_checkpoint
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -95,6 +97,7 @@ required_files:
   - rules/sltd_webnovel_momentum_benchmark.md
   - rules/sltd_vietnamese_line_surgery.md
   - rules/sltd_role_boundary_contracts.md
+  - rules/sltd_agentic_iteration_loop.md
   - prompts/boot_task.md
   - prompts/task_intake.md
   - prompts/result_report.md
@@ -104,6 +107,7 @@ required_files:
   - prompts/review_mode_pass.md
   - prompts/webnovel_packet_benchmark.md
   - prompts/line_surgery_pass.md
+  - prompts/iteration_checkpoint.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
   - prompts/audit_story_arc.md
