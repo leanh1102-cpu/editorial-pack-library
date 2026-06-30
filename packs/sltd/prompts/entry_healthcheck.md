@@ -6,9 +6,13 @@ Read:
 
 ```text
 manifest.yml
+DESIGN.md
 ENTRY_FAST_PATH.md
+EDITORIAL_COMPETENCY_MAP.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
+rules/sltd_role_boundary_contracts.md
+rules/sltd_task_router.md
 samples/router_examples.md
 CHANGELOG.md
 ```
@@ -22,6 +26,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 ROUTE CHECK:
+ROLE BOUNDARY CHECK:
 EVIDENCE CHECK:
 ORPHAN RISK:
 SMOKE TEST RESULT:
