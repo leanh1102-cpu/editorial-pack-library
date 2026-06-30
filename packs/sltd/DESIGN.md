@@ -12,6 +12,7 @@ It should help the agent:
 
 - read the right source;
 - choose the right skill;
+- enter the right role;
 - keep canon stable;
 - avoid AI-looking Vietnamese prose;
 - work by chapter, scene, packet, role, and node;
@@ -22,7 +23,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role boundaries
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries
 User instruction = current task and final authority for writes
 ```
 
@@ -37,6 +38,7 @@ AI_ENTRY.md
   -> packs/sltd/PACK.md
   -> packs/sltd/AGENT_IDENTITY.md
   -> packs/sltd/ENTRY_FAST_PATH.md
+  -> packs/sltd/ROLE_ENTRY_INDEX.md when a role is named
   -> packs/sltd/prompts/boot_task.md
   -> packs/sltd/rules/sltd_runtime_loop.md
 ```
@@ -47,6 +49,7 @@ The pack is split into:
 - source discipline;
 - task router;
 - competency map;
+- role entry cards;
 - role boundary contracts;
 - mindmap and node traversal;
 - context-window strategy;
@@ -62,6 +65,7 @@ boot_task
 source_preflight
 task_intake
 task_router
+role entry card when a role is named
 decision_safety
 task-specific prompt
 role boundary check when multiple roles overlap
@@ -83,6 +87,7 @@ scope
 local chapter or scene
 relevant canon
 active skills
+active role entry
 active role and boundary
 node ledger
 open loops
@@ -106,6 +111,8 @@ The main editorial roles are:
 
 Roles should be routed by task. Do not run every role for every request.
 
+Each role has a short entry card in `roles/`, indexed by `ROLE_ENTRY_INDEX.md`.
+
 Each role has start conditions, may-do limits, must-not-do limits, done criteria, handoff, and stop conditions in `rules/sltd_role_boundary_contracts.md`.
 
 ## Mindmap and node traversal
@@ -127,6 +134,19 @@ Current-state claims require current evidence.
 Claims about Chapter Index, Human Chapter Pass, Publication Lock, Scene Bank readiness, packet lock, canon conflict, or pass validity must name source and node.
 
 Chat memory, old audit, old Google Doc, or a prior assistant claim is not enough.
+
+## Role entry discipline
+
+Role entry cards are the short doors into individual roles.
+
+Use a role entry card when:
+
+- the user names a role;
+- task routing chooses a specific role;
+- multiple roles are possible and the agent must pick one;
+- the agent needs the role's read-first list and output shape.
+
+Role entry cards do not override role boundary contracts.
 
 ## Role boundary discipline
 
@@ -158,6 +178,7 @@ Check:
 - required files;
 - allowed tasks;
 - route coverage;
+- role entry coverage;
 - role boundary coverage;
 - evidence coverage;
 - orphan risk;
@@ -167,13 +188,14 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, role boundaries, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, role entries, role boundaries, evidence, context handling, or pack health.
 
 Allowed file types:
 
 - rule;
 - prompt;
 - sample;
+- role entry;
 - design note;
 - manifest update;
 - changelog entry.
@@ -205,7 +227,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, context brief, node checkpoint, role handoff, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, context brief, node checkpoint, role entry, role handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -218,6 +240,7 @@ These rules should remain stable across versions:
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
 - AI uses fast path for normal tasks.
+- AI uses role entry cards when roles are named.
 - AI respects role boundaries.
 - AI splits large work by node.
 - Manifest is machine-readable entry.
