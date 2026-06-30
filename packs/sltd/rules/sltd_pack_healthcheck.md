@@ -66,6 +66,27 @@ Verify:
 - loop ends with next node or stop;
 - loop does not authorize automation, scripts, workflows, reports, boards, or silent writes.
 
+## Check calibration cases
+
+Verify:
+
+- `rules/sltd_calibration_discipline.md` exists and is listed in manifest;
+- calibration task is listed in allowed_tasks;
+- calibration sample files exist and are listed in manifest;
+- calibration route ends with node checkpoint;
+- calibration cases use BAD / WHY BAD / RULE HIT / PREFERRED / PATCH PRINCIPLE;
+- calibration is marked as example, not canon or current manuscript;
+- user rejection creates a calibration candidate, not a silent write.
+
+Required calibration files:
+
+```text
+samples/line_surgery_calibration.md
+samples/dialogue_voice_calibration.md
+samples/underreach_calibration.md
+samples/readiness_false_positive.md
+```
+
 ## Check routes
 
 Verify:
@@ -76,7 +97,8 @@ Verify:
 - large routes use context brief when needed;
 - node-changing routes end with node checkpoint or result report;
 - role-overlap routes reference `rules/sltd_role_boundary_contracts.md`;
-- iteration routes reference `rules/sltd_agentic_iteration_loop.md`.
+- iteration routes reference `rules/sltd_agentic_iteration_loop.md`;
+- calibration routes reference `rules/sltd_calibration_discipline.md`.
 
 ## Check role boundaries
 
@@ -85,7 +107,7 @@ Verify:
 - each active editorial role has start condition, allowed actions, must-not-do, done criteria, stop condition, and handoff;
 - later roles do not overwrite earlier-layer blockers;
 - review modes remain lenses, not roles;
-- learned taste does not override current source, canon, evidence, or human lock.
+- learned taste and calibration do not override current source, canon, evidence, or human lock.
 
 ## Check orphan risk
 
@@ -97,7 +119,8 @@ Mark a file as possible orphan when:
 - it duplicates another rule without a clear reason;
 - it defines a role or task without boundary, route, or output;
 - a role card exists but is missing from `ROLE_ENTRY_INDEX.md`;
-- an iteration file exists but is missing from manifest or route.
+- an iteration file exists but is missing from manifest or route;
+- a calibration file exists but is missing from manifest or route.
 
 ## Output labels
 
