@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.10.4
+
+- Added SLTD webnovel momentum benchmark rule.
+- Added webnovel packet benchmark prompt.
+- Added webnovel_momentum_benchmark to allowed tasks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.3
 
 - Added SLTD review modes rule.
