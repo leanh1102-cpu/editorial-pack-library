@@ -20,7 +20,7 @@ Audit scene theo pack SLTD và core tiếng Việt. Không viết lại toàn sc
 ```text
 STATUS: PASS / NOT PASS
 SCOPE: ...
-PACK: sltd@1.0.0
+PACK: sltd@1.1.0
 LỖI CHÍNH:
 1.
 2.
