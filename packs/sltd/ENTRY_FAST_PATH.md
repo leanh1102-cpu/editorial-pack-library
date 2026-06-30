@@ -75,8 +75,8 @@ prompts/node_checkpoint.md
 ```text
 rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
-prompts/pack_healthcheck.md
-samples/router_smoke_tests.md
+prompts/entry_healthcheck.md
+samples/router_examples.md
 ```
 
 ## Rule
