@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.7.0
+
+- Added SLTD editorial mindmap.
+- Added node traversal rule.
+- Added Notion update discipline rule.
+- Added mindmap review prompt.
+- Added node checkpoint prompt.
+- Updated manifest with mindmap and checkpoint tasks.
+- Core unchanged.
+
 ## 1.6.0
 
 - Added SLTD editorial competency map.
