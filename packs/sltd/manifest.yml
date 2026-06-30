@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.6"
+version: "1.10.7"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -38,6 +38,7 @@ allowed_tasks:
   - review_mode_pass
   - webnovel_momentum_benchmark
   - role_boundary_check
+  - role_entry_check
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -52,6 +53,16 @@ required_files:
   - AUTHOR_WORKING_PROFILE.md
   - AUTHOR_TASTE_EXAMPLES.md
   - ENTRY_FAST_PATH.md
+  - ROLE_ENTRY_INDEX.md
+  - roles/canon_guard.md
+  - roles/story_doctor.md
+  - roles/intensity_editor.md
+  - roles/vietnamese_line_editor.md
+  - roles/line_surgery.md
+  - roles/copyeditor.md
+  - roles/proofreader.md
+  - roles/publishing_readiness_reviewer.md
+  - roles/editorial_director.md
   - EDITORIAL_COMPETENCY_MAP.md
   - EDITORIAL_MINDMAP.md
   - EDITORIAL_CONTEXT_PROTOCOL.md
