@@ -16,6 +16,7 @@ It should help the agent:
 - keep canon stable;
 - avoid AI-looking Vietnamese prose;
 - work by chapter, scene, packet, role, and node;
+- iterate through nodes without running unsupervised;
 - leave evidence, checkpoints, and handoff;
 - avoid creating extra management structure.
 
@@ -23,7 +24,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop
 User instruction = current task and final authority for writes
 ```
 
@@ -51,6 +52,7 @@ The pack is split into:
 - competency map;
 - role entry cards;
 - role boundary contracts;
+- agentic iteration loop;
 - mindmap and node traversal;
 - context-window strategy;
 - evidence discipline;
@@ -68,6 +70,7 @@ task_router
 role entry card when a role is named
 decision_safety
 task-specific prompt
+agentic iteration checkpoint when continuation is requested
 role boundary check when multiple roles overlap
 node_checkpoint
 result_report
@@ -89,6 +92,7 @@ relevant canon
 active skills
 active role entry
 active role and boundary
+active iteration node
 node ledger
 open loops
 ```
@@ -114,6 +118,24 @@ Roles should be routed by task. Do not run every role for every request.
 Each role has a short entry card in `roles/`, indexed by `ROLE_ENTRY_INDEX.md`.
 
 Each role has start conditions, may-do limits, must-not-do limits, done criteria, handoff, and stop conditions in `rules/sltd_role_boundary_contracts.md`.
+
+## Agentic iteration model
+
+The agent may iterate only inside a named user request, named source, named role, and named node.
+
+```text
+MISSION
+ANALYZE
+PLAN
+EXECUTE
+EVALUATE
+ADJUST
+NEXT NODE / STOP
+```
+
+The loop must end with `NEXT NODE`, `STOP REASON`, or `USER CONFIRMATION NEEDED`.
+
+It must not run indefinitely, create background automation, write to Notion/GitHub, or bypass evidence discipline.
 
 ## Mindmap and node traversal
 
@@ -180,6 +202,7 @@ Check:
 - route coverage;
 - role entry coverage;
 - role boundary coverage;
+- iteration loop coverage;
 - evidence coverage;
 - orphan risk;
 - changelog.
@@ -188,7 +211,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, role entries, role boundaries, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, role entries, role boundaries, controlled iteration, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -200,7 +223,7 @@ Allowed file types:
 - manifest update;
 - changelog entry.
 
-Do not add scripts, workflows, boards, reports, project management files, or live manuscript copies.
+Do not add scripts, workflows, boards, reports, project management files, automation files, or live manuscript copies.
 
 ## Non-goals
 
@@ -211,6 +234,7 @@ The SLTD pack must not become:
 - a project board;
 - an automation system;
 - a GitHub Actions workflow;
+- a self-running agent loop;
 - a place where AI invents canon;
 - a place where AI silently updates Notion.
 
@@ -220,6 +244,7 @@ For a very long series, operate by slice:
 
 ```text
 1 scene = rewrite unit
+1 excerpt = line surgery unit
 1 chapter = readiness unit
 10 chapters = packet check
 30 chapters = arc or part check
@@ -227,7 +252,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, context brief, node checkpoint, role entry, role handoff, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -239,6 +264,7 @@ These rules should remain stable across versions:
 - AI does not invent canon.
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
+- AI does not loop indefinitely.
 - AI uses fast path for normal tasks.
 - AI uses role entry cards when roles are named.
 - AI respects role boundaries.
