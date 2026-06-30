@@ -19,6 +19,18 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Handoff continuity
+
+```text
+prompts/task_intake.md
+rules/sltd_handoff_continuity_protocol.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_evidence_discipline.md
+rules/sltd_role_boundary_contracts.md
+prompts/node_checkpoint.md
+prompts/session_handoff.md
+```
+
 ### Source surface check
 
 ```text
@@ -185,6 +197,7 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_handoff_continuity_protocol.md
 ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
@@ -195,3 +208,5 @@ samples/router_examples.md
 If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` before opening more files.
 
 If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
+
+If context is degrading or a task must move to another chat, run `session_handoff.md` with `sltd_handoff_continuity_protocol.md`.
