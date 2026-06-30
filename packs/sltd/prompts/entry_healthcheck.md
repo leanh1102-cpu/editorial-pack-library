@@ -16,9 +16,11 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_handoff_continuity_protocol.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
 prompts/iteration_checkpoint.md
+prompts/session_handoff.md
 samples/router_examples.md
 CHANGELOG.md
 ```
@@ -43,6 +45,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+HANDOFF CONTINUITY CHECK:
 ROLE ENTRY CHECK:
 ITERATION LOOP CHECK:
 CALIBRATION CHECK:
