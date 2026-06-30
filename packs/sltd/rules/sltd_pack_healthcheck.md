@@ -36,6 +36,20 @@ Verify:
 - exact OLD is required before OLD/NEW patch;
 - missing source surface downgrades to map-level review, packet risk scan, or source request.
 
+## Check handoff continuity
+
+Verify:
+
+- `rules/sltd_handoff_continuity_protocol.md` exists and is listed in manifest;
+- `prompts/session_handoff.md` reads the handoff continuity protocol;
+- handoff_continuity_check is listed in allowed_tasks;
+- handoff route ends with node checkpoint;
+- handoff separates FACT, INFERENCE, RECOMMENDATION, CANDIDATE, and UNVERIFIED;
+- handoff contains source, role, node, decision, patch, and error ledgers;
+- handoff contains CARRY FORWARD and DO NOT CARRY;
+- handoff tells next AI to verify current source before verdict;
+- handoff is marked as navigation, not source truth.
+
 ## Check role entry cards
 
 Verify each role card exists, is listed in manifest, and has:
@@ -111,7 +125,8 @@ Verify:
 - role-overlap routes reference `rules/sltd_role_boundary_contracts.md`;
 - iteration routes reference `rules/sltd_agentic_iteration_loop.md`;
 - calibration routes reference `rules/sltd_calibration_discipline.md`;
-- source-surface routes reference `rules/sltd_source_fidelity_anti_compression.md`.
+- source-surface routes reference `rules/sltd_source_fidelity_anti_compression.md`;
+- handoff routes reference `rules/sltd_handoff_continuity_protocol.md`.
 
 ## Check role boundaries
 
@@ -134,7 +149,8 @@ Mark a file as possible orphan when:
 - a role card exists but is missing from `ROLE_ENTRY_INDEX.md`;
 - an iteration file exists but is missing from manifest or route;
 - a calibration file exists but is missing from manifest or route;
-- a source-surface file exists but is missing from manifest or route.
+- a source-surface file exists but is missing from manifest or route;
+- a handoff-continuity file exists but is missing from manifest or route.
 
 ## Output labels
 
