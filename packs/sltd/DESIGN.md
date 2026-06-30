@@ -17,6 +17,7 @@ It should help the agent:
 - avoid AI-looking Vietnamese prose;
 - work by chapter, scene, packet, role, and node;
 - iterate through nodes without running unsupervised;
+- calibrate from accepted and rejected examples;
 - leave evidence, checkpoints, and handoff;
 - avoid creating extra management structure.
 
@@ -24,7 +25,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases
 User instruction = current task and final authority for writes
 ```
 
@@ -53,6 +54,7 @@ The pack is split into:
 - role entry cards;
 - role boundary contracts;
 - agentic iteration loop;
+- calibration cases;
 - mindmap and node traversal;
 - context-window strategy;
 - evidence discipline;
@@ -71,6 +73,7 @@ role entry card when a role is named
 decision_safety
 task-specific prompt
 agentic iteration checkpoint when continuation is requested
+calibration check when examples are relevant
 role boundary check when multiple roles overlap
 node_checkpoint
 result_report
@@ -93,6 +96,7 @@ active skills
 active role entry
 active role and boundary
 active iteration node
+relevant calibration cases
 node ledger
 open loops
 ```
@@ -136,6 +140,18 @@ NEXT NODE / STOP
 The loop must end with `NEXT NODE`, `STOP REASON`, or `USER CONFIRMATION NEEDED`.
 
 It must not run indefinitely, create background automation, write to Notion/GitHub, or bypass evidence discipline.
+
+## Calibration model
+
+Calibration cases are accepted or rejected examples used to improve future execution.
+
+They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, and wrong role routing.
+
+Calibration is not canon, not current manuscript, and not publication evidence.
+
+Use calibration to choose among safe edits, not to override current source or scene function.
+
+When the user rejects an output, return a calibration candidate before writing anything to GitHub.
 
 ## Mindmap and node traversal
 
@@ -188,7 +204,7 @@ If a later role discovers an earlier-layer failure, stop and hand back.
 
 Review modes are lenses, not roles.
 
-Learned taste and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
+Learned taste, calibration, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
@@ -203,6 +219,7 @@ Check:
 - role entry coverage;
 - role boundary coverage;
 - iteration loop coverage;
+- calibration coverage;
 - evidence coverage;
 - orphan risk;
 - changelog.
@@ -211,7 +228,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, role entries, role boundaries, controlled iteration, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, role entries, role boundaries, controlled iteration, calibration, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -252,7 +269,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -268,6 +285,7 @@ These rules should remain stable across versions:
 - AI uses fast path for normal tasks.
 - AI uses role entry cards when roles are named.
 - AI respects role boundaries.
+- AI uses calibration as examples, not source truth.
 - AI splits large work by node.
 - Manifest is machine-readable entry.
 - Design is human-readable architecture contract.
