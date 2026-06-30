@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.10"
+version: "1.10.11"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -33,6 +33,7 @@ allowed_tasks:
   - task_router
   - context_brief
   - session_handoff
+  - handoff_continuity_check
   - entry_healthcheck
   - evidence_check
   - review_mode_pass
@@ -102,6 +103,7 @@ required_files:
   - rules/sltd_agentic_iteration_loop.md
   - rules/sltd_calibration_discipline.md
   - rules/sltd_source_fidelity_anti_compression.md
+  - rules/sltd_handoff_continuity_protocol.md
   - prompts/boot_task.md
   - prompts/task_intake.md
   - prompts/result_report.md
