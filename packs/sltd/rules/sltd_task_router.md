@@ -11,6 +11,7 @@ boot_task -> source_preflight -> task_intake -> decision_safety
 Routes:
 
 ```text
+calibration case: sltd_calibration_discipline -> relevant calibration sample -> node_checkpoint
 agentic iteration: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
 iteration checkpoint: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
 role entry: ROLE_ENTRY_INDEX -> roles/<requested_role>.md -> sltd_role_boundary_contracts -> node_checkpoint
@@ -44,6 +45,14 @@ Iteration rule:
 If the user asks to continue, loop, iterate, batch, patch, verify, or proceed node by node, run agentic iteration.
 The loop must end with NEXT NODE or STOP.
 The loop may not continue indefinitely without user permission.
+```
+
+Calibration rule:
+
+```text
+If the user rejects an output or asks to learn from an error, return a calibration candidate.
+Do not write calibration cases unless the user explicitly requests a write action.
+Use existing calibration files before proposing new files.
 ```
 
 Gap output:
