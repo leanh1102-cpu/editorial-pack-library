@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.10.10
+
+- Added SLTD source fidelity and anti-compression gate.
+- Added source surface check prompt.
+- Added source_surface_check to allowed tasks.
+- Synced DESIGN.md with source fidelity model.
+- Synced ENTRY_FAST_PATH.md with source surface routes.
+- Synced task router with source surface routes and safe downgrade rule.
+- Synced pack healthcheck and entry healthcheck with source fidelity checks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.9
 
 - Added SLTD calibration discipline rule.
