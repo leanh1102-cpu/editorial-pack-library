@@ -19,6 +19,7 @@ It should help the agent:
 - work by chapter, scene, packet, role, and node;
 - iterate through nodes without running unsupervised;
 - calibrate from accepted and rejected examples;
+- preserve handoff continuity across sessions;
 - leave evidence, checkpoints, and handoff;
 - avoid creating extra management structure.
 
@@ -26,7 +27,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -57,6 +58,7 @@ The pack is split into:
 - role boundary contracts;
 - agentic iteration loop;
 - calibration cases;
+- handoff continuity;
 - mindmap and node traversal;
 - context-window strategy;
 - evidence discipline;
@@ -78,6 +80,7 @@ task-specific prompt
 agentic iteration checkpoint when continuation is requested
 calibration check when examples are relevant
 role boundary check when multiple roles overlap
+handoff continuity when context degrades or transfer is needed
 node_checkpoint
 result_report
 ```
@@ -101,6 +104,7 @@ active role entry
 active role and boundary
 active iteration node
 relevant calibration cases
+handoff status when transferring
 node ledger
 open loops
 ```
@@ -171,6 +175,26 @@ Use calibration to choose among safe edits, not to override current source or sc
 
 When the user rejects an output, return a calibration candidate before writing anything to GitHub.
 
+## Handoff continuity model
+
+Handoff is a continuity-preserving transfer, not a loose summary.
+
+A handoff is navigation and task state. It is not source text, not canon, not current manuscript, not proof of readiness, and not write permission.
+
+A continuity handoff must preserve:
+
+- source ledger;
+- role ledger;
+- node ledger;
+- decision ledger;
+- patch ledger;
+- error ledger;
+- carry forward list;
+- do-not-carry list;
+- next AI boot instructions.
+
+The next AI must treat the handoff as navigation, verify current source before verdict, continue only at NEXT NODE unless user changes scope, and avoid carrying forward rejected or unverified claims.
+
 ## Mindmap and node traversal
 
 Mindmap files define source nodes, role nodes, output nodes, and blocking nodes.
@@ -239,6 +263,7 @@ Check:
 - role boundary coverage;
 - iteration loop coverage;
 - calibration coverage;
+- handoff continuity coverage;
 - evidence coverage;
 - orphan risk;
 - changelog.
@@ -247,7 +272,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, role entries, role boundaries, controlled iteration, calibration, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -273,6 +298,7 @@ The SLTD pack must not become:
 - a self-running agent loop;
 - a place where AI invents canon;
 - a place where AI edits prose from summary;
+- a place where AI treats handoff as source truth;
 - a place where AI silently updates Notion.
 
 ## 1000+ chapter operating model
@@ -289,7 +315,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, exact source surface, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, exact source surface, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -302,6 +328,7 @@ These rules should remain stable across versions:
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
 - AI does not edit prose from summary.
+- AI does not treat handoff as source truth.
 - AI does not loop indefinitely.
 - AI uses fast path for normal tasks.
 - AI uses role entry cards when roles are named.
