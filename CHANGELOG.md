@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.10.3
+
+- Added SLTD review modes rule.
+- Added review mode pass prompt.
+- Added review_mode_pass to allowed tasks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.2
 
 - Added SLTD author taste examples.
