@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.10.8
+
+- Added SLTD agentic iteration loop rule.
+- Added iteration checkpoint prompt.
+- Added agentic_iteration_loop and iteration_checkpoint to allowed tasks.
+- Synced DESIGN.md with controlled iteration discipline.
+- Synced ENTRY_FAST_PATH.md with agentic iteration route.
+- Synced task router with agentic iteration and iteration checkpoint routes.
+- Synced pack healthcheck and entry healthcheck with iteration loop checks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.7
 
 - Added SLTD role entry index.
