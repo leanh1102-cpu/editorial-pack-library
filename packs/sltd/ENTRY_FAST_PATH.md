@@ -2,17 +2,19 @@
 
 Use this file to avoid reading the whole pack for every task.
 
-It does not replace `manifest.yml`, `PACK.md`, or `boot_task.md`. It only gives the smallest safe route.
+It does not replace `manifest.yml`, `PACK.md`, `DESIGN.md`, or `boot_task.md`. It only gives the smallest safe route.
 
 ## Always read
 
 ```text
 packs/sltd/manifest.yml
+packs/sltd/DESIGN.md
 packs/sltd/PACK.md
 packs/sltd/AGENT_IDENTITY.md
 packs/sltd/prompts/boot_task.md
 packs/sltd/rules/sltd_runtime_loop.md
 packs/sltd/rules/sltd_source_preflight.md
+packs/sltd/rules/sltd_decision_safety.md
 ```
 
 ## Fast paths
@@ -61,6 +63,49 @@ prompts/intensity_pass.md
 prompts/node_checkpoint.md
 ```
 
+### Line surgery
+
+```text
+prompts/task_intake.md
+rules/sltd_vietnamese_line_surgery.md
+core/vietnamese_prose/prose_rhythm.vi.md
+core/vietnamese_prose/dialogue_voice.vi.md
+core/vietnamese_prose/anti_ai_words.vi.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/line_surgery_pass.md
+prompts/node_checkpoint.md
+```
+
+### Webnovel momentum benchmark
+
+```text
+prompts/task_intake.md
+rules/sltd_webnovel_momentum_benchmark.md
+rules/sltd_review_modes.md
+prompts/webnovel_packet_benchmark.md
+prompts/node_checkpoint.md
+prompts/result_report.md
+```
+
+### Review mode pass
+
+```text
+prompts/task_intake.md
+rules/sltd_review_modes.md
+rules/sltd_evidence_discipline.md
+prompts/review_mode_pass.md
+prompts/node_checkpoint.md
+```
+
+### Role boundary check
+
+```text
+EDITORIAL_COMPETENCY_MAP.md
+rules/sltd_role_boundary_contracts.md
+rules/sltd_decision_safety.md
+prompts/node_checkpoint.md
+```
+
 ### Mindmap or node check
 
 ```text
@@ -75,6 +120,7 @@ prompts/node_checkpoint.md
 ```text
 rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
+rules/sltd_role_boundary_contracts.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
 ```
