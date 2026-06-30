@@ -11,6 +11,7 @@ The SLTD pack turns AI into a controlled editorial agent for a long Vietnamese w
 It should help the agent:
 
 - read the right source;
+- preserve exact source surface before editing;
 - choose the right skill;
 - enter the right role;
 - keep canon stable;
@@ -25,7 +26,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates
 User instruction = current task and final authority for writes
 ```
 
@@ -49,6 +50,7 @@ The pack is split into:
 
 - identity files;
 - source discipline;
+- source fidelity and anti-compression gates;
 - task router;
 - competency map;
 - role entry cards;
@@ -69,6 +71,7 @@ boot_task
 source_preflight
 task_intake
 task_router
+source surface check when exact source may be missing
 role entry card when a role is named
 decision_safety
 task-specific prompt
@@ -89,6 +92,7 @@ For each task, build a small working context:
 
 ```text
 current source
+source surface status
 scope
 local chapter or scene
 relevant canon
@@ -102,6 +106,20 @@ open loops
 ```
 
 Large work must split by chapter, scene, packet, role, or source layer.
+
+## Source fidelity model
+
+The agent must preserve the difference between exact source text, derived digest, legacy reference, and chat memory.
+
+```text
+SOURCE TEXT > DERIVED DIGEST > CHAT MEMORY
+```
+
+Line edit, line surgery, copyedit, proofread, rewrite, exact OLD/NEW patch, readiness, and lock verdicts require the appropriate source surface.
+
+Digest may guide navigation and prioritization. Digest must not be used as prose surface or current-state evidence.
+
+If source surface is missing, the agent must safely downgrade to map-level review, packet risk scan, or source request.
 
 ## Editorial competency model
 
@@ -216,6 +234,7 @@ Check:
 - required files;
 - allowed tasks;
 - route coverage;
+- source fidelity coverage;
 - role entry coverage;
 - role boundary coverage;
 - iteration loop coverage;
@@ -228,7 +247,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, role entries, role boundaries, controlled iteration, calibration, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, role entries, role boundaries, controlled iteration, calibration, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -253,6 +272,7 @@ The SLTD pack must not become:
 - a GitHub Actions workflow;
 - a self-running agent loop;
 - a place where AI invents canon;
+- a place where AI edits prose from summary;
 - a place where AI silently updates Notion.
 
 ## 1000+ chapter operating model
@@ -269,7 +289,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, exact source surface, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -281,6 +301,7 @@ These rules should remain stable across versions:
 - AI does not invent canon.
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
+- AI does not edit prose from summary.
 - AI does not loop indefinitely.
 - AI uses fast path for normal tasks.
 - AI uses role entry cards when roles are named.
