@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.10.9
+
+- Added SLTD calibration discipline rule.
+- Added calibration case samples for line surgery, dialogue voice, underreach, and readiness false positives.
+- Added calibration_case_check to allowed tasks.
+- Synced DESIGN.md with calibration model.
+- Synced ENTRY_FAST_PATH.md with calibration route.
+- Synced task router with calibration case route.
+- Synced pack healthcheck and entry healthcheck with calibration checks.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.8
 
 - Added SLTD agentic iteration loop rule.
