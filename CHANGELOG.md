@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.10.0
+
+- Added Entry Fast Path.
+- Added pack healthcheck rule.
+- Added evidence discipline rule.
+- Added entry healthcheck prompt.
+- Added router examples.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.9.0
 
 - Added editorial context protocol.
@@ -12,78 +22,51 @@
 
 ## 1.8.1
 
-- Added SLTD runtime loop rule.
-- Updated manifest with runtime loop task.
+- Added runtime loop rule.
+- Updated manifest.
 - Core unchanged.
 
 ## 1.8.0
 
-- Added SLTD task router rule.
-- Added SLTD decision safety rule.
-- Added task intake prompt.
-- Added result report prompt.
-- Updated manifest with router and decision-loop tasks.
+- Added task router, decision safety, task intake, and result report.
+- Updated manifest.
 - Core unchanged.
 
 ## 1.7.0
 
-- Added SLTD editorial mindmap.
-- Added node traversal rule.
-- Added Notion update discipline rule.
-- Added mindmap review prompt.
-- Added node checkpoint prompt.
-- Updated manifest with mindmap and checkpoint tasks.
+- Added editorial mindmap, node traversal, update discipline, mindmap review, and node checkpoint.
+- Updated manifest.
 - Core unchanged.
 
 ## 1.6.0
 
-- Added SLTD editorial competency map.
-- Added developmental editing rule.
-- Added copyedit and proofread rule.
-- Added publishing readiness rule.
-- Added editorial director review prompt.
-- Added chapter readiness check prompt.
-- Updated manifest with editorial competency tasks.
+- Added editorial competency map and readiness prompts.
+- Updated manifest.
 - Core unchanged.
 
 ## 1.5.1
 
-- Restored full SLTD manifest entries after v1.5.0 boot-layer update.
-- Restored core job packet required files in SLTD manifest.
-- Restored flow, seam, and consequence task entries in SLTD manifest.
-- Updated command recipes to call boot task first.
+- Restored full manifest entries and command recipes boot call.
 - Core unchanged.
 
 ## 1.5.0
 
-- Added agent identity.
-- Added author working profile.
-- Added boot sequence.
-- Added memory boundaries.
-- Added boot task prompt.
-- Updated manifest.
+- Added agent identity, author profile, boot sequence, memory boundaries, boot task.
 - Core unchanged.
 
 ## 1.4.0
 
-- Added SLTD source preflight rule.
-- Added SLTD editorial hooks rule.
-- Added SLTD underreach gate.
-- Added SLTD multi reviewer pass prompt.
-- Added SLTD command recipes.
+- Added source preflight, hooks, underreach gate, multi reviewer pass, command recipes.
 - Core unchanged.
 
 ## 1.3.0
 
-- Added SLTD intensity rules.
-- Added SLTD intensity targets.
-- Added SLTD intensity pass prompt.
+- Added intensity rules, targets, and pass prompt.
 - Core unchanged.
 
 ## 1.2.0
 
-- Added SLTD Story Momentum rule.
-- Added SLTD Story Arc Audit prompt.
+- Added Story Momentum and Story Arc Audit.
 - Core unchanged.
 
 ## 1.1.1
@@ -92,9 +75,7 @@
 
 ## 1.1.0
 
-- Added change policy.
-- Added job packet files.
-- Updated AI entry.
+- Added change policy, job packet files, and AI entry update.
 
 ## 1.0.0
 
