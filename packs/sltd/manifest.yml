@@ -1,0 +1,39 @@
+package_id: sltd
+package_name: "Sương Lạc Tiên Đạo Editorial Pack"
+version: "1.1.0"
+pack_type: project_pack
+inherits:
+  - ../../core/vietnamese_prose
+  - ../../core/job_packet
+compatible_core: ">=1.1.0 <2.0.0"
+allowed_tasks:
+  - audit_scene
+  - rewrite_scene
+  - line_edit
+  - flow_pass
+  - seam_pass
+forbidden_tasks:
+  - manage_notion_tasks
+  - create_workflows
+  - create_github_issues
+  - create_project_boards
+  - invent_canon
+  - change_project_structure
+required_files:
+  - PACK.md
+  - ../../core/job_packet/EDITORIAL_JOB_PACKET.md
+  - ../../core/job_packet/ACCEPTANCE_CRITERIA.md
+  - ../../core/job_packet/RED_FLAGS.md
+  - rules/sltd_style_rules.md
+  - rules/sltd_canon_guard.md
+  - prompts/audit_scene.md
+  - prompts/rewrite_scene.md
+priority:
+  - user_current_instruction
+  - notion_locked_decision
+  - provided_scene_packet
+  - sltd_project_pack
+  - core_job_packet
+  - core_vietnamese_prose
+fail_closed: true
+deprecated: []
