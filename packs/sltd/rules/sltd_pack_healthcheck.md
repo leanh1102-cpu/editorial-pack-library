@@ -21,13 +21,45 @@ Verify:
 - root entry is still `AI_ENTRY.md`;
 - pack entry is still `packs/sltd/manifest.yml`;
 - runtime entry is still `prompts/boot_task.md`;
-- fast path does not replace boot, manifest, design, or source preflight.
+- fast path does not replace boot, manifest, design, or source preflight;
+- `ROLE_ENTRY_INDEX.md` lists every role card.
+
+## Check role entry cards
+
+Verify each role card exists, is listed in manifest, and has:
+
+- Role;
+- When user says;
+- Read first;
+- Source required;
+- Run;
+- Do;
+- Do not;
+- Output;
+- Done;
+- Handoff;
+- Fail closed.
+
+Required role cards:
+
+```text
+roles/canon_guard.md
+roles/story_doctor.md
+roles/intensity_editor.md
+roles/vietnamese_line_editor.md
+roles/line_surgery.md
+roles/copyeditor.md
+roles/proofreader.md
+roles/publishing_readiness_reviewer.md
+roles/editorial_director.md
+```
 
 ## Check routes
 
 Verify:
 
 - each allowed task has a route or prompt;
+- each named role has a role card route;
 - each route has a safety step;
 - large routes use context brief when needed;
 - node-changing routes end with node checkpoint or result report;
@@ -50,7 +82,8 @@ Mark a file as possible orphan when:
 - it is listed in manifest but cannot be fetched;
 - it describes a task that no route uses;
 - it duplicates another rule without a clear reason;
-- it defines a role or task without boundary, route, or output.
+- it defines a role or task without boundary, route, or output;
+- a role card exists but is missing from `ROLE_ENTRY_INDEX.md`.
 
 ## Output labels
 
