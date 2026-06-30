@@ -19,6 +19,16 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Role entry
+
+```text
+ROLE_ENTRY_INDEX.md
+roles/<requested_role>.md
+rules/sltd_role_boundary_contracts.md
+rules/sltd_decision_safety.md
+prompts/node_checkpoint.md
+```
+
 ### Current chapter status
 
 ```text
@@ -67,6 +77,8 @@ prompts/node_checkpoint.md
 
 ```text
 prompts/task_intake.md
+ROLE_ENTRY_INDEX.md
+roles/line_surgery.md
 rules/sltd_vietnamese_line_surgery.md
 core/vietnamese_prose/prose_rhythm.vi.md
 core/vietnamese_prose/dialogue_voice.vi.md
@@ -101,6 +113,7 @@ prompts/node_checkpoint.md
 
 ```text
 EDITORIAL_COMPETENCY_MAP.md
+ROLE_ENTRY_INDEX.md
 rules/sltd_role_boundary_contracts.md
 rules/sltd_decision_safety.md
 prompts/node_checkpoint.md
@@ -121,6 +134,7 @@ prompts/node_checkpoint.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
 rules/sltd_role_boundary_contracts.md
+ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
 ```
