@@ -11,6 +11,8 @@ boot_task -> source_preflight -> task_intake -> decision_safety
 Routes:
 
 ```text
+handoff continuity: sltd_handoff_continuity_protocol -> session_handoff -> node_checkpoint
+session handoff: sltd_handoff_continuity_protocol -> session_handoff -> node_checkpoint
 source surface check: sltd_source_fidelity_anti_compression -> source_surface_check -> node_checkpoint
 calibration case: sltd_calibration_discipline -> relevant calibration sample -> node_checkpoint
 agentic iteration: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
@@ -62,6 +64,14 @@ Source fidelity rule:
 If the task requires exact prose, exact status, exact patch, or current lock, verify source surface first.
 Do not line edit, line surgery, copyedit, proofread, rewrite, or patch from digest, summary, or chat memory.
 If source surface is missing, downgrade to map/packet risk scan or request exact source.
+```
+
+Handoff rule:
+
+```text
+If context is degrading, task state must move to another AI, or the user asks for handoff, run handoff continuity.
+Handoff is navigation and task state, not source truth.
+The next AI must verify current source before verdict and continue only at NEXT NODE.
 ```
 
 Gap output:
