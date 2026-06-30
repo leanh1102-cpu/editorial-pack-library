@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.4.0
+
+- Added SLTD source preflight rule.
+- Added SLTD editorial hooks rule.
+- Added SLTD underreach gate.
+- Added SLTD multi reviewer pass prompt.
+- Added SLTD command recipes.
+- Added `source_preflight` and `multi_reviewer_pass` to SLTD manifest.
+- Core unchanged.
+
 ## 1.3.0
 
 - Added SLTD intensity rules.
