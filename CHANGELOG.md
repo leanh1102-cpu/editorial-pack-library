@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.1
+
+- Added SLTD pack design document.
+- Added DESIGN.md to required files.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.0
 
 - Added Entry Fast Path.
