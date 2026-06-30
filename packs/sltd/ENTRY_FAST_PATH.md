@@ -19,6 +19,19 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Calibration case check
+
+```text
+prompts/task_intake.md
+rules/sltd_calibration_discipline.md
+samples/line_surgery_calibration.md if prose smell
+samples/dialogue_voice_calibration.md if dialogue voice
+samples/underreach_calibration.md if underreach
+samples/readiness_false_positive.md if readiness or lock
+rules/sltd_evidence_discipline.md
+prompts/node_checkpoint.md
+```
+
 ### Agentic iteration loop
 
 ```text
@@ -94,6 +107,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_vietnamese_line_surgery.md
+samples/line_surgery_calibration.md
 core/vietnamese_prose/prose_rhythm.vi.md
 core/vietnamese_prose/dialogue_voice.vi.md
 core/vietnamese_prose/anti_ai_words.vi.md
@@ -149,6 +163,7 @@ rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
 rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
+rules/sltd_calibration_discipline.md
 ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
