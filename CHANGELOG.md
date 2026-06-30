@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.5.0
+
+- Added agent identity.
+- Added author working profile.
+- Added boot sequence.
+- Added memory boundaries.
+- Added boot task prompt.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.4.0
 
 - Added SLTD source preflight rule.
