@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.1
+
+- Restored full SLTD manifest entries after v1.5.0 boot-layer update.
+- Restored core job packet required files in SLTD manifest.
+- Restored flow, seam, and consequence task entries in SLTD manifest.
+- Updated command recipes to call boot task first.
+- Core unchanged.
+
 ## 1.5.0
 
 - Added agent identity.
