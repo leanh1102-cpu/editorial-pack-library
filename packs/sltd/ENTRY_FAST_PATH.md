@@ -19,6 +19,20 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Agentic iteration loop
+
+```text
+prompts/task_intake.md
+rules/sltd_agentic_iteration_loop.md
+rules/sltd_task_router.md
+rules/sltd_decision_safety.md
+ROLE_ENTRY_INDEX.md if a role is named
+rules/sltd_role_boundary_contracts.md if roles overlap
+rules/sltd_evidence_discipline.md
+prompts/iteration_checkpoint.md
+prompts/node_checkpoint.md
+```
+
 ### Role entry
 
 ```text
@@ -134,6 +148,7 @@ prompts/node_checkpoint.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
 rules/sltd_role_boundary_contracts.md
+rules/sltd_agentic_iteration_loop.md
 ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
