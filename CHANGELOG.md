@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.8.0
+
+- Added SLTD task router rule.
+- Added SLTD decision safety rule.
+- Added task intake prompt.
+- Added result report prompt.
+- Updated manifest with router and decision-loop tasks.
+- Core unchanged.
+
 ## 1.7.0
 
 - Added SLTD editorial mindmap.
