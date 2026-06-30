@@ -1,17 +1,22 @@
 # Changelog
 
+## 1.2.0
+
+- Added SLTD Story Momentum rule.
+- Added SLTD Story Arc Audit prompt.
+- Updated SLTD manifest to version 1.2.0.
+- Core unchanged.
+
+## 1.1.1
+
+- Corrected SLTD audit prompt pack label to `sltd@1.1.0`.
+
 ## 1.1.0
 
-- Thêm `CHANGE_POLICY.md` để khóa cách sửa thư viện.
-- Thêm `core/job_packet/EDITORIAL_JOB_PACKET.md`.
-- Thêm `core/job_packet/ACCEPTANCE_CRITERIA.md`.
-- Thêm `core/job_packet/RED_FLAGS.md`.
-- Cập nhật `AI_ENTRY.md` để AI kiểm Job Packet trước khi chạm bản thảo.
-- Không thêm workflow, issue, project, report, script, bản thảo sống.
+- Added change policy.
+- Added job packet files.
+- Updated AI entry.
 
 ## 1.0.0
 
-- Khởi tạo thư viện gói biên tập.
-- Thêm core tiếng Việt.
-- Thêm pack SLTD.
-- Không có workflow, issue, project, report, bản thảo sống.
+- Initial editorial pack library.
