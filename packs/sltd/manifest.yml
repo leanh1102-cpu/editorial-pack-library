@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.5"
+version: "1.10.6"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -37,6 +37,7 @@ allowed_tasks:
   - evidence_check
   - review_mode_pass
   - webnovel_momentum_benchmark
+  - role_boundary_check
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -82,6 +83,7 @@ required_files:
   - rules/sltd_review_modes.md
   - rules/sltd_webnovel_momentum_benchmark.md
   - rules/sltd_vietnamese_line_surgery.md
+  - rules/sltd_role_boundary_contracts.md
   - prompts/boot_task.md
   - prompts/task_intake.md
   - prompts/result_report.md
