@@ -19,6 +19,19 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Source surface check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_source_preflight.md
+rules/sltd_decision_safety.md
+rules/sltd_evidence_discipline.md
+rules/sltd_context_window_strategy.md
+prompts/source_surface_check.md
+prompts/node_checkpoint.md
+```
+
 ### Calibration case check
 
 ```text
@@ -39,6 +52,7 @@ prompts/task_intake.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_task_router.md
 rules/sltd_decision_safety.md
+rules/sltd_source_fidelity_anti_compression.md when source surface may be compressed
 ROLE_ENTRY_INDEX.md if a role is named
 rules/sltd_role_boundary_contracts.md if roles overlap
 rules/sltd_evidence_discipline.md
@@ -70,6 +84,7 @@ prompts/result_report.md
 
 ```text
 prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_window_strategy.md
 prompts/context_brief.md
 prompts/audit_story_arc.md
@@ -82,6 +97,7 @@ prompts/result_report.md
 
 ```text
 prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_editorial_hooks.md
 rules/sltd_canon_guard.md
 rules/sltd_intensity_rules.md
@@ -94,6 +110,7 @@ prompts/node_checkpoint.md
 
 ```text
 prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md if only digest/memory is available
 rules/sltd_underreach_gate.md
 rules/sltd_intensity_targets.md
 prompts/intensity_pass.md
@@ -106,12 +123,14 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
+rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_vietnamese_line_surgery.md
 samples/line_surgery_calibration.md
 core/vietnamese_prose/prose_rhythm.vi.md
 core/vietnamese_prose/dialogue_voice.vi.md
 core/vietnamese_prose/anti_ai_words.vi.md
 packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/source_surface_check.md if exact excerpt is not confirmed
 prompts/line_surgery_pass.md
 prompts/node_checkpoint.md
 ```
@@ -120,6 +139,7 @@ prompts/node_checkpoint.md
 
 ```text
 prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_webnovel_momentum_benchmark.md
 rules/sltd_review_modes.md
 prompts/webnovel_packet_benchmark.md
@@ -164,6 +184,7 @@ rules/sltd_evidence_discipline.md
 rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
+rules/sltd_source_fidelity_anti_compression.md
 ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
@@ -172,3 +193,5 @@ samples/router_examples.md
 ## Rule
 
 If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` before opening more files.
+
+If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
