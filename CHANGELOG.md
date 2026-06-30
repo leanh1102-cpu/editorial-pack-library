@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.1
+
+- Added SLTD runtime loop rule.
+- Updated manifest with runtime loop task.
+- Core unchanged.
+
 ## 1.8.0
 
 - Added SLTD task router rule.
