@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0
+
+- Added SLTD intensity rules.
+- Added SLTD intensity targets.
+- Added SLTD intensity pass prompt.
+- Added `intensity_pass` and `consequence_pass` to SLTD manifest.
+- Core unchanged.
+
 ## 1.2.0
 
 - Added SLTD Story Momentum rule.
