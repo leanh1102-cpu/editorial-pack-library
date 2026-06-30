@@ -9,7 +9,7 @@ manifest.yml
 ENTRY_FAST_PATH.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
-samples/router_smoke_tests.md
+samples/router_examples.md
 CHANGELOG.md
 ```
 
