@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.1"
+version: "1.10.2"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -46,6 +46,7 @@ required_files:
   - DESIGN.md
   - AGENT_IDENTITY.md
   - AUTHOR_WORKING_PROFILE.md
+  - AUTHOR_TASTE_EXAMPLES.md
   - ENTRY_FAST_PATH.md
   - EDITORIAL_COMPETENCY_MAP.md
   - EDITORIAL_MINDMAP.md
