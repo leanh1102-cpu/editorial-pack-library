@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.2
+
+- Added SLTD author taste examples.
+- Added AUTHOR_TASTE_EXAMPLES.md to required files.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.1
 
 - Added SLTD pack design document.
