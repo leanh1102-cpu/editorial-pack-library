@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.10.5
+
+- Added SLTD Vietnamese line surgery rule.
+- Added line surgery pass prompt.
+- Added line_surgery_pass to allowed tasks.
+- Updated scene audit prompt to route prose-smell cases to line surgery.
+- Updated manifest.
+- Core unchanged.
+
 ## 1.10.4
 
 - Added SLTD webnovel momentum benchmark rule.
