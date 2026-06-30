@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.6.0
+
+- Added SLTD editorial competency map.
+- Added developmental editing rule.
+- Added copyedit and proofread rule.
+- Added publishing readiness rule.
+- Added editorial director review prompt.
+- Added chapter readiness check prompt.
+- Updated manifest with editorial competency tasks.
+- Core unchanged.
+
 ## 1.5.1
 
 - Restored full SLTD manifest entries after v1.5.0 boot-layer update.
