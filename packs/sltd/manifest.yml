@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.0"
+version: "1.10.1"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -43,6 +43,7 @@ forbidden_tasks:
   - project_structure_changes
 required_files:
   - PACK.md
+  - DESIGN.md
   - AGENT_IDENTITY.md
   - AUTHOR_WORKING_PROFILE.md
   - ENTRY_FAST_PATH.md
