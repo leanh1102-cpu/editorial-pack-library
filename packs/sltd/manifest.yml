@@ -1,26 +1,43 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.5.0"
+version: "1.5.1"
 pack_type: project_pack
+inherits:
+  - ../../core/vietnamese_prose
+  - ../../core/job_packet
 compatible_core: ">=1.1.0 <2.0.0"
 allowed_tasks:
   - audit_scene
   - rewrite_scene
   - line_edit
+  - flow_pass
+  - seam_pass
   - story_arc_audit
   - intensity_pass
+  - consequence_pass
   - source_preflight
   - multi_reviewer_pass
   - boot_sequence
+forbidden_tasks:
+  - manage_notion_tasks
+  - workflow_management
+  - github_issue_management
+  - project_board_management
+  - canon_invention
+  - project_structure_changes
 required_files:
   - PACK.md
   - AGENT_IDENTITY.md
   - AUTHOR_WORKING_PROFILE.md
+  - ../../core/job_packet/EDITORIAL_JOB_PACKET.md
+  - ../../core/job_packet/ACCEPTANCE_CRITERIA.md
+  - ../../core/job_packet/RED_FLAGS.md
   - rules/sltd_boot_sequence.md
   - rules/sltd_memory_boundaries.md
   - rules/sltd_source_preflight.md
   - rules/sltd_editorial_hooks.md
   - rules/sltd_underreach_gate.md
+  - rules/sltd_style_rules.md
   - rules/sltd_canon_guard.md
   - rules/sltd_story_momentum.md
   - rules/sltd_intensity_rules.md
@@ -35,6 +52,7 @@ required_files:
 priority:
   - user_current_instruction
   - notion_live_source
+  - provided_scene_packet
   - sltd_project_pack
   - core_job_packet
   - core_vietnamese_prose
