@@ -54,6 +54,18 @@ roles/publishing_readiness_reviewer.md
 roles/editorial_director.md
 ```
 
+## Check iteration loop
+
+Verify:
+
+- `rules/sltd_agentic_iteration_loop.md` exists and is listed in manifest;
+- `prompts/iteration_checkpoint.md` exists and is listed in manifest;
+- iteration tasks are listed in allowed_tasks;
+- iteration route ends with node checkpoint;
+- loop requires source, scope, role, route, verification gate, and stop condition;
+- loop ends with next node or stop;
+- loop does not authorize automation, scripts, workflows, reports, boards, or silent writes.
+
 ## Check routes
 
 Verify:
@@ -63,7 +75,8 @@ Verify:
 - each route has a safety step;
 - large routes use context brief when needed;
 - node-changing routes end with node checkpoint or result report;
-- role-overlap routes reference `rules/sltd_role_boundary_contracts.md`.
+- role-overlap routes reference `rules/sltd_role_boundary_contracts.md`;
+- iteration routes reference `rules/sltd_agentic_iteration_loop.md`.
 
 ## Check role boundaries
 
@@ -83,7 +96,8 @@ Mark a file as possible orphan when:
 - it describes a task that no route uses;
 - it duplicates another rule without a clear reason;
 - it defines a role or task without boundary, route, or output;
-- a role card exists but is missing from `ROLE_ENTRY_INDEX.md`.
+- a role card exists but is missing from `ROLE_ENTRY_INDEX.md`;
+- an iteration file exists but is missing from manifest or route.
 
 ## Output labels
 
