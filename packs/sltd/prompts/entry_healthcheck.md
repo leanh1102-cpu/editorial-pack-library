@@ -14,6 +14,7 @@ rules/sltd_pack_healthcheck.md
 rules/sltd_evidence_discipline.md
 rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
+rules/sltd_calibration_discipline.md
 rules/sltd_task_router.md
 prompts/iteration_checkpoint.md
 samples/router_examples.md
@@ -21,6 +22,15 @@ CHANGELOG.md
 ```
 
 Also spot-check all required role cards listed in `ROLE_ENTRY_INDEX.md`.
+
+Also spot-check required calibration files:
+
+```text
+samples/line_surgery_calibration.md
+samples/dialogue_voice_calibration.md
+samples/underreach_calibration.md
+samples/readiness_false_positive.md
+```
 
 Output:
 
@@ -32,6 +42,7 @@ MANIFEST CHECK:
 ENTRY CHECK:
 ROLE ENTRY CHECK:
 ITERATION LOOP CHECK:
+CALIBRATION CHECK:
 ROUTE CHECK:
 ROLE BOUNDARY CHECK:
 EVIDENCE CHECK:
