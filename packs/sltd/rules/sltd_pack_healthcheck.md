@@ -24,6 +24,18 @@ Verify:
 - fast path does not replace boot, manifest, design, or source preflight;
 - `ROLE_ENTRY_INDEX.md` lists every role card.
 
+## Check source fidelity
+
+Verify:
+
+- `rules/sltd_source_fidelity_anti_compression.md` exists and is listed in manifest;
+- `prompts/source_surface_check.md` exists and is listed in manifest;
+- source_surface_check is listed in allowed_tasks;
+- line edit, line surgery, copyedit, proofread, rewrite, readiness, and exact patch routes require source surface when exact text/current source may be missing;
+- digest is labeled as not source text;
+- exact OLD is required before OLD/NEW patch;
+- missing source surface downgrades to map-level review, packet risk scan, or source request.
+
 ## Check role entry cards
 
 Verify each role card exists, is listed in manifest, and has:
@@ -98,7 +110,8 @@ Verify:
 - node-changing routes end with node checkpoint or result report;
 - role-overlap routes reference `rules/sltd_role_boundary_contracts.md`;
 - iteration routes reference `rules/sltd_agentic_iteration_loop.md`;
-- calibration routes reference `rules/sltd_calibration_discipline.md`.
+- calibration routes reference `rules/sltd_calibration_discipline.md`;
+- source-surface routes reference `rules/sltd_source_fidelity_anti_compression.md`.
 
 ## Check role boundaries
 
@@ -120,7 +133,8 @@ Mark a file as possible orphan when:
 - it defines a role or task without boundary, route, or output;
 - a role card exists but is missing from `ROLE_ENTRY_INDEX.md`;
 - an iteration file exists but is missing from manifest or route;
-- a calibration file exists but is missing from manifest or route.
+- a calibration file exists but is missing from manifest or route;
+- a source-surface file exists but is missing from manifest or route.
 
 ## Output labels
 
