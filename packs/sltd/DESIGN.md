@@ -12,6 +12,7 @@ It should help the agent:
 
 - read the right source;
 - preserve exact source surface before editing;
+- detect composite AI failure after many correct-looking passes;
 - preserve character agency;
 - preserve dynamic range and cadence;
 - choose the right skill;
@@ -29,7 +30,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, character agency gates, dynamic range gates, handoff continuity
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, anti-AI composite gates, character agency gates, dynamic range gates, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -54,6 +55,7 @@ The pack is split into:
 - identity files;
 - source discipline;
 - source fidelity and anti-compression gates;
+- anti-AI composite failure gates;
 - character agency and anti-OOC gates;
 - dynamic range and cadence gates;
 - task router;
@@ -78,6 +80,7 @@ source_preflight
 task_intake
 task_router
 source surface check when exact source may be missing
+anti-AI composite check when synthetic/checklist risk appears
 character agency check when OOC/OCC risk appears
 dynamic range check when cadence risk appears
 role entry card when a role is named
@@ -105,6 +108,7 @@ source surface status
 scope
 local chapter or scene
 scene function
+anti-AI composite risk
 character agency state
 cadence state
 relevant canon
@@ -133,6 +137,16 @@ Line edit, line surgery, copyedit, proofread, rewrite, exact OLD/NEW patch, read
 Digest may guide navigation and prioritization. Digest must not be used as prose surface or current-state evidence.
 
 If source surface is missing, the agent must safely downgrade to map-level review, packet risk scan, or source request.
+
+## Anti-AI composite model
+
+A scene can be correct and still feel AI-made.
+
+Composite AI failure happens when many safe repairs stack into a scene that is cleaner, more complete, and more functional, but less lived.
+
+Anti-AI composite check catches scene-card visibility, object-as-proof-item, explanation-duty dialogue, universal narrator voice, consequence vacuum, repair collage, false human texture, clean transition disease, negative explanation habit, and false readiness.
+
+It must not add more texture to hide synthetic structure. It must choose one governing scene pressure before repair.
 
 ## Character agency model
 
@@ -206,7 +220,7 @@ It must not run indefinitely, create background automation, write to Notion/GitH
 
 Calibration cases are accepted or rejected examples used to improve future execution.
 
-They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, wrong role routing, over-restraint, and false character agency.
+They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, wrong role routing, over-restraint, false character agency, and composite AI failure.
 
 Calibration is not canon, not current manuscript, and not publication evidence.
 
@@ -285,7 +299,7 @@ If a later role discovers an earlier-layer failure, stop and hand back.
 
 Review modes are lenses, not roles.
 
-Learned taste, calibration, character agency checks, dynamic range checks, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
+Learned taste, calibration, anti-AI composite checks, character agency checks, dynamic range checks, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
@@ -298,6 +312,7 @@ Check:
 - allowed tasks;
 - route coverage;
 - source fidelity coverage;
+- anti-AI composite coverage;
 - character agency coverage;
 - dynamic range coverage;
 - role entry coverage;
@@ -313,7 +328,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, character agency, dynamic range, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, anti-AI composite checks, character agency, dynamic range, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -339,6 +354,7 @@ The SLTD pack must not become:
 - a self-running agent loop;
 - a place where AI invents canon;
 - a place where AI edits prose from summary;
+- a place where AI hides synthetic structure under more texture;
 - a place where AI forces characters to serve scene cards;
 - a place where AI flattens every scene through over-restraint;
 - a place where AI treats handoff as source truth;
@@ -358,7 +374,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, exact source surface, context brief, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, exact source surface, context brief, anti-AI composite check, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -371,6 +387,7 @@ These rules should remain stable across versions:
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
 - AI does not edit prose from summary.
+- AI does not hide synthetic structure with more texture.
 - AI does not force character behavior only to satisfy scene function.
 - AI does not flatten scene cadence through over-restraint.
 - AI does not treat handoff as source truth.
