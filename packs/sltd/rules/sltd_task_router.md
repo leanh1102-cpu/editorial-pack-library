@@ -11,32 +11,34 @@ boot_task -> source_preflight -> task_intake -> decision_safety
 Routes:
 
 ```text
+living world community motion check: sltd_source_fidelity_anti_compression -> sltd_living_world_community_motion_gate -> living_world_community_motion_check -> node_checkpoint
 character distinctiveness check: sltd_source_fidelity_anti_compression -> sltd_character_distinctiveness_iceberg_gate -> character_distinctiveness_check -> node_checkpoint
-character agency check: sltd_source_fidelity_anti_compression -> sltd_character_agency_anti_ooc_gate -> character_distinctiveness_check if character remains interchangeable -> character_agency_check -> node_checkpoint
 webnovel paragraphing layout check: sltd_source_fidelity_anti_compression -> sltd_webnovel_paragraphing_layout_rhythm_gate -> webnovel_paragraphing_layout_check -> node_checkpoint
 vietnamese register check: sltd_source_fidelity_anti_compression -> sltd_vietnamese_register_viet_dao_gate -> vietnamese_register_check -> node_checkpoint
-chapter assembly split check: sltd_source_fidelity_anti_compression -> sltd_chapter_assembly_split_control_gate -> webnovel_paragraphing_layout_check if layout affects chapter surface -> character_distinctiveness_check if cast continuity drifts -> chapter_assembly_split_check -> node_checkpoint
-first-pass editorial workflow: sltd_source_fidelity_anti_compression -> sltd_first_pass_editorial_workflow -> character_distinctiveness_check if character profile target is unclear -> webnovel_paragraphing_layout_check if paragraphing target is unclear -> vietnamese_register_check if register target is unclear -> first_pass_editorial_workflow -> node_checkpoint
-scene-first prose judgment: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate -> character_distinctiveness_check if characters read as scene functions -> webnovel_paragraphing_layout_check if layout performs emotion or breaks reader breath -> vietnamese_register_check if register is miscalibrated -> scene_first_prose_judgment -> node_checkpoint
-anti-AI composite check: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate if checklist-first risk appears -> sltd_character_distinctiveness_iceberg_gate if cast reads flat or interchangeable -> sltd_webnovel_paragraphing_layout_rhythm_gate if AI layout risk appears -> sltd_vietnamese_register_viet_dao_gate if translated/flat register risk appears -> sltd_anti_ai_composite_failure_gate -> anti_ai_composite_check -> node_checkpoint
-dynamic range check: sltd_source_fidelity_anti_compression -> sltd_dynamic_range_cadence_gate -> webnovel_paragraphing_layout_check if visible paragraph rhythm contributes to flat cadence -> dynamic_range_check -> node_checkpoint
-source surface check: sltd_source_fidelity_anti_compression -> source_surface_check -> node_checkpoint
-chapter status: source_surface_check if current source unclear -> chapter_assembly_split_check if chapter length/reader unit is in scope -> character_distinctiveness_check if cast function affects readiness -> webnovel_paragraphing_layout_check if layout affects readiness -> chapter_readiness_check -> mindmap_review -> node_checkpoint
-packet review: sltd_source_fidelity_anti_compression -> chapter_assembly_split_check if chapter split risk appears -> character_distinctiveness_check if cast texture or continuity is in scope -> webnovel_paragraphing_layout_check if layout rhythm affects reader experience -> vietnamese_register_check if register drift appears -> first_pass_editorial_workflow if first edit is requested -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if synthetic/checklist risk appears -> character_agency_check if agency risk appears -> context_brief -> audit_story_arc -> mindmap_review -> editorial_director_review -> node_checkpoint
-scene rewrite: source_surface_check -> first_pass_editorial_workflow -> character_distinctiveness_check if character distinctiveness is in scope -> webnovel_paragraphing_layout_check if paragraphing/layout is in scope -> vietnamese_register_check if register/Hán Việt/Viet Dao is in scope -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if multiple-pass AI risk appears -> character_agency_check if OOC/OCC risk appears -> dynamic_range_check if restraint/cadence risk appears -> canon_guard -> sltd_editorial_hooks -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
-chapter assembly after scene edits: source_surface_check -> chapter_assembly_split_check -> character_distinctiveness_check if cast continuity or side-character function drifts between scenes -> webnovel_paragraphing_layout_check if chapter surface flow or mobile fatigue is in scope -> vietnamese_register_check if register drifts between scenes -> anti_ai_composite_check if assembled chapter reads synthetic -> publishing_readiness_reviewer if split affects readiness -> node_checkpoint
-line edit: source_surface_check -> character_distinctiveness_check if voice/body/object signature is the issue -> webnovel_paragraphing_layout_check if line breaks/paragraphing are the issue -> vietnamese_register_check if Hán Việt/register balance is the issue -> first_pass_editorial_workflow if first serious edit -> scene_first_prose_judgment if prose reads like rule performance -> anti_ai_composite_check if repair collage risk appears -> character_agency_check if dialogue/action serves plot too neatly -> dynamic_range_check if cadence flattened -> vietnamese_line_editor -> sltd_canon_guard -> vietnamese_prose rules -> sltd_copyedit_proofread
-line surgery: source_surface_check -> character_distinctiveness_check if voice/body/object signature is the issue -> webnovel_paragraphing_layout_check if line breaks/paragraphing are the issue -> vietnamese_register_check if Hán Việt/register balance is the issue -> first_pass_editorial_workflow if first serious edit -> scene_first_prose_judgment if prose reads like rule performance -> anti_ai_composite_check if repair collage risk appears -> character_agency_check if dialogue/action serves plot too neatly -> dynamic_range_check if cadence flattened -> line_surgery -> sltd_vietnamese_line_surgery -> line_surgery_pass -> node_checkpoint
-readiness: source_surface_check -> chapter_assembly_split_check if length/split affects readiness -> character_distinctiveness_check if character flatness affects human read -> webnovel_paragraphing_layout_check if layout affects human read -> vietnamese_register_check if register affects human read -> scene_first_prose_judgment if prose readiness is inferred from checklist compliance -> anti_ai_composite_check if false readiness risk appears -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
+chapter assembly split check: sltd_source_fidelity_anti_compression -> sltd_chapter_assembly_split_control_gate -> living_world_community_motion_check if world motion affects chapter surface -> chapter_assembly_split_check -> node_checkpoint
+first-pass editorial workflow: sltd_source_fidelity_anti_compression -> sltd_first_pass_editorial_workflow -> living_world_community_motion_check if setting/community motion is unclear -> character_distinctiveness_check if character profile target is unclear -> first_pass_editorial_workflow -> node_checkpoint
+scene-first prose judgment: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate -> living_world_community_motion_check if setting reads as backdrop -> character_distinctiveness_check if characters read as functions -> scene_first_prose_judgment -> node_checkpoint
+anti-AI composite check: sltd_source_fidelity_anti_compression -> sltd_living_world_community_motion_gate if world feels staged -> sltd_character_distinctiveness_iceberg_gate if cast reads flat -> sltd_webnovel_paragraphing_layout_rhythm_gate if AI layout risk appears -> sltd_vietnamese_register_viet_dao_gate if register risk appears -> sltd_anti_ai_composite_failure_gate -> anti_ai_composite_check -> node_checkpoint
+scene rewrite: source_surface_check -> first_pass_editorial_workflow -> living_world_community_motion_check if setting/community/world motion is in scope -> character_distinctiveness_check if character distinctiveness is in scope -> webnovel_paragraphing_layout_check if layout is in scope -> vietnamese_register_check if register is in scope -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if synthetic risk appears -> character_agency_check if agency risk appears -> dynamic_range_check if cadence risk appears -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
+line surgery: source_surface_check -> living_world_community_motion_check if setting/community detail is the issue -> character_distinctiveness_check if voice/body/object signature is the issue -> webnovel_paragraphing_layout_check if line breaks are the issue -> vietnamese_register_check if register is the issue -> line_surgery -> line_surgery_pass -> node_checkpoint
+readiness: source_surface_check -> chapter_assembly_split_check if length/split affects readiness -> living_world_community_motion_check if static setting/community affects human read -> character_distinctiveness_check if character flatness affects human read -> webnovel_paragraphing_layout_check if layout affects human read -> vietnamese_register_check if register affects human read -> anti_ai_composite_check if false readiness risk appears -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
+```
+
+Living world rule:
+
+```text
+If setting, community, custom, social habit, environment pushback, offscreen motion, or butterfly trace is in scope, run living world community motion check.
+The world must not wait for the protagonist to enter.
+A location is not ready because it is described. A custom is not ready because it is named. A community is not ready because people appear as witnesses.
+Do not invent major lore, custom, institution, ritual, faction, village history, or canon geography.
+If evidence is missing, mark the gap instead of inventing worldbuilding.
 ```
 
 Character distinctiveness rule:
 
 ```text
 If characters feel skimmed, interchangeable, function-only, same-voiced, or lacking hidden life, run character distinctiveness check.
-Agency asks whether plot forces behavior. Distinctiveness asks whether the character remains themselves beyond scene function.
 Do not invent trauma, backstory, hidden motive, symbol, title, or canon relation.
-If evidence is missing, mark the profile gap instead of inventing depth.
 ```
 
 Paragraphing and layout rule:
@@ -44,63 +46,26 @@ Paragraphing and layout rule:
 ```text
 If paragraphing, line breaks, short-line density, wall-text risk, or mobile readability affects reader breath, run webnovel paragraphing layout check.
 Paragraph is reader breath, not decoration.
-Line break is a structural signal, not artificial emphasis.
 ```
 
 Vietnamese register rule:
 
 ```text
 If prose is too Chinese-translated, too Hán Việt-heavy, too modern-flat, or missing Viet Dao balance, run vietnamese register check.
-Use Vietnamese life for body/work/poverty/illness/debt/weather/object pressure.
-Use Sino-Vietnamese for canon, law, rite, rank, taboo, old object, and Dao pressure when earned.
 ```
 
 Chapter assembly rule:
 
 ```text
 If scene edits are being assembled into a chapter, or chapter length/reader unit may be overloaded, run chapter assembly split check.
-Scene is the edit unit. Chapter is the reader unit. Packet is the continuity and momentum unit.
-```
-
-First-pass rule:
-
-```text
-If beginning a first serious rewrite, line edit, line surgery, or scene repair, run first-pass editorial workflow before targeted gates.
-Edit first as a human prose editor. Verify after.
-Choose the earliest failing layer and one main edit strategy before writing.
+Scene is the edit unit. Chapter is the reader unit.
 ```
 
 Source fidelity rule:
 
 ```text
 If the task requires exact prose, exact status, exact patch, or current lock, verify source surface first.
-Do not line edit, line surgery, copyedit, proofread, rewrite, or patch from digest, summary, or chat memory.
-```
-
-Scene-first rule:
-
-```text
-If prose work starts by satisfying gates instead of judging the scene as lived Vietnamese prose, run scene-first prose judgment.
-Use checklist as later verification, not as the writing method.
-```
-
-Character agency rule:
-
-```text
-If a character seems to serve the plot, clue, scene card, or explanation instead of acting from pressure, run character agency check.
-```
-
-Anti-AI composite rule:
-
-```text
-If a scene or chapter has many correct-looking passes but still reads arranged, synthetic, over-polished, or assembled, run anti-AI composite check.
-Do not claim readiness from green sub-passes alone.
-```
-
-Dynamic range rule:
-
-```text
-If restraint, moderation, line edit, anti-melodrama, or subtlety causes a scene to become cleaner but flatter, run dynamic range check.
+Do not edit prose from digest, summary, or chat memory.
 ```
 
 Gap output:
