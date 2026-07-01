@@ -1,10 +1,15 @@
 # Changelog
 
+## 1.10.20
+
+- Added character distinctiveness and iceberg profile gate.
+- Added character_distinctiveness_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.19
 
 - Added webnovel paragraphing and layout rhythm gate.
 - Added webnovel_paragraphing_layout_check task and prompt.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.18
 
