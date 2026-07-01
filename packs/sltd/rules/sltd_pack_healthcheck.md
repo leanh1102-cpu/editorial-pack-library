@@ -28,17 +28,22 @@ Verify first-pass rule and prompt exist, task is allowed, route ends with node c
 
 ## Check chapter assembly and split control
 
+Verify chapter assembly rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, and it separates scene edit unit from chapter reader unit.
+
+## Check Vietnamese register and Viet Dao calibration
+
 Verify:
 
-- `rules/sltd_chapter_assembly_split_control_gate.md` exists and is listed in manifest;
-- `prompts/chapter_assembly_split_check.md` exists and is listed in manifest;
-- chapter_assembly_split_check is listed in allowed_tasks;
-- chapter assembly route ends with node checkpoint;
-- chapter assembly route references source fidelity before verdict;
-- chapter assembly gate separates scene edit unit from chapter reader unit;
-- chapter assembly gate checks length type, reader question, governing chapter pressure, major turns, payoff points, loops, and natural breakpoints;
-- chapter assembly gate warns on word-count risk without splitting mechanically by word count alone;
-- chapter assembly gate does not authorize silent live manuscript split, renumbering, deletion, or Notion update.
+- `rules/sltd_vietnamese_register_viet_dao_gate.md` exists and is listed in manifest;
+- `prompts/vietnamese_register_check.md` exists and is listed in manifest;
+- `samples/viet_dao_prose_calibration.md` exists and is listed in manifest;
+- vietnamese_register_check is listed in allowed_tasks;
+- Vietnamese register route ends with node checkpoint;
+- Vietnamese register route references source fidelity before patching;
+- the gate separates Vietnamese life layer from Sino-Vietnamese concept layer;
+- the gate prevents Hán Việt overload, Chinese-translation syntax, fake classical Vietnamese, and modern-flat prose;
+- the gate preserves controlled Sino-Vietnamese for canon, law, rite, rank, taboo, and Dao pressure when earned;
+- the gate does not authorize canon term changes or new terminology.
 
 ## Check scene-first prose judgment
 
@@ -89,6 +94,7 @@ Verify calibration discipline and sample files are listed, calibration route end
 Required calibration files:
 
 ```text
+samples/viet_dao_prose_calibration.md
 samples/line_surgery_calibration.md
 samples/dialogue_voice_calibration.md
 samples/underreach_calibration.md
@@ -103,6 +109,7 @@ Verify each allowed task has a route or prompt, large routes use context brief w
 source-surface routes -> sltd_source_fidelity_anti_compression.md
 first-pass routes -> sltd_first_pass_editorial_workflow.md
 chapter assembly routes -> sltd_chapter_assembly_split_control_gate.md
+Vietnamese register routes -> sltd_vietnamese_register_viet_dao_gate.md
 scene-first routes -> sltd_scene_first_prose_judgment_gate.md
 anti-AI composite routes -> sltd_anti_ai_composite_failure_gate.md
 character agency routes -> sltd_character_agency_anti_ooc_gate.md
