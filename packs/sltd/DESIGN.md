@@ -8,6 +8,7 @@ The pack helps the agent:
 
 - read the right source;
 - preserve exact source surface before editing;
+- run a first-pass editorial workflow before targeted gates;
 - judge the scene before using checklists;
 - detect composite AI failure after many correct-looking passes;
 - preserve character agency;
@@ -21,7 +22,7 @@ The pack helps the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -41,7 +42,7 @@ AI_ENTRY.md
   -> packs/sltd/rules/sltd_runtime_loop.md
 ```
 
-The pack is split into source discipline, source fidelity, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, task routing, role boundaries, iteration, calibration, handoff continuity, evidence, healthcheck, prompts, and examples.
+The pack is split into source discipline, source fidelity, first-pass editorial workflow, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, task routing, role boundaries, iteration, calibration, handoff continuity, evidence, healthcheck, prompts, and examples.
 
 ## Runtime loop
 
@@ -51,6 +52,7 @@ source_preflight
 task_intake
 task_router
 source surface check when exact source may be missing
+first-pass editorial workflow when beginning prose repair
 scene-first prose judgment when checklist-first risk appears
 anti-AI composite check when synthetic/checklist risk appears
 character agency check when OOC/OCC risk appears
@@ -78,6 +80,8 @@ source surface status
 scope
 local chapter or scene
 scene function
+first-pass edit layer
+edit strategy
 scene-first prose status
 governing scene pressure
 anti-AI composite risk
@@ -99,6 +103,20 @@ SOURCE TEXT > DERIVED DIGEST > CHAT MEMORY
 ```
 
 Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, and lock verdicts require the right source surface. Digest may guide navigation; it must not become prose surface or current-state evidence.
+
+## First-pass editorial workflow model
+
+Edit first as a human prose editor. Verify after.
+
+The first pass starts with source surface, scene-first intake, editorial diagnosis, one edit strategy, draft/patch, and a human-read prose pass. Targeted gates run only when a remaining blocker requires them.
+
+```text
+FIRST PASS = source surface + scene intake + diagnosis + one edit strategy + human-read prose pass
+GATES = targeted later checks, not the first writing method
+QUALITY = natural Vietnamese prose with scene pressure, character behavior, and rhythm working together
+```
+
+The first pass must choose the earliest failing layer and avoid stacking many repair strategies unless the user asks for a full rewrite.
 
 ## Scene-first prose judgment model
 
@@ -150,15 +168,15 @@ proofread before readiness
 readiness before publication lock claim
 ```
 
-Review modes are lenses, not roles. Learned taste, calibration, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
+Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
-Check manifest version, required files, allowed tasks, route coverage, source fidelity, scene-first judgment, anti-AI composite, character agency, dynamic range, role entry, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
+Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, scene-first judgment, anti-AI composite, character agency, dynamic range, role entry, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types: rule, prompt, sample, role entry, design note, manifest update, changelog entry.
 
@@ -176,7 +194,7 @@ Do not add scripts, workflows, boards, reports, project management files, automa
 1000+ chapters = series-level navigation, not line edit
 ```
 
-Prefer retrieval, exact source surface, context brief, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
+Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -188,6 +206,7 @@ Prefer retrieval, exact source surface, context brief, scene-first prose judgmen
 - No readiness claim without evidence.
 - No prose edit from summary.
 - No checklist-first prose repair.
+- First-pass editing starts from scene pressure and edit layer, not all gates.
 - No hiding synthetic structure with more texture.
 - No forcing character behavior only to satisfy scene function.
 - No handoff-as-source truth.
