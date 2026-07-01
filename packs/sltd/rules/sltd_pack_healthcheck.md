@@ -16,25 +16,24 @@ Verify:
 
 ## Check entries
 
-Verify:
-
-- root entry is still `AI_ENTRY.md`;
-- pack entry is still `packs/sltd/manifest.yml`;
-- runtime entry is still `prompts/boot_task.md`;
-- fast path does not replace boot, manifest, design, or source preflight;
-- `ROLE_ENTRY_INDEX.md` lists every role card.
+Verify root entry, pack entry, runtime entry, fast path, and role entry index.
 
 ## Check source fidelity
 
+Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
+
+## Check scene-first prose judgment
+
 Verify:
 
-- `rules/sltd_source_fidelity_anti_compression.md` exists and is listed in manifest;
-- `prompts/source_surface_check.md` exists and is listed in manifest;
-- source_surface_check is listed in allowed_tasks;
-- line edit, line surgery, copyedit, proofread, rewrite, readiness, and exact patch routes require source surface when exact text/current source may be missing;
-- digest is labeled as not source text;
-- exact OLD is required before OLD/NEW patch;
-- missing source surface downgrades to map-level review, packet risk scan, or source request.
+- `rules/sltd_scene_first_prose_judgment_gate.md` exists and is listed in manifest;
+- `prompts/scene_first_prose_judgment.md` exists and is listed in manifest;
+- scene_first_prose_judgment is listed in allowed_tasks;
+- scene-first route ends with node checkpoint;
+- scene-first route references source fidelity before patching;
+- scene-first gate requires one governing scene pressure before repair;
+- scene-first gate treats checklist as later verification, not the writing method;
+- scene-first gate prevents adding required-looking body/object/silence/cost beats to hide checklist-first prose.
 
 ## Check anti-AI composite
 
@@ -51,59 +50,17 @@ Verify:
 
 ## Check character agency
 
-Verify:
-
-- `rules/sltd_character_agency_anti_ooc_gate.md` exists and is listed in manifest;
-- `prompts/character_agency_check.md` exists and is listed in manifest;
-- character_agency_check is listed in allowed_tasks;
-- character agency route ends with node checkpoint;
-- character agency route references source fidelity before patching;
-- character agency gate checks want, fear, knowledge limit, pressure, choice, and visible cost;
-- character agency gate prevents characters from serving plot, clue, scene card, or explanation duty without source pressure;
-- character agency gate does not authorize canon invention or locked outcome changes.
+Verify character agency rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, and want/fear/knowledge limit/pressure/choice/visible cost are checked.
 
 ## Check dynamic range
 
-Verify:
-
-- `rules/sltd_dynamic_range_cadence_gate.md` exists and is listed in manifest;
-- `prompts/dynamic_range_check.md` exists and is listed in manifest;
-- dynamic_range_check is listed in allowed_tasks;
-- dynamic range route ends with node checkpoint;
-- dynamic range route references source fidelity before patching;
-- dynamic range gate separates what must stay quiet from what needs stronger scene pressure;
-- dynamic range gate prevents all scenes from being forced into the same restrained cadence;
-- dynamic range gate does not authorize canon invention or locked outcome changes.
+Verify dynamic range rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, and cadence/pressure are not flattened.
 
 ## Check handoff continuity
 
-Verify:
-
-- `rules/sltd_handoff_continuity_protocol.md` exists and is listed in manifest;
-- `prompts/session_handoff.md` reads the handoff continuity protocol;
-- handoff_continuity_check is listed in allowed_tasks;
-- handoff route ends with node checkpoint;
-- handoff separates FACT, INFERENCE, RECOMMENDATION, CANDIDATE, and UNVERIFIED;
-- handoff contains source, role, node, decision, patch, and error ledgers;
-- handoff contains CARRY FORWARD and DO NOT CARRY;
-- handoff tells next AI to verify current source before verdict;
-- handoff is marked as navigation, not source truth.
+Verify handoff continuity rule is listed, session_handoff reads it, handoff route ends with node checkpoint, and handoff is navigation rather than source truth.
 
 ## Check role entry cards
-
-Verify each role card exists, is listed in manifest, and has:
-
-- Role;
-- When user says;
-- Read first;
-- Source required;
-- Run;
-- Do;
-- Do not;
-- Output;
-- Done;
-- Handoff;
-- Fail closed.
 
 Required role cards:
 
@@ -119,29 +76,15 @@ roles/publishing_readiness_reviewer.md
 roles/editorial_director.md
 ```
 
+Each role card must have role, trigger, read-first list, source required, run, do, do not, output, done, handoff, and fail-closed.
+
 ## Check iteration loop
 
-Verify:
-
-- `rules/sltd_agentic_iteration_loop.md` exists and is listed in manifest;
-- `prompts/iteration_checkpoint.md` exists and is listed in manifest;
-- iteration tasks are listed in allowed_tasks;
-- iteration route ends with node checkpoint;
-- loop requires source, scope, role, route, verification gate, and stop condition;
-- loop ends with next node or stop;
-- loop does not authorize automation, scripts, workflows, reports, boards, or silent writes.
+Verify iteration loop and checkpoint are listed, route ends with node checkpoint, and the loop requires source, scope, role, route, verification gate, and stop condition.
 
 ## Check calibration cases
 
-Verify:
-
-- `rules/sltd_calibration_discipline.md` exists and is listed in manifest;
-- calibration task is listed in allowed_tasks;
-- calibration sample files exist and are listed in manifest;
-- calibration route ends with node checkpoint;
-- calibration cases use BAD / WHY BAD / RULE HIT / PREFERRED / PATCH PRINCIPLE;
-- calibration is marked as example, not canon or current manuscript;
-- user rejection creates a calibration candidate, not a silent write.
+Verify calibration discipline and sample files are listed, calibration route ends with node checkpoint, and calibration remains example data rather than canon/current manuscript.
 
 Required calibration files:
 
@@ -154,48 +97,24 @@ samples/readiness_false_positive.md
 
 ## Check routes
 
-Verify:
+Verify each allowed task has a route or prompt, large routes use context brief when needed, node-changing routes end with node checkpoint or result report, and routes reference their required gate files:
 
-- each allowed task has a route or prompt;
-- each named role has a role card route;
-- each route has a safety step;
-- large routes use context brief when needed;
-- node-changing routes end with node checkpoint or result report;
-- role-overlap routes reference `rules/sltd_role_boundary_contracts.md`;
-- iteration routes reference `rules/sltd_agentic_iteration_loop.md`;
-- calibration routes reference `rules/sltd_calibration_discipline.md`;
-- source-surface routes reference `rules/sltd_source_fidelity_anti_compression.md`;
-- anti-AI composite routes reference `rules/sltd_anti_ai_composite_failure_gate.md`;
-- character agency routes reference `rules/sltd_character_agency_anti_ooc_gate.md`;
-- dynamic range routes reference `rules/sltd_dynamic_range_cadence_gate.md`;
-- handoff routes reference `rules/sltd_handoff_continuity_protocol.md`.
+```text
+source-surface routes -> sltd_source_fidelity_anti_compression.md
+scene-first routes -> sltd_scene_first_prose_judgment_gate.md
+anti-AI composite routes -> sltd_anti_ai_composite_failure_gate.md
+character agency routes -> sltd_character_agency_anti_ooc_gate.md
+dynamic range routes -> sltd_dynamic_range_cadence_gate.md
+handoff routes -> sltd_handoff_continuity_protocol.md
+```
 
 ## Check role boundaries
 
-Verify:
-
-- each active editorial role has start condition, allowed actions, must-not-do, done criteria, stop condition, and handoff;
-- later roles do not overwrite earlier-layer blockers;
-- review modes remain lenses, not roles;
-- learned taste, calibration, anti-AI composite checks, character agency checks, and dynamic range checks do not override current source, canon, evidence, or human lock.
+Verify later roles do not overwrite earlier-layer blockers and learned taste/calibration/gates do not override current source, canon, evidence, or human lock.
 
 ## Check orphan risk
 
-Mark a file as possible orphan when:
-
-- it exists but is not listed in manifest;
-- it is listed in manifest but cannot be fetched;
-- it describes a task that no route uses;
-- it duplicates another rule without a clear reason;
-- it defines a role or task without boundary, route, or output;
-- a role card exists but is missing from `ROLE_ENTRY_INDEX.md`;
-- an iteration file exists but is missing from manifest or route;
-- a calibration file exists but is missing from manifest or route;
-- a source-surface file exists but is missing from manifest or route;
-- an anti-AI composite file exists but is missing from manifest or route;
-- a character-agency file exists but is missing from manifest or route;
-- a dynamic range file exists but is missing from manifest or route;
-- a handoff-continuity file exists but is missing from manifest or route.
+Mark a file as possible orphan when it exists but is not listed in manifest, is listed but cannot be fetched, defines a task with no route, duplicates another rule without reason, or is missing from its route.
 
 ## Output labels
 
