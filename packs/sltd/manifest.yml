@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.20"
+version: "1.10.21"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -49,17 +49,11 @@ allowed_tasks:
   - vietnamese_register_check
   - webnovel_paragraphing_layout_check
   - character_distinctiveness_check
+  - living_world_community_motion_check
   - scene_first_prose_judgment
   - dynamic_range_check
   - character_agency_check
   - anti_ai_composite_check
-forbidden_tasks:
-  - manage_notion_tasks
-  - workflow_management
-  - github_issue_management
-  - project_board_management
-  - canon_invention
-  - project_structure_changes
 required_files:
   - PACK.md
   - DESIGN.md
@@ -68,94 +62,37 @@ required_files:
   - AUTHOR_TASTE_EXAMPLES.md
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
-  - roles/canon_guard.md
-  - roles/story_doctor.md
-  - roles/intensity_editor.md
-  - roles/vietnamese_line_editor.md
-  - roles/line_surgery.md
-  - roles/copyeditor.md
-  - roles/proofreader.md
-  - roles/publishing_readiness_reviewer.md
-  - roles/editorial_director.md
-  - EDITORIAL_COMPETENCY_MAP.md
-  - EDITORIAL_MINDMAP.md
-  - EDITORIAL_CONTEXT_PROTOCOL.md
-  - ../../core/job_packet/EDITORIAL_JOB_PACKET.md
-  - ../../core/job_packet/ACCEPTANCE_CRITERIA.md
-  - ../../core/job_packet/RED_FLAGS.md
-  - rules/sltd_boot_sequence.md
-  - rules/sltd_runtime_loop.md
-  - rules/sltd_memory_boundaries.md
-  - rules/sltd_source_preflight.md
-  - rules/sltd_editorial_hooks.md
-  - rules/sltd_underreach_gate.md
-  - rules/sltd_style_rules.md
-  - rules/sltd_canon_guard.md
   - rules/sltd_story_momentum.md
-  - rules/sltd_intensity_rules.md
-  - rules/sltd_intensity_targets.md
-  - rules/sltd_dynamic_range_cadence_gate.md
-  - rules/sltd_character_agency_anti_ooc_gate.md
+  - rules/sltd_living_world_community_motion_gate.md
   - rules/sltd_character_distinctiveness_iceberg_gate.md
-  - rules/sltd_anti_ai_composite_failure_gate.md
-  - rules/sltd_scene_first_prose_judgment_gate.md
-  - rules/sltd_first_pass_editorial_workflow.md
-  - rules/sltd_chapter_assembly_split_control_gate.md
-  - rules/sltd_vietnamese_register_viet_dao_gate.md
   - rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md
-  - rules/sltd_developmental_editing.md
-  - rules/sltd_copyedit_proofread.md
-  - rules/sltd_publishing_readiness.md
-  - rules/sltd_node_traversal.md
-  - rules/sltd_notion_update_discipline.md
-  - rules/sltd_task_router.md
-  - rules/sltd_decision_safety.md
-  - rules/sltd_context_window_strategy.md
-  - rules/sltd_retrieval_budget.md
-  - rules/sltd_pack_healthcheck.md
-  - rules/sltd_evidence_discipline.md
-  - rules/sltd_review_modes.md
-  - rules/sltd_webnovel_momentum_benchmark.md
-  - rules/sltd_vietnamese_line_surgery.md
-  - rules/sltd_role_boundary_contracts.md
-  - rules/sltd_agentic_iteration_loop.md
-  - rules/sltd_calibration_discipline.md
+  - rules/sltd_vietnamese_register_viet_dao_gate.md
+  - rules/sltd_chapter_assembly_split_control_gate.md
+  - rules/sltd_first_pass_editorial_workflow.md
+  - rules/sltd_scene_first_prose_judgment_gate.md
+  - rules/sltd_anti_ai_composite_failure_gate.md
+  - rules/sltd_character_agency_anti_ooc_gate.md
+  - rules/sltd_dynamic_range_cadence_gate.md
   - rules/sltd_source_fidelity_anti_compression.md
-  - rules/sltd_handoff_continuity_protocol.md
-  - prompts/boot_task.md
-  - prompts/task_intake.md
-  - prompts/result_report.md
-  - prompts/context_brief.md
-  - prompts/session_handoff.md
-  - prompts/entry_healthcheck.md
-  - prompts/review_mode_pass.md
-  - prompts/webnovel_packet_benchmark.md
-  - prompts/line_surgery_pass.md
-  - prompts/iteration_checkpoint.md
-  - prompts/source_surface_check.md
-  - prompts/first_pass_editorial_workflow.md
-  - prompts/chapter_assembly_split_check.md
-  - prompts/vietnamese_register_check.md
-  - prompts/webnovel_paragraphing_layout_check.md
+  - rules/sltd_task_router.md
+  - rules/sltd_pack_healthcheck.md
+  - prompts/living_world_community_motion_check.md
   - prompts/character_distinctiveness_check.md
+  - prompts/webnovel_paragraphing_layout_check.md
+  - prompts/vietnamese_register_check.md
+  - prompts/chapter_assembly_split_check.md
+  - prompts/first_pass_editorial_workflow.md
   - prompts/scene_first_prose_judgment.md
-  - prompts/dynamic_range_check.md
-  - prompts/character_agency_check.md
   - prompts/anti_ai_composite_check.md
-  - prompts/audit_scene.md
-  - prompts/rewrite_scene.md
-  - prompts/audit_story_arc.md
-  - prompts/intensity_pass.md
-  - prompts/multi_reviewer_pass.md
-  - prompts/command_recipes.md
-  - prompts/editorial_director_review.md
-  - prompts/chapter_readiness_check.md
-  - prompts/mindmap_review.md
+  - prompts/character_agency_check.md
+  - prompts/dynamic_range_check.md
+  - prompts/source_surface_check.md
+  - prompts/entry_healthcheck.md
   - prompts/node_checkpoint.md
   - samples/router_examples.md
   - samples/viet_dao_prose_calibration.md
-  - samples/line_surgery_calibration.md
   - samples/dialogue_voice_calibration.md
+  - samples/line_surgery_calibration.md
   - samples/underreach_calibration.md
   - samples/readiness_false_positive.md
 priority:
