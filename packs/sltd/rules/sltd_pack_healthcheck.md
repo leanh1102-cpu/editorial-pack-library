@@ -14,10 +14,6 @@ Verify:
 - no forbidden task was added;
 - priority order still keeps current user instruction and Notion live source above the pack.
 
-## Check entries
-
-Verify root entry, pack entry, runtime entry, fast path, and role entry index.
-
 ## Check source fidelity
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
@@ -32,18 +28,21 @@ Verify chapter assembly rule and prompt exist, task is allowed, route ends with 
 
 ## Check Vietnamese register and Viet Dao calibration
 
+Verify Vietnamese register rule, prompt, and calibration sample exist, task is allowed, route ends with node checkpoint, source fidelity is respected, and the gate separates Vietnamese life layer from Sino-Vietnamese concept layer.
+
+## Check webnovel paragraphing and layout rhythm
+
 Verify:
 
-- `rules/sltd_vietnamese_register_viet_dao_gate.md` exists and is listed in manifest;
-- `prompts/vietnamese_register_check.md` exists and is listed in manifest;
-- `samples/viet_dao_prose_calibration.md` exists and is listed in manifest;
-- vietnamese_register_check is listed in allowed_tasks;
-- Vietnamese register route ends with node checkpoint;
-- Vietnamese register route references source fidelity before patching;
-- the gate separates Vietnamese life layer from Sino-Vietnamese concept layer;
-- the gate prevents Hán Việt overload, Chinese-translation syntax, fake classical Vietnamese, and modern-flat prose;
-- the gate preserves controlled Sino-Vietnamese for canon, law, rite, rank, taboo, and Dao pressure when earned;
-- the gate does not authorize canon term changes or new terminology.
+- `rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md` exists and is listed in manifest;
+- `prompts/webnovel_paragraphing_layout_check.md` exists and is listed in manifest;
+- webnovel_paragraphing_layout_check is listed in allowed_tasks;
+- paragraphing route ends with node checkpoint;
+- paragraphing route references source fidelity before patching;
+- paragraphing gate treats paragraph as reader breath and line break as structural signal;
+- paragraphing gate checks short-line density, one-sentence paragraph overuse, dialogue layout, action paragraph flow, aftershock line use, mobile fatigue, and wall-text risk;
+- paragraphing gate avoids both random short-line rhythm and dense wall text;
+- paragraphing gate does not authorize plot/canon changes.
 
 ## Check scene-first prose judgment
 
@@ -64,28 +63,6 @@ Verify dynamic range rule and prompt exist, task is allowed, route ends with nod
 ## Check handoff continuity
 
 Verify handoff continuity rule is listed, session_handoff reads it, handoff route ends with node checkpoint, and handoff is navigation rather than source truth.
-
-## Check role entry cards
-
-Required role cards:
-
-```text
-roles/canon_guard.md
-roles/story_doctor.md
-roles/intensity_editor.md
-roles/vietnamese_line_editor.md
-roles/line_surgery.md
-roles/copyeditor.md
-roles/proofreader.md
-roles/publishing_readiness_reviewer.md
-roles/editorial_director.md
-```
-
-Each role card must have role, trigger, read-first list, source required, run, do, do not, output, done, handoff, and fail-closed.
-
-## Check iteration loop
-
-Verify iteration loop and checkpoint are listed, route ends with node checkpoint, and the loop requires source, scope, role, route, verification gate, and stop condition.
 
 ## Check calibration cases
 
@@ -110,6 +87,7 @@ source-surface routes -> sltd_source_fidelity_anti_compression.md
 first-pass routes -> sltd_first_pass_editorial_workflow.md
 chapter assembly routes -> sltd_chapter_assembly_split_control_gate.md
 Vietnamese register routes -> sltd_vietnamese_register_viet_dao_gate.md
+webnovel paragraphing routes -> sltd_webnovel_paragraphing_layout_rhythm_gate.md
 scene-first routes -> sltd_scene_first_prose_judgment_gate.md
 anti-AI composite routes -> sltd_anti_ai_composite_failure_gate.md
 character agency routes -> sltd_character_agency_anti_ooc_gate.md
