@@ -19,6 +19,19 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Dynamic range check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_dynamic_range_cadence_gate.md
+rules/sltd_intensity_targets.md
+rules/sltd_intensity_rules.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/dynamic_range_check.md
+prompts/node_checkpoint.md
+```
+
 ### Handoff continuity
 
 ```text
@@ -110,6 +123,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_dynamic_range_cadence_gate.md if restraint or cadence risk appears
 rules/sltd_editorial_hooks.md
 rules/sltd_canon_guard.md
 rules/sltd_intensity_rules.md
@@ -123,6 +137,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md if only digest/memory is available
+rules/sltd_dynamic_range_cadence_gate.md if scene is clean but not sharp
 rules/sltd_underreach_gate.md
 rules/sltd_intensity_targets.md
 prompts/intensity_pass.md
@@ -136,6 +151,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_dynamic_range_cadence_gate.md if line edit has flattened cadence
 rules/sltd_vietnamese_line_surgery.md
 samples/line_surgery_calibration.md
 core/vietnamese_prose/prose_rhythm.vi.md
@@ -152,6 +168,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_webnovel_momentum_benchmark.md
 rules/sltd_review_modes.md
 prompts/webnovel_packet_benchmark.md
@@ -198,6 +215,7 @@ rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_handoff_continuity_protocol.md
+rules/sltd_dynamic_range_cadence_gate.md
 ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
@@ -210,3 +228,5 @@ If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` befor
 If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
 
 If context is degrading or a task must move to another chat, run `session_handoff.md` with `sltd_handoff_continuity_protocol.md`.
+
+If restraint, moderation, line edit, or anti-melodrama risks flattening scene cadence, run `dynamic_range_check.md`.
