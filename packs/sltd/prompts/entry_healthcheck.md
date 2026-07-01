@@ -16,11 +16,13 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_anti_ai_composite_failure_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_handoff_continuity_protocol.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
+prompts/anti_ai_composite_check.md
 prompts/character_agency_check.md
 prompts/dynamic_range_check.md
 prompts/iteration_checkpoint.md
@@ -49,6 +51,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+ANTI-AI COMPOSITE CHECK:
 CHARACTER AGENCY CHECK:
 DYNAMIC RANGE CHECK:
 HANDOFF CONTINUITY CHECK:
