@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.25"
+version: "1.10.26"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -46,6 +46,7 @@ allowed_tasks:
   - source_surface_check
   - first_pass_editorial_workflow
   - chapter_assembly_split_check
+  - scene_transition_skiptime_event_cluster_check
   - timeline_pov_foreshadowing_folklore_check
   - vietnamese_register_check
   - prose_craft_style_check
@@ -67,6 +68,7 @@ required_files:
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_story_momentum.md
+  - rules/sltd_scene_transition_skiptime_event_cluster_gate.md
   - rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
   - rules/sltd_prose_craft_style_material_gate.md
   - rules/sltd_narrative_beat_escalation_aftershock_gate.md
@@ -84,6 +86,7 @@ required_files:
   - rules/sltd_source_fidelity_anti_compression.md
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
+  - prompts/scene_transition_skiptime_event_cluster_check.md
   - prompts/timeline_pov_foreshadowing_folklore_check.md
   - prompts/prose_craft_style_check.md
   - prompts/narrative_beat_escalation_check.md
