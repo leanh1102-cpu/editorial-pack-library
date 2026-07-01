@@ -19,6 +19,19 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### First-pass editorial workflow
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_scene_first_prose_judgment_gate.md
+rules/sltd_role_boundary_contracts.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/first_pass_editorial_workflow.md
+prompts/node_checkpoint.md
+```
+
 ### Scene-first prose judgment
 
 ```text
@@ -153,6 +166,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_first_pass_editorial_workflow.md if first edit is requested
 rules/sltd_scene_first_prose_judgment_gate.md if checklist-first risk appears
 rules/sltd_anti_ai_composite_failure_gate.md if composite AI risk appears
 rules/sltd_character_agency_anti_ooc_gate.md if character agency risk appears
@@ -169,6 +183,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_first_pass_editorial_workflow.md
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md if scene is synthetic after multiple passes
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -186,6 +201,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md if only digest/memory is available
+rules/sltd_first_pass_editorial_workflow.md for initial repair
 rules/sltd_scene_first_prose_judgment_gate.md if prose feels like checklist compliance
 rules/sltd_anti_ai_composite_failure_gate.md if scene is correct but synthetic
 rules/sltd_character_agency_anti_ooc_gate.md if plot seems to force character behavior
@@ -203,6 +219,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_first_pass_editorial_workflow.md if this is the first serious edit
 rules/sltd_scene_first_prose_judgment_gate.md if prose reads like rule performance
 rules/sltd_anti_ai_composite_failure_gate.md if prior passes created repair collage
 rules/sltd_character_agency_anti_ooc_gate.md if dialogue or action serves plot too neatly
@@ -223,6 +240,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_first_pass_editorial_workflow.md if assessing first-pass quality
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -273,6 +291,7 @@ rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_handoff_continuity_protocol.md
+rules/sltd_first_pass_editorial_workflow.md
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -287,6 +306,8 @@ samples/router_examples.md
 If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` before opening more files.
 
 If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
+
+If beginning a first serious rewrite, line edit, or scene repair, run `first_pass_editorial_workflow.md` before targeted gates.
 
 If prose work starts to satisfy gates before reading the scene as lived Vietnamese prose, run `scene_first_prose_judgment.md`.
 
