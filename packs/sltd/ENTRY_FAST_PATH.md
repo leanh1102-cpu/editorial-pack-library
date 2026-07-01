@@ -15,7 +15,32 @@ packs/sltd/rules/sltd_source_preflight.md
 packs/sltd/rules/sltd_decision_safety.md
 ```
 
+## Entry governance first
+
+If a request could trigger three or more gates, or the primary route is unclear, run route governance before editorial checks.
+
+```text
+rules/sltd_entry_route_governance_gate_budget_protocol.md
+prompts/entry_route_governance_check.md
+```
+
+Governance chooses one primary route, caps secondary gates, declares stop condition, and blocks gate cascade.
+
 ## Fast paths
+
+### Entry route governance check
+
+```text
+prompts/task_intake.md
+rules/sltd_entry_route_governance_gate_budget_protocol.md
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md if exact source may be needed
+rules/sltd_decision_safety.md
+rules/sltd_evidence_discipline.md
+rules/sltd_role_boundary_contracts.md
+prompts/entry_route_governance_check.md
+prompts/node_checkpoint.md
+```
 
 ### Scene transition / skiptime / event cluster check
 
@@ -28,7 +53,6 @@ rules/sltd_narrative_beat_escalation_aftershock_gate.md if aftershock, payoff, o
 rules/sltd_living_world_community_motion_gate.md if offscreen motion or world residue is in scope
 rules/sltd_prose_craft_style_material_gate.md if sensory/material bridge is in scope
 rules/sltd_chapter_assembly_split_control_gate.md if chapter flow or event cluster continuity is in scope
-rules/sltd_role_boundary_contracts.md
 prompts/scene_transition_skiptime_event_cluster_check.md
 prompts/node_checkpoint.md
 ```
@@ -145,6 +169,7 @@ prompts/node_checkpoint.md
 
 ```text
 prompts/task_intake.md
+rules/sltd_entry_route_governance_gate_budget_protocol.md if three or more gates appear relevant
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if transition, skiptime, or event cluster continuity is in scope
@@ -169,6 +194,7 @@ prompts/node_checkpoint.md
 
 ```text
 prompts/task_intake.md
+rules/sltd_entry_route_governance_gate_budget_protocol.md if broad audit risks gate cascade
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if seam continuity, skiptime, or event cluster affects packet quality
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if timeline, POV, folklore, material thread, or planted/paid/held ledger is in scope
@@ -214,6 +240,7 @@ prompts/node_checkpoint.md
 
 ```text
 rules/sltd_pack_healthcheck.md
+rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
 rules/sltd_prose_craft_style_material_gate.md
@@ -236,6 +263,8 @@ prompts/entry_healthcheck.md
 ## Rule
 
 If exact prose, current lock, readiness, rewrite, line edit, line surgery, copyedit, or proofread is requested and source surface is not exact, run `source_surface_check.md` first.
+
+If a task could trigger three or more gates, or primary route / secondary gates / stop condition are unclear, run `entry_route_governance_check.md` first.
 
 If transition, scene seam, skiptime, process trace, sensory bridge, symbolic bridge, hard cut, object/material continuity, emotional continuity, or event cluster continuity is in scope, run `scene_transition_skiptime_event_cluster_check.md`.
 
