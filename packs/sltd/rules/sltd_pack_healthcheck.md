@@ -12,50 +12,31 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check protagonist inquiry and clue-chain pressure
+## Check supernatural event residue and dread amplitude
 
 Verify:
 
-- `rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md` exists and is listed in manifest;
-- `prompts/protagonist_inquiry_check.md` exists and is listed in manifest;
-- `samples/protagonist_inquiry_calibration.md` exists and is listed in manifest;
-- protagonist_inquiry_check is listed in allowed_tasks;
-- protagonist inquiry route ends with node checkpoint;
-- protagonist inquiry route references source fidelity before patching;
-- the gate defines inquiry chain, private question, child-scale hypothesis, small test, partial read, misread, kept detail, small secret, and next return;
-- the gate blocks passive protagonist, missing inner reasoning, mood-only strange signs, broken clue chain, adult system reasoning, and answer without inquiry;
-- the gate does not authorize source-unsupported material or patching without exact source.
+- `rules/sltd_supernatural_event_residue_dread_amplitude_gate.md` exists and is listed in manifest;
+- `prompts/supernatural_event_residue_check.md` exists and is listed in manifest;
+- `samples/supernatural_event_residue_calibration.md` exists and is listed in manifest;
+- supernatural_event_residue_check is listed in allowed_tasks;
+- supernatural event residue route ends with node checkpoint;
+- supernatural event residue route references source fidelity before patching;
+- the gate defines event residue, dread amplitude, event root, residue type, social residue, animal residue, material residue, and reveal boundary;
+- the gate blocks mood-only fog/cold/silence, underpowered dread, folklore without incident, generic beast threat, relic decoration, and early deep-lore reveal;
+- the gate does not authorize source-unsupported lore, beast species, ancient war facts, relics, or future reveals.
+
+## Check protagonist inquiry and clue-chain pressure
+
+Verify protagonist inquiry rule/prompt/sample, allowed task, source fidelity route, node checkpoint, and blockers for passive protagonist, missing inner reasoning, broken clue chain, and adult system reasoning.
 
 ## Check protagonist advancement and growth route calibration
 
-Verify:
-
-- `rules/sltd_protagonist_advancement_growth_route_gate.md` exists and is listed in manifest;
-- `prompts/protagonist_advancement_check.md` exists and is listed in manifest;
-- `samples/protagonist_advancement_calibration.md` exists and is listed in manifest;
-- protagonist_advancement_check is listed in allowed_tasks;
-- protagonist advancement route ends with node checkpoint;
-- protagonist advancement route references source fidelity before patching;
-- the gate defines gain target, gain type, cost, knowledge limit, forbidden gain, and growth route;
-- the gate requires object, body, relation, witness or social trace, cost, knowledge limit, and aftershock;
-- the gate blocks Notion-label prose, label-only gains, too-adult reasoning, early system knowledge, and object-as-function-tag prose;
-- the gate treats C030 low-layer lore as valid when it becomes world-rule sensitivity, not system knowledge;
-- the gate does not authorize new source-unsupported growth.
+Verify protagonist advancement rule/prompt/sample, allowed task, source fidelity route, node checkpoint, gain target/type/cost/knowledge limit/forbidden gain, and blockers for Notion-label prose and source-unsupported growth.
 
 ## Check entry route governance and gate budget
 
-Verify:
-
-- `rules/sltd_entry_route_governance_gate_budget_protocol.md` exists and is listed in manifest;
-- `prompts/entry_route_governance_check.md` exists and is listed in manifest;
-- entry_route_governance_check is listed in allowed_tasks;
-- entry governance route ends with node checkpoint;
-- the protocol defines primary route, secondary gate, gate budget, stop condition, gate cascade, and checklist-first repair;
-- the protocol requires one primary route before secondary gates;
-- secondary gates require evidence, not adjacency;
-- stop conditions are explicit;
-- gate cascade and checklist-first repair are blocked;
-- the protocol does not authorize skipping source preflight, source surface, canon guard, evidence, or user-requested modes.
+Verify entry governance rule/prompt, allowed task, node checkpoint route, one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, and no gate cascade.
 
 ## Check routes
 
@@ -64,6 +45,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
 entry governance routes -> sltd_entry_route_governance_gate_budget_protocol.md
+supernatural residue routes -> sltd_supernatural_event_residue_dread_amplitude_gate.md
 protagonist inquiry routes -> sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 protagonist advancement routes -> sltd_protagonist_advancement_growth_route_gate.md
 transition/skiptime/event-cluster routes -> sltd_scene_transition_skiptime_event_cluster_gate.md
