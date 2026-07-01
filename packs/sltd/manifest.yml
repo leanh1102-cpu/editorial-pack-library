@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.23"
+version: "1.10.24"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -47,6 +47,7 @@ allowed_tasks:
   - first_pass_editorial_workflow
   - chapter_assembly_split_check
   - vietnamese_register_check
+  - prose_craft_style_check
   - webnovel_paragraphing_layout_check
   - character_distinctiveness_check
   - living_world_community_motion_check
@@ -65,6 +66,7 @@ required_files:
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_story_momentum.md
+  - rules/sltd_prose_craft_style_material_gate.md
   - rules/sltd_narrative_beat_escalation_aftershock_gate.md
   - rules/sltd_scene_composition_component_balance_gate.md
   - rules/sltd_living_world_community_motion_gate.md
@@ -80,6 +82,7 @@ required_files:
   - rules/sltd_source_fidelity_anti_compression.md
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
+  - prompts/prose_craft_style_check.md
   - prompts/narrative_beat_escalation_check.md
   - prompts/scene_composition_balance_check.md
   - prompts/living_world_community_motion_check.md
@@ -95,6 +98,7 @@ required_files:
   - prompts/source_surface_check.md
   - prompts/entry_healthcheck.md
   - prompts/node_checkpoint.md
+  - samples/prose_craft_style_material_calibration.md
   - samples/router_examples.md
   - samples/viet_dao_prose_calibration.md
   - samples/dialogue_voice_calibration.md
