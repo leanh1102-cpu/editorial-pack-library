@@ -11,11 +11,14 @@ ENTRY_FAST_PATH.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 rules/sltd_protagonist_advancement_growth_route_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
 prompts/entry_route_governance_check.md
+prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
+samples/protagonist_inquiry_calibration.md
 samples/protagonist_advancement_calibration.md
 CHANGELOG.md
 ```
@@ -30,6 +33,7 @@ MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
 ENTRY ROUTE GOVERNANCE CHECK:
+PROTAGONIST INQUIRY CHECK:
 PROTAGONIST ADVANCEMENT CHECK:
 ROUTE CHECK:
 ROLE BOUNDARY CHECK:
