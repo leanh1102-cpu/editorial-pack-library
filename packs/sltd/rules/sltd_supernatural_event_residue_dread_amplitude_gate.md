@@ -2,6 +2,8 @@
 
 This gate prevents SLTD supernatural material from becoming safe mood, vague fog, or decorative lore residue.
 
+It also prevents checklist-driven repairs that make supernatural residue feel staged, over-controlled, or AI-written.
+
 It protects dread amplitude without authorizing early deep-lore reveal.
 
 ## Core rule
@@ -25,12 +27,15 @@ Do not treat canon discipline as a reason to weaken dread.
 
 Do not reveal deep systems when residue is enough.
 
+Do not stack multiple obvious residue signals merely to satisfy the gate.
+
 ## Use when
 
 - Mê Thúy Lâm, Mê Vụ Sâm Lâm, Hồn sương, Trọc khí, fog, old forest, shrine, beast, relic, old battlefield, strange object, rumor, or folklore is in scope;
 - yêu thú, quái thú, yêu ma, hung thú, linh thú, dị thú, hồn thú, trọc thú, or animal omen appears or is rumored;
 - lore exists but reads too safe, clean, abstract, or mood-only;
 - a clue such as bronze fragment, cold stone, old paper, odd name, shifted route, old map, beast hide, honey, herb, well, shrine, or dog silence should carry residue;
+- a repair adds residue but begins to smell like staged proof, checklist prose, or over-shaped AI writing;
 - C001-C029 or C030 needs supernatural pressure before line edit;
 - the user asks for Event / Residue Ledger, dread amplitude, folklore with real incident, community aftershock, or deep-lore residue.
 
@@ -68,6 +73,7 @@ WHAT DAI PHONG MISREADS:
 WHAT READER CAN SUSPECT:
 REVEAL BOUNDARY:
 DREAD AMPLITUDE:
+REPAIR NATURALNESS:
 RETURN PATH:
 FAILURE LABELS:
 SAFE REPAIR:
@@ -96,6 +102,21 @@ LOCKED = deep-lore force present but reveal boundary forbids explanation; use re
 ```
 
 Low is not bad. Low is bad only when the source promise requires stronger residue.
+
+## Repair naturalness rule
+
+A residue repair fails if the added signal is too legible as an editorial proof beat.
+
+Before accepting a patch, ask:
+
+```text
+Did the edit choose one main pressure carrier, or stack several?
+Does the object behave for life, or for the checklist?
+Does ordinary work continue around the strange sign?
+Does Dai Phong's response remain child-scale and bodily?
+Is the paragraph closed by action, or by reader-effect control?
+Could the added sign be removed without hurting scene causality?
+```
 
 ## Beast / folklore rule
 
@@ -163,6 +184,12 @@ DEEP_LORE_REVEALED_TOO_EARLY
 MOOD_REPLACES_EVENT
 FOG_AS_DECORATION
 SILENCE_WITHOUT_THREAT
+AI_REPAIR_SMELL
+OVERDETERMINED_RESIDUE
+OBJECT_BEHAVES_FOR_GATE
+INQUIRY_AS_STAGE_DIRECTION
+PROOF_BEAT_STACKING
+READER_EFFECT_OVERCONTROLLED
 ```
 
 ## Safe repair
@@ -173,7 +200,8 @@ Safe repair may:
 - raise dread through daily-life disturbance, animal reaction, material residue, social habit, route cost, or economic cost;
 - strengthen folklore by tying it to a concrete incident or consequence;
 - mark residue as locked when deep lore cannot be revealed;
-- require Protagonist Inquiry when Dai Phong should compare, test, misread, or keep a residue clue.
+- require Protagonist Inquiry when Dai Phong should compare, test, misread, or keep a residue clue;
+- remove an over-staged repair and keep only the strongest pressure carrier.
 
 Safe repair must not:
 
@@ -181,6 +209,9 @@ Safe repair must not:
 - turn every strange sign into a major clue;
 - explain Cuu Than / Bat Than / Ninth God early;
 - make monsters into combat-loot encounters;
+- stack proof beats to satisfy the ledger;
+- make objects behave for the checklist rather than for scene life;
+- close a paragraph by explaining or over-controlling reader effect;
 - replace lived dread with labels.
 
 ## Output labels
@@ -191,5 +222,6 @@ SUPERNATURAL_RESIDUE_PARTIAL
 SUPERNATURAL_UNDERPOWERED_DETECTED
 EVENT_ROOT_REQUIRED
 DEEP_LORE_REVEAL_BLOCKED
+AI_REPAIR_SMELL_DETECTED
 SOURCE_SURFACE_REQUIRED
 ```
