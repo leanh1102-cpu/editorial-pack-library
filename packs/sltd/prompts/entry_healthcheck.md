@@ -16,6 +16,7 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_living_world_community_motion_gate.md
 rules/sltd_first_pass_editorial_workflow.md
 rules/sltd_chapter_assembly_split_control_gate.md
 rules/sltd_vietnamese_register_viet_dao_gate.md
@@ -28,6 +29,7 @@ rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_handoff_continuity_protocol.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
+prompts/living_world_community_motion_check.md
 prompts/first_pass_editorial_workflow.md
 prompts/chapter_assembly_split_check.md
 prompts/vietnamese_register_check.md
@@ -45,18 +47,6 @@ samples/dialogue_voice_calibration.md
 CHANGELOG.md
 ```
 
-Spot-check required role cards listed in `ROLE_ENTRY_INDEX.md`.
-
-Spot-check required calibration files:
-
-```text
-samples/viet_dao_prose_calibration.md
-samples/line_surgery_calibration.md
-samples/dialogue_voice_calibration.md
-samples/underreach_calibration.md
-samples/readiness_false_positive.md
-```
-
 Output:
 
 ```text
@@ -66,6 +56,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+LIVING WORLD COMMUNITY MOTION CHECK:
 FIRST-PASS EDITORIAL WORKFLOW CHECK:
 CHAPTER ASSEMBLY SPLIT CHECK:
 VIETNAMESE REGISTER CHECK:
@@ -94,5 +85,3 @@ PACK_HEALTH_OK
 PACK_HEALTH_WARN
 PACK_HEALTH_FAIL
 ```
-
-If health fails, patch the entry before adding new skills.
