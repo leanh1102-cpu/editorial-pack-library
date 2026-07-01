@@ -12,19 +12,18 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check timeline, POV, foreshadowing, and folklore threads
+## Check scene transition, skiptime, and event cluster continuity
 
 Verify:
 
-- `rules/sltd_timeline_pov_foreshadowing_folklore_gate.md` exists and is listed in manifest;
-- `prompts/timeline_pov_foreshadowing_folklore_check.md` exists and is listed in manifest;
-- timeline_pov_foreshadowing_folklore_check is listed in allowed_tasks;
-- timeline/POV route ends with node checkpoint;
-- timeline/POV route references source fidelity before patching;
-- the gate checks time position, event order, elapsed time, consequence heat, POV holder, POV knowledge boundary, reader knowledge, off-POV access, foreshadowing ledger, folklore thread, material layer, planting density, chapter thread status, and packet continuity risk;
-- the gate enforces planted / paid / held / forgotten-risk ledger discipline;
-- the gate prevents POV boundary leak, unearned payoff, folklore as lore dump, folklore as color only, and material thread decoration;
-- the gate does not authorize new canon, new folklore, new clues, new payoff, changed event order, or early hidden-truth reveal.
+- `rules/sltd_scene_transition_skiptime_event_cluster_gate.md` exists and is listed in manifest;
+- `prompts/scene_transition_skiptime_event_cluster_check.md` exists and is listed in manifest;
+- scene_transition_skiptime_event_cluster_check is listed in allowed_tasks;
+- transition/skiptime/event-cluster route ends with node checkpoint;
+- transition/skiptime/event-cluster route references source fidelity before patching;
+- the gate checks from scene, to scene, seam type, transition anchor, carry-over, time skipped, process trace, off-page continuation, cooled/heated pressure, POV access after cut, emotional continuity, object/material continuity, event-cluster start/development/result/aftershock, and seam-break risk;
+- the gate prevents decorative transitions, sensory ornament bridges, symbolic bridges without causality, skiptime summary dump, skiptime without process trace, object reset, emotion reset, and fragmented event clusters;
+- the gate does not authorize new scenes, events, witnesses, clues, folklore, payoff, changed POV access, or changed timeline.
 
 ## Check routes
 
@@ -32,6 +31,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+transition/skiptime/event-cluster routes -> sltd_scene_transition_skiptime_event_cluster_gate.md
 timeline POV routes -> sltd_timeline_pov_foreshadowing_folklore_gate.md
 prose craft routes -> sltd_prose_craft_style_material_gate.md
 scene composition routes -> sltd_scene_composition_component_balance_gate.md
