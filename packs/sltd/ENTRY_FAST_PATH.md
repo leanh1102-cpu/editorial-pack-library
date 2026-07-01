@@ -19,6 +19,19 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Chapter assembly & split check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_chapter_assembly_split_control_gate.md
+rules/sltd_first_pass_editorial_workflow.md if governing chapter pressure is unclear
+rules/sltd_anti_ai_composite_failure_gate.md if assembled chapter reads synthetic
+rules/sltd_role_boundary_contracts.md
+prompts/chapter_assembly_split_check.md
+prompts/node_checkpoint.md
+```
+
 ### First-pass editorial workflow
 
 ```text
@@ -166,6 +179,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_chapter_assembly_split_control_gate.md if chapter/arc length or split risk appears
 rules/sltd_first_pass_editorial_workflow.md if first edit is requested
 rules/sltd_scene_first_prose_judgment_gate.md if checklist-first risk appears
 rules/sltd_anti_ai_composite_failure_gate.md if composite AI risk appears
@@ -174,6 +188,7 @@ rules/sltd_context_window_strategy.md
 prompts/context_brief.md
 prompts/audit_story_arc.md
 prompts/editorial_director_review.md
+prompts/chapter_assembly_split_check.md if chapter assembly is in scope
 prompts/node_checkpoint.md
 prompts/result_report.md
 ```
@@ -193,6 +208,18 @@ rules/sltd_canon_guard.md
 rules/sltd_intensity_rules.md
 prompts/rewrite_scene.md
 prompts/multi_reviewer_pass.md
+prompts/node_checkpoint.md
+```
+
+### Chapter assembly after scene edits
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_chapter_assembly_split_control_gate.md
+rules/sltd_first_pass_editorial_workflow.md if governing chapter pressure is unclear
+rules/sltd_anti_ai_composite_failure_gate.md if assembled chapter reads synthetic
+prompts/chapter_assembly_split_check.md
 prompts/node_checkpoint.md
 ```
 
@@ -240,6 +267,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_chapter_assembly_split_control_gate.md if chapter-level benchmark is in scope
 rules/sltd_first_pass_editorial_workflow.md if assessing first-pass quality
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md
@@ -292,6 +320,7 @@ rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_handoff_continuity_protocol.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_chapter_assembly_split_control_gate.md
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -308,6 +337,8 @@ If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` befor
 If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
 
 If beginning a first serious rewrite, line edit, or scene repair, run `first_pass_editorial_workflow.md` before targeted gates.
+
+If scene edits are being assembled into a chapter, or chapter length/reader unit may be overloaded, run `chapter_assembly_split_check.md`.
 
 If prose work starts to satisfy gates before reading the scene as lived Vietnamese prose, run `scene_first_prose_judgment.md`.
 
