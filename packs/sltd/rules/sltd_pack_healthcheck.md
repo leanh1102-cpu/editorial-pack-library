@@ -12,19 +12,21 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check scene composition and component balance
+## Check prose craft, style, and material calibration
 
 Verify:
 
-- `rules/sltd_scene_composition_component_balance_gate.md` exists and is listed in manifest;
-- `prompts/scene_composition_balance_check.md` exists and is listed in manifest;
-- scene_composition_balance_check is listed in allowed_tasks;
-- scene composition route ends with node checkpoint;
-- scene composition route references source fidelity before patching;
-- the gate checks dialogue, action/blocking, inner thought, setting/living world, object/clue, sensory/body, silence/pause, summary/transition, and aftershock;
-- the gate uses soft diagnostic bands by scene function and blocks ratio-as-formula;
-- the gate detects fake balance, overused/missing components, and dominant component mismatch;
-- the gate does not authorize adding components only to satisfy percentages.
+- `rules/sltd_prose_craft_style_material_gate.md` exists and is listed in manifest;
+- `prompts/prose_craft_style_check.md` exists and is listed in manifest;
+- `samples/prose_craft_style_material_calibration.md` exists and is listed in manifest;
+- prose_craft_style_check is listed in allowed_tasks;
+- prose craft route ends with node checkpoint;
+- prose craft route references source fidelity before patching;
+- the gate treats samples as calibration, not canon and not a voice to imitate;
+- the gate requires one selected craft move before patching;
+- the gate checks prose technique, dialogue technique, character technique, living world material, genre technique, register/style, rhythm/layout, and edit decision;
+- the gate detects style-sample mimicry, craft move as decoration, material layer thinness, and checklist craft stacking;
+- the gate does not authorize copying benchmark novels, adding canon, or stacking craft moves to hide structure.
 
 ## Check routes
 
@@ -32,6 +34,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+prose craft routes -> sltd_prose_craft_style_material_gate.md
 scene composition routes -> sltd_scene_composition_component_balance_gate.md
 narrative beat routes -> sltd_narrative_beat_escalation_aftershock_gate.md
 living world routes -> sltd_living_world_community_motion_gate.md
