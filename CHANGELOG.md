@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.32
+
+- Added AI repair smell blockers to supernatural residue gate.
+- Added supernatural residue calibration sample for overdetermined, checklist-visible line edits.
+- No new files added.
+
 ## 1.10.31
 
 - Added supernatural event residue and dread amplitude calibration.
