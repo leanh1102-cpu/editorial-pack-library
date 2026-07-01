@@ -28,6 +28,22 @@ Governance chooses one primary route, caps secondary gates, declares stop condit
 
 ## Fast paths
 
+### Protagonist inquiry / inner reasoning / clue chain check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
+samples/protagonist_inquiry_calibration.md
+rules/sltd_protagonist_advancement_growth_route_gate.md if inquiry should become protagonist gain
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if clue access, reveal window, folklore, or knowledge limit is in scope
+rules/sltd_narrative_beat_escalation_aftershock_gate.md if inquiry lacks cost/result/aftershock
+rules/sltd_prose_craft_style_material_gate.md if inner reasoning becomes explanation or object tag
+rules/sltd_anti_ai_composite_failure_gate.md if clue chain becomes checklist prose
+prompts/protagonist_inquiry_check.md
+prompts/node_checkpoint.md
+```
+
 ### Protagonist advancement / growth route check
 
 ```text
@@ -35,6 +51,7 @@ prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_protagonist_advancement_growth_route_gate.md
 samples/protagonist_advancement_calibration.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if gain requires private question, small test, kept detail, or clue return
 rules/sltd_character_agency_anti_ooc_gate.md if behavior is forced by plot
 rules/sltd_character_distinctiveness_iceberg_gate.md if growth depends on voice/body/iceberg profile
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if knowledge limit, lore access, thread, or C030 low-lore context is in scope
@@ -65,6 +82,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if seam/skiptime breaks or carries Dai Phong inquiry
 rules/sltd_protagonist_advancement_growth_route_gate.md if seam/skiptime changes protagonist gain
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if time cut, POV access, or thread continuity is in scope
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if aftershock, payoff, or beat result is in scope
@@ -81,6 +99,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if clue access, reveal window, private question, or knowledge chain is in scope
 rules/sltd_protagonist_advancement_growth_route_gate.md if protagonist knowledge limit or growth route is in scope
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if seam/skiptime/event cluster is in scope
 rules/sltd_story_momentum.md
@@ -101,6 +120,7 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_prose_craft_style_material_gate.md
 samples/prose_craft_style_material_calibration.md
 packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if inner reasoning/clue comparison must be converted into lived prose
 rules/sltd_protagonist_advancement_growth_route_gate.md if craft must carry protagonist gain
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if sensory/material bridge or process trace is in scope
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if material thread or folklore planting is in scope
@@ -120,6 +140,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_scene_composition_component_balance_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if component mix hides inquiry or makes Dai Phong passive
 rules/sltd_protagonist_advancement_growth_route_gate.md if component mix hides protagonist gain
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if seam or skiptime affects component balance
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if planting density affects composition
@@ -139,6 +160,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if beat should produce private question, test, clue, or small secret
 rules/sltd_protagonist_advancement_growth_route_gate.md if beat should produce protagonist gain
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if transition, skiptime, or event cluster carries beat pressure
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if planted/paid/held thread or POV access is in scope
@@ -158,6 +180,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_living_world_community_motion_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if world pressure should provoke private question or small test
 rules/sltd_protagonist_advancement_growth_route_gate.md if living-world pressure should change protagonist reading method
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if world residue or skiptime process trace is in scope
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if folklore thread or material planting is in scope
@@ -177,6 +200,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_character_distinctiveness_iceberg_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if Dai Phong's private reasoning, curiosity, or silence profile is in scope
 rules/sltd_protagonist_advancement_growth_route_gate.md if protagonist route/voice/body/signature method is in scope
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if emotional continuity or object reset affects character read
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if character knowledge or thread access is in scope
@@ -196,6 +220,7 @@ prompts/task_intake.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md if three or more gates appear relevant
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if Dai Phong's private question, small test, kept detail, clue chain, or small secret is in scope
 rules/sltd_protagonist_advancement_growth_route_gate.md if Dai Phong's gain/limit/cost/forbidden gain is in scope
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if transition, skiptime, or event cluster continuity is in scope
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if timeline, POV, planting density, folklore, or thread ledger is in scope
@@ -221,6 +246,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md if broad audit risks gate cascade
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if Dai Phong's inquiry route or clue-chain pressure is in scope
 rules/sltd_protagonist_advancement_growth_route_gate.md if Dai Phong's growth route or benchmark ambition is in scope
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if seam continuity, skiptime, or event cluster affects packet quality
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if timeline, POV, folklore, material thread, or planted/paid/held ledger is in scope
@@ -246,6 +272,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md if line-level thought/clue should carry private question or kept detail
 rules/sltd_protagonist_advancement_growth_route_gate.md if line-level object/body/relation should carry protagonist gain
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md if seam, skiptime, or object reset is the underlying issue
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if POV leak or material thread is the underlying issue
@@ -269,11 +296,12 @@ prompts/node_checkpoint.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_protagonist_advancement_growth_route_gate.md
+rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 samples/protagonist_advancement_calibration.md
+samples/protagonist_inquiry_calibration.md
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
 rules/sltd_prose_craft_style_material_gate.md
-samples/prose_craft_style_material_calibration.md
 rules/sltd_scene_composition_component_balance_gate.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
 rules/sltd_living_world_community_motion_gate.md
@@ -294,6 +322,8 @@ prompts/entry_healthcheck.md
 If exact prose, current lock, readiness, rewrite, line edit, line surgery, copyedit, or proofread is requested and source surface is not exact, run `source_surface_check.md` first.
 
 If a task could trigger three or more gates, or primary route / secondary gates / stop condition are unclear, run `entry_route_governance_check.md` first.
+
+If Dai Phong's private question, inner reasoning, curiosity pressure, small test, kept detail, clue chain, small secret, supernatural pressure, or inquiry route is in scope, run `protagonist_inquiry_check.md`.
 
 If Dai Phong's development path, protagonist gain, growth route, gain type, cost, knowledge limit, forbidden gain, world-rule sensitivity, or benchmark-level protagonist appeal is in scope, run `protagonist_advancement_check.md`.
 
