@@ -17,6 +17,23 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Timeline / POV / foreshadowing / folklore check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
+rules/sltd_story_momentum.md
+rules/sltd_narrative_beat_escalation_aftershock_gate.md if promise/payoff or off-POV return is in scope
+rules/sltd_living_world_community_motion_gate.md if folklore/community behavior is in scope
+rules/sltd_prose_craft_style_material_gate.md if material layer is in scope
+rules/sltd_chapter_assembly_split_control_gate.md if chapter/packet continuity is in scope
+rules/sltd_canon_guard.md if event order, folklore truth, geography, or custom is unclear
+rules/sltd_role_boundary_contracts.md
+prompts/timeline_pov_foreshadowing_folklore_check.md
+prompts/node_checkpoint.md
+```
+
 ### Prose craft / style / material check
 
 ```text
@@ -26,13 +43,13 @@ rules/sltd_prose_craft_style_material_gate.md
 samples/prose_craft_style_material_calibration.md
 packs/sltd/AUTHOR_TASTE_EXAMPLES.md
 rules/sltd_style_rules.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if material thread or folklore planting is in scope
 rules/sltd_vietnamese_line_surgery.md if sentence-level craft is in scope
 rules/sltd_vietnamese_register_viet_dao_gate.md if register/style is in scope
 rules/sltd_scene_composition_component_balance_gate.md if component mix is in scope
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if genre beat/cost/promise is in scope
 rules/sltd_living_world_community_motion_gate.md if material/world texture is in scope
 rules/sltd_character_distinctiveness_iceberg_gate.md if voice/character craft is in scope
-rules/sltd_role_boundary_contracts.md
 prompts/prose_craft_style_check.md
 prompts/node_checkpoint.md
 ```
@@ -42,8 +59,9 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
-rules/sltd_prose_craft_style_material_gate.md if craft move selection is in scope
 rules/sltd_scene_composition_component_balance_gate.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if planting density affects composition
+rules/sltd_prose_craft_style_material_gate.md if craft move selection is in scope
 rules/sltd_first_pass_editorial_workflow.md if scene function is unclear
 rules/sltd_scene_first_prose_judgment_gate.md if checklist balance risk appears
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if fake balance comes from missing beat escalation
@@ -59,6 +77,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if planted/paid/held thread or POV access is in scope
 rules/sltd_story_momentum.md
 rules/sltd_prose_craft_style_material_gate.md if genre technique or craft move is in scope
 rules/sltd_scene_composition_component_balance_gate.md if component mix hides beat flatness
@@ -75,6 +94,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_living_world_community_motion_gate.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if folklore thread or material planting is in scope
 rules/sltd_prose_craft_style_material_gate.md if material layer or world-texture craft is in scope
 rules/sltd_scene_composition_component_balance_gate.md if setting ratio or component role is in scope
 rules/sltd_story_momentum.md
@@ -91,6 +111,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_character_distinctiveness_iceberg_gate.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if character knowledge or thread access is in scope
 rules/sltd_prose_craft_style_material_gate.md if voice/body/iceberg craft move is in scope
 rules/sltd_scene_composition_component_balance_gate.md if dialogue/action/inner-thought balance affects cast life
 rules/sltd_character_agency_anti_ooc_gate.md if plot is forcing behavior
@@ -106,6 +127,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if timeline, POV, planting density, folklore, or thread ledger is in scope
 rules/sltd_prose_craft_style_material_gate.md if writing/editing technique, style, voice, genre, or material is in scope
 samples/prose_craft_style_material_calibration.md if craft calibration is needed
 rules/sltd_scene_composition_component_balance_gate.md if component mix or ratio is in scope
@@ -127,6 +149,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if timeline, POV, folklore, material thread, or planted/paid/held ledger is in scope
 rules/sltd_prose_craft_style_material_gate.md if craft/style/material drift affects packet quality
 rules/sltd_scene_composition_component_balance_gate.md if component balance affects scene/chapter read
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat map, promise/payoff, or off-POV conflict is in scope
@@ -149,6 +172,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if POV leak or material thread is the underlying issue
 rules/sltd_prose_craft_style_material_gate.md if craft move selection is the underlying issue
 samples/prose_craft_style_material_calibration.md if a sample-guided move is needed
 rules/sltd_scene_composition_component_balance_gate.md if component mix is the underlying issue
@@ -167,6 +191,7 @@ prompts/node_checkpoint.md
 
 ```text
 rules/sltd_pack_healthcheck.md
+rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
 rules/sltd_prose_craft_style_material_gate.md
 samples/prose_craft_style_material_calibration.md
 rules/sltd_scene_composition_component_balance_gate.md
@@ -187,6 +212,8 @@ prompts/entry_healthcheck.md
 ## Rule
 
 If exact prose, current lock, readiness, rewrite, line edit, line surgery, copyedit, or proofread is requested and source surface is not exact, run `source_surface_check.md` first.
+
+If timeline, event order, POV boundary, reader knowledge, foreshadowing ledger, folklore mutation, material thread, planting density, or scene/chapter/packet thread management is in scope, run `timeline_pov_foreshadowing_folklore_check.md`.
 
 If writing technique, editing technique, genre style, prose style, voice, material layer, or craft sample calibration is in scope, run `prose_craft_style_check.md`.
 
