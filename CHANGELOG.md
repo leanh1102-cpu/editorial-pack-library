@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.29
+
+- Added protagonist advancement node and growth route calibration rule.
+- Added protagonist_advancement_check task and prompt.
+- Added protagonist advancement calibration samples.
+- Synced manifest, fast path, router, design, and pack healthcheck.
+
 ## 1.10.27
 
 - Added entry route governance and gate budget protocol.
