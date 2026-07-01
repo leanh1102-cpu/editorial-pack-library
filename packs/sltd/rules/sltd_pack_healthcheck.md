@@ -24,29 +24,25 @@ Verify source fidelity rule and source surface prompt exist, are listed in manif
 
 ## Check first-pass editorial workflow
 
+Verify first-pass rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, and targeted gates run only after initial prose judgment.
+
+## Check chapter assembly and split control
+
 Verify:
 
-- `rules/sltd_first_pass_editorial_workflow.md` exists and is listed in manifest;
-- `prompts/first_pass_editorial_workflow.md` exists and is listed in manifest;
-- first_pass_editorial_workflow is listed in allowed_tasks;
-- first-pass route ends with node checkpoint;
-- first-pass route references source fidelity before patching;
-- first-pass workflow starts from source surface, scene intake, editorial diagnosis, one edit strategy, and human-read prose pass;
-- first-pass workflow runs targeted gates only after initial prose judgment;
-- first-pass workflow prevents running all gates before the first edit.
+- `rules/sltd_chapter_assembly_split_control_gate.md` exists and is listed in manifest;
+- `prompts/chapter_assembly_split_check.md` exists and is listed in manifest;
+- chapter_assembly_split_check is listed in allowed_tasks;
+- chapter assembly route ends with node checkpoint;
+- chapter assembly route references source fidelity before verdict;
+- chapter assembly gate separates scene edit unit from chapter reader unit;
+- chapter assembly gate checks length type, reader question, governing chapter pressure, major turns, payoff points, loops, and natural breakpoints;
+- chapter assembly gate warns on word-count risk without splitting mechanically by word count alone;
+- chapter assembly gate does not authorize silent live manuscript split, renumbering, deletion, or Notion update.
 
 ## Check scene-first prose judgment
 
-Verify:
-
-- `rules/sltd_scene_first_prose_judgment_gate.md` exists and is listed in manifest;
-- `prompts/scene_first_prose_judgment.md` exists and is listed in manifest;
-- scene_first_prose_judgment is listed in allowed_tasks;
-- scene-first route ends with node checkpoint;
-- scene-first route references source fidelity before patching;
-- scene-first gate requires one governing scene pressure before repair;
-- scene-first gate treats checklist as later verification, not the writing method;
-- scene-first gate prevents adding required-looking body/object/silence/cost beats to hide checklist-first prose.
+Verify scene-first rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, one governing scene pressure is required, and checklist is later verification rather than writing method.
 
 ## Check anti-AI composite
 
@@ -106,6 +102,7 @@ Verify each allowed task has a route or prompt, large routes use context brief w
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
 first-pass routes -> sltd_first_pass_editorial_workflow.md
+chapter assembly routes -> sltd_chapter_assembly_split_control_gate.md
 scene-first routes -> sltd_scene_first_prose_judgment_gate.md
 anti-AI composite routes -> sltd_anti_ai_composite_failure_gate.md
 character agency routes -> sltd_character_agency_anti_ooc_gate.md
