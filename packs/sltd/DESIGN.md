@@ -10,6 +10,7 @@ The pack helps the agent:
 - preserve exact source surface before editing;
 - run a first-pass editorial workflow before targeted gates;
 - control chapter assembly and split risk after scene edits;
+- calibrate Vietnamese register and Viet Dao prose;
 - judge the scene before using checklists;
 - detect composite AI failure after many correct-looking passes;
 - preserve character agency;
@@ -23,7 +24,7 @@ The pack helps the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, chapter assembly and split control, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, chapter assembly and split control, Vietnamese register and Viet Dao calibration, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -39,6 +40,7 @@ task_router
 source surface check when exact source may be missing
 first-pass editorial workflow when beginning prose repair
 chapter assembly split check when scene edits become a chapter or reader unit is overloaded
+Vietnamese register check when Hán Việt, translated-Chinese syntax, or Viet Dao balance is in scope
 scene-first prose judgment when checklist-first risk appears
 anti-AI composite check when synthetic/checklist risk appears
 character agency check when OOC/OCC risk appears
@@ -73,6 +75,9 @@ natural breakpoints
 scene function
 first-pass edit layer
 edit strategy
+Vietnamese register target
+Hán Việt load
+Viet Dao balance
 scene-first prose status
 governing scene pressure
 anti-AI composite risk
@@ -115,6 +120,23 @@ Chapter assembly checks whether edited scenes still form one natural reader unit
 Length warnings are not absolute law. Word-count bands apply only when the length type is words. If the count is characters, label it and do not apply word bands mechanically.
 
 A live manuscript must not be split, renumbered, deleted, or updated without explicit user instruction.
+
+## Vietnamese register and Viet Dao model
+
+Vietnamese life carries the scene. Sino-Vietnamese carries law, rite, rank, taboo, old object, canon term, and Dao pressure when earned.
+
+```text
+VIET LIFE = body, work, food, illness, debt, weather, mud, smoke, dog, door, bowl, hand, breath
+SINO-VIETNAMESE = law, Dao, rank, taboo, rite, old object, formal title, inherited concept
+VIET DAO = Vietnamese scene life carrying a controlled Dao register without becoming translated Chinese prose
+```
+
+The agent must avoid two extremes:
+
+- Hán Việt overload or Chinese-translation syntax that turns SLTD into translated xianxia;
+- Hán Việt undercut that makes Dao, taboo, rite, and old-world pressure too modern or flat.
+
+Use calibration samples before patching register.
 
 ## Scene-first prose judgment model
 
@@ -164,15 +186,15 @@ proofread before readiness
 readiness before publication lock claim
 ```
 
-Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, chapter assembly checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
+Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, chapter assembly checks, Vietnamese register checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
-Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, chapter assembly/split control, scene-first judgment, anti-AI composite, character agency, dynamic range, role entry, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
+Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, chapter assembly/split control, Vietnamese register/Viet Dao calibration, scene-first judgment, anti-AI composite, character agency, dynamic range, role entry, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, chapter assembly/split control, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, chapter assembly/split control, Vietnamese register/Viet Dao calibration, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types: rule, prompt, sample, role entry, design note, manifest update, changelog entry.
 
@@ -190,7 +212,7 @@ Do not add scripts, workflows, boards, reports, project management files, automa
 1000+ chapters = series-level navigation, not line edit
 ```
 
-Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, chapter assembly split check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
+Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, chapter assembly split check, Vietnamese register check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -205,6 +227,8 @@ Prefer retrieval, exact source surface, context brief, first-pass editorial work
 - No mechanical split by word count alone.
 - No silent split or renumber of live manuscript.
 - No checklist-first prose repair.
+- Hán Việt is controlled, not purged and not allowed to sprawl.
+- Viet Dao prose must stay anchored in Vietnamese life.
 - First-pass editing starts from scene pressure and edit layer, not all gates.
 - No hiding synthetic structure with more texture.
 - No forcing character behavior only to satisfy scene function.
