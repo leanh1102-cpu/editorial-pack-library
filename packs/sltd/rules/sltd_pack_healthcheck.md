@@ -12,18 +12,20 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check scene transition, skiptime, and event cluster continuity
+## Check entry route governance and gate budget
 
 Verify:
 
-- `rules/sltd_scene_transition_skiptime_event_cluster_gate.md` exists and is listed in manifest;
-- `prompts/scene_transition_skiptime_event_cluster_check.md` exists and is listed in manifest;
-- scene_transition_skiptime_event_cluster_check is listed in allowed_tasks;
-- transition/skiptime/event-cluster route ends with node checkpoint;
-- transition/skiptime/event-cluster route references source fidelity before patching;
-- the gate checks from scene, to scene, seam type, transition anchor, carry-over, time skipped, process trace, off-page continuation, cooled/heated pressure, POV access after cut, emotional continuity, object/material continuity, event-cluster start/development/result/aftershock, and seam-break risk;
-- the gate prevents decorative transitions, sensory ornament bridges, symbolic bridges without causality, skiptime summary dump, skiptime without process trace, object reset, emotion reset, and fragmented event clusters;
-- the gate does not authorize new scenes, events, witnesses, clues, folklore, payoff, changed POV access, or changed timeline.
+- `rules/sltd_entry_route_governance_gate_budget_protocol.md` exists and is listed in manifest;
+- `prompts/entry_route_governance_check.md` exists and is listed in manifest;
+- entry_route_governance_check is listed in allowed_tasks;
+- entry governance route ends with node checkpoint;
+- the protocol defines primary route, secondary gate, gate budget, stop condition, gate cascade, and checklist-first repair;
+- the protocol requires one primary route before secondary gates;
+- secondary gates require evidence, not adjacency;
+- stop conditions are explicit;
+- gate cascade and checklist-first repair are blocked;
+- the protocol does not authorize skipping source preflight, source surface, canon guard, evidence, or user-requested modes.
 
 ## Check routes
 
@@ -31,6 +33,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+entry governance routes -> sltd_entry_route_governance_gate_budget_protocol.md
 transition/skiptime/event-cluster routes -> sltd_scene_transition_skiptime_event_cluster_gate.md
 timeline POV routes -> sltd_timeline_pov_foreshadowing_folklore_gate.md
 prose craft routes -> sltd_prose_craft_style_material_gate.md
