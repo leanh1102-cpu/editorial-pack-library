@@ -1,17 +1,21 @@
 # Changelog
 
+## 1.10.19
+
+- Added webnovel paragraphing and layout rhythm gate.
+- Added webnovel_paragraphing_layout_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.18
 
 - Added Vietnamese register and Viet Dao prose calibration gate.
 - Added vietnamese_register_check task and prompt.
 - Added Viet Dao prose calibration samples.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.17
 
 - Added chapter assembly and split control gate.
 - Added chapter_assembly_split_check task and prompt.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.16
 
