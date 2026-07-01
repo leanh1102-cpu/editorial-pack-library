@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.26"
+version: "1.10.27"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -35,6 +35,7 @@ allowed_tasks:
   - session_handoff
   - handoff_continuity_check
   - entry_healthcheck
+  - entry_route_governance_check
   - evidence_check
   - review_mode_pass
   - webnovel_momentum_benchmark
@@ -67,6 +68,7 @@ required_files:
   - AUTHOR_TASTE_EXAMPLES.md
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
+  - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_story_momentum.md
   - rules/sltd_scene_transition_skiptime_event_cluster_gate.md
   - rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
@@ -86,6 +88,7 @@ required_files:
   - rules/sltd_source_fidelity_anti_compression.md
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
+  - prompts/entry_route_governance_check.md
   - prompts/scene_transition_skiptime_event_cluster_check.md
   - prompts/timeline_pov_foreshadowing_folklore_check.md
   - prompts/prose_craft_style_check.md
