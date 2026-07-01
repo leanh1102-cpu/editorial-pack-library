@@ -12,6 +12,20 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
+## Check protagonist inquiry and clue-chain pressure
+
+Verify:
+
+- `rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md` exists and is listed in manifest;
+- `prompts/protagonist_inquiry_check.md` exists and is listed in manifest;
+- `samples/protagonist_inquiry_calibration.md` exists and is listed in manifest;
+- protagonist_inquiry_check is listed in allowed_tasks;
+- protagonist inquiry route ends with node checkpoint;
+- protagonist inquiry route references source fidelity before patching;
+- the gate defines inquiry chain, private question, child-scale hypothesis, small test, partial read, misread, kept detail, small secret, and next return;
+- the gate blocks passive protagonist, missing inner reasoning, mood-only strange signs, broken clue chain, adult system reasoning, and answer without inquiry;
+- the gate does not authorize source-unsupported material or patching without exact source.
+
 ## Check protagonist advancement and growth route calibration
 
 Verify:
@@ -24,7 +38,7 @@ Verify:
 - protagonist advancement route references source fidelity before patching;
 - the gate defines gain target, gain type, cost, knowledge limit, forbidden gain, and growth route;
 - the gate requires object, body, relation, witness or social trace, cost, knowledge limit, and aftershock;
-- the gate blocks Notion-label prose, lore-label gains, too-adult reasoning, too-clean upgrades, early system knowledge, and object-as-function-tag prose;
+- the gate blocks Notion-label prose, label-only gains, too-adult reasoning, early system knowledge, and object-as-function-tag prose;
 - the gate treats C030 low-layer lore as valid when it becomes world-rule sensitivity, not system knowledge;
 - the gate does not authorize new source-unsupported growth.
 
@@ -50,6 +64,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
 entry governance routes -> sltd_entry_route_governance_gate_budget_protocol.md
+protagonist inquiry routes -> sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 protagonist advancement routes -> sltd_protagonist_advancement_growth_route_gate.md
 transition/skiptime/event-cluster routes -> sltd_scene_transition_skiptime_event_cluster_gate.md
 timeline POV routes -> sltd_timeline_pov_foreshadowing_folklore_gate.md
