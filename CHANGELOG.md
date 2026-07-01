@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.30
+
+- Added protagonist inquiry and clue-chain pressure protocol.
+- Added protagonist_inquiry_check task and prompt.
+- Added protagonist inquiry calibration samples.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.29
 
 - Added protagonist advancement node and growth route calibration rule.
@@ -49,14 +56,3 @@
 
 - Added character distinctiveness and iceberg profile rule.
 - Added character_distinctiveness_check task and prompt.
-
-## 1.10.19
-
-- Added webnovel paragraphing and layout rhythm rule.
-- Added webnovel_paragraphing_layout_check task and prompt.
-
-## 1.10.18
-
-- Added Vietnamese register and Viet Dao prose calibration rule.
-- Added vietnamese_register_check task and prompt.
-- Added Viet Dao prose calibration samples.
