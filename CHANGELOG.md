@@ -1,10 +1,15 @@
 # Changelog
 
+## 1.10.23
+
+- Added scene composition ratio and component balance gate.
+- Added scene_composition_balance_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.22
 
 - Added narrative beat escalation and aftershock gate.
 - Added narrative_beat_escalation_check task and prompt.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.21
 
