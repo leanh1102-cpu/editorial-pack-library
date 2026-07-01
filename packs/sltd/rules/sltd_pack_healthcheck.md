@@ -12,18 +12,19 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check narrative beat escalation and aftershock
+## Check scene composition and component balance
 
 Verify:
 
-- `rules/sltd_narrative_beat_escalation_aftershock_gate.md` exists and is listed in manifest;
-- `prompts/narrative_beat_escalation_check.md` exists and is listed in manifest;
-- narrative_beat_escalation_check is listed in allowed_tasks;
-- narrative beat route ends with node checkpoint;
-- narrative beat route references source fidelity before patching;
-- the gate checks beat map, anchor point, pressure ladder, off-POV / parallel conflict, escalation step, interruption point, aftershock, peak/turn, result, cost ledger, promise/payoff, and uniform beat risk;
-- the gate prevents uniform beat rhythm, beat without escalation, anchorless conflict, interruption without aftershock, peak without result, false cliffhanger, and offscreen conflict as decoration;
-- the gate treats benchmark novels as mechanical checks only and does not authorize copying systems, motifs, worldview, or plot rhythm.
+- `rules/sltd_scene_composition_component_balance_gate.md` exists and is listed in manifest;
+- `prompts/scene_composition_balance_check.md` exists and is listed in manifest;
+- scene_composition_balance_check is listed in allowed_tasks;
+- scene composition route ends with node checkpoint;
+- scene composition route references source fidelity before patching;
+- the gate checks dialogue, action/blocking, inner thought, setting/living world, object/clue, sensory/body, silence/pause, summary/transition, and aftershock;
+- the gate uses soft diagnostic bands by scene function and blocks ratio-as-formula;
+- the gate detects fake balance, overused/missing components, and dominant component mismatch;
+- the gate does not authorize adding components only to satisfy percentages.
 
 ## Check routes
 
@@ -31,6 +32,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+scene composition routes -> sltd_scene_composition_component_balance_gate.md
 narrative beat routes -> sltd_narrative_beat_escalation_aftershock_gate.md
 living world routes -> sltd_living_world_community_motion_gate.md
 first-pass routes -> sltd_first_pass_editorial_workflow.md
