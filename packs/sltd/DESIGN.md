@@ -12,6 +12,7 @@ It should help the agent:
 
 - read the right source;
 - preserve exact source surface before editing;
+- preserve dynamic range and cadence;
 - choose the right skill;
 - enter the right role;
 - keep canon stable;
@@ -27,7 +28,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, handoff continuity
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, dynamic range gates, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -52,6 +53,7 @@ The pack is split into:
 - identity files;
 - source discipline;
 - source fidelity and anti-compression gates;
+- dynamic range and cadence gates;
 - task router;
 - competency map;
 - role entry cards;
@@ -74,6 +76,7 @@ source_preflight
 task_intake
 task_router
 source surface check when exact source may be missing
+dynamic range check when cadence risk appears
 role entry card when a role is named
 decision_safety
 task-specific prompt
@@ -98,6 +101,8 @@ current source
 source surface status
 scope
 local chapter or scene
+scene function
+cadence state
 relevant canon
 active skills
 active role entry
@@ -124,6 +129,16 @@ Line edit, line surgery, copyedit, proofread, rewrite, exact OLD/NEW patch, read
 Digest may guide navigation and prioritization. Digest must not be used as prose surface or current-state evidence.
 
 If source surface is missing, the agent must safely downgrade to map-level review, packet risk scan, or source request.
+
+## Dynamic range model
+
+Restraint is not flattening.
+
+The agent must preserve dynamic range: quiet pressure, controlled escalation, scene turn, and aftershock.
+
+Dynamic range check separates what must stay quiet from what needs stronger scene pressure.
+
+The agent must match intensity to scene function and must not give every scene the same restrained cadence.
 
 ## Editorial competency model
 
@@ -167,7 +182,7 @@ It must not run indefinitely, create background automation, write to Notion/GitH
 
 Calibration cases are accepted or rejected examples used to improve future execution.
 
-They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, and wrong role routing.
+They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, wrong role routing, and over-restraint.
 
 Calibration is not canon, not current manuscript, and not publication evidence.
 
@@ -246,7 +261,7 @@ If a later role discovers an earlier-layer failure, stop and hand back.
 
 Review modes are lenses, not roles.
 
-Learned taste, calibration, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
+Learned taste, calibration, dynamic range checks, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
@@ -259,6 +274,7 @@ Check:
 - allowed tasks;
 - route coverage;
 - source fidelity coverage;
+- dynamic range coverage;
 - role entry coverage;
 - role boundary coverage;
 - iteration loop coverage;
@@ -272,7 +288,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, dynamic range, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -298,6 +314,7 @@ The SLTD pack must not become:
 - a self-running agent loop;
 - a place where AI invents canon;
 - a place where AI edits prose from summary;
+- a place where AI flattens every scene through over-restraint;
 - a place where AI treats handoff as source truth;
 - a place where AI silently updates Notion.
 
@@ -315,7 +332,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, exact source surface, context brief, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, exact source surface, context brief, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -328,6 +345,7 @@ These rules should remain stable across versions:
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
 - AI does not edit prose from summary.
+- AI does not flatten scene cadence through over-restraint.
 - AI does not treat handoff as source truth.
 - AI does not loop indefinitely.
 - AI uses fast path for normal tasks.
