@@ -36,6 +36,19 @@ Verify:
 - exact OLD is required before OLD/NEW patch;
 - missing source surface downgrades to map-level review, packet risk scan, or source request.
 
+## Check dynamic range
+
+Verify:
+
+- `rules/sltd_dynamic_range_cadence_gate.md` exists and is listed in manifest;
+- `prompts/dynamic_range_check.md` exists and is listed in manifest;
+- dynamic_range_check is listed in allowed_tasks;
+- dynamic range route ends with node checkpoint;
+- dynamic range route references source fidelity before patching;
+- dynamic range gate separates what must stay quiet from what needs stronger scene pressure;
+- dynamic range gate prevents all scenes from being forced into the same restrained cadence;
+- dynamic range gate does not authorize canon invention or locked outcome changes.
+
 ## Check handoff continuity
 
 Verify:
@@ -126,6 +139,7 @@ Verify:
 - iteration routes reference `rules/sltd_agentic_iteration_loop.md`;
 - calibration routes reference `rules/sltd_calibration_discipline.md`;
 - source-surface routes reference `rules/sltd_source_fidelity_anti_compression.md`;
+- dynamic range routes reference `rules/sltd_dynamic_range_cadence_gate.md`;
 - handoff routes reference `rules/sltd_handoff_continuity_protocol.md`.
 
 ## Check role boundaries
@@ -135,7 +149,7 @@ Verify:
 - each active editorial role has start condition, allowed actions, must-not-do, done criteria, stop condition, and handoff;
 - later roles do not overwrite earlier-layer blockers;
 - review modes remain lenses, not roles;
-- learned taste and calibration do not override current source, canon, evidence, or human lock.
+- learned taste, calibration, and dynamic range checks do not override current source, canon, evidence, or human lock.
 
 ## Check orphan risk
 
@@ -150,6 +164,7 @@ Mark a file as possible orphan when:
 - an iteration file exists but is missing from manifest or route;
 - a calibration file exists but is missing from manifest or route;
 - a source-surface file exists but is missing from manifest or route;
+- a dynamic range file exists but is missing from manifest or route;
 - a handoff-continuity file exists but is missing from manifest or route.
 
 ## Output labels
