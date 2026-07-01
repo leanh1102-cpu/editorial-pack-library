@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.27
+
+- Added entry route governance and gate budget protocol.
+- Added entry_route_governance_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.26
 
 - Added scene transition, skiptime, and event cluster continuity rule.
