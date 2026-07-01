@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.30"
+version: "1.10.31"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -48,6 +48,7 @@ allowed_tasks:
   - first_pass_editorial_workflow
   - protagonist_advancement_check
   - protagonist_inquiry_check
+  - supernatural_event_residue_check
   - chapter_assembly_split_check
   - scene_transition_skiptime_event_cluster_check
   - timeline_pov_foreshadowing_folklore_check
@@ -71,6 +72,7 @@ required_files:
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
+  - rules/sltd_supernatural_event_residue_dread_amplitude_gate.md
   - rules/sltd_protagonist_advancement_growth_route_gate.md
   - rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
   - rules/sltd_story_momentum.md
@@ -94,6 +96,7 @@ required_files:
   - rules/sltd_pack_healthcheck.md
   - prompts/protagonist_advancement_check.md
   - prompts/protagonist_inquiry_check.md
+  - prompts/supernatural_event_residue_check.md
   - prompts/entry_route_governance_check.md
   - prompts/scene_transition_skiptime_event_cluster_check.md
   - prompts/timeline_pov_foreshadowing_folklore_check.md
@@ -115,6 +118,7 @@ required_files:
   - prompts/node_checkpoint.md
   - samples/protagonist_advancement_calibration.md
   - samples/protagonist_inquiry_calibration.md
+  - samples/supernatural_event_residue_calibration.md
   - samples/prose_craft_style_material_calibration.md
   - samples/router_examples.md
   - samples/viet_dao_prose_calibration.md
