@@ -12,19 +12,27 @@ Routes:
 
 ```text
 entry route governance check: sltd_entry_route_governance_gate_budget_protocol -> entry_route_governance_check -> node_checkpoint
-protagonist advancement check: sltd_source_fidelity_anti_compression -> sltd_protagonist_advancement_growth_route_gate -> protagonist_advancement_check -> node_checkpoint
-scene transition skiptime event cluster check: sltd_source_fidelity_anti_compression -> sltd_scene_transition_skiptime_event_cluster_gate -> protagonist_advancement_check if seam/skiptime changes protagonist gain -> scene_transition_skiptime_event_cluster_check -> node_checkpoint
-timeline POV foreshadowing folklore check: sltd_source_fidelity_anti_compression -> sltd_timeline_pov_foreshadowing_folklore_gate -> protagonist_advancement_check if protagonist knowledge limit or growth route is in scope -> scene_transition_skiptime_event_cluster_check if seam/skiptime/event cluster is in scope -> timeline_pov_foreshadowing_folklore_check -> node_checkpoint
-prose craft style check: sltd_source_fidelity_anti_compression -> sltd_prose_craft_style_material_gate -> protagonist_advancement_check if craft must carry protagonist gain -> scene_transition_skiptime_event_cluster_check if sensory/material bridge or process trace is in scope -> prose_craft_style_check -> node_checkpoint
-scene composition balance check: sltd_source_fidelity_anti_compression -> sltd_scene_composition_component_balance_gate -> protagonist_advancement_check if component mix hides protagonist gain -> scene_transition_skiptime_event_cluster_check if seam or skiptime affects component balance -> scene_composition_balance_check -> node_checkpoint
-narrative beat escalation check: sltd_source_fidelity_anti_compression -> sltd_narrative_beat_escalation_aftershock_gate -> protagonist_advancement_check if beat should produce protagonist gain -> scene_transition_skiptime_event_cluster_check if transition/skiptime/event cluster carries beat pressure -> narrative_beat_escalation_check -> node_checkpoint
-living world community motion check: sltd_source_fidelity_anti_compression -> sltd_living_world_community_motion_gate -> protagonist_advancement_check if living-world pressure should change protagonist reading method -> scene_transition_skiptime_event_cluster_check if world residue or skiptime process trace is in scope -> living_world_community_motion_check -> node_checkpoint
-character distinctiveness check: sltd_source_fidelity_anti_compression -> sltd_character_distinctiveness_iceberg_gate -> protagonist_advancement_check if protagonist route/voice/body/signature method is in scope -> scene_transition_skiptime_event_cluster_check if emotional continuity or object reset affects character read -> character_distinctiveness_check -> node_checkpoint
-chapter assembly split check: entry_route_governance_check if broad reader-unit audit risks cascade -> sltd_source_fidelity_anti_compression -> sltd_chapter_assembly_split_control_gate -> protagonist_advancement_check if protagonist gain route affects reader unit -> scene_transition_skiptime_event_cluster_check if seams/skiptime/event clusters affect reader unit -> timeline_pov_foreshadowing_folklore_check if timeline/thread continuity affects reader unit -> prose_craft_style_check if craft/style drift affects reader unit -> scene_composition_balance_check if component balance affects reader unit -> narrative_beat_escalation_check if beat chain affects reader unit -> living_world_community_motion_check if world motion affects chapter surface -> chapter_assembly_split_check -> node_checkpoint
-first-pass editorial workflow: entry_route_governance_check if three or more gates appear relevant -> sltd_source_fidelity_anti_compression -> sltd_first_pass_editorial_workflow -> protagonist_advancement_check if protagonist gain/limit/cost/forbidden gain is unclear -> scene_transition_skiptime_event_cluster_check if seam/skiptime/event cluster target is unclear -> timeline_pov_foreshadowing_folklore_check if timeline/POV/thread target is unclear -> prose_craft_style_check if craft/style/material target is unclear -> scene_composition_balance_check if component mix or ratio is unclear -> narrative_beat_escalation_check if beat escalation or aftershock is unclear -> living_world_community_motion_check if setting/community motion is unclear -> character_distinctiveness_check if character profile target is unclear -> first_pass_editorial_workflow -> node_checkpoint
-scene rewrite: source_surface_check -> entry_route_governance_check if three or more gates appear relevant -> first_pass_editorial_workflow -> protagonist_advancement_check if Dai Phong's gain/limit/cost/forbidden gain is in scope -> scene_transition_skiptime_event_cluster_check if transition, skiptime, or event cluster continuity is in scope -> timeline_pov_foreshadowing_folklore_check if timeline, POV, foreshadowing, folklore, or material thread is in scope -> prose_craft_style_check if writing/editing technique, genre, style, voice, or material is in scope -> scene_composition_balance_check if component mix or ratio is in scope -> narrative_beat_escalation_check if beat escalation or aftershock is in scope -> living_world_community_motion_check if setting/community/world motion is in scope -> character_distinctiveness_check if character distinctiveness is in scope -> webnovel_paragraphing_layout_check if layout is in scope -> vietnamese_register_check if register is in scope -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if synthetic risk appears -> character_agency_check if agency risk appears -> dynamic_range_check if cadence risk appears -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
-line surgery: source_surface_check -> entry_route_governance_check if multiple blockers compete -> protagonist_advancement_check if line-level object/body/relation should carry protagonist gain -> scene_transition_skiptime_event_cluster_check if seam, skiptime, or object reset is the underlying issue -> timeline_pov_foreshadowing_folklore_check if POV leak or material thread is the underlying issue -> prose_craft_style_check if craft move selection is the underlying issue -> scene_composition_balance_check if component mix is the underlying issue -> narrative_beat_escalation_check if beat flatness is the underlying issue -> living_world_community_motion_check if setting/community detail is the issue -> character_distinctiveness_check if voice/body/object signature is the issue -> webnovel_paragraphing_layout_check if line breaks are the issue -> vietnamese_register_check if register is the issue -> line_surgery -> line_surgery_pass -> node_checkpoint
-readiness: source_surface_check -> entry_route_governance_check if more than four checks appear relevant -> chapter_assembly_split_check if length/split affects readiness -> protagonist_advancement_check if protagonist gain/forbidden gain affects human read -> scene_transition_skiptime_event_cluster_check if seam break, skiptime, or fragmented event cluster affects human read -> timeline_pov_foreshadowing_folklore_check if timeline, POV, forgotten thread, or folklore risk affects human read -> prose_craft_style_check if craft/style/material failure affects human read -> scene_composition_balance_check if component imbalance affects human read -> narrative_beat_escalation_check if beat flatness or promise/payoff affects human read -> living_world_community_motion_check if static setting/community affects human read -> character_distinctiveness_check if character flatness affects human read -> webnovel_paragraphing_layout_check if layout affects human read -> vietnamese_register_check if register affects human read -> anti_ai_composite_check if false readiness risk appears -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
+protagonist inquiry check: sltd_source_fidelity_anti_compression -> sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate -> protagonist_inquiry_check -> node_checkpoint
+protagonist advancement check: sltd_source_fidelity_anti_compression -> sltd_protagonist_advancement_growth_route_gate -> protagonist_inquiry_check if growth requires private question, small test, kept detail, or clue return -> protagonist_advancement_check -> node_checkpoint
+scene transition skiptime event cluster check: sltd_source_fidelity_anti_compression -> sltd_scene_transition_skiptime_event_cluster_gate -> protagonist_inquiry_check if seam/skiptime carries Dai Phong inquiry -> protagonist_advancement_check if seam/skiptime changes protagonist gain -> scene_transition_skiptime_event_cluster_check -> node_checkpoint
+timeline POV foreshadowing folklore check: sltd_source_fidelity_anti_compression -> sltd_timeline_pov_foreshadowing_folklore_gate -> protagonist_inquiry_check if clue access, reveal window, or private reasoning is in scope -> protagonist_advancement_check if protagonist knowledge limit or growth route is in scope -> timeline_pov_foreshadowing_folklore_check -> node_checkpoint
+prose craft style check: sltd_source_fidelity_anti_compression -> sltd_prose_craft_style_material_gate -> protagonist_inquiry_check if inner reasoning becomes explanation -> protagonist_advancement_check if craft must carry protagonist gain -> prose_craft_style_check -> node_checkpoint
+narrative beat escalation check: sltd_source_fidelity_anti_compression -> sltd_narrative_beat_escalation_aftershock_gate -> protagonist_inquiry_check if beat should produce private question, test, clue, or small secret -> protagonist_advancement_check if beat should produce protagonist gain -> narrative_beat_escalation_check -> node_checkpoint
+living world community motion check: sltd_source_fidelity_anti_compression -> sltd_living_world_community_motion_gate -> protagonist_inquiry_check if world pressure should provoke private question or small test -> protagonist_advancement_check if world pressure should change protagonist reading method -> living_world_community_motion_check -> node_checkpoint
+character distinctiveness check: sltd_source_fidelity_anti_compression -> sltd_character_distinctiveness_iceberg_gate -> protagonist_inquiry_check if Dai Phong's private reasoning, curiosity, or silence profile is in scope -> protagonist_advancement_check if route/voice/body/signature method is in scope -> character_distinctiveness_check -> node_checkpoint
+scene rewrite: source_surface_check -> entry_route_governance_check if three or more gates appear relevant -> first_pass_editorial_workflow -> protagonist_inquiry_check if Dai Phong's private question, small test, kept detail, clue chain, or small secret is in scope -> protagonist_advancement_check if Dai Phong's gain/limit/cost/forbidden gain is in scope -> scene_transition_skiptime_event_cluster_check if seam/skiptime is in scope -> timeline_pov_foreshadowing_folklore_check if timeline/POV/thread is in scope -> prose_craft_style_check if craft/style is in scope -> narrative_beat_escalation_check if beat/aftershock is in scope -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
+line surgery: source_surface_check -> entry_route_governance_check if multiple blockers compete -> protagonist_inquiry_check if line-level thought/clue should carry private question or kept detail -> protagonist_advancement_check if line-level object/body/relation should carry protagonist gain -> line_surgery -> line_surgery_pass -> node_checkpoint
+readiness: source_surface_check -> entry_route_governance_check if more than four checks appear relevant -> chapter_assembly_split_check if length/split affects readiness -> protagonist_inquiry_check if passive protagonist, missing inquiry, or clue-chain pressure affects human read -> protagonist_advancement_check if protagonist gain/forbidden gain affects human read -> scene_transition_skiptime_event_cluster_check if seam break affects human read -> timeline_pov_foreshadowing_folklore_check if timeline/POV/thread risk affects human read -> prose_craft_style_check if craft/style failure affects human read -> narrative_beat_escalation_check if beat/promise risk affects human read -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
+```
+
+Protagonist inquiry rule:
+
+```text
+If Dai Phong's private question, inner reasoning, curiosity pressure, small test, kept detail, clue chain, small secret, supernatural pressure, or inquiry route is in scope, run protagonist inquiry check.
+A strange sign must create private question, small test, kept detail, partial read/misread, or next return.
+Inner reasoning should place concrete signs beside each other, not explain the world.
+Do not add new source-unsupported clues or future answers.
+Do not let Dai Phong form adult system theory too early.
 ```
 
 Protagonist advancement rule:
@@ -45,41 +53,6 @@ Choose one primary route.
 Add secondary gates only when the primary route exposes a real blocker.
 Do not run a gate because it is adjacent.
 Stop when the source is missing, the requested answer is complete, the patch is complete, readiness is blocked, or the gate budget is spent.
-```
-
-Transition / skiptime / event cluster rule:
-
-```text
-If transition, scene seam, skiptime, process trace, sensory bridge, symbolic bridge, hard cut, object/material continuity, emotional continuity, or event cluster continuity is in scope, run scene transition skiptime event cluster check.
-A transition must carry pressure, information, cost, time, POV access, material state, or aftershock.
-```
-
-Timeline / POV / thread rule:
-
-```text
-If timeline, event order, POV boundary, reader knowledge, foreshadowing ledger, folklore mutation, material thread, planting density, or scene/chapter/packet thread management is in scope, run timeline POV foreshadowing folklore check.
-Threads must be planted, held, paid, or retired with evidence.
-```
-
-Prose craft rule:
-
-```text
-If writing technique, editing technique, genre style, prose style, voice, material layer, or craft sample calibration is in scope, run prose craft style check.
-Craft samples are calibration, not voice to imitate.
-```
-
-Narrative beat rule:
-
-```text
-If beat rhythm, anchor point, escalation, interruption, aftershock, peak/result, off-POV conflict, parallel event, or promise/payoff is in scope, run narrative beat escalation check.
-A beat is not an event. A beat must change pressure, information, position, cost, or promise.
-```
-
-Living world rule:
-
-```text
-If setting, community, custom, social habit, environment pushback, offscreen motion, or butterfly trace is in scope, run living world community motion check.
-The world must not wait for the protagonist to enter.
 ```
 
 Source fidelity rule:
