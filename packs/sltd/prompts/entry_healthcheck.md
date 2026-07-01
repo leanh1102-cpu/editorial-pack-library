@@ -16,6 +16,7 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_scene_transition_skiptime_event_cluster_gate.md
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
 rules/sltd_prose_craft_style_material_gate.md
@@ -33,6 +34,7 @@ rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
+prompts/entry_route_governance_check.md
 prompts/scene_transition_skiptime_event_cluster_check.md
 prompts/timeline_pov_foreshadowing_folklore_check.md
 prompts/prose_craft_style_check.md
@@ -64,6 +66,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+ENTRY ROUTE GOVERNANCE CHECK:
 SCENE TRANSITION SKIPTIME EVENT CLUSTER CHECK:
 TIMELINE POV FORESHADOWING FOLKLORE CHECK:
 PROSE CRAFT STYLE CHECK:
