@@ -22,6 +22,19 @@ Verify root entry, pack entry, runtime entry, fast path, and role entry index.
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
+## Check first-pass editorial workflow
+
+Verify:
+
+- `rules/sltd_first_pass_editorial_workflow.md` exists and is listed in manifest;
+- `prompts/first_pass_editorial_workflow.md` exists and is listed in manifest;
+- first_pass_editorial_workflow is listed in allowed_tasks;
+- first-pass route ends with node checkpoint;
+- first-pass route references source fidelity before patching;
+- first-pass workflow starts from source surface, scene intake, editorial diagnosis, one edit strategy, and human-read prose pass;
+- first-pass workflow runs targeted gates only after initial prose judgment;
+- first-pass workflow prevents running all gates before the first edit.
+
 ## Check scene-first prose judgment
 
 Verify:
@@ -37,16 +50,7 @@ Verify:
 
 ## Check anti-AI composite
 
-Verify:
-
-- `rules/sltd_anti_ai_composite_failure_gate.md` exists and is listed in manifest;
-- `prompts/anti_ai_composite_check.md` exists and is listed in manifest;
-- anti_ai_composite_check is listed in allowed_tasks;
-- anti-AI composite route ends with node checkpoint;
-- anti-AI composite route references source fidelity before patching;
-- anti-AI composite gate checks scene-card visibility, object force, dialogue duty, narrator voice, consequence trace, repair collage, false human texture, and readiness conflict;
-- anti-AI composite gate prevents adding more texture to hide synthetic structure;
-- anti-AI composite gate does not authorize canon invention or readiness claims from green sub-passes alone.
+Verify anti-AI composite rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, and it blocks texture-as-cover and readiness-from-green-sub-passes.
 
 ## Check character agency
 
@@ -101,6 +105,7 @@ Verify each allowed task has a route or prompt, large routes use context brief w
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+first-pass routes -> sltd_first_pass_editorial_workflow.md
 scene-first routes -> sltd_scene_first_prose_judgment_gate.md
 anti-AI composite routes -> sltd_anti_ai_composite_failure_gate.md
 character agency routes -> sltd_character_agency_anti_ooc_gate.md
@@ -110,7 +115,7 @@ handoff routes -> sltd_handoff_continuity_protocol.md
 
 ## Check role boundaries
 
-Verify later roles do not overwrite earlier-layer blockers and learned taste/calibration/gates do not override current source, canon, evidence, or human lock.
+Verify later roles do not overwrite earlier-layer blockers and learned taste/calibration/gates/workflows do not override current source, canon, evidence, or human lock.
 
 ## Check orphan risk
 
