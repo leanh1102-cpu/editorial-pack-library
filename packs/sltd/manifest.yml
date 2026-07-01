@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.12"
+version: "1.10.13"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -45,6 +45,7 @@ allowed_tasks:
   - calibration_case_check
   - source_surface_check
   - dynamic_range_check
+  - character_agency_check
 forbidden_tasks:
   - manage_notion_tasks
   - workflow_management
@@ -87,6 +88,7 @@ required_files:
   - rules/sltd_intensity_rules.md
   - rules/sltd_intensity_targets.md
   - rules/sltd_dynamic_range_cadence_gate.md
+  - rules/sltd_character_agency_anti_ooc_gate.md
   - rules/sltd_developmental_editing.md
   - rules/sltd_copyedit_proofread.md
   - rules/sltd_publishing_readiness.md
@@ -118,6 +120,7 @@ required_files:
   - prompts/iteration_checkpoint.md
   - prompts/source_surface_check.md
   - prompts/dynamic_range_check.md
+  - prompts/character_agency_check.md
   - prompts/audit_scene.md
   - prompts/rewrite_scene.md
   - prompts/audit_story_arc.md
