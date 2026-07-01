@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.27"
+version: "1.10.29"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -46,6 +46,7 @@ allowed_tasks:
   - calibration_case_check
   - source_surface_check
   - first_pass_editorial_workflow
+  - protagonist_advancement_check
   - chapter_assembly_split_check
   - scene_transition_skiptime_event_cluster_check
   - timeline_pov_foreshadowing_folklore_check
@@ -69,6 +70,7 @@ required_files:
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
+  - rules/sltd_protagonist_advancement_growth_route_gate.md
   - rules/sltd_story_momentum.md
   - rules/sltd_scene_transition_skiptime_event_cluster_gate.md
   - rules/sltd_timeline_pov_foreshadowing_folklore_gate.md
@@ -88,6 +90,7 @@ required_files:
   - rules/sltd_source_fidelity_anti_compression.md
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
+  - prompts/protagonist_advancement_check.md
   - prompts/entry_route_governance_check.md
   - prompts/scene_transition_skiptime_event_cluster_check.md
   - prompts/timeline_pov_foreshadowing_folklore_check.md
@@ -107,6 +110,7 @@ required_files:
   - prompts/source_surface_check.md
   - prompts/entry_healthcheck.md
   - prompts/node_checkpoint.md
+  - samples/protagonist_advancement_calibration.md
   - samples/prose_craft_style_material_calibration.md
   - samples/router_examples.md
   - samples/viet_dao_prose_calibration.md
