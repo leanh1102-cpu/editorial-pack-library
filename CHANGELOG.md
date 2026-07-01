@@ -1,11 +1,16 @@
 # Changelog
 
+## 1.10.25
+
+- Added timeline, POV, foreshadowing, and folklore thread gate.
+- Added timeline_pov_foreshadowing_folklore_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.24
 
 - Added prose craft, genre style, and material calibration gate.
 - Added prose_craft_style_check task and prompt.
 - Added prose craft/style/material calibration samples.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.23
 
