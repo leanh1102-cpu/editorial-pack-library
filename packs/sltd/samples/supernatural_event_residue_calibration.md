@@ -100,3 +100,37 @@ WHAT DAI PHONG CAN SEE: route, ink, number, or body fatigue does not match ordin
 WHAT DAI PHONG MISREADS: he blames bad map or old habit first
 REVEAL BOUNDARY: no Cửu Thần / Bát Thần / Ninth God explanation
 ```
+
+## 6. AI repair smell: residue becomes staged signal
+
+```text
+BAD PATCH PATTERN:
+A local edit adds multiple precise signals at once: a water dot refuses to spread, a sick adult detects cold from another room, the protagonist keeps his hand still to show inquiry, and a closing line explains that another character sees only roots.
+
+WHY BAD:
+- the edit satisfies the checklist too visibly
+- object behavior feels staged for the gate
+- dread becomes a sequence of proof beats rather than lived pressure
+- the protagonist's pause becomes an editorial sign, not a child response
+- the final line over-controls reader interpretation
+- added effects cluster too close together without enough ordinary action between them
+
+FAILURE LABELS:
+AI_REPAIR_SMELL
+OVERDETERMINED_RESIDUE
+OBJECT_BEHAVES_FOR_GATE
+INQUIRY_AS_STAGE_DIRECTION
+PROOF_BEAT_STACKING
+READER_EFFECT_OVERCONTROLLED
+
+PREFERRED CALIBRATION:
+Choose one pressure carrier only.
+Let ordinary work continue around it.
+Keep the added sign deniable and absorbed into action.
+Do not close the paragraph by explaining what the reader should notice.
+
+SAFE MOVE:
+If the original excerpt already has the sick adult sensing cold, keep that as the main residue.
+Use one small supporting material sign at most, such as the protagonist covering the wet mark, tightening the bundle, or answering late.
+Do not add a second abnormal object behavior unless source already supports it.
+```
