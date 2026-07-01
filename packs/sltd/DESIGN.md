@@ -10,6 +10,7 @@ The pack helps the agent:
 - preserve exact source surface before editing;
 - keep Entry as a router, not a maze;
 - choose one primary route and cap secondary gates;
+- control Dai Phong's inquiry, private reasoning, clue chain, and small tests as source-bound exploration;
 - control Dai Phong's protagonist advancement as source-bound growth, not Notion labels or AI fantasy;
 - run a first-pass editorial workflow before targeted gates;
 - preserve scene transitions, skiptime process traces, and event-cluster continuity;
@@ -33,7 +34,7 @@ The pack helps the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, entry route governance, protagonist advancement/growth route calibration, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, entry route governance, protagonist inquiry/clue-chain pressure, protagonist advancement/growth route calibration, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -48,6 +49,7 @@ task_intake
 task_router
 entry route governance check when primary route, gate budget, or stop condition is unclear
 source surface check when exact source may be missing
+protagonist inquiry check when Dai Phong's private question, inner reasoning, small test, kept detail, clue chain, small secret, supernatural pressure, or inquiry route is in scope
 protagonist advancement check when Dai Phong's development path, gain type, cost, knowledge limit, forbidden gain, or world-rule sensitivity is in scope
 first-pass editorial workflow when beginning prose repair
 scene transition skiptime event cluster check when transitions, seams, skiptime, process trace, sensory/symbolic bridge, hard cut, object/material continuity, emotional continuity, or event cluster continuity is in scope
@@ -70,72 +72,13 @@ result_report
 
 Use the smallest route that answers the request.
 
-## Context strategy
-
-For each task, build a small working context:
-
-```text
-current source
-source surface status
-scope
-request type
-source requirement
-primary blocker
-primary route
-secondary gates allowed
-secondary gates used
-gate budget
-stop condition
-protagonist current state
-gain target
-gain type
-visible object
-body trace
-relation trace
-witness / social trace
-cost
-knowledge limit
-what he can learn
-what he must not know
-what he misreads
-what he does not say
-forbidden gain
-aftershock
-next return
-local chapter or scene
-from scene / to scene
-seam type
-transition anchor
-what carries over
-time skipped
-process trace
-time position
-event order
-POV holder
-foreshadowing ledger
-folklore mutation
-material layer
-scene function
-craft move needed
-composition profile
-beat map
-anchor point
-pressure ladder
-promise / payoff
-living world layer
-characters in scope
-reader unit
-node ledger
-open loops
-```
-
 ## Source fidelity model
 
 ```text
 SOURCE TEXT > DERIVED DIGEST > CHAT MEMORY
 ```
 
-Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, current seam, skiptime, event-cluster, timeline, POV, thread ledger, protagonist advancement, route selection when current status is at stake, and lock verdicts require the right source surface.
+Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, current seam, skiptime, event-cluster, timeline, POV, thread ledger, protagonist inquiry, protagonist advancement, route selection when current status is at stake, and lock verdicts require the right source surface.
 
 ## Entry route governance and gate budget model
 
@@ -152,6 +95,24 @@ CHECKLIST-FIRST REPAIR = editing to satisfy gates before reading the scene as li
 
 The agent must choose one primary route, add secondary gates only when evidence requires them, and stop when the answer, patch, or blocker is complete. If three or more gates seem necessary, create a context brief or prioritized node ledger instead of running a cascade.
 
+## Protagonist inquiry, inner reasoning, and clue chain model
+
+Dai Phong must not only receive events. He must form child-scale private questions, test small clues, keep details, misread safely, and return to clues later.
+
+```text
+INQUIRY_CHAIN = pressure sign -> private question -> child-scale hypothesis -> small test -> partial read or misread -> kept detail -> small secret -> next return
+PRIVATE_QUESTION = what Dai Phong silently asks because a daily pattern broke
+CHILD_SCALE_HYPOTHESIS = a concrete guess based on body, object, person, animal, work, price, name, or route
+SMALL_TEST = a low-power action: touch again, move object, ask sideways, wait, compare animal behavior, repeat a name, check heat/cold, look for a witness
+PARTIAL_READ = what he can reasonably infer now
+MISREAD = the wrong or incomplete conclusion that keeps future growth possible
+KEPT_DETAIL = a clue he does not say aloud because saying it may create cost
+SMALL_SECRET = a tiny discovery that changes his method, not a major lore reveal
+NEXT_RETURN = where the clue or method must return later
+```
+
+A strange sign must create private question, small test, kept detail, partial read/misread, or next return. Inner reasoning should place concrete signs beside each other, not explain the world. Do not add source-unsupported clues or future answers. Do not let Dai Phong form adult system theory too early.
+
 ## Protagonist advancement and growth route model
 
 Dai Phong's growth must be source-bound.
@@ -167,94 +128,25 @@ FORBIDDEN_GAIN = growth the source does not allow yet: adult reasoning, clean po
 
 A protagonist gain must be shown through object, body, relation, witness/social trace, cost, knowledge limit, and aftershock. Do not use Notion labels as prose. Do not upgrade intelligence, power, or Dao insight without source evidence and visible cost. C030 low-layer lore is valid when it becomes world-rule sensitivity for Dai Phong, not system knowledge.
 
-## Scene transition, skiptime, and event cluster continuity model
-
-A transition must carry pressure, information, cost, time, POV access, material state, or aftershock.
+## Other core models
 
 ```text
-SCENE SEAM = the join between one scene/beat and the next
-TRANSITION ANCHOR = sound, smell, image, object, action, dialogue, silence, weather, rumor, body state, symbol, or hard cut that carries continuity
-SKIPTIME = elapsed time not dramatized on-page
-PROCESS TRACE = residue showing what happened during skipped time without summary dump
-EVENT CLUSTER = related event chain with start, development, result, and aftershock
+TRANSITION: carries pressure, information, cost, time, POV access, material state, or aftershock.
+TIMELINE / POV / THREAD: threads must be planted, held, paid, or retired with evidence.
+PROSE CRAFT: craft samples are calibration, not voice to imitate.
+COMPOSITION: follows scene function; ratios are diagnostic, not formula.
+BEAT: must change pressure, information, position, cost, or promise.
+LIVING WORLD: the world must not wait for protagonist POV.
+FIRST PASS: source surface + scene intake + diagnosis + one edit strategy + human-read prose pass.
 ```
-
-Skiptime must leave process trace. A sensory or symbolic bridge is valid only if it changes continuity, not just mood. An event cluster must have start, development, result, and aftershock. Missing seam evidence becomes a seam gap, not invented continuity.
-
-## Timeline, POV, foreshadowing, and folklore model
-
-Threads must be planted, held, paid, or retired with evidence.
-
-```text
-TIMELINE = where the scene sits in event order, elapsed time, and consequence heat
-POV BOUNDARY = what the viewpoint holder can know, infer, misread, hide, or miss
-READER KNOWLEDGE = what the reader knows beyond the POV and why that gap creates pressure
-FORESHADOWING LEDGER = planted / paid / held / forgotten-risk items tracked by source evidence
-FOLKLORE THREAD = rumor, taboo, proverb, song, custom, misheard phrase, ritual trace, or community behavior that mutates through social motion
-MATERIAL THREAD = recurring object, place, animal, weather, work, food, medicine, debt, road, paper, clothing, tool, or sound that carries pressure across scenes
-PLANTING DENSITY = how many thread signals a scene/chapter carries before it becomes overloaded or decorative
-```
-
-The agent must not plant without a route to payoff or pressure, pay off what was not planted or earned, or let narration know what POV cannot know unless source intentionally shifts access. Missing thread evidence becomes a thread gap, not invented canon.
-
-## Prose craft, style, and material calibration model
-
-Craft samples are calibration, not voice to imitate.
-
-```text
-CRAFT MOVE = a conditional editing / writing technique used for a scene function
-STYLE CALIBRATION = a way to choose register, rhythm, material, and degree without copying a sample
-MATERIAL LAYER = concrete life-substance that carries pressure: body, work, object, place, weather, debt, animal, tool, food, medicine, road, rumor, taboo
-GENRE FUNCTION = what the move serves: mystery, dread, survival, cost, pursuit, reveal, concealment, consequence, promise/payoff
-```
-
-The agent must select one main craft move before patching and must not stack moves to make prose look rich. A craft move is valid only if it changes pressure, relation, information, cost, movement, reader breath, or genre promise.
-
-## Scene composition and component balance model
-
-Composition follows scene function. Percentages are diagnostic bands, not writing formulas.
-
-## Narrative beat escalation and aftershock model
-
-A beat is not an event. A beat must change pressure, information, position, cost, or promise.
-
-## Living world and community motion model
-
-The world must not wait for the protagonist to enter. Living-world repair must not invent major lore, custom, institution, ritual, faction, village history, canon geography, or social system. Missing evidence becomes a world-motion gap, not new canon.
-
-## First-pass editorial workflow model
-
-```text
-FIRST PASS = source surface + scene intake + diagnosis + one edit strategy + human-read prose pass
-GATES = targeted later checks, not the first writing method
-QUALITY = natural Vietnamese prose with route discipline, source-safe protagonist advancement, seam and thread management, scene pressure, craft move discipline, component balance, beat escalation, character behavior, living world motion, rhythm, readable layout, and distinct cast life working together
-```
-
-## Chapter assembly and split model
-
-Scene is the edit unit. Chapter is the reader unit. Packet is the continuity and momentum unit.
-
-## Role boundaries
-
-```text
-source and canon before story
-story before intensity
-intensity before line surgery
-line surgery before copyedit
-copyedit before proofread
-proofread before readiness
-readiness before publication lock claim
-```
-
-Review modes are lenses, not roles. Learned taste, calibration, route governance, protagonist advancement checks, first-pass workflow, transition/thread/prose/composition/beat/world/character/register/layout gates, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
-Check manifest version, required files, allowed tasks, route coverage, source fidelity, entry route governance/gate budget, protagonist advancement/growth route calibration, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
+Check manifest version, required files, allowed tasks, route coverage, source fidelity, entry route governance/gate budget, protagonist inquiry/clue-chain pressure, protagonist advancement/growth route calibration, first-pass workflow, transition/thread/prose/composition/beat/world/character/register/layout gates, role boundary, evidence, orphan risk, and changelog.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, entry route governance/gate budget, protagonist advancement/growth route calibration, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, entry route governance/gate budget, protagonist inquiry/clue-chain pressure, protagonist advancement/growth route calibration, first-pass workflow, transition/thread/prose/composition/beat/world/character/register/layout gates, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types: rule, prompt, sample, role entry, design note, manifest update, changelog entry.
 
@@ -272,7 +164,7 @@ Do not add scripts, workflows, boards, reports, project management files, automa
 1000+ chapters = series-level navigation, not line edit
 ```
 
-Prefer retrieval, exact source surface, context brief, entry route governance check, protagonist advancement check, first-pass editorial workflow, scene transition skiptime event cluster check, timeline POV foreshadowing folklore check, prose craft style check, scene composition balance check, narrative beat escalation check, chapter assembly split check, living world community motion check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
+Prefer retrieval, exact source surface, context brief, entry route governance check, protagonist inquiry check, protagonist advancement check, first-pass editorial workflow, scene transition skiptime event cluster check, timeline POV foreshadowing folklore check, prose craft style check, scene composition balance check, narrative beat escalation check, chapter assembly split check, living world community motion check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
 
 ## Invariants
 
@@ -287,6 +179,9 @@ Prefer retrieval, exact source surface, context brief, entry route governance ch
 - Choose one primary route before adding secondary gates.
 - Secondary gates require evidence, not adjacency.
 - Stop when the answer, blocker, patch, or budget is complete.
+- Dai Phong must not only receive events; inquiry must show private question, small test, kept detail, partial read/misread, or next return.
+- Inner reasoning places concrete signs beside each other; it does not explain the world.
+- Supernatural pressure must not remain mood only.
 - A protagonist gain must be shown through object, body, relation, witness/social trace, cost, knowledge limit, and aftershock.
 - Do not use Notion labels as prose.
 - Gain type is not a prose label.
@@ -294,19 +189,11 @@ Prefer retrieval, exact source surface, context brief, entry route governance ch
 - Do not upgrade intelligence, power, or Dao insight without source evidence and visible cost.
 - No gate cascade.
 - No checklist-first prose repair.
-- A transition must carry pressure, information, cost, time, POV access, material state, or aftershock.
-- Skiptime must leave process trace.
-- Sensory or symbolic bridge must change continuity, not just mood.
-- Event clusters must have start, development, result, and aftershock.
 - Threads must be planted, held, paid, or retired with evidence.
 - POV boundary must not leak unearned knowledge.
 - Folklore must alter behavior before explanation.
 - Material threads must carry pressure, not decorative motif repetition.
 - Craft samples are calibration, not voice to imitate.
-- A craft move must change pressure, relation, information, cost, movement, reader breath, or genre promise.
-- Do not stack craft moves to make prose look rich.
-- Composition follows scene function.
-- Percentages are diagnostic bands, not writing formulas.
 - A beat must change pressure, information, position, cost, or promise.
 - The world does not wait for protagonist POV.
 - Scene is the edit unit; chapter is the reader unit.
