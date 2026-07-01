@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.18"
+version: "1.10.19"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -47,6 +47,7 @@ allowed_tasks:
   - first_pass_editorial_workflow
   - chapter_assembly_split_check
   - vietnamese_register_check
+  - webnovel_paragraphing_layout_check
   - scene_first_prose_judgment
   - dynamic_range_check
   - character_agency_check
@@ -99,6 +100,7 @@ required_files:
   - rules/sltd_first_pass_editorial_workflow.md
   - rules/sltd_chapter_assembly_split_control_gate.md
   - rules/sltd_vietnamese_register_viet_dao_gate.md
+  - rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md
   - rules/sltd_developmental_editing.md
   - rules/sltd_copyedit_proofread.md
   - rules/sltd_publishing_readiness.md
@@ -132,6 +134,7 @@ required_files:
   - prompts/first_pass_editorial_workflow.md
   - prompts/chapter_assembly_split_check.md
   - prompts/vietnamese_register_check.md
+  - prompts/webnovel_paragraphing_layout_check.md
   - prompts/scene_first_prose_judgment.md
   - prompts/dynamic_range_check.md
   - prompts/character_agency_check.md
