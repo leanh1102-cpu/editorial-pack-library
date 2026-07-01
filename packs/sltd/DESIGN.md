@@ -9,6 +9,7 @@ The pack helps the agent:
 - read the right source;
 - preserve exact source surface before editing;
 - run a first-pass editorial workflow before targeted gates;
+- control scene composition and component balance without formulaic writing;
 - control narrative beat escalation, aftershock, off-POV conflict, and promise/payoff;
 - control chapter assembly and split risk after scene edits;
 - calibrate Vietnamese register and Viet Dao prose;
@@ -26,7 +27,7 @@ The pack helps the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -41,6 +42,7 @@ task_intake
 task_router
 source surface check when exact source may be missing
 first-pass editorial workflow when beginning prose repair
+scene composition balance check when dialogue/action/thought/setting/object/body/silence/summary/aftershock mix is in scope
 narrative beat escalation check when beat rhythm, anchor, aftershock, off-POV conflict, or promise/payoff is in scope
 chapter assembly split check when scene edits become a chapter or reader unit is overloaded
 Vietnamese register check when Hán Việt, translated-Chinese syntax, or Viet Dao balance is in scope
@@ -66,6 +68,21 @@ current source
 source surface status
 scope
 local chapter or scene
+scene function
+composition profile
+dialogue ratio
+action / blocking ratio
+inner thought ratio
+setting / living world ratio
+object / clue ratio
+sensory / body ratio
+silence / pause ratio
+summary / transition ratio
+aftershock ratio
+dominant component
+missing component
+overused component
+fake balance risk
 beat map
 anchor point
 pressure ladder
@@ -102,7 +119,6 @@ layout rhythm risk
 reader unit
 governing chapter pressure
 natural breakpoints
-scene function
 first-pass edit layer
 edit strategy
 Vietnamese register target
@@ -124,6 +140,20 @@ SOURCE TEXT > DERIVED DIGEST > CHAT MEMORY
 ```
 
 Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, and lock verdicts require the right source surface.
+
+## Scene composition and component balance model
+
+Composition follows scene function.
+
+Percentages are diagnostic bands, not writing formulas.
+
+```text
+SCENE COMPOSITION = how the scene distributes reader attention across dialogue, action, thought, place, object, body, silence, summary, and aftershock
+COMPONENT BALANCE = whether each component serves pressure, relation, information, cost, movement, or reader breath
+FAKE BALANCE = all components are present but none of them truly move the scene
+```
+
+A component is valid only if it changes pressure, relation, information, cost, movement, or reader breath. The agent must not add dialogue, action, inner thought, setting, object, sensory/body texture, silence, summary, or aftershock just to fill a ratio.
 
 ## Narrative beat escalation and aftershock model
 
@@ -158,7 +188,7 @@ Living-world repair must not invent major lore, custom, institution, ritual, fac
 ```text
 FIRST PASS = source surface + scene intake + diagnosis + one edit strategy + human-read prose pass
 GATES = targeted later checks, not the first writing method
-QUALITY = natural Vietnamese prose with scene pressure, beat escalation, character behavior, living world motion, rhythm, readable layout, and distinct cast life working together
+QUALITY = natural Vietnamese prose with scene pressure, component balance, beat escalation, character behavior, living world motion, rhythm, readable layout, and distinct cast life working together
 ```
 
 ## Chapter assembly and split model
@@ -207,15 +237,15 @@ proofread before readiness
 readiness before publication lock claim
 ```
 
-Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, narrative beat checks, chapter assembly checks, Vietnamese register checks, webnovel layout checks, character distinctiveness checks, living world checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
+Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, scene composition checks, narrative beat checks, chapter assembly checks, Vietnamese register checks, webnovel layout checks, character distinctiveness checks, living world checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
-Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
+Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types: rule, prompt, sample, role entry, design note, manifest update, changelog entry.
 
@@ -233,7 +263,7 @@ Do not add scripts, workflows, boards, reports, project management files, automa
 1000+ chapters = series-level navigation, not line edit
 ```
 
-Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, narrative beat escalation check, chapter assembly split check, living world community motion check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
+Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, scene composition balance check, narrative beat escalation check, chapter assembly split check, living world community motion check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
 
 ## Invariants
 
@@ -244,6 +274,9 @@ Prefer retrieval, exact source surface, context brief, first-pass editorial work
 - No source write without clear user request.
 - No readiness claim without evidence.
 - No prose edit from summary.
+- Composition follows scene function.
+- Percentages are diagnostic bands, not writing formulas.
+- A component must change pressure, relation, information, cost, movement, or reader breath.
 - A beat must change pressure, information, position, cost, or promise.
 - Interruption must leave inherited pressure.
 - Peak must leave result, cost, changed state, or promise/payoff movement.
