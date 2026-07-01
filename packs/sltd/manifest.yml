@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.31"
+version: "1.10.32"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
