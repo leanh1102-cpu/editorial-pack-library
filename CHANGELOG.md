@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.31
+
+- Added supernatural event residue and dread amplitude calibration.
+- Added supernatural_event_residue_check task and prompt.
+- Added supernatural event residue calibration samples.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.30
 
 - Added protagonist inquiry and clue-chain pressure protocol.
@@ -46,13 +53,3 @@
 
 - Added narrative beat escalation and aftershock rule.
 - Added narrative_beat_escalation_check task and prompt.
-
-## 1.10.21
-
-- Added living world and community motion rule.
-- Added living_world_community_motion_check task and prompt.
-
-## 1.10.20
-
-- Added character distinctiveness and iceberg profile rule.
-- Added character_distinctiveness_check task and prompt.
