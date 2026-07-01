@@ -19,11 +19,27 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Scene-first prose judgment
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_first_prose_judgment_gate.md
+rules/sltd_anti_ai_composite_failure_gate.md if synthetic/checklist risk remains
+rules/sltd_character_agency_anti_ooc_gate.md if character pressure is false
+rules/sltd_dynamic_range_cadence_gate.md if cadence is flat
+rules/sltd_role_boundary_contracts.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/scene_first_prose_judgment.md
+prompts/node_checkpoint.md
+```
+
 ### Anti-AI composite check
 
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_first_prose_judgment_gate.md if checklist-first risk appears
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md
@@ -137,6 +153,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_first_prose_judgment_gate.md if checklist-first risk appears
 rules/sltd_anti_ai_composite_failure_gate.md if composite AI risk appears
 rules/sltd_character_agency_anti_ooc_gate.md if character agency risk appears
 rules/sltd_context_window_strategy.md
@@ -152,6 +169,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md if scene is synthetic after multiple passes
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md if restraint or cadence risk appears
@@ -168,6 +186,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md if only digest/memory is available
+rules/sltd_scene_first_prose_judgment_gate.md if prose feels like checklist compliance
 rules/sltd_anti_ai_composite_failure_gate.md if scene is correct but synthetic
 rules/sltd_character_agency_anti_ooc_gate.md if plot seems to force character behavior
 rules/sltd_dynamic_range_cadence_gate.md if scene is clean but not sharp
@@ -184,6 +203,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_first_prose_judgment_gate.md if prose reads like rule performance
 rules/sltd_anti_ai_composite_failure_gate.md if prior passes created repair collage
 rules/sltd_character_agency_anti_ooc_gate.md if dialogue or action serves plot too neatly
 rules/sltd_dynamic_range_cadence_gate.md if line edit has flattened cadence
@@ -203,6 +223,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
@@ -252,6 +273,7 @@ rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_handoff_continuity_protocol.md
+rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md
@@ -265,6 +287,8 @@ samples/router_examples.md
 If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` before opening more files.
 
 If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
+
+If prose work starts to satisfy gates before reading the scene as lived Vietnamese prose, run `scene_first_prose_judgment.md`.
 
 If context is degrading or a task must move to another chat, run `session_handoff.md` with `sltd_handoff_continuity_protocol.md`.
 
