@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.22"
+version: "1.10.23"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -51,6 +51,7 @@ allowed_tasks:
   - character_distinctiveness_check
   - living_world_community_motion_check
   - narrative_beat_escalation_check
+  - scene_composition_balance_check
   - scene_first_prose_judgment
   - dynamic_range_check
   - character_agency_check
@@ -65,6 +66,7 @@ required_files:
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_story_momentum.md
   - rules/sltd_narrative_beat_escalation_aftershock_gate.md
+  - rules/sltd_scene_composition_component_balance_gate.md
   - rules/sltd_living_world_community_motion_gate.md
   - rules/sltd_character_distinctiveness_iceberg_gate.md
   - rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md
@@ -79,6 +81,7 @@ required_files:
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
   - prompts/narrative_beat_escalation_check.md
+  - prompts/scene_composition_balance_check.md
   - prompts/living_world_community_motion_check.md
   - prompts/character_distinctiveness_check.md
   - prompts/webnovel_paragraphing_layout_check.md
