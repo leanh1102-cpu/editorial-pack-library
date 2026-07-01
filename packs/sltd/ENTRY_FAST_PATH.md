@@ -17,18 +17,38 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Prose craft / style / material check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_prose_craft_style_material_gate.md
+samples/prose_craft_style_material_calibration.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+rules/sltd_style_rules.md
+rules/sltd_vietnamese_line_surgery.md if sentence-level craft is in scope
+rules/sltd_vietnamese_register_viet_dao_gate.md if register/style is in scope
+rules/sltd_scene_composition_component_balance_gate.md if component mix is in scope
+rules/sltd_narrative_beat_escalation_aftershock_gate.md if genre beat/cost/promise is in scope
+rules/sltd_living_world_community_motion_gate.md if material/world texture is in scope
+rules/sltd_character_distinctiveness_iceberg_gate.md if voice/character craft is in scope
+rules/sltd_role_boundary_contracts.md
+prompts/prose_craft_style_check.md
+prompts/node_checkpoint.md
+```
+
 ### Scene composition & component balance check
 
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_prose_craft_style_material_gate.md if craft move selection is in scope
 rules/sltd_scene_composition_component_balance_gate.md
 rules/sltd_first_pass_editorial_workflow.md if scene function is unclear
 rules/sltd_scene_first_prose_judgment_gate.md if checklist balance risk appears
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if fake balance comes from missing beat escalation
 rules/sltd_living_world_community_motion_gate.md if setting/living world is decorative
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if paragraphing creates false rhythm
-rules/sltd_role_boundary_contracts.md
 prompts/scene_composition_balance_check.md
 prompts/node_checkpoint.md
 ```
@@ -40,6 +60,7 @@ prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
 rules/sltd_story_momentum.md
+rules/sltd_prose_craft_style_material_gate.md if genre technique or craft move is in scope
 rules/sltd_scene_composition_component_balance_gate.md if component mix hides beat flatness
 rules/sltd_dynamic_range_cadence_gate.md if cadence rather than beat structure is the blocker
 rules/sltd_living_world_community_motion_gate.md if off-POV or butterfly trace is in scope
@@ -54,6 +75,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_living_world_community_motion_gate.md
+rules/sltd_prose_craft_style_material_gate.md if material layer or world-texture craft is in scope
 rules/sltd_scene_composition_component_balance_gate.md if setting ratio or component role is in scope
 rules/sltd_story_momentum.md
 rules/sltd_underreach_gate.md
@@ -69,6 +91,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_character_distinctiveness_iceberg_gate.md
+rules/sltd_prose_craft_style_material_gate.md if voice/body/iceberg craft move is in scope
 rules/sltd_scene_composition_component_balance_gate.md if dialogue/action/inner-thought balance affects cast life
 rules/sltd_character_agency_anti_ooc_gate.md if plot is forcing behavior
 rules/sltd_canon_guard.md if profile depends on canon or relation history
@@ -83,6 +106,8 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_prose_craft_style_material_gate.md if writing/editing technique, style, voice, genre, or material is in scope
+samples/prose_craft_style_material_calibration.md if craft calibration is needed
 rules/sltd_scene_composition_component_balance_gate.md if component mix or ratio is in scope
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat escalation, conflict peak, or aftershock is in scope
 rules/sltd_living_world_community_motion_gate.md if setting/community/world motion is in scope
@@ -102,6 +127,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_prose_craft_style_material_gate.md if craft/style/material drift affects packet quality
 rules/sltd_scene_composition_component_balance_gate.md if component balance affects scene/chapter read
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat map, promise/payoff, or off-POV conflict is in scope
 rules/sltd_chapter_assembly_split_control_gate.md if chapter length or reader unit is in scope
@@ -123,6 +149,8 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_prose_craft_style_material_gate.md if craft move selection is the underlying issue
+samples/prose_craft_style_material_calibration.md if a sample-guided move is needed
 rules/sltd_scene_composition_component_balance_gate.md if component mix is the underlying issue
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat flatness is the underlying issue
 rules/sltd_living_world_community_motion_gate.md if setting/community detail is the issue
@@ -139,6 +167,8 @@ prompts/node_checkpoint.md
 
 ```text
 rules/sltd_pack_healthcheck.md
+rules/sltd_prose_craft_style_material_gate.md
+samples/prose_craft_style_material_calibration.md
 rules/sltd_scene_composition_component_balance_gate.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
 rules/sltd_living_world_community_motion_gate.md
@@ -157,6 +187,8 @@ prompts/entry_healthcheck.md
 ## Rule
 
 If exact prose, current lock, readiness, rewrite, line edit, line surgery, copyedit, or proofread is requested and source surface is not exact, run `source_surface_check.md` first.
+
+If writing technique, editing technique, genre style, prose style, voice, material layer, or craft sample calibration is in scope, run `prose_craft_style_check.md`.
 
 If dialogue/action/blocking/inner thought/setting/object/sensory/silence/summary/aftershock ratio or component mix is in scope, run `scene_composition_balance_check.md`.
 
