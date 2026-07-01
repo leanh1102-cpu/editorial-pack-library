@@ -12,18 +12,18 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check living world and community motion
+## Check narrative beat escalation and aftershock
 
 Verify:
 
-- `rules/sltd_living_world_community_motion_gate.md` exists and is listed in manifest;
-- `prompts/living_world_community_motion_check.md` exists and is listed in manifest;
-- living_world_community_motion_check is listed in allowed_tasks;
-- living-world route ends with node checkpoint;
-- living-world route references source fidelity before patching;
-- the gate checks location, world layer, community activity, custom/habit/taboo, offscreen motion, butterfly trace, environment pushback, social consequence, world iceberg trace, and setting-as-backdrop risk;
-- the gate prevents setting-as-backdrop, world-pauses-for-POV, custom-as-decoration, scenery-as-mood-label, and lore replacing world life;
-- the gate does not authorize new canon, large worldbuilding, geography changes, or social-history invention.
+- `rules/sltd_narrative_beat_escalation_aftershock_gate.md` exists and is listed in manifest;
+- `prompts/narrative_beat_escalation_check.md` exists and is listed in manifest;
+- narrative_beat_escalation_check is listed in allowed_tasks;
+- narrative beat route ends with node checkpoint;
+- narrative beat route references source fidelity before patching;
+- the gate checks beat map, anchor point, pressure ladder, off-POV / parallel conflict, escalation step, interruption point, aftershock, peak/turn, result, cost ledger, promise/payoff, and uniform beat risk;
+- the gate prevents uniform beat rhythm, beat without escalation, anchorless conflict, interruption without aftershock, peak without result, false cliffhanger, and offscreen conflict as decoration;
+- the gate treats benchmark novels as mechanical checks only and does not authorize copying systems, motifs, worldview, or plot rhythm.
 
 ## Check routes
 
@@ -31,6 +31,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+narrative beat routes -> sltd_narrative_beat_escalation_aftershock_gate.md
 living world routes -> sltd_living_world_community_motion_gate.md
 first-pass routes -> sltd_first_pass_editorial_workflow.md
 chapter assembly routes -> sltd_chapter_assembly_split_control_gate.md
