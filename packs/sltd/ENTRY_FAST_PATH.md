@@ -19,6 +19,35 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Character distinctiveness & iceberg check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_character_distinctiveness_iceberg_gate.md
+rules/sltd_character_agency_anti_ooc_gate.md if plot is forcing behavior
+rules/sltd_canon_guard.md if profile depends on canon or relation history
+samples/dialogue_voice_calibration.md if voice collapse appears
+rules/sltd_role_boundary_contracts.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/character_distinctiveness_check.md
+prompts/node_checkpoint.md
+```
+
+### Character agency check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_character_agency_anti_ooc_gate.md
+rules/sltd_character_distinctiveness_iceberg_gate.md if character remains interchangeable after agency check
+rules/sltd_canon_guard.md
+rules/sltd_role_boundary_contracts.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/character_agency_check.md
+prompts/node_checkpoint.md
+```
+
 ### Webnovel paragraphing & layout check
 
 ```text
@@ -66,6 +95,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_character_distinctiveness_iceberg_gate.md if character profile target is unclear
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if paragraphing/layout target is unclear
 rules/sltd_vietnamese_register_viet_dao_gate.md if register target is unclear
 rules/sltd_scene_first_prose_judgment_gate.md
@@ -81,6 +111,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_scene_first_prose_judgment_gate.md
+rules/sltd_character_distinctiveness_iceberg_gate.md if characters read as scene functions
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if layout performs emotion or breaks reader breath
 rules/sltd_vietnamese_register_viet_dao_gate.md if Vietnamese register is miscalibrated
 rules/sltd_anti_ai_composite_failure_gate.md if synthetic/checklist risk remains
@@ -98,6 +129,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_scene_first_prose_judgment_gate.md if checklist-first risk appears
+rules/sltd_character_distinctiveness_iceberg_gate.md if cast reads flat or interchangeable
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if layout has AI signature
 rules/sltd_vietnamese_register_viet_dao_gate.md if prose smells translated or flat
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -106,33 +138,6 @@ rules/sltd_anti_ai_composite_failure_gate.md
 rules/sltd_role_boundary_contracts.md
 packs/sltd/AUTHOR_TASTE_EXAMPLES.md
 prompts/anti_ai_composite_check.md
-prompts/node_checkpoint.md
-```
-
-### Character agency check
-
-```text
-prompts/task_intake.md
-rules/sltd_source_fidelity_anti_compression.md
-rules/sltd_character_agency_anti_ooc_gate.md
-rules/sltd_canon_guard.md
-rules/sltd_role_boundary_contracts.md
-packs/sltd/AUTHOR_TASTE_EXAMPLES.md
-prompts/character_agency_check.md
-prompts/node_checkpoint.md
-```
-
-### Dynamic range check
-
-```text
-prompts/task_intake.md
-rules/sltd_source_fidelity_anti_compression.md
-rules/sltd_dynamic_range_cadence_gate.md
-rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if visible paragraph rhythm contributes to flat cadence
-rules/sltd_intensity_targets.md
-rules/sltd_intensity_rules.md
-packs/sltd/AUTHOR_TASTE_EXAMPLES.md
-prompts/dynamic_range_check.md
 prompts/node_checkpoint.md
 ```
 
@@ -155,6 +160,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_character_distinctiveness_iceberg_gate.md if character distinctiveness is in scope
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if paragraphing/layout is in scope
 rules/sltd_vietnamese_register_viet_dao_gate.md if Hán Việt / Viet Dao register is in scope
 rules/sltd_scene_first_prose_judgment_gate.md
@@ -176,6 +182,8 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_character_distinctiveness_iceberg_gate.md if voice/body/object signature is the issue
+samples/dialogue_voice_calibration.md if cast voice collapse appears
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if paragraphing/line breaks are the issue
 rules/sltd_vietnamese_register_viet_dao_gate.md if register/Hán Việt balance is the issue
 samples/viet_dao_prose_calibration.md if register patching is needed
@@ -201,6 +209,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_chapter_assembly_split_control_gate.md
+rules/sltd_character_distinctiveness_iceberg_gate.md if cast continuity or side-character function drifts between scenes
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if chapter surface flow or mobile fatigue is in scope
 rules/sltd_vietnamese_register_viet_dao_gate.md if register drift appears between scenes
 rules/sltd_first_pass_editorial_workflow.md if governing chapter pressure is unclear
@@ -215,6 +224,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_chapter_assembly_split_control_gate.md if chapter-level length or split risk appears
+rules/sltd_character_distinctiveness_iceberg_gate.md if cast texture or character continuity is in scope
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if layout rhythm affects reader experience
 rules/sltd_vietnamese_register_viet_dao_gate.md if register affects reader texture
 rules/sltd_first_pass_editorial_workflow.md if assessing first-pass quality
@@ -243,6 +253,7 @@ rules/sltd_first_pass_editorial_workflow.md
 rules/sltd_chapter_assembly_split_control_gate.md
 rules/sltd_vietnamese_register_viet_dao_gate.md
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md
+rules/sltd_character_distinctiveness_iceberg_gate.md
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -251,6 +262,7 @@ ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
 samples/viet_dao_prose_calibration.md
+samples/dialogue_voice_calibration.md
 ```
 
 ## Rule
@@ -260,6 +272,8 @@ If the task is unclear, run `task_intake.md` and `sltd_decision_safety.md` befor
 If the task asks for prose patch, line edit, line surgery, copyedit, proofread, rewrite, readiness, or lock and source surface is not exact, run `source_surface_check.md` before proceeding.
 
 If beginning a first serious rewrite, line edit, or scene repair, run `first_pass_editorial_workflow.md` before targeted gates.
+
+If characters feel skimmed, interchangeable, function-only, same-voiced, or lacking hidden life, run `character_distinctiveness_check.md`.
 
 If scene edits are being assembled into a chapter, or chapter length/reader unit may be overloaded, run `chapter_assembly_split_check.md`.
 
