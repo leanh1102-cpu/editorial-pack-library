@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.15
+
+- Added scene-first prose judgment gate.
+- Added scene_first_prose_judgment task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.14
 
 - Added anti-AI composite failure gate.
