@@ -1,10 +1,15 @@
 # Changelog
 
+## 1.10.22
+
+- Added narrative beat escalation and aftershock gate.
+- Added narrative_beat_escalation_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.21
 
 - Added living world and community motion gate.
 - Added living_world_community_motion_check task and prompt.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.20
 
