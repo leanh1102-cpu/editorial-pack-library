@@ -8,6 +8,8 @@ The pack helps the agent:
 
 - read the right source;
 - preserve exact source surface before editing;
+- keep Entry as a router, not a maze;
+- choose one primary route and cap secondary gates;
 - run a first-pass editorial workflow before targeted gates;
 - preserve scene transitions, skiptime process traces, and event-cluster continuity;
 - manage timeline, POV boundary, foreshadowing, folklore, and material threads;
@@ -30,7 +32,7 @@ The pack helps the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, entry route governance, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -43,6 +45,7 @@ boot_task
 source_preflight
 task_intake
 task_router
+entry route governance check when primary route, gate budget, or stop condition is unclear
 source surface check when exact source may be missing
 first-pass editorial workflow when beginning prose repair
 scene transition skiptime event cluster check when transitions, seams, skiptime, process trace, sensory/symbolic bridge, hard cut, object/material continuity, emotional continuity, or event cluster continuity is in scope
@@ -73,6 +76,16 @@ For each task, build a small working context:
 current source
 source surface status
 scope
+request type
+source requirement
+primary blocker
+primary route
+secondary gates allowed
+secondary gates used
+gate budget
+stop condition
+no-cascade check
+checklist-first risk
 local chapter or scene
 from scene / to scene
 seam type
@@ -107,70 +120,14 @@ craft move needed
 genre function
 style register
 voice target
-bad pattern
-preferred move
-overuse risk
-related gate
 composition profile
-dialogue ratio
-action / blocking ratio
-inner thought ratio
-setting / living world ratio
-object / clue ratio
-sensory / body ratio
-silence / pause ratio
-summary / transition ratio
-aftershock ratio
-dominant component
-missing component
-overused component
-fake balance risk
 beat map
 anchor point
 pressure ladder
-off-POV / parallel conflict
-interruption point
-aftershock
-peak / turn
-result
-cost ledger
 promise / payoff
-location
-world layer
-community activity
-custom / habit / taboo
-offscreen motion
-butterfly trace
-environment pushback
-social consequence
-world iceberg trace
+living world layer
 characters in scope
-character function
-voice signature
-body / gesture signature
-object / clothing signature
-private want / private fear
-concealment strategy
-iceberg trace
-interchangeability risk
-scene list
-length type and total length
-paragraph length map
-short-line density
-layout rhythm risk
 reader unit
-governing chapter pressure
-natural breakpoints
-first-pass edit layer
-edit strategy
-Vietnamese register target
-Hán Việt load
-Viet Dao balance
-governing scene pressure
-anti-AI composite risk
-character agency state
-cadence state
-relevant canon
 node ledger
 open loops
 ```
@@ -181,7 +138,22 @@ open loops
 SOURCE TEXT > DERIVED DIGEST > CHAT MEMORY
 ```
 
-Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, current seam, skiptime, event-cluster, timeline, POV, thread ledger, and lock verdicts require the right source surface.
+Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, current seam, skiptime, event-cluster, timeline, POV, thread ledger, route selection when current status is at stake, and lock verdicts require the right source surface.
+
+## Entry route governance and gate budget model
+
+Entry is a router, not a maze.
+
+```text
+PRIMARY ROUTE = the smallest route that directly answers the user's request
+SECONDARY GATE = a dependent check added only when the primary route exposes a real blocker
+GATE BUDGET = the maximum number of gates allowed before the task must stop, report, or ask for source/scope
+STOP CONDITION = the point where enough evidence, verdict, or rewrite output has been produced
+GATE CASCADE = running every related gate because it is available rather than required
+CHECKLIST-FIRST REPAIR = editing to satisfy gates before reading the scene as lived prose
+```
+
+The agent must choose one primary route, add secondary gates only when evidence requires them, and stop when the answer, patch, or blocker is complete. If three or more gates seem necessary, create a context brief or prioritized node ledger instead of running a cascade.
 
 ## Scene transition, skiptime, and event cluster continuity model
 
@@ -228,9 +200,7 @@ The agent must select one main craft move before patching and must not stack mov
 
 ## Scene composition and component balance model
 
-Composition follows scene function.
-
-Percentages are diagnostic bands, not writing formulas.
+Composition follows scene function. Percentages are diagnostic bands, not writing formulas.
 
 ```text
 SCENE COMPOSITION = how the scene distributes reader attention across dialogue, action, thought, place, object, body, silence, summary, and aftershock
@@ -264,8 +234,6 @@ WORLD ICEBERG = social rules, old fears, habits, and taboos carried by behavior 
 ENVIRONMENT PUSHBACK = space, weather, animal, object, crowd, road, door, stove, market, field, or forest changing action or cost
 ```
 
-A location is not ready because it is described. A custom is not ready because it is named. A community is not ready because people appear as witnesses.
-
 Living-world repair must not invent major lore, custom, institution, ritual, faction, village history, canon geography, or social system. Missing evidence becomes a world-motion gap, not new canon.
 
 ## First-pass editorial workflow model
@@ -273,7 +241,7 @@ Living-world repair must not invent major lore, custom, institution, ritual, fac
 ```text
 FIRST PASS = source surface + scene intake + diagnosis + one edit strategy + human-read prose pass
 GATES = targeted later checks, not the first writing method
-QUALITY = natural Vietnamese prose with source-safe seam and thread management, scene pressure, craft move discipline, component balance, beat escalation, character behavior, living world motion, rhythm, readable layout, and distinct cast life working together
+QUALITY = natural Vietnamese prose with route discipline, source-safe seam and thread management, scene pressure, craft move discipline, component balance, beat escalation, character behavior, living world motion, rhythm, readable layout, and distinct cast life working together
 ```
 
 ## Chapter assembly and split model
@@ -322,15 +290,15 @@ proofread before readiness
 readiness before publication lock claim
 ```
 
-Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, scene transition/skiptime/event-cluster checks, timeline/POV/thread checks, prose craft checks, scene composition checks, narrative beat checks, chapter assembly checks, Vietnamese register checks, webnovel layout checks, character distinctiveness checks, living world checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
+Review modes are lenses, not roles. Learned taste, calibration, route governance, first-pass workflow, transition/thread/prose/composition/beat/world/character/register/layout gates, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
-Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
+Check manifest version, required files, allowed tasks, route coverage, source fidelity, entry route governance/gate budget, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, entry route governance/gate budget, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition/component balance, narrative beat escalation/aftershock, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, living world/community motion, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types: rule, prompt, sample, role entry, design note, manifest update, changelog entry.
 
@@ -348,7 +316,7 @@ Do not add scripts, workflows, boards, reports, project management files, automa
 1000+ chapters = series-level navigation, not line edit
 ```
 
-Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, scene transition skiptime event cluster check, timeline POV foreshadowing folklore check, prose craft style check, scene composition balance check, narrative beat escalation check, chapter assembly split check, living world community motion check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
+Prefer retrieval, exact source surface, context brief, entry route governance check, first-pass editorial workflow, scene transition skiptime event cluster check, timeline POV foreshadowing folklore check, prose craft style check, scene composition balance check, narrative beat escalation check, chapter assembly split check, living world community motion check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
 
 ## Invariants
 
@@ -359,6 +327,12 @@ Prefer retrieval, exact source surface, context brief, first-pass editorial work
 - No source write without clear user request.
 - No readiness claim without evidence.
 - No prose edit from summary.
+- Entry is a router, not a maze.
+- Choose one primary route before adding secondary gates.
+- Secondary gates require evidence, not adjacency.
+- Stop when the answer, blocker, patch, or budget is complete.
+- No gate cascade.
+- No checklist-first prose repair.
 - A transition must carry pressure, information, cost, time, POV access, material state, or aftershock.
 - Skiptime must leave process trace.
 - Sensory or symbolic bridge must change continuity, not just mood.
@@ -384,5 +358,4 @@ Prefer retrieval, exact source surface, context brief, first-pass editorial work
 - Hán Việt is controlled, not purged and not allowed to sprawl.
 - Viet Dao prose must stay anchored in Vietnamese life.
 - Characters are not replaceable scene functions.
-- No checklist-first prose repair.
 - Split large work by node.
