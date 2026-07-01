@@ -36,6 +36,19 @@ Verify:
 - exact OLD is required before OLD/NEW patch;
 - missing source surface downgrades to map-level review, packet risk scan, or source request.
 
+## Check anti-AI composite
+
+Verify:
+
+- `rules/sltd_anti_ai_composite_failure_gate.md` exists and is listed in manifest;
+- `prompts/anti_ai_composite_check.md` exists and is listed in manifest;
+- anti_ai_composite_check is listed in allowed_tasks;
+- anti-AI composite route ends with node checkpoint;
+- anti-AI composite route references source fidelity before patching;
+- anti-AI composite gate checks scene-card visibility, object force, dialogue duty, narrator voice, consequence trace, repair collage, false human texture, and readiness conflict;
+- anti-AI composite gate prevents adding more texture to hide synthetic structure;
+- anti-AI composite gate does not authorize canon invention or readiness claims from green sub-passes alone.
+
 ## Check character agency
 
 Verify:
@@ -152,6 +165,7 @@ Verify:
 - iteration routes reference `rules/sltd_agentic_iteration_loop.md`;
 - calibration routes reference `rules/sltd_calibration_discipline.md`;
 - source-surface routes reference `rules/sltd_source_fidelity_anti_compression.md`;
+- anti-AI composite routes reference `rules/sltd_anti_ai_composite_failure_gate.md`;
 - character agency routes reference `rules/sltd_character_agency_anti_ooc_gate.md`;
 - dynamic range routes reference `rules/sltd_dynamic_range_cadence_gate.md`;
 - handoff routes reference `rules/sltd_handoff_continuity_protocol.md`.
@@ -163,7 +177,7 @@ Verify:
 - each active editorial role has start condition, allowed actions, must-not-do, done criteria, stop condition, and handoff;
 - later roles do not overwrite earlier-layer blockers;
 - review modes remain lenses, not roles;
-- learned taste, calibration, character agency checks, and dynamic range checks do not override current source, canon, evidence, or human lock.
+- learned taste, calibration, anti-AI composite checks, character agency checks, and dynamic range checks do not override current source, canon, evidence, or human lock.
 
 ## Check orphan risk
 
@@ -178,6 +192,7 @@ Mark a file as possible orphan when:
 - an iteration file exists but is missing from manifest or route;
 - a calibration file exists but is missing from manifest or route;
 - a source-surface file exists but is missing from manifest or route;
+- an anti-AI composite file exists but is missing from manifest or route;
 - a character-agency file exists but is missing from manifest or route;
 - a dynamic range file exists but is missing from manifest or route;
 - a handoff-continuity file exists but is missing from manifest or route.
