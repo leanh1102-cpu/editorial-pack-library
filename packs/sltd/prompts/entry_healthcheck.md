@@ -16,6 +16,7 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_agentic_iteration_loop.md
 rules/sltd_calibration_discipline.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_composition_component_balance_gate.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
 rules/sltd_living_world_community_motion_gate.md
 rules/sltd_first_pass_editorial_workflow.md
@@ -29,6 +30,7 @@ rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
+prompts/scene_composition_balance_check.md
 prompts/narrative_beat_escalation_check.md
 prompts/living_world_community_motion_check.md
 prompts/first_pass_editorial_workflow.md
@@ -55,6 +57,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+SCENE COMPOSITION BALANCE CHECK:
 NARRATIVE BEAT ESCALATION CHECK:
 LIVING WORLD COMMUNITY MOTION CHECK:
 FIRST-PASS EDITORIAL WORKFLOW CHECK:
