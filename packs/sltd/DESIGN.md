@@ -12,6 +12,7 @@ The pack helps the agent:
 - control chapter assembly and split risk after scene edits;
 - calibrate Vietnamese register and Viet Dao prose;
 - control webnovel paragraphing, layout rhythm, and mobile readability;
+- preserve character distinctiveness and iceberg profiles;
 - judge the scene before using checklists;
 - detect composite AI failure after many correct-looking passes;
 - preserve character agency;
@@ -23,7 +24,7 @@ The pack helps the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, first-pass workflow, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -41,6 +42,7 @@ first-pass editorial workflow when beginning prose repair
 chapter assembly split check when scene edits become a chapter or reader unit is overloaded
 Vietnamese register check when Hán Việt, translated-Chinese syntax, or Viet Dao balance is in scope
 webnovel paragraphing layout check when line breaks, paragraph rhythm, or mobile readability is in scope
+character distinctiveness check when cast voice, body, habit, relation, or iceberg profile is in scope
 scene-first prose judgment when checklist-first risk appears
 anti-AI composite check when synthetic/checklist risk appears
 character agency check when OOC/OCC risk appears
@@ -60,6 +62,15 @@ current source
 source surface status
 scope
 local chapter or scene
+characters in scope
+character function
+voice signature
+body / gesture signature
+object / clothing signature
+private want / private fear
+concealment strategy
+iceberg trace
+interchangeability risk
 scene list
 length type and total length
 paragraph length map
@@ -96,7 +107,7 @@ Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, a
 ```text
 FIRST PASS = source surface + scene intake + diagnosis + one edit strategy + human-read prose pass
 GATES = targeted later checks, not the first writing method
-QUALITY = natural Vietnamese prose with scene pressure, character behavior, rhythm, and readable layout working together
+QUALITY = natural Vietnamese prose with scene pressure, character behavior, rhythm, readable layout, and distinct cast life working together
 ```
 
 ## Chapter assembly and split model
@@ -121,12 +132,25 @@ Paragraph is reader breath, not decoration.
 
 Line break is a structural signal, not artificial emphasis.
 
-The agent must avoid two extremes:
+The agent must avoid both choppy short-line overuse / AI layout signature and wall text that exhausts mobile readers.
 
-- choppy short-line overuse, one-sentence paragraph abuse, and AI layout signature;
-- wall text that exhausts mobile readers.
+## Character distinctiveness and iceberg model
 
-Paragraphing should follow speaker change, action shift, focus shift, turn, interruption, earned aftershock, scene beat, and mobile breath. One-sentence paragraphs are emphasis tools, not the default webnovel style.
+Agency is not the same as distinctiveness.
+
+Character Agency asks whether plot is forcing behavior. Character Distinctiveness asks whether the person remains themselves beyond the scene function.
+
+```text
+CHARACTER DISTINCTIVENESS = voice + body + habit + relation + concealment + private pressure + visible trace
+ICEBERG PROFILE = what the character does not say but carries into behavior
+SAFE CHARACTER = scene function passes through a specific person, not a replaceable name
+```
+
+A character must not exist only as the one who asks, blocks, explains, witnesses, discovers, or moves the scene to the next beat.
+
+If two names can be swapped without changing dialogue, gesture, relation pressure, object handling, or cost, mark character flattening.
+
+This model must not invent trauma, backstory, hidden motive, symbol, title, or canon relation. Missing evidence becomes a profile gap, not new canon.
 
 ## Scene-first prose judgment model
 
@@ -158,15 +182,15 @@ proofread before readiness
 readiness before publication lock claim
 ```
 
-Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, chapter assembly checks, Vietnamese register checks, webnovel layout checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
+Review modes are lenses, not roles. Learned taste, calibration, first-pass workflow, chapter assembly checks, Vietnamese register checks, webnovel layout checks, character distinctiveness checks, scene-first judgment, anti-AI composite checks, character agency checks, and dynamic range checks guide safe edits; they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
-Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
+Check manifest version, required files, allowed tasks, route coverage, source fidelity, first-pass workflow, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, scene-first judgment, anti-AI composite, character agency, dynamic range, role boundary, iteration, calibration, handoff continuity, evidence, orphan risk, and changelog.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, first-pass workflow, chapter assembly/split control, Vietnamese register/Viet Dao calibration, webnovel paragraphing/layout rhythm, character distinctiveness/iceberg profiles, scene-first judgment, anti-AI composite checks, character agency, dynamic range, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types: rule, prompt, sample, role entry, design note, manifest update, changelog entry.
 
@@ -184,7 +208,7 @@ Do not add scripts, workflows, boards, reports, project management files, automa
 1000+ chapters = series-level navigation, not line edit
 ```
 
-Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, chapter assembly split check, Vietnamese register check, webnovel paragraphing layout check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
+Prefer retrieval, exact source surface, context brief, first-pass editorial workflow, chapter assembly split check, Vietnamese register check, webnovel paragraphing layout check, character distinctiveness check, scene-first prose judgment, anti-AI composite check, character agency check, dynamic range check, node checkpoint, and handoff over trying to remember everything.
 
 ## Invariants
 
@@ -200,5 +224,7 @@ Prefer retrieval, exact source surface, context brief, first-pass editorial work
 - Line break is structural, not artificial emphasis.
 - Hán Việt is controlled, not purged and not allowed to sprawl.
 - Viet Dao prose must stay anchored in Vietnamese life.
+- Characters are not replaceable scene functions.
+- Missing character depth is marked as profile gap, not invented.
 - No checklist-first prose repair.
 - Split large work by node.
