@@ -19,6 +19,20 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Anti-AI composite check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_character_agency_anti_ooc_gate.md
+rules/sltd_dynamic_range_cadence_gate.md
+rules/sltd_anti_ai_composite_failure_gate.md
+rules/sltd_role_boundary_contracts.md
+packs/sltd/AUTHOR_TASTE_EXAMPLES.md
+prompts/anti_ai_composite_check.md
+prompts/node_checkpoint.md
+```
+
 ### Character agency check
 
 ```text
@@ -123,6 +137,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_anti_ai_composite_failure_gate.md if composite AI risk appears
 rules/sltd_character_agency_anti_ooc_gate.md if character agency risk appears
 rules/sltd_context_window_strategy.md
 prompts/context_brief.md
@@ -137,6 +152,7 @@ prompts/result_report.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_anti_ai_composite_failure_gate.md if scene is synthetic after multiple passes
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md if restraint or cadence risk appears
 rules/sltd_editorial_hooks.md
@@ -152,6 +168,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md if only digest/memory is available
+rules/sltd_anti_ai_composite_failure_gate.md if scene is correct but synthetic
 rules/sltd_character_agency_anti_ooc_gate.md if plot seems to force character behavior
 rules/sltd_dynamic_range_cadence_gate.md if scene is clean but not sharp
 rules/sltd_underreach_gate.md
@@ -167,6 +184,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_anti_ai_composite_failure_gate.md if prior passes created repair collage
 rules/sltd_character_agency_anti_ooc_gate.md if dialogue or action serves plot too neatly
 rules/sltd_dynamic_range_cadence_gate.md if line edit has flattened cadence
 rules/sltd_vietnamese_line_surgery.md
@@ -185,6 +203,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_anti_ai_composite_failure_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_webnovel_momentum_benchmark.md
@@ -235,6 +254,7 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_handoff_continuity_protocol.md
 rules/sltd_dynamic_range_cadence_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
+rules/sltd_anti_ai_composite_failure_gate.md
 ROLE_ENTRY_INDEX.md
 prompts/entry_healthcheck.md
 samples/router_examples.md
@@ -251,3 +271,5 @@ If context is degrading or a task must move to another chat, run `session_handof
 If restraint, moderation, line edit, or anti-melodrama risks flattening scene cadence, run `dynamic_range_check.md`.
 
 If a character appears to serve the plot, clue, scene card, or explanation rather than acting from pressure, run `character_agency_check.md`.
+
+If a scene or chapter has many correct-looking passes but still reads arranged, synthetic, or over-polished, run `anti_ai_composite_check.md`.
