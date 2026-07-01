@@ -17,6 +17,22 @@ packs/sltd/rules/sltd_decision_safety.md
 
 ## Fast paths
 
+### Scene composition & component balance check
+
+```text
+prompts/task_intake.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_composition_component_balance_gate.md
+rules/sltd_first_pass_editorial_workflow.md if scene function is unclear
+rules/sltd_scene_first_prose_judgment_gate.md if checklist balance risk appears
+rules/sltd_narrative_beat_escalation_aftershock_gate.md if fake balance comes from missing beat escalation
+rules/sltd_living_world_community_motion_gate.md if setting/living world is decorative
+rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md if paragraphing creates false rhythm
+rules/sltd_role_boundary_contracts.md
+prompts/scene_composition_balance_check.md
+prompts/node_checkpoint.md
+```
+
 ### Narrative beat escalation & aftershock check
 
 ```text
@@ -24,10 +40,10 @@ prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
 rules/sltd_story_momentum.md
+rules/sltd_scene_composition_component_balance_gate.md if component mix hides beat flatness
 rules/sltd_dynamic_range_cadence_gate.md if cadence rather than beat structure is the blocker
 rules/sltd_living_world_community_motion_gate.md if off-POV or butterfly trace is in scope
 rules/sltd_character_agency_anti_ooc_gate.md if beat depends on forced character choice
-rules/sltd_role_boundary_contracts.md
 prompts/narrative_beat_escalation_check.md
 prompts/node_checkpoint.md
 ```
@@ -38,6 +54,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_living_world_community_motion_gate.md
+rules/sltd_scene_composition_component_balance_gate.md if setting ratio or component role is in scope
 rules/sltd_story_momentum.md
 rules/sltd_underreach_gate.md
 rules/sltd_canon_guard.md if repair depends on geography, custom, social structure, or history
@@ -52,6 +69,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_character_distinctiveness_iceberg_gate.md
+rules/sltd_scene_composition_component_balance_gate.md if dialogue/action/inner-thought balance affects cast life
 rules/sltd_character_agency_anti_ooc_gate.md if plot is forcing behavior
 rules/sltd_canon_guard.md if profile depends on canon or relation history
 samples/dialogue_voice_calibration.md if voice collapse appears
@@ -65,6 +83,7 @@ prompts/node_checkpoint.md
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_first_pass_editorial_workflow.md
+rules/sltd_scene_composition_component_balance_gate.md if component mix or ratio is in scope
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat escalation, conflict peak, or aftershock is in scope
 rules/sltd_living_world_community_motion_gate.md if setting/community/world motion is in scope
 rules/sltd_character_distinctiveness_iceberg_gate.md if character distinctiveness is in scope
@@ -83,6 +102,7 @@ prompts/node_checkpoint.md
 ```text
 prompts/task_intake.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_composition_component_balance_gate.md if component balance affects scene/chapter read
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat map, promise/payoff, or off-POV conflict is in scope
 rules/sltd_chapter_assembly_split_control_gate.md if chapter length or reader unit is in scope
 rules/sltd_living_world_community_motion_gate.md if world/community motion or social texture is in scope
@@ -103,6 +123,7 @@ prompts/task_intake.md
 ROLE_ENTRY_INDEX.md
 roles/line_surgery.md
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_scene_composition_component_balance_gate.md if component mix is the underlying issue
 rules/sltd_narrative_beat_escalation_aftershock_gate.md if beat flatness is the underlying issue
 rules/sltd_living_world_community_motion_gate.md if setting/community detail is the issue
 rules/sltd_character_distinctiveness_iceberg_gate.md if voice/body/object signature is the issue
@@ -118,6 +139,7 @@ prompts/node_checkpoint.md
 
 ```text
 rules/sltd_pack_healthcheck.md
+rules/sltd_scene_composition_component_balance_gate.md
 rules/sltd_narrative_beat_escalation_aftershock_gate.md
 rules/sltd_living_world_community_motion_gate.md
 rules/sltd_character_distinctiveness_iceberg_gate.md
@@ -135,6 +157,8 @@ prompts/entry_healthcheck.md
 ## Rule
 
 If exact prose, current lock, readiness, rewrite, line edit, line surgery, copyedit, or proofread is requested and source surface is not exact, run `source_surface_check.md` first.
+
+If dialogue/action/blocking/inner thought/setting/object/sensory/silence/summary/aftershock ratio or component mix is in scope, run `scene_composition_balance_check.md`.
 
 If beat rhythm, anchor point, escalation, interruption, aftershock, peak/result, off-POV conflict, parallel event, or promise/payoff is in scope, run `narrative_beat_escalation_check.md`.
 
