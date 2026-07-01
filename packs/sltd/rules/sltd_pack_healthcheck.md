@@ -12,21 +12,19 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check prose craft, style, and material calibration
+## Check timeline, POV, foreshadowing, and folklore threads
 
 Verify:
 
-- `rules/sltd_prose_craft_style_material_gate.md` exists and is listed in manifest;
-- `prompts/prose_craft_style_check.md` exists and is listed in manifest;
-- `samples/prose_craft_style_material_calibration.md` exists and is listed in manifest;
-- prose_craft_style_check is listed in allowed_tasks;
-- prose craft route ends with node checkpoint;
-- prose craft route references source fidelity before patching;
-- the gate treats samples as calibration, not canon and not a voice to imitate;
-- the gate requires one selected craft move before patching;
-- the gate checks prose technique, dialogue technique, character technique, living world material, genre technique, register/style, rhythm/layout, and edit decision;
-- the gate detects style-sample mimicry, craft move as decoration, material layer thinness, and checklist craft stacking;
-- the gate does not authorize copying benchmark novels, adding canon, or stacking craft moves to hide structure.
+- `rules/sltd_timeline_pov_foreshadowing_folklore_gate.md` exists and is listed in manifest;
+- `prompts/timeline_pov_foreshadowing_folklore_check.md` exists and is listed in manifest;
+- timeline_pov_foreshadowing_folklore_check is listed in allowed_tasks;
+- timeline/POV route ends with node checkpoint;
+- timeline/POV route references source fidelity before patching;
+- the gate checks time position, event order, elapsed time, consequence heat, POV holder, POV knowledge boundary, reader knowledge, off-POV access, foreshadowing ledger, folklore thread, material layer, planting density, chapter thread status, and packet continuity risk;
+- the gate enforces planted / paid / held / forgotten-risk ledger discipline;
+- the gate prevents POV boundary leak, unearned payoff, folklore as lore dump, folklore as color only, and material thread decoration;
+- the gate does not authorize new canon, new folklore, new clues, new payoff, changed event order, or early hidden-truth reveal.
 
 ## Check routes
 
@@ -34,6 +32,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
+timeline POV routes -> sltd_timeline_pov_foreshadowing_folklore_gate.md
 prose craft routes -> sltd_prose_craft_style_material_gate.md
 scene composition routes -> sltd_scene_composition_component_balance_gate.md
 narrative beat routes -> sltd_narrative_beat_escalation_aftershock_gate.md
