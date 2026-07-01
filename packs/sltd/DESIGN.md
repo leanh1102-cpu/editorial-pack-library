@@ -12,6 +12,7 @@ It should help the agent:
 
 - read the right source;
 - preserve exact source surface before editing;
+- preserve character agency;
 - preserve dynamic range and cadence;
 - choose the right skill;
 - enter the right role;
@@ -28,7 +29,7 @@ It should help the agent:
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, dynamic range gates, handoff continuity
+GitHub = editorial rules, skills, router, evidence discipline, role entries, role boundaries, iteration loop, calibration cases, source fidelity gates, character agency gates, dynamic range gates, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -53,6 +54,7 @@ The pack is split into:
 - identity files;
 - source discipline;
 - source fidelity and anti-compression gates;
+- character agency and anti-OOC gates;
 - dynamic range and cadence gates;
 - task router;
 - competency map;
@@ -76,6 +78,7 @@ source_preflight
 task_intake
 task_router
 source surface check when exact source may be missing
+character agency check when OOC/OCC risk appears
 dynamic range check when cadence risk appears
 role entry card when a role is named
 decision_safety
@@ -102,6 +105,7 @@ source surface status
 scope
 local chapter or scene
 scene function
+character agency state
 cadence state
 relevant canon
 active skills
@@ -129,6 +133,26 @@ Line edit, line surgery, copyedit, proofread, rewrite, exact OLD/NEW patch, read
 Digest may guide navigation and prioritization. Digest must not be used as prose surface or current-state evidence.
 
 If source surface is missing, the agent must safely downgrade to map-level review, packet risk scan, or source request.
+
+## Character agency model
+
+Characters must not become tools for the outline, scene card, clue delivery, or explanation duty.
+
+A scene preserves agency when plot function is reached through character pressure:
+
+```text
+want
+fear
+knowledge limit
+avoidance or misread
+pressure
+choice
+visible cost
+```
+
+If a character only says, notices, or decides something because the scene needs the next beat, run Character Agency Check before line edit or readiness.
+
+This gate must not add canon, invent motive, or change locked outcome.
 
 ## Dynamic range model
 
@@ -182,7 +206,7 @@ It must not run indefinitely, create background automation, write to Notion/GitH
 
 Calibration cases are accepted or rejected examples used to improve future execution.
 
-They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, wrong role routing, and over-restraint.
+They help the agent recognize repeated prose smell, dialogue voice collapse, underreach, false readiness, unsafe canon invention, wrong role routing, over-restraint, and false character agency.
 
 Calibration is not canon, not current manuscript, and not publication evidence.
 
@@ -261,7 +285,7 @@ If a later role discovers an earlier-layer failure, stop and hand back.
 
 Review modes are lenses, not roles.
 
-Learned taste, calibration, dynamic range checks, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
+Learned taste, calibration, character agency checks, dynamic range checks, and future model improvements may guide safe edits, but they do not override source, canon, evidence, human pass, or publication lock.
 
 ## Healthcheck discipline
 
@@ -274,6 +298,7 @@ Check:
 - allowed tasks;
 - route coverage;
 - source fidelity coverage;
+- character agency coverage;
 - dynamic range coverage;
 - role entry coverage;
 - role boundary coverage;
@@ -288,7 +313,7 @@ If pack health fails, patch the entry before adding skills.
 
 ## Extension policy
 
-Add new files only when they improve editorial reading, rewriting, routing, source fidelity, dynamic range, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
+Add new files only when they improve editorial reading, rewriting, routing, source fidelity, character agency, dynamic range, role entries, role boundaries, controlled iteration, calibration, handoff continuity, evidence, context handling, or pack health.
 
 Allowed file types:
 
@@ -314,6 +339,7 @@ The SLTD pack must not become:
 - a self-running agent loop;
 - a place where AI invents canon;
 - a place where AI edits prose from summary;
+- a place where AI forces characters to serve scene cards;
 - a place where AI flattens every scene through over-restraint;
 - a place where AI treats handoff as source truth;
 - a place where AI silently updates Notion.
@@ -332,7 +358,7 @@ For a very long series, operate by slice:
 1000+ chapters = series-level navigation, not line edit
 ```
 
-The agent should always prefer retrieval, exact source surface, context brief, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
+The agent should always prefer retrieval, exact source surface, context brief, character agency check, dynamic range check, node checkpoint, role entry, role handoff, iteration checkpoint, calibration case, continuity handoff, and session handoff over trying to remember everything.
 
 ## Invariants
 
@@ -345,6 +371,7 @@ These rules should remain stable across versions:
 - AI does not update Notion without a clear write request.
 - AI does not claim readiness without evidence.
 - AI does not edit prose from summary.
+- AI does not force character behavior only to satisfy scene function.
 - AI does not flatten scene cadence through over-restraint.
 - AI does not treat handoff as source truth.
 - AI does not loop indefinitely.
