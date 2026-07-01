@@ -11,10 +11,11 @@ boot_task -> source_preflight -> task_intake -> decision_safety
 Routes:
 
 ```text
+vietnamese register check: sltd_source_fidelity_anti_compression -> sltd_vietnamese_register_viet_dao_gate -> vietnamese_register_check -> node_checkpoint
 chapter assembly split check: sltd_source_fidelity_anti_compression -> sltd_chapter_assembly_split_control_gate -> chapter_assembly_split_check -> node_checkpoint
-first-pass editorial workflow: sltd_source_fidelity_anti_compression -> sltd_first_pass_editorial_workflow -> first_pass_editorial_workflow -> node_checkpoint
-scene-first prose judgment: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate -> scene_first_prose_judgment -> node_checkpoint
-anti-AI composite check: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate if checklist-first risk appears -> sltd_anti_ai_composite_failure_gate -> anti_ai_composite_check -> node_checkpoint
+first-pass editorial workflow: sltd_source_fidelity_anti_compression -> sltd_first_pass_editorial_workflow -> vietnamese_register_check if register target is unclear -> first_pass_editorial_workflow -> node_checkpoint
+scene-first prose judgment: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate -> vietnamese_register_check if register is miscalibrated -> scene_first_prose_judgment -> node_checkpoint
+anti-AI composite check: sltd_source_fidelity_anti_compression -> sltd_scene_first_prose_judgment_gate if checklist-first risk appears -> sltd_vietnamese_register_viet_dao_gate if translated/flat register risk appears -> sltd_anti_ai_composite_failure_gate -> anti_ai_composite_check -> node_checkpoint
 character agency check: sltd_source_fidelity_anti_compression -> sltd_character_agency_anti_ooc_gate -> character_agency_check -> node_checkpoint
 dynamic range check: sltd_source_fidelity_anti_compression -> sltd_dynamic_range_cadence_gate -> dynamic_range_check -> node_checkpoint
 handoff continuity: sltd_handoff_continuity_protocol -> session_handoff -> node_checkpoint
@@ -25,20 +26,20 @@ agentic iteration: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_c
 iteration checkpoint: sltd_agentic_iteration_loop -> iteration_checkpoint -> node_checkpoint
 role entry: ROLE_ENTRY_INDEX -> roles/<requested_role>.md -> sltd_role_boundary_contracts -> node_checkpoint
 chapter status: source_surface_check if current source unclear -> chapter_assembly_split_check if chapter length/reader unit is in scope -> chapter_readiness_check -> mindmap_review -> node_checkpoint
-packet review: sltd_source_fidelity_anti_compression -> chapter_assembly_split_check if chapter split risk appears -> first_pass_editorial_workflow if first edit is requested -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if synthetic/checklist risk appears -> character_agency_check if agency risk appears -> context_brief -> audit_story_arc -> mindmap_review -> editorial_director_review -> node_checkpoint
+packet review: sltd_source_fidelity_anti_compression -> chapter_assembly_split_check if chapter split risk appears -> vietnamese_register_check if register drift appears -> first_pass_editorial_workflow if first edit is requested -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if synthetic/checklist risk appears -> character_agency_check if agency risk appears -> context_brief -> audit_story_arc -> mindmap_review -> editorial_director_review -> node_checkpoint
 repair priority: editorial_director -> editorial_director_review -> node_checkpoint
-underreached scene: source_surface_check if exact scene missing -> first_pass_editorial_workflow for initial repair -> scene_first_prose_judgment if prose feels like checklist compliance -> anti_ai_composite_check if scene is correct but synthetic -> character_agency_check if plot forces behavior -> dynamic_range_check if clean but not sharp -> intensity_editor -> intensity_pass -> sltd_underreach_gate -> node_checkpoint
-scene rewrite: source_surface_check -> first_pass_editorial_workflow -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if multiple-pass AI risk appears -> character_agency_check if OOC/OCC risk appears -> dynamic_range_check if restraint/cadence risk appears -> canon_guard -> sltd_editorial_hooks -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
-chapter assembly after scene edits: source_surface_check -> chapter_assembly_split_check -> anti_ai_composite_check if assembled chapter reads synthetic -> publishing_readiness_reviewer if split affects readiness -> node_checkpoint
-line edit: source_surface_check -> first_pass_editorial_workflow if first serious edit -> scene_first_prose_judgment if prose reads like rule performance -> anti_ai_composite_check if repair collage risk appears -> character_agency_check if dialogue/action serves plot too neatly -> dynamic_range_check if cadence flattened -> vietnamese_line_editor -> sltd_canon_guard -> vietnamese_prose rules -> sltd_copyedit_proofread
-line surgery: source_surface_check -> first_pass_editorial_workflow if first serious edit -> scene_first_prose_judgment if prose reads like rule performance -> anti_ai_composite_check if repair collage risk appears -> character_agency_check if dialogue/action serves plot too neatly -> dynamic_range_check if cadence flattened -> line_surgery -> sltd_vietnamese_line_surgery -> line_surgery_pass -> node_checkpoint
+underreached scene: source_surface_check if exact scene missing -> first_pass_editorial_workflow for initial repair -> vietnamese_register_check if prose is Chinese-translated, Hán Việt-heavy, or modern-flat -> scene_first_prose_judgment if prose feels like checklist compliance -> anti_ai_composite_check if scene is correct but synthetic -> character_agency_check if plot forces behavior -> dynamic_range_check if clean but not sharp -> intensity_editor -> intensity_pass -> sltd_underreach_gate -> node_checkpoint
+scene rewrite: source_surface_check -> first_pass_editorial_workflow -> vietnamese_register_check if register/Hán Việt/Viet Dao is in scope -> scene_first_prose_judgment if checklist-first risk appears -> anti_ai_composite_check if multiple-pass AI risk appears -> character_agency_check if OOC/OCC risk appears -> dynamic_range_check if restraint/cadence risk appears -> canon_guard -> sltd_editorial_hooks -> rewrite_scene -> multi_reviewer_pass -> node_checkpoint
+chapter assembly after scene edits: source_surface_check -> chapter_assembly_split_check -> vietnamese_register_check if register drifts between scenes -> anti_ai_composite_check if assembled chapter reads synthetic -> publishing_readiness_reviewer if split affects readiness -> node_checkpoint
+line edit: source_surface_check -> vietnamese_register_check if Hán Việt/register balance is the issue -> first_pass_editorial_workflow if first serious edit -> scene_first_prose_judgment if prose reads like rule performance -> anti_ai_composite_check if repair collage risk appears -> character_agency_check if dialogue/action serves plot too neatly -> dynamic_range_check if cadence flattened -> vietnamese_line_editor -> sltd_canon_guard -> vietnamese_prose rules -> sltd_copyedit_proofread
+line surgery: source_surface_check -> vietnamese_register_check if Hán Việt/register balance is the issue -> first_pass_editorial_workflow if first serious edit -> scene_first_prose_judgment if prose reads like rule performance -> anti_ai_composite_check if repair collage risk appears -> character_agency_check if dialogue/action serves plot too neatly -> dynamic_range_check if cadence flattened -> line_surgery -> sltd_vietnamese_line_surgery -> line_surgery_pass -> node_checkpoint
 copyedit: source_surface_check -> copyeditor -> sltd_copyedit_proofread -> node_checkpoint
 proofread: source_surface_check -> proofreader -> sltd_copyedit_proofread -> node_checkpoint
-webnovel benchmark: sltd_source_fidelity_anti_compression -> sltd_chapter_assembly_split_control_gate if chapter-level benchmark is in scope -> sltd_first_pass_editorial_workflow if assessing first-pass quality -> sltd_scene_first_prose_judgment_gate -> sltd_anti_ai_composite_failure_gate -> sltd_character_agency_anti_ooc_gate -> sltd_dynamic_range_cadence_gate -> sltd_webnovel_momentum_benchmark -> webnovel_packet_benchmark -> node_checkpoint -> result_report
+webnovel benchmark: sltd_source_fidelity_anti_compression -> sltd_chapter_assembly_split_control_gate if chapter-level benchmark is in scope -> sltd_vietnamese_register_viet_dao_gate if register affects reader texture -> sltd_first_pass_editorial_workflow if assessing first-pass quality -> sltd_scene_first_prose_judgment_gate -> sltd_anti_ai_composite_failure_gate -> sltd_character_agency_anti_ooc_gate -> sltd_dynamic_range_cadence_gate -> sltd_webnovel_momentum_benchmark -> webnovel_packet_benchmark -> node_checkpoint -> result_report
 review mode: sltd_review_modes -> review_mode_pass -> node_checkpoint
 role boundary check: ROLE_ENTRY_INDEX -> sltd_role_boundary_contracts -> node_checkpoint
 node check: mindmap_review -> node_checkpoint
-readiness: source_surface_check -> chapter_assembly_split_check if length/split affects readiness -> scene_first_prose_judgment if prose readiness is being inferred from checklist compliance -> anti_ai_composite_check if false readiness risk appears -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
+readiness: source_surface_check -> chapter_assembly_split_check if length/split affects readiness -> vietnamese_register_check if register affects human read -> scene_first_prose_judgment if prose readiness is being inferred from checklist compliance -> anti_ai_composite_check if false readiness risk appears -> publishing_readiness_reviewer -> chapter_readiness_check -> sltd_publishing_readiness -> node_checkpoint
 ```
 
 Role boundary rule:
@@ -47,6 +48,15 @@ Role boundary rule:
 If multiple roles are active, run role boundary check before execution.
 If a later role finds an earlier-layer blocker, stop and hand back.
 If a user names a role directly, read the role entry card before running the task-specific route.
+```
+
+Vietnamese register rule:
+
+```text
+If prose is too Chinese-translated, too Hán Việt-heavy, too modern-flat, or missing Viet Dao balance, run vietnamese register check.
+Use Vietnamese life for body/work/poverty/illness/debt/weather/object pressure.
+Use Sino-Vietnamese for canon, law, rite, rank, taboo, old object, and Dao pressure when earned.
+Do not purge all Hán Việt or add new terms without canon basis.
 ```
 
 Chapter assembly rule:
