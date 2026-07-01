@@ -32,17 +32,21 @@ Verify Vietnamese register rule, prompt, and calibration sample exist, task is a
 
 ## Check webnovel paragraphing and layout rhythm
 
+Verify webnovel paragraphing rule and prompt exist, task is allowed, route ends with node checkpoint, source fidelity is respected, paragraph is reader breath, line break is structural signal, and the gate checks short-line density, dialogue layout, mobile fatigue, and wall-text risk.
+
+## Check character distinctiveness and iceberg profile
+
 Verify:
 
-- `rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md` exists and is listed in manifest;
-- `prompts/webnovel_paragraphing_layout_check.md` exists and is listed in manifest;
-- webnovel_paragraphing_layout_check is listed in allowed_tasks;
-- paragraphing route ends with node checkpoint;
-- paragraphing route references source fidelity before patching;
-- paragraphing gate treats paragraph as reader breath and line break as structural signal;
-- paragraphing gate checks short-line density, one-sentence paragraph overuse, dialogue layout, action paragraph flow, aftershock line use, mobile fatigue, and wall-text risk;
-- paragraphing gate avoids both random short-line rhythm and dense wall text;
-- paragraphing gate does not authorize plot/canon changes.
+- `rules/sltd_character_distinctiveness_iceberg_gate.md` exists and is listed in manifest;
+- `prompts/character_distinctiveness_check.md` exists and is listed in manifest;
+- character_distinctiveness_check is listed in allowed_tasks;
+- character distinctiveness route ends with node checkpoint;
+- character distinctiveness route references source fidelity before patching;
+- the gate separates agency from distinctiveness;
+- the gate checks voice signature, body/gesture signature, object/clothing signature, habit under pressure, private want, private fear, concealment strategy, relation-specific behavior, iceberg trace, personalized cost, and interchangeability risk;
+- the gate prevents function-only characters, cast voice collapse, decorative quirks, and backstory explained rather than embodied;
+- the gate does not authorize trauma, backstory, motive, symbol, title, relation, or canon invention.
 
 ## Check scene-first prose judgment
 
@@ -88,6 +92,7 @@ first-pass routes -> sltd_first_pass_editorial_workflow.md
 chapter assembly routes -> sltd_chapter_assembly_split_control_gate.md
 Vietnamese register routes -> sltd_vietnamese_register_viet_dao_gate.md
 webnovel paragraphing routes -> sltd_webnovel_paragraphing_layout_rhythm_gate.md
+character distinctiveness routes -> sltd_character_distinctiveness_iceberg_gate.md
 scene-first routes -> sltd_scene_first_prose_judgment_gate.md
 anti-AI composite routes -> sltd_anti_ai_composite_failure_gate.md
 character agency routes -> sltd_character_agency_anti_ooc_gate.md
