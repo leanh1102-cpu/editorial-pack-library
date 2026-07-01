@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.17
+
+- Added chapter assembly and split control gate.
+- Added chapter_assembly_split_check task and prompt.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.16
 
 - Added first-pass editorial workflow.
@@ -10,13 +16,11 @@
 
 - Added scene-first prose judgment gate.
 - Added scene_first_prose_judgment task and prompt.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.14
 
 - Added anti-AI composite failure gate.
 - Added anti_ai_composite_check task and prompt.
-- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
 
 ## 1.10.13
 
