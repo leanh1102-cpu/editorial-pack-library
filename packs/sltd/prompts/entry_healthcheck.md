@@ -20,6 +20,7 @@ rules/sltd_first_pass_editorial_workflow.md
 rules/sltd_chapter_assembly_split_control_gate.md
 rules/sltd_vietnamese_register_viet_dao_gate.md
 rules/sltd_webnovel_paragraphing_layout_rhythm_gate.md
+rules/sltd_character_distinctiveness_iceberg_gate.md
 rules/sltd_scene_first_prose_judgment_gate.md
 rules/sltd_anti_ai_composite_failure_gate.md
 rules/sltd_character_agency_anti_ooc_gate.md
@@ -31,6 +32,7 @@ prompts/first_pass_editorial_workflow.md
 prompts/chapter_assembly_split_check.md
 prompts/vietnamese_register_check.md
 prompts/webnovel_paragraphing_layout_check.md
+prompts/character_distinctiveness_check.md
 prompts/scene_first_prose_judgment.md
 prompts/anti_ai_composite_check.md
 prompts/character_agency_check.md
@@ -39,6 +41,7 @@ prompts/iteration_checkpoint.md
 prompts/session_handoff.md
 samples/router_examples.md
 samples/viet_dao_prose_calibration.md
+samples/dialogue_voice_calibration.md
 CHANGELOG.md
 ```
 
@@ -67,6 +70,7 @@ FIRST-PASS EDITORIAL WORKFLOW CHECK:
 CHAPTER ASSEMBLY SPLIT CHECK:
 VIETNAMESE REGISTER CHECK:
 WEBNOVEL PARAGRAPHING LAYOUT CHECK:
+CHARACTER DISTINCTIVENESS CHECK:
 SCENE-FIRST PROSE JUDGMENT CHECK:
 ANTI-AI COMPOSITE CHECK:
 CHARACTER AGENCY CHECK:
