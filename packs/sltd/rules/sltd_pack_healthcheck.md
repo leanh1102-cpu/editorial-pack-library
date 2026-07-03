@@ -12,19 +12,23 @@ Verify manifest version, required files, allowed tasks, source priority, and fai
 
 Verify source fidelity rule and source surface prompt exist, are listed in manifest, and line-level routes require exact source surface before patching.
 
-## Check supernatural event residue and dread amplitude
+## Check structural spine, outline pre-prose, and borderbound
 
 Verify:
 
-- `rules/sltd_supernatural_event_residue_dread_amplitude_gate.md` exists and is listed in manifest;
-- `prompts/supernatural_event_residue_check.md` exists and is listed in manifest;
-- `samples/supernatural_event_residue_calibration.md` exists and is listed in manifest;
-- supernatural_event_residue_check is listed in allowed_tasks;
-- supernatural event residue route ends with node checkpoint;
-- supernatural event residue route references source fidelity before patching;
-- the gate defines event residue, dread amplitude, event root, residue type, social residue, animal residue, material residue, and reveal boundary;
-- the gate blocks mood-only fog/cold/silence, underpowered dread, folklore without incident, generic beast threat, relic decoration, and early deep-lore reveal;
-- the gate does not authorize source-unsupported lore, beast species, ancient war facts, relics, or future reveals.
+- `rules/sltd_structural_spine_outline_preprose_borderbound_gate.md` exists and is listed in manifest;
+- `prompts/structural_spine_outline_preprose_check.md` exists and is listed in manifest;
+- `samples/structural_spine_outline_preprose_calibration.md` exists and is listed in manifest;
+- structural_spine_outline_preprose_check is listed in allowed_tasks;
+- structural spine route ends with node checkpoint;
+- rewrite, line surgery, readiness, and chapter/packet/arc routes reference structural spine when prose permission or borderbound is at stake;
+- the gate defines structural spine, outline preflight, borderbound, Chapter Card lock, Scene Packet lock, prose permission, and outline repair required;
+- the gate blocks prose before outline, incomplete chapter cards, incomplete scene packets, missing borderbound, thin detailed outline, missing chapter/scene question, unclear changed state, and unsupported gain/lore/residue slots;
+- the gate does not authorize new source-unsupported outline, canon, scene, chapter purpose, lore, or payoff.
+
+## Check supernatural event residue and dread amplitude
+
+Verify supernatural residue rule/prompt/sample, allowed task, source fidelity route, node checkpoint, and blockers for mood-only fog/cold/silence, underpowered dread, folklore without incident, generic beast threat, relic decoration, and early deep-lore reveal.
 
 ## Check protagonist inquiry and clue-chain pressure
 
@@ -45,6 +49,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
 entry governance routes -> sltd_entry_route_governance_gate_budget_protocol.md
+structural spine routes -> sltd_structural_spine_outline_preprose_borderbound_gate.md
 supernatural residue routes -> sltd_supernatural_event_residue_dread_amplitude_gate.md
 protagonist inquiry routes -> sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 protagonist advancement routes -> sltd_protagonist_advancement_growth_route_gate.md
