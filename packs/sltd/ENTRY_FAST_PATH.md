@@ -39,6 +39,9 @@ rules/sltd_entry_route_governance_gate_budget_protocol.md if multiple downstream
 rules/sltd_timeline_pov_foreshadowing_folklore_gate.md if thread, reveal window, POV access, or chapter order is in scope
 rules/sltd_protagonist_advancement_growth_route_gate.md if protagonist gain must be mapped into the spine
 rules/sltd_supernatural_event_residue_dread_amplitude_gate.md if supernatural/lore residue must be slotted into the spine
+rules/sltd_living_world_community_motion_gate.md if daily-life task, household work, community witness, custom, rumor, or world motion must prevent outline labels from driving characters
+rules/sltd_narrative_beat_escalation_aftershock_gate.md if story movement, beat pressure, mini-payoff, aftershock, or benchmark pull is in scope
+rules/sltd_character_agency_anti_ooc_gate.md if characters risk acting beyond knowledge, role, or life-task to serve scene function
 prompts/structural_spine_outline_preprose_check.md
 prompts/node_checkpoint.md
 ```
@@ -157,6 +160,8 @@ If exact prose, current lock, readiness, rewrite, line edit, line surgery, copye
 If a task could trigger three or more gates, or primary route / secondary gates / stop condition are unclear, run `entry_route_governance_check.md` first.
 
 If act, arc, hồi, chapter, scene, Story Outline, Chapter by Chapter Outline, Chapter Card, Scene Packet, Replacement Spine, borderbound, or prose permission is in scope, run `structural_spine_outline_preprose_check.md`.
+
+If a scene card has correct function but risks characters acting to serve the card, run Life-Task Bound + Story Movement before prose by combining `sltd_living_world_community_motion_gate.md`, `sltd_narrative_beat_escalation_aftershock_gate.md`, and `sltd_character_agency_anti_ooc_gate.md` as capped secondary gates.
 
 If supernatural residue, dread amplitude, folklore incident, beast residue, relic trace, old battlefield leak, Mê Thúy Lâm, Hồn sương, Trọc khí, Cửu Thần residue, Bát Thần residue, or Event / Residue Ledger is in scope, run `supernatural_event_residue_check.md`.
 
