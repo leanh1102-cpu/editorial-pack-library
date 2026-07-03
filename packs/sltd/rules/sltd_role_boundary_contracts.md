@@ -23,7 +23,11 @@ Review modes change the lens. They do not become roles.
 
 Context Capsule is not a prose, story, line, canon, or readiness role. It is a pre-role source/context gate. If it blocks, later roles must stop instead of continuing from memory or plausible continuity.
 
-Human Surface Polish is not detector bypass, story repair, canon repair, or readiness. It is a late prose role used only after source/context/story/voice constraints are clear enough.
+Author Voice Fingerprint is a sample-backed style extraction role. It is not canon, character voice, or readiness.
+
+Author-Aligned Drafting Assistant is bounded drafting under source, canon, POV, scene function, character voice, and author fingerprint. It is not autonomous authorship.
+
+Human Surface Polish is not story repair, canon repair, or readiness. It is a late prose role used only after source/context/story/voice constraints are clear enough.
 
 ## Role order principle
 
@@ -31,7 +35,9 @@ Human Surface Polish is not detector bypass, story repair, canon repair, or read
 source and context before canon
 canon before story
 story before intensity
-intensity before line surgery
+intensity before author voice use
+author voice fingerprint before author-aligned drafting
+author-aligned draft before line surgery when drafting is requested
 line surgery before human surface polish
 human surface polish before copyedit
 copyedit before proofread
@@ -42,532 +48,185 @@ editorial director chooses priority, not canon truth
 
 If a later role discovers an earlier-layer failure, stop and hand back.
 
-## Contract format
-
-Each role must be understood through:
-
-```text
-ROLE:
-START WHEN:
-READ BEFORE:
-MAY DO:
-MUST NOT DO:
-OUTPUT:
-DONE WHEN:
-HANDOFF TO:
-STOP WHEN:
-```
-
 ## Canon Guard
 
-ROLE: Canon Guard
+START WHEN source conflict, reveal timing risk, invented-fact risk, or lock/status/canon uncertainty appears.
 
-START WHEN:
-- source conflict appears;
-- reveal timing may be wrong;
-- rewrite or patch may invent facts;
-- lock/status/canon is unclear.
+READ BEFORE current instruction, source preflight, context capsule when required, current Notion/source packet, relevant canon index, evidence discipline.
 
-READ BEFORE:
-- current user instruction;
-- source preflight result;
-- context capsule preflight result when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope;
-- current Notion source or user-provided source;
-- relevant canon index if available;
-- evidence discipline.
+MAY DO detect source conflict, mark reveal risk, block invented canon, return candidate, request source.
 
-MAY DO:
-- detect source conflict;
-- mark reveal timing risk;
-- block invented canon;
-- return canon patch candidate;
-- request missing source.
+MUST NOT invent lore, decide canon without current source, use legacy Workdeck as current unless named current, or rewrite for style.
 
-MUST NOT DO:
-- invent lore to solve a scene;
-- decide canon without current source;
-- use legacy Workdeck as current source unless named current;
-- rewrite for style.
+HANDOFF TO Story Doctor, Intensity Editor, Vietnamese Line Editor, Author-Aligned Drafting Assistant, or Line Surgery depending on blocker.
 
-OUTPUT:
-- canon risk;
-- source conflict;
-- safe claim;
-- candidate only.
-
-DONE WHEN:
-- canon risk is cleared, blocked, or narrowed;
-- next role knows what must not be changed.
-
-HANDOFF TO:
-- Story Doctor if story motion is the issue;
-- Intensity Editor if underreach is the issue;
-- Vietnamese Line Editor or Line Surgery if prose is the issue.
-
-STOP WHEN:
-- current source is missing;
-- context capsule blocks current source, hidden canon, POV knowledge, or source-status separation;
-- canon conflict lacks current decision;
-- user asks for lock but lock source was not read.
+STOP WHEN current source is missing, context capsule blocks, canon conflict lacks current decision, or lock source was not read.
 
 ## Story Doctor
 
-ROLE: Story Doctor
+START WHEN story motion, changed state, promise/payoff, reader reward, or structure blocks prose work.
 
-START WHEN:
-- scene or chapter is correct but does not pull;
-- changed state is missing;
-- promise/payoff is weak;
-- reader reward is low;
-- structure blocks line polish.
+READ BEFORE Canon Guard, Context Capsule when required, Scene Bank/chapter source, Story Outline if needed.
 
-READ BEFORE:
-- Canon Guard result;
-- Context Capsule result if current source, hidden canon, POV knowledge, relationship memory, object state, or long-range continuity is in scope;
-- Scene Bank or chapter source;
-- Story Outline if needed;
-- Webnovel Momentum Benchmark if packet pull is asked.
+MAY DO identify missing changed state, weak causality, payoff debt, and repair priority.
 
-MAY DO:
-- identify missing changed state;
-- mark weak causality;
-- find promise/payoff debt;
-- propose scene-level repair priority;
-- recommend rewrite when structure is wrong.
+MUST NOT polish prose to hide story failure, add canon, change ending, call readiness, or authorize drafting without scene controls.
 
-MUST NOT DO:
-- polish prose to hide story failure;
-- add new canon;
-- change ending without user request;
-- call readiness.
+HANDOFF TO Intensity Editor, Author Voice Fingerprint, Author-Aligned Drafting Assistant, Vietnamese Line Editor, Line Surgery, or Editorial Director.
 
-OUTPUT:
-- story blocker;
-- repair priority;
-- rewrite candidate;
-- next scene/chapter node.
-
-DONE WHEN:
-- the story layer is passable or marked for rewrite;
-- line roles know whether polishing is allowed.
-
-HANDOFF TO:
-- Intensity Editor if story is functional but thin;
-- Vietnamese Line Editor or Line Surgery if story is settled;
-- Editorial Director if multiple blockers compete.
-
-STOP WHEN:
-- source or scope is missing;
-- context capsule blocks required source/context;
-- scene function is unclear;
-- repair would require canon invention.
+STOP WHEN source/scope is missing, context capsule blocks, scene function is unclear, or repair requires canon invention.
 
 ## Intensity Editor
 
-ROLE: Intensity Editor
+START WHEN scene is safe but thin, cost is absent, object lacks consequence, mystery lacks pressure, or correct material underreaches.
 
-START WHEN:
-- scene is safe but thin;
-- cost is absent;
-- object exists without consequence;
-- mystery lacks pressure;
-- correct material underreaches.
+READ BEFORE Canon Guard, Story Doctor if available, Context Capsule when required, intensity targets, author taste, current scene source.
 
-READ BEFORE:
-- Canon Guard result;
-- Story Doctor result if available;
-- Context Capsule result if object/location/body/debt state, relationship memory, hidden canon, or long-range continuity is in scope;
-- intensity rules and targets;
-- author taste examples;
-- current scene source.
+MAY DO identify missing cost/body/object/pressure/relation/witness/debt/choice and propose pressure patch from existing source.
 
-MAY DO:
-- identify missing cost, body, object, pressure, relation, witness, debt, or choice;
-- propose pressure patch using existing source material;
-- mark underreach;
-- rank intensity fixes.
+MUST NOT add lore or power, escalate by grander prose, change outcome, or rewrite entire scene unless asked.
 
-MUST NOT DO:
-- add new lore or power;
-- escalate by making prose grander;
-- change scene outcome;
-- rewrite entire scene unless asked.
+HANDOFF TO Author Voice Fingerprint, Author-Aligned Drafting Assistant, Vietnamese Line Editor, Line Surgery, or Story Doctor.
 
-OUTPUT:
-- underreach finding;
-- pressure patch candidate;
-- cost/consequence gap;
-- next node.
+STOP WHEN proposed intensity requires new canon, object/pressure source was not read, context capsule blocks, or more than local patch is needed.
 
-DONE WHEN:
-- visible cost or pressure is present, or the scene is marked for rewrite.
+## Author Voice Fingerprint
 
-HANDOFF TO:
-- Vietnamese Line Editor if prose can now be shaped;
-- Line Surgery if issue is sentence-level AI smell;
-- Story Doctor if pressure failure is structural.
+START WHEN user asks to decode, learn, preserve, or compare author voice; style guide / voice DNA / writing sample analysis is requested; prose sounds correct but unlike the author; or author-aligned drafting is requested without a task fingerprint.
 
-STOP WHEN:
-- proposed intensity requires new canon;
-- object/pressure source was not read;
-- context capsule blocks required object/location/body/debt state;
-- more than local patch is needed.
+READ BEFORE explicit author samples or current Notion source named as sample, AUTHOR_WORKING_PROFILE.md, AUTHOR_TASTE_EXAMPLES.md, source preflight, author voice discipline rule, and Character Voice / Dialogue / Staging when character voice is being compared.
+
+MAY DO extract evidence-backed style traits, build compact style guide, compare passage to fingerprint, separate author rhythm from character voice, and mark sample gaps.
+
+MUST NOT infer author voice from chat memory alone, treat legacy drafts as approved samples unless named current, invent personal facts/canon from prose samples, turn style into formulaic repeated phrases, or call readiness.
+
+OUTPUT AUTHOR_VOICE_FINGERPRINT_OK / AUTHOR_VOICE_FINGERPRINT_PARTIAL / AUTHOR_SAMPLE_MISSING / voice match matrix / next node.
+
+HANDOFF TO Author-Aligned Drafting Assistant, Human Surface Polish, or Character Voice / Dialogue / Staging.
+
+STOP WHEN samples are missing, unapproved, legacy-only, or chat-memory-only; style claims would be speculative; or author voice would overwrite character voice/canon.
+
+## Author-Aligned Drafting Assistant
+
+START WHEN user asks for author-aligned drafting or writing in the author's voice, source/canon/scene controls are clear, and an author fingerprint or approved taste source is available.
+
+READ BEFORE source surface or current scene packet, Context Capsule when required, Structural/Tracking if scene function or state is in scope, Character Voice / Dialogue / Staging if characters speak or interact, Author Voice Fingerprint, and author-aligned draft prompt.
+
+MAY DO draft only requested scope, use author rhythm and scene-thinking habits, preserve source/function/POV/reveal lock/reader effect, mark voice match and human-surface risk, and hand off to Human Surface Polish.
+
+MUST NOT invent canon, object, relation, secret, payoff, route, scene outcome, or reveal timing; override current Notion source; override character voice with author voice; use hidden canon in POV prose; draft from chat memory as source; or call Human Chapter Pass/readiness/Publication Lock.
+
+OUTPUT AUTHOR_ALIGNED_DRAFT_READY / AUTHOR_ALIGNED_DRAFT_BLOCKED / bounded draft / self-check / next node.
+
+HANDOFF TO Human Surface Polish, Line Surgery, Story Doctor, or Canon Guard depending on blocker.
+
+STOP WHEN exact source or scene packet is missing, context capsule blocks, author sample/fingerprint is missing, or drafting would change canon/function/POV/outcome/reveal timing.
 
 ## Vietnamese Line Editor
 
-ROLE: Vietnamese Line Editor
+START WHEN story/source/canon are settled enough and prose rhythm, dialogue voice, tell/act balance, or AI phrasing leaks.
 
-START WHEN:
-- story, source, and canon are settled enough to work at prose level;
-- rhythm is stiff;
-- dialogue has one voice;
-- scene tells instead of acts;
-- AI phrasing leaks.
+READ BEFORE prose rhythm, dialogue voice, anti-AI words, SLTD style, author taste, line surgery gate if needed, Author Voice Fingerprint if style match is in scope, Context Capsule when required.
 
-READ BEFORE:
-- prose rhythm rules;
-- dialogue voice rules;
-- anti-AI words;
-- SLTD style rules;
-- author taste examples;
-- line surgery gate if prose smell is line-level;
-- Context Capsule result if voice, relationship memory, POV knowledge, hidden canon, or source-status separation is in scope.
+MAY DO improve rhythm, split/reorder stiff sentences, reduce abstraction, restore body/object/silence/action, and mark need for line surgery, human surface polish, author fingerprint, or scene rewrite.
 
-MAY DO:
-- improve Vietnamese rhythm;
-- split or reorder stiff sentences;
-- reduce abstract phrasing;
-- restore body, object, silence, and action;
-- mark need for line surgery, human surface polish, or scene rewrite.
+MUST NOT solve story failure by pretty prose, add beat/canon, make all voices polished, over-literarize, or force author style over character voice.
 
-MUST NOT DO:
-- solve story failure by pretty prose;
-- add beat or canon;
-- make all voices polished;
-- over-literarize the sentence.
+HANDOFF TO Author Voice Fingerprint, Human Surface Polish, Copyeditor, Line Surgery, or Story Doctor.
 
-OUTPUT:
-- prose issue;
-- minimal patch;
-- line surgery or human surface polish recommendation;
-- voice risk.
-
-DONE WHEN:
-- prose reads naturally for the scoped passage, or failure is escalated.
-
-HANDOFF TO:
-- Human Surface Polish if prose is correct but still synthetic, over-clean, same-voiced, or falsely smooth;
-- Copyeditor if line prose and human surface pass;
-- Line Surgery if sentence-level repair is needed;
-- Story Doctor if prose failure is structural.
-
-STOP WHEN:
-- source/canon/story layer is unsettled;
-- context capsule blocks POV knowledge, hidden canon, relationship memory, or source-status separation;
-- more than 30 percent of excerpt needs surgery;
-- voice cannot be fixed without character source.
+STOP WHEN source/canon/story layer is unsettled, context capsule blocks, more than 30 percent needs surgery, or voice cannot be fixed without character source.
 
 ## Line Surgery
 
-ROLE: Line Surgery
+START WHEN excerpt is 300-1500 words/scoped line set and prose reads stiff, translated, over-clean, or AI-like.
 
-START WHEN:
-- excerpt is 300-1500 words or a scoped line set;
-- prose reads stiff, translated, over-clean, or AI-like;
-- user asks for line audit or minimal OLD/NEW patch.
+READ BEFORE line surgery gate, prose rhythm, dialogue voice, anti-AI words, SLTD style, author taste, Author Voice Fingerprint if style match is in scope, source excerpt, Context Capsule when required.
 
-READ BEFORE:
-- Vietnamese Line Surgery Gate;
-- prose rhythm;
-- dialogue voice;
-- anti-AI words;
-- SLTD style rules;
-- author taste examples;
-- source excerpt;
-- Context Capsule result if current source, hidden canon, POV knowledge, relationship memory, or source-status separation is in scope.
+MAY DO label line issues, propose minimal OLD/NEW fixes, run mouth-read check, and mark rewrite threshold.
 
-MAY DO:
-- label line issues;
-- propose minimal OLD/NEW fixes;
-- run mouth-read check;
-- mark rewrite threshold.
+MUST NOT rewrite whole scene unless asked, change outcome, add metaphor to hide stiffness, add canon/new beats, or turn author style into repeated phrase templates.
 
-MUST NOT DO:
-- rewrite whole scene unless asked;
-- change scene outcome;
-- add metaphor to hide stiffness;
-- add canon or new beats.
+HANDOFF TO Human Surface Polish, Author Voice Fingerprint, Copyeditor, Rewrite Scene, or Vietnamese Line Editor.
 
-OUTPUT:
-- LINE_SURGERY_PASS;
-- NEEDS_LINE_SURGERY;
-- NEEDS_SCENE_REWRITE;
-- OLD/NEW patches.
-
-DONE WHEN:
-- scoped lines pass mouth-read check or are escalated.
-
-HANDOFF TO:
-- Human Surface Polish if the line set is repaired but still falsely smooth, same-voiced, or synthetic-surface thin;
-- Copyeditor if pass and human surface is already clean;
-- Rewrite Scene if over threshold;
-- Vietnamese Line Editor if broad prose rhythm still needs work.
-
-STOP WHEN:
-- excerpt is too large and no sampling instruction exists;
-- source is missing;
-- context capsule blocks required source/context;
-- repair load exceeds 30 percent.
+STOP WHEN excerpt is too large without sampling instruction, source is missing, context capsule blocks, or repair load exceeds 30 percent.
 
 ## Human Surface Polish
 
-ROLE: Human Surface Polish
+START WHEN exact current prose surface has been read; story/canon/intensity/voice/author-style needs and line-level permission are settled enough; and passage is correct in meaning but still synthetic, over-clean, falsely smooth, same-voiced, symbol-first, or thin in body/object/relationship pressure.
 
-START WHEN:
-- exact current prose surface has been read;
-- story, canon, intensity, voice, and line-level permission are settled enough;
-- the passage is correct in meaning but still reads synthetic, over-clean, falsely smooth, same-voiced, symbol-first, or thin in body/object/relationship pressure;
-- user asks for human surface, humanize, anti-synthetic polish, văn nghe người hơn, đúng ý nhưng giả, or mượt giả.
+READ BEFORE source surface, Context Capsule when required, Vietnamese Senior Editor Surface if needed, Character Voice/Staging if needed, Author Voice Fingerprint if style match is in scope, and human surface rule.
 
-READ BEFORE:
-- source surface result for the exact prose;
-- Context Capsule result when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope;
-- Vietnamese Senior Editor Surface result if human surface or pass integrity is in scope;
-- Character Voice / Dialogue / Staging result if voice, relationship, silence, presence, or location staging is in scope;
-- AUTHOR_TASTE_EXAMPLES.md;
-- `rules/sltd_human_surface_polish_anti_synthetic_gate.md`.
+MAY DO identify false smoothing, same-voice polish, symbolic drift, object/body loss, relationship flattening, generic emotional polish; propose minimal OLD/NEW patches; restore body/object/silence/action; route back if load too high.
 
-MAY DO:
-- identify false smoothing, same-voice polish, symbolic drift, object/body loss, relationship flattening, or generic emotional polish;
-- propose minimal OLD/NEW patches;
-- restore body, object, silence, action, and read-aloud Vietnamese using only existing source pressure;
-- mark detector-bypass framing as blocked;
-- route back to Line Surgery or Rewrite Scene if repair load is too high.
+MUST NOT add canon, scene beat, object, relationship, secret, payoff, metaphor; change function/outcome/reveal timing; make rough characters fluent for smoothness; or call Human Chapter Pass/readiness/Publication Lock.
 
-MUST NOT DO:
-- bypass AI detectors or frame the task as detector evasion;
-- add canon, scene beat, object, relationship, secret, payoff, or metaphor;
-- change scene function, outcome, or reveal timing;
-- make rough characters fluent because polish wants smoothness;
-- call Human Chapter Pass, readiness, or Publication Lock.
+HANDOFF TO Copyeditor, Line Surgery, Author Voice Fingerprint, Voice/Staging, Story Doctor, or Intensity Editor.
 
-OUTPUT:
-- HUMAN_SURFACE_READY;
-- HUMAN_SURFACE_NEEDS_PATCH;
-- HUMAN_SURFACE_BLOCKED;
-- OLD/NEW patches;
-- next node.
-
-DONE WHEN:
-- the scoped passage keeps source meaning, pressure, voice, and reveal locks while reading as lived Vietnamese prose;
-- or the pass blocks and hands back to the earlier role.
-
-HANDOFF TO:
-- Copyeditor if human surface passes;
-- Line Surgery if sentence-level repair remains;
-- Voice / Dialogue / Staging if same-voice or relationship loss remains;
-- Story Doctor or Intensity Editor if the polish exposes structural thinness.
-
-STOP WHEN:
-- exact prose source is missing;
-- context capsule blocks required source/context;
-- repair would change canon, scene function, outcome, or reveal timing;
-- detector-bypass is the goal;
-- repair load exceeds 30 percent.
+STOP WHEN exact prose source is missing, context capsule blocks, repair would change canon/function/outcome/reveal timing, or repair load exceeds 30 percent.
 
 ## Copyeditor
 
-ROLE: Copyeditor
+START WHEN story, canon, intensity, prose, author-aligned/human surface, and reader pull are acceptable and task is technical consistency.
 
-START WHEN:
-- story, canon, intensity, prose, human surface, and reader pull are acceptable;
-- the task is technical consistency.
+READ BEFORE copyedit/proofread rule, current source, term/name/xưng hô context, Human Surface Polish result if flagged, Author Voice Fingerprint if style consistency is in scope, Context Capsule when required.
 
-READ BEFORE:
-- copyedit/proofread rule;
-- current source;
-- term/name/xung ho context;
-- Human Surface Polish result if prose was previously flagged as synthetic, over-clean, same-voiced, or falsely smooth;
-- Context Capsule result if source status, relationship memory, names, terms, or long-range continuity is in scope.
+MAY DO fix names, terms, xưng hô, punctuation, repeated words, paragraph breaks, dialogue tags, continuity wording.
 
-MAY DO:
-- fix names, terms, xung ho, punctuation, repeated words, paragraph breaks, dialogue tags, continuity wording.
+MUST NOT change story function, change character voice for style, add scene beats, call readiness, or smooth intentionally rough prose.
 
-MUST NOT DO:
-- change story function;
-- change character voice for style;
-- add scene beats;
-- call readiness;
-- smooth prose that Human Surface Polish has intentionally left rough.
+HANDOFF TO Proofreader, Human Surface Polish, Vietnamese Line Editor, or Canon Guard.
 
-OUTPUT:
-- COPYEDIT_PASS;
-- COPYEDIT_NEEDS_FIX;
-- exact issues.
-
-DONE WHEN:
-- technical consistency issues are cleared or listed.
-
-HANDOFF TO:
-- Proofreader if clean;
-- Human Surface Polish if prose becomes technically clean but lifeless, same-voiced, or falsely smooth;
-- Vietnamese Line Editor if prose is still unnatural;
-- Canon Guard if term/source conflict appears.
-
-STOP WHEN:
-- story or prose layer fails;
-- canon/source conflict appears;
-- context capsule blocks source-status or long-range continuity.
+STOP WHEN story/prose layer fails, canon/source conflict appears, or context capsule blocks source-status/long-range continuity.
 
 ## Proofreader
 
-ROLE: Proofreader
+START WHEN chapter already passes story, prose, human surface, canon, intensity, and reader checks, with only final surface errors left.
 
-START WHEN:
-- chapter already passes story, prose, human surface, canon, intensity, and reader checks;
-- only final surface errors remain.
+READ BEFORE copyedit/proofread rule, final source excerpt/chapter, Context Capsule if final status/source separation is in scope.
 
-READ BEFORE:
-- copyedit/proofread rule;
-- final source excerpt/chapter;
-- Context Capsule result if final status or source-status separation is in scope.
+MAY DO catch typo, missing word, wrong name, repeated line, punctuation, spacing, paragraph join error, old draft residue.
 
-MAY DO:
-- catch typo, missing word, wrong name, repeated line, broken punctuation, spacing, paragraph join error, old draft residue.
+MUST NOT rewrite style, change rhythm, change story, or approve publication lock.
 
-MUST NOT DO:
-- rewrite style;
-- change rhythm;
-- change story;
-- approve publication lock.
+HANDOFF TO Publishing Readiness Reviewer, Copyeditor, or Human Surface Polish.
 
-OUTPUT:
-- PROOFREAD_PASS;
-- PROOFREAD_NEEDS_FIX.
-
-DONE WHEN:
-- surface errors are cleared or listed.
-
-HANDOFF TO:
-- Publishing Readiness Reviewer if all prior layers pass;
-- Copyeditor if consistency issue remains;
-- Human Surface Polish if proofread exposes lifeless smoothing rather than a typo-level issue.
-
-STOP WHEN:
-- line prose, human surface, or story is still failing;
-- context capsule blocks source-status separation.
+STOP WHEN line prose, human surface, or story is still failing, or context capsule blocks source-status separation.
 
 ## Publishing Readiness Reviewer
 
-ROLE: Publishing Readiness Reviewer
+START WHEN user asks readiness, Human Chapter Pass, Publication Lock, packet lock, or publish candidate, and source status is current.
 
-START WHEN:
-- user asks readiness, Human Chapter Pass, Publication Lock, packet lock, or publish candidate;
-- source status is current.
+READ BEFORE Chapter Index, Chapter Review, Scene Bank if needed, Context Capsule, Author Voice / Author-Aligned Draft result if used, Human Surface Polish if flagged, Publication Lock / Human Chapter Pass fields, evidence discipline.
 
-READ BEFORE:
-- Chapter Index;
-- Chapter Review;
-- Scene Bank if needed;
-- Context Capsule result for current source/status, hidden canon, POV knowledge, and source-status separation;
-- Human Surface Polish result if synthetic-surface risk was flagged;
-- Publication Lock / Human Chapter Pass fields;
-- evidence discipline.
+MAY DO check readiness conditions, identify blockers, state evidence-backed candidate, refuse unsupported lock claim.
 
-MAY DO:
-- check readiness conditions;
-- identify blockers;
-- state evidence-backed readiness candidate;
-- refuse unsupported lock claim.
+MUST NOT mark publication lock without current evidence, treat green prose or author-style match as publish-ready, override human pass, or use chat memory as lock status.
 
-MUST NOT DO:
-- mark publication lock without current evidence;
-- treat green prose as publish-ready;
-- override human pass;
-- use chat memory as lock status.
+HANDOFF TO Editorial Director, Story Doctor, Author Voice Fingerprint, Author-Aligned Drafting Assistant, Human Surface Polish, Line Surgery, or Canon Guard depending on blocker.
 
-OUTPUT:
-- READY_CANDIDATE;
-- NOT_READY;
-- EVIDENCE_MISSING;
-- blocker list.
-
-DONE WHEN:
-- readiness verdict is evidence-backed or blocked.
-
-HANDOFF TO:
-- Editorial Director if prioritization is needed;
-- Story Doctor, Human Surface Polish, Line Surgery, or Canon Guard depending on blocker.
-
-STOP WHEN:
-- current status source was not read;
-- context capsule blocks source-status, hidden canon, POV knowledge, or long-range continuity;
-- packet contains unready chapter;
-- Human Chapter Pass or Publication Lock is missing.
+STOP WHEN current status source was not read, context capsule blocks, packet contains unready chapter, or Human Chapter Pass / Publication Lock is missing.
 
 ## Editorial Director
 
-ROLE: Editorial Director
+START WHEN many problems compete, user asks what to fix first, packet/arc needs priority, or AI risks polishing/drafting/routing the wrong layer.
 
-START WHEN:
-- many problems compete;
-- user asks what to fix first;
-- packet/arc needs priority;
-- AI risks polishing the wrong layer.
+READ BEFORE role outputs already run, node ledger, context brief for large scope, Context Capsule when required, Author Voice / Author-Aligned Draft result if priority is author-style/drafting, Human Surface Polish if priority is correct-but-synthetic prose, evidence discipline, user priority.
 
-READ BEFORE:
-- role outputs already run;
-- node ledger;
-- context brief for large scope;
-- Context Capsule result if current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope;
-- Human Surface Polish result if the priority is correct-but-synthetic prose;
-- evidence discipline;
-- user priority.
+MAY DO rank blockers, choose next node, recommend patch vs rewrite vs audit, stop unnecessary roles.
 
-MAY DO:
-- rank blockers;
-- choose next node;
-- recommend patch vs rewrite vs audit;
-- stop unnecessary roles.
+MUST NOT invent source truth, override Canon Guard, call publication lock, or collapse issues into vague verdict.
 
-MUST NOT DO:
-- invent source truth;
-- override Canon Guard;
-- call publication lock;
-- collapse all issues into one vague verdict.
+HANDOFF TO any role needed next, named explicitly.
 
-OUTPUT:
-- priority order;
-- next node;
-- role handoff;
-- candidate action.
-
-DONE WHEN:
-- next action is clear, narrow, and source-safe.
-
-HANDOFF TO:
-- any role needed next, named explicitly.
-
-STOP WHEN:
-- source/evidence is missing;
-- context capsule blocks required source/context;
-- priorities depend on unread nodes.
+STOP WHEN source/evidence is missing, context capsule blocks required source/context, or priorities depend on unread nodes.
 
 ## Learning and calibration boundary
 
-Failure examples, author taste examples, human-surface samples, and future model learning may improve recognition of patterns.
+Failure examples, author taste examples, author voice samples, human-surface samples, and future model learning may improve recognition of patterns.
 
-They do not override:
+They do not override current user instruction, current Notion source, canon, context capsule when required, evidence discipline, character voice, human pass, or publication lock.
 
-- current user instruction;
-- current Notion source;
-- canon;
-- context capsule when required;
-- evidence discipline;
-- human pass;
-- publication lock.
-
-Use learned taste to choose among safe edits, not to invent facts, bypass detectors, or force a scene into a preferred style.
+Use learned taste to choose among safe edits, not to invent facts or force a scene into a preferred style.
 
 ## Output for role-boundary check
 
@@ -579,6 +238,7 @@ START CONDITION MET: YES / NO
 SOURCE READY: YES / NO
 CONTEXT CAPSULE REQUIRED: YES / NO
 CONTEXT CAPSULE STATUS:
+AUTHOR VOICE / DRAFTING REQUIRED: YES / NO
 HUMAN SURFACE POLISH REQUIRED: YES / NO
 MAY DO:
 MUST NOT DO:
