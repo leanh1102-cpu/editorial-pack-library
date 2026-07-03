@@ -28,17 +28,18 @@ rules/sltd_decision_safety.md
 8. Scene-First Prose Judgment
 9. Narrative Feature / Structural Idiosyncrasy Audit when story-decision AI smell is in scope
 10. Voice / Dialogue / Staging
-11. Author Voice Fingerprint when author style matching is in scope
-12. Draft / Rewrite / Author-Aligned Ghostwriter Draft
-13. Line / Voice / Rhythm
-14. Human Surface Polish
-15. Composite Risk Check
-16. Feedback Matrix / Report
-17. Seam / Chapter Assembly
-18. Readiness / Lock
+11. Author Writing Sheet when claim-evidence style memory is in scope
+12. Author Voice Fingerprint when author style matching is in scope
+13. Draft / Rewrite / Author-Aligned Ghostwriter Draft
+14. Line / Voice / Rhythm
+15. Human Surface Polish
+16. Composite Risk Check
+17. Feedback Matrix / Report
+18. Seam / Chapter Assembly
+19. Readiness / Lock
 ```
 
-Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, polish, copyedit, or claim readiness before source, context capsule, claim verification, spine, tracking, border, narrative-feature, and scene staging are clear when continuity, hidden canon, object state, relationship memory, author voice, dialogue, reveal, status, lock, or story-decision smell is at stake. Stop at the first real blocker.
+Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, polish, copyedit, or claim readiness before source, context capsule, claim verification, spine, tracking, border, narrative-feature, scene staging, author writing sheet, and author fingerprint are clear when continuity, hidden canon, object state, relationship memory, author voice, dialogue, reveal, status, lock, style evidence, or story-decision smell is at stake. Stop at the first real blocker.
 
 ## Fast paths
 
@@ -101,10 +102,27 @@ samples/character_voice_dialogue_staging_calibration.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md if relationship memory, knowledge state, object state, or downstream risk is affected
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or border is unclear
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese dialogue surface is in scope
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md if author style may overwrite character voice or needs claim-evidence memory
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice may overwrite character voice
 rules/sltd_character_distinctiveness_iceberg_gate.md if voice profile is unclear
 rules/sltd_living_world_community_motion_gate.md if group presence or community motion is in scope
 prompts/character_voice_dialogue_staging_check.md
+prompts/node_checkpoint.md
+```
+
+### Author writing sheet / claim-evidence style memory
+
+```text
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md
+AUTHOR_WORKING_PROFILE.md
+AUTHOR_TASTE_EXAMPLES.md
+rules/sltd_narrative_claim_verification_clipper_discipline.md if a style claim depends on a factual/status/canon claim
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md
+rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
+rules/sltd_character_voice_dialogue_relationship_location_gate.md if character voice may be affected
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface is being compared
+prompts/author_writing_sheet_check.md
 prompts/node_checkpoint.md
 ```
 
@@ -115,6 +133,7 @@ rules/sltd_source_preflight.md
 rules/sltd_source_fidelity_anti_compression.md
 AUTHOR_WORKING_PROFILE.md
 AUTHOR_TASTE_EXAMPLES.md
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md if style claims need evidence or prompt-specific story rules
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
 rules/sltd_narrative_claim_verification_clipper_discipline.md if author-aligned draft depends on status/canon/continuity claim
@@ -123,6 +142,7 @@ rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene functi
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, character voice, relationship, silence, presence, or staging is in scope
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface is in scope
+prompts/author_writing_sheet_check.md if no claim-evidence style memory exists
 prompts/author_voice_fingerprint_check.md for sample/style extraction or voice match
 prompts/author_aligned_ghostwriter_draft.md for bounded source-safe drafting
 prompts/node_checkpoint.md
@@ -139,6 +159,7 @@ rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if spine/source
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state/thread/object/pass/downstream logic is in scope
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if story-decision AI smell, thematic overexplicitness, causal tidiness, or narrative diversity is a packet issue
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, relationship, or staging is a packet issue
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md if author-style claims need evidence in packet review
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice match is a packet issue
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if human surface or pass integrity is in scope
 prompts/general_chapter_feedback_matrix_check.md
@@ -155,6 +176,7 @@ rules/sltd_structural_spine_outline_preprose_borderbound_gate.md when spine or b
 rules/sltd_tracking_logic_ledger_traceability_gate.md when logic continuity is affected
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md when story-decision AI smell, thematic overexplicitness, causal tidiness, reveal value, body/sensory overperformance, or narrative diversity is in scope
 rules/sltd_character_voice_dialogue_relationship_location_gate.md when voice, relationship, or location staging is affected
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md when author style claims or prompt-specific story rules are in scope
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md when author voice, style match, or ghostwriter drafting is in scope
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md when human surface or pass integrity is affected
 rules/sltd_human_surface_polish_anti_synthetic_gate.md when exact prose is source-safe but still reads synthetic, over-clean, same-voiced, or falsely smooth
@@ -173,6 +195,7 @@ rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene functi
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if surface polish may hide structural AI smell or decorative body/sensory overperformance
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if voice, relationship, silence, presence, dialogue, or location staging is in scope
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md if style memory is used for polish
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice match or ghostwriter output is being polished
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
 rules/sltd_human_surface_polish_anti_synthetic_gate.md
@@ -187,6 +210,8 @@ Run `context_capsule_preflight.md` when the task concerns current/latest source,
 Run `narrative_claim_verification_check.md` when the task concerns CLIPPER-style claim verification, true/false claims, false twins, status claims, canon claims, continuity claims, POV knowledge claims, source conflicts, readiness claims, Human Chapter Pass, Publication Lock, or whether a claim is TRUE/FALSE/UNCERTAIN.
 
 Run `narrative_feature_audit.md` when the task concerns StoryScope-style narrative features, structural AI smell, theme overexplained, causal tidiness, single-track plot risk, protagonist understanding as resolution, temporal flatness, weak reveal/recontextualization, decorative body/sensory detail, or narrative diversity.
+
+Run `author_writing_sheet_check.md` when the task concerns Author Writing Sheet, claim-evidence style memory, sample-backed author profile, prompt-specific story rules, or author style claims that need evidence before author voice fingerprint or author-aligned drafting.
 
 Run `character_voice_dialogue_staging_check.md` when the task concerns dialogue, multi-character scenes, character voice, relationship memory, silence, interruptions, location staging, usable objects, tone, comedy, grief, or physical action.
 
