@@ -25,18 +25,19 @@ rules/sltd_decision_safety.md
 5. Life-Task Bound
 6. Story Movement
 7. Scene-First Prose Judgment
-8. Voice / Dialogue / Staging
-9. Author Voice Fingerprint when author style matching is in scope
-10. Draft / Rewrite / Author-Aligned Ghostwriter Draft
-11. Line / Voice / Rhythm
-12. Human Surface Polish
-13. Composite Risk Check
-14. Feedback Matrix / Report
-15. Seam / Chapter Assembly
-16. Readiness / Lock
+8. Narrative Feature / Structural Idiosyncrasy Audit when story-decision AI smell is in scope
+9. Voice / Dialogue / Staging
+10. Author Voice Fingerprint when author style matching is in scope
+11. Draft / Rewrite / Author-Aligned Ghostwriter Draft
+12. Line / Voice / Rhythm
+13. Human Surface Polish
+14. Composite Risk Check
+15. Feedback Matrix / Report
+16. Seam / Chapter Assembly
+17. Readiness / Lock
 ```
 
-Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, or polish prose before source, context capsule, spine, tracking, border, and scene staging are clear when continuity, hidden canon, object state, relationship memory, author voice, or dialogue is at stake. Stop at the first real blocker.
+Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, polish, or copyedit prose before source, context capsule, spine, tracking, border, narrative-feature, and scene staging are clear when continuity, hidden canon, object state, relationship memory, author voice, dialogue, reveal, or story-decision smell is at stake. Stop at the first real blocker.
 
 ## Fast paths
 
@@ -48,9 +49,26 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, knowledge, object, residue, thread, pass trace, or downstream risk is affected
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function, chapter card, scene packet, or border is unclear
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if story-decision AI smell, reveal value, thematic explicitness, or causal tidiness is in scope
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if voice, relationship, silence, presence, or location staging is affected
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface, Human Chapter Pass, or Publication Lock is in scope
 prompts/context_capsule_preflight.md
+prompts/node_checkpoint.md
+```
+
+### Narrative feature / structural idiosyncrasy audit
+
+```text
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, reveal timing, or long-range continuity is in scope
+rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene/chapter function or prose permission is unclear
+rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, reveal, or downstream risk is affected
+rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue function, character presence, or relationship pressure is in scope
+rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author-style match or author-aligned draft is being evaluated
+rules/sltd_human_surface_polish_anti_synthetic_gate.md if the next node may be surface polish
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md
+prompts/narrative_feature_audit.md
 prompts/node_checkpoint.md
 ```
 
@@ -59,6 +77,7 @@ prompts/node_checkpoint.md
 ```text
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, object state, relationship memory, or long-range context is in scope
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if dialogue is structurally decorative, causality is too tidy, or body/sensory pressure performs without consequence
 rules/sltd_character_voice_dialogue_relationship_location_gate.md
 samples/character_voice_dialogue_staging_calibration.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md if relationship memory, knowledge state, object state, or downstream risk is affected
@@ -80,6 +99,7 @@ AUTHOR_WORKING_PROFILE.md
 AUTHOR_TASTE_EXAMPLES.md
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if author-aligned prose may be structurally AI-shaped
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or prose permission is unclear
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, character voice, relationship, silence, presence, or staging is in scope
@@ -97,6 +117,7 @@ rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, packe
 rules/sltd_general_chapter_feedback_matrix_output_protocol.md
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if spine/source status is in scope
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state/thread/object/pass/downstream logic is in scope
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if story-decision AI smell, thematic overexplicitness, causal tidiness, or narrative diversity is a packet issue
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, relationship, or staging is a packet issue
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice match is a packet issue
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if human surface or pass integrity is in scope
@@ -111,6 +132,7 @@ source_surface_check when exact prose or status is required
 context_capsule_preflight when current source, hidden canon, POV knowledge, object state, relationship memory, lore retrieval, or long-range continuity is in scope
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md when spine or border is in scope
 rules/sltd_tracking_logic_ledger_traceability_gate.md when logic continuity is affected
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md when story-decision AI smell, thematic overexplicitness, causal tidiness, reveal value, body/sensory overperformance, or narrative diversity is in scope
 rules/sltd_character_voice_dialogue_relationship_location_gate.md when voice, relationship, or location staging is affected
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md when author voice, style match, or ghostwriter drafting is in scope
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md when human surface or pass integrity is affected
@@ -127,6 +149,7 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or prose permission is unclear
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if surface polish may hide structural AI smell or decorative body/sensory overperformance
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if voice, relationship, silence, presence, dialogue, or location staging is in scope
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice match or ghostwriter output is being polished
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
@@ -138,6 +161,8 @@ prompts/node_checkpoint.md
 ## Rule
 
 Run `context_capsule_preflight.md` when the task concerns current/latest source, Notion current manuscript, lock, readiness, Human Chapter Pass, Publication Lock, packet verdict, canon conflict, hidden canon, POV knowledge, object/location/body/debt state, relationship memory, lore retrieval, legacy source risk, summary-vs-source risk, or long-range continuity.
+
+Run `narrative_feature_audit.md` when the task concerns StoryScope-style narrative features, structural AI smell, theme overexplained, causal tidiness, single-track plot risk, protagonist understanding as resolution, temporal flatness, weak reveal/recontextualization, decorative body/sensory detail, or narrative diversity.
 
 Run `character_voice_dialogue_staging_check.md` when the task concerns dialogue, multi-character scenes, character voice, relationship memory, silence, interruptions, location staging, usable objects, tone, comedy, grief, or physical action.
 
