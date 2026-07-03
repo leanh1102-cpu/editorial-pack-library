@@ -154,7 +154,74 @@ prompts/narrative_feature_audit.md
 prompts/node_checkpoint.md
 ```
 
-### Packet / arc / feedback matrix
+### Character voice / dialogue / relationship / location staging
+
+```text
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, object state, relationship memory, or long-range context is in scope
+rules/sltd_narrative_claim_verification_clipper_discipline.md if a voice/knowledge/status claim needs evidence
+rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if character voice is one of several controlling constraints
+rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if voice/relationship harm is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if packet/arc voice or relationship clusters are in scope
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if dialogue is structurally decorative, causality is too tidy, or body/sensory pressure performs without consequence
+rules/sltd_character_voice_dialogue_relationship_location_gate.md
+samples/character_voice_dialogue_staging_calibration.md
+rules/sltd_tracking_logic_ledger_traceability_gate.md if relationship memory, knowledge state, object state, or downstream risk is affected
+rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or border is unclear
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese dialogue surface is in scope
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md if author style may overwrite character voice or needs claim-evidence memory
+rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice may overwrite character voice
+rules/sltd_character_distinctiveness_iceberg_gate.md if voice profile is unclear
+rules/sltd_living_world_community_motion_gate.md if group presence or community motion is in scope
+prompts/character_voice_dialogue_staging_check.md
+prompts/node_checkpoint.md
+```
+
+### Author writing sheet / claim-evidence style memory
+
+```text
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md
+AUTHOR_WORKING_PROFILE.md
+AUTHOR_TASTE_EXAMPLES.md
+rules/sltd_narrative_claim_verification_clipper_discipline.md if a style claim depends on a factual/status/canon claim
+rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if style is one of several draft constraints
+rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if style-over-character harm is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if author-style topic clusters are in scope
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md
+rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
+rules/sltd_character_voice_dialogue_relationship_location_gate.md if character voice may be affected
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface is being compared
+prompts/author_writing_sheet_check.md
+prompts/node_checkpoint.md
+```
+
+### Author voice fingerprint / ghostwriter discipline
+
+```text
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md
+AUTHOR_WORKING_PROFILE.md
+AUTHOR_TASTE_EXAMPLES.md
+rules/sltd_author_writing_sheet_claim_evidence_discipline.md if style claims need evidence or prompt-specific story rules
+rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
+rules/sltd_narrative_claim_verification_clipper_discipline.md if author-aligned draft depends on status/canon/continuity claim
+rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if author-aligned draft must preserve multiple constraints
+rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if author-aligned draft has high downstream harm risk
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if author-style thread/topic clusters are in scope
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if author-aligned prose may be structurally AI-shaped
+rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or prose permission is unclear
+rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
+rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, character voice, relationship, silence, presence, or staging is in scope
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface is in scope
+prompts/author_writing_sheet_check.md if no claim-evidence style memory exists
+prompts/author_voice_fingerprint_check.md for sample/style extraction or voice match
+prompts/author_aligned_ghostwriter_draft.md for bounded source-safe drafting
+prompts/node_checkpoint.md
+```
+
+### General + chapter feedback matrix
 
 ```text
 rules/sltd_source_fidelity_anti_compression.md
@@ -206,6 +273,7 @@ rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidde
 rules/sltd_narrative_claim_verification_clipper_discipline.md if the patch depends on a factual/canon/continuity claim
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if polish must preserve multiple constraints
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if over-polish or false-surface harm is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md only if surface issue is actually map-level repetition/thread drift
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or prose permission is unclear
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if surface polish may hide structural AI smell or decorative body/sensory overperformance
