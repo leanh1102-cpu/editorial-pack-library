@@ -16,13 +16,17 @@ Verify source fidelity rule and source surface prompt exist and exact prose/stat
 
 Verify Context Capsule files exist, task is allowed, Entry and Router place Context Capsule after Source Preflight and before downstream roles when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
 
+## Check comparative editorial feedback delta discipline
+
+Verify the rule, prompt, and calibration sample exist, are listed in manifest, and `comparative_editorial_feedback_delta_check` is listed in allowed_tasks.
+
+Verify Task Router and Role Entry Index route this as a feedback-translation role for increase/decrease/preserve/prohibit deltas, A/B comparison, vague preference clarification, reader-effect targets, and revision tests.
+
+Verify the gate blocks vague preference, missing scope, missing target span, missing preserve/prohibit list, generic style-law drift, source/canon/POV/reveal conflict, rewrite permission from feedback alone, and project-management artifacts.
+
 ## Check human expert AI-smell explanation discipline
 
-Verify the rule, prompt, and calibration sample exist, are listed in manifest, and `human_expert_ai_smell_explanation_check` is listed in allowed_tasks.
-
-Verify Task Router and Role Entry Index route this as a span-based reader-effect explanation role for synthetic surface, same-voice dialogue, over-clean prose, outline labels, false-positive risk, and repair direction.
-
-Verify the gate requires span, reason, false-positive risk, source/canon/voice separation, and next route; it must not become source truth, authorship verdict, detector score, rewrite permission, Human Chapter Pass, readiness, Publication Lock, or project-management artifact.
+Verify Human Expert AI-Smell Explanation rule/prompt/sample exist, task is allowed, route explains reader-facing synthetic effects without detector score, authorship accusation, or readiness authority.
 
 ## Check multilingual long-context retrieval and OneRuler discipline
 
@@ -62,11 +66,11 @@ Verify Author Voice / Author-Aligned Drafting files exist, tasks are allowed, Au
 
 ## Check human surface polish and anti-synthetic prose discipline
 
-Verify Human Surface Polish files exist, task is allowed, route runs after source/context/retrieval/AI-smell explanation/story/voice/style/constraint/harm/topic-map/reference-quality blockers, and it cannot authorize new canon, scene outcome changes, readiness, Human Chapter Pass, Publication Lock, or project-management artifacts.
+Verify Human Surface Polish files exist, task is allowed, route runs after source/context/retrieval/feedback-delta/AI-smell explanation/story/voice/style/constraint/harm/topic-map/reference-quality blockers, and it cannot authorize new canon, scene outcome changes, readiness, Human Chapter Pass, Publication Lock, or project-management artifacts.
 
 ## Check role boundary and role entry index
 
-Verify Role Entry Index includes Human Expert AI-Smell Explanation and the other prompt-routed roles where applicable, and role boundary contracts still prevent silent Notion/GitHub/source writes and role mixing.
+Verify Role Entry Index includes Comparative Editorial Feedback Delta, Human Expert AI-Smell Explanation, and the other prompt-routed roles where applicable, and role boundary contracts still prevent silent Notion/GitHub/source writes and role mixing.
 
 ## Check character voice, dialogue, relationship memory, and location staging
 
@@ -82,7 +86,7 @@ Verify these gates remain listed and routed when their scope is in play.
 
 ## Check route governance
 
-Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements, retrieval requirements, AI-smell explanation requirements, reference quality requirements, corpus topic/thread requirements, claim verification requirements, multi-constraint ledger requirements, editorial harm requirements, narrative feature requirements, author writing sheet requirements, author voice / drafting requirements, human surface polish requirements, and no gate cascade.
+Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements, retrieval requirements, feedback delta requirements, AI-smell explanation requirements, reference quality requirements, corpus topic/thread requirements, claim verification requirements, multi-constraint ledger requirements, editorial harm requirements, narrative feature requirements, author writing sheet requirements, author voice / drafting requirements, human surface polish requirements, and no gate cascade.
 
 ## Check orphan risk
 
