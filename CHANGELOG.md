@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.33
+
+- Added structural spine, outline pre-prose, and borderbound protocol.
+- Added structural_spine_outline_preprose_check task and prompt.
+- Added structural spine / outline pre-prose calibration samples.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.32
 
 - Added AI repair smell blockers to supernatural residue gate.
@@ -49,13 +56,3 @@
 - Added prose craft, genre style, and material calibration rule.
 - Added prose_craft_style_check task and prompt.
 - Added prose craft/style/material calibration samples.
-
-## 1.10.23
-
-- Added scene composition ratio and component balance rule.
-- Added scene_composition_balance_check task and prompt.
-
-## 1.10.22
-
-- Added narrative beat escalation and aftershock rule.
-- Added narrative_beat_escalation_check task and prompt.
