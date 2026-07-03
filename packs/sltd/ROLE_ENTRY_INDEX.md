@@ -8,6 +8,8 @@ Role entry cards do not replace `rules/sltd_role_boundary_contracts.md`. They ar
 
 Context Capsule is not a role card. It is a pre-role source/context gate used when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
 
+Corpus Topic / Thread Discovery may be routed as a prompt-based map-level navigation role. It is not source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
+
 Narrative Claim Verifier may be routed as a prompt-based evidence/source role. It is not readiness, canon authority, prose polish, or publication lock authority.
 
 Multi-Constraint Instruction Ledger may be routed as a prompt-based constraint tracking role. It is not source authority, canon authority, prose polish, Human Chapter Pass, readiness, or publication lock authority.
@@ -37,6 +39,7 @@ Editorial Director -> roles/editorial_director.md
 ## Prompt-routed roles without standalone role cards
 
 ```text
+Corpus Topic / Thread Discovery -> prompts/corpus_topic_thread_discovery_check.md + rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md
 Narrative Claim Verifier -> prompts/narrative_claim_verification_check.md + rules/sltd_narrative_claim_verification_clipper_discipline.md
 Multi-Constraint Instruction Ledger -> prompts/multi_constraint_instruction_check.md + rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md
 Editorial Harm Anticipation -> prompts/editorial_harm_anticipation_check.md + rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md
@@ -55,16 +58,17 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 3. Read role boundary contracts.
 4. Run source preflight / source surface as required.
 5. Run context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
-6. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
-7. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
-8. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
-9. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
-10. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
-11. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
-12. Read the requested role card or prompt-routed role.
-13. Read source/evidence files needed by the role.
-14. Execute the smallest safe task.
-15. End with node checkpoint or result report.
+6. Run corpus topic / thread discovery when packet/arc/series map, motif clusters, repeated AI-smell clusters, topic gaps, or thread drift need quote/evidence anchors.
+7. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
+8. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
+9. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
+10. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
+11. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
+12. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
+13. Read the requested role card or prompt-routed role.
+14. Read source/evidence files needed by the role.
+15. Execute the smallest safe task.
+16. End with node checkpoint or result report.
 ```
 
 ## Conflict rule
@@ -72,6 +76,8 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 If a role card and role boundary contracts disagree, use `rules/sltd_role_boundary_contracts.md`.
 
 If Context Capsule blocks, do not continue into a later role to hide the source/context failure.
+
+If Corpus Topic / Thread Discovery blocks because source, quote/evidence anchor, current assignment evidence, or low-frequency canon/reveal/payoff check is missing, do not use the topic map as readiness, canon verdict, or rewrite permission.
 
 If Narrative Claim Verification returns UNCERTAIN or disproves a status/lock/readiness/canon claim, do not continue into readiness, Publication Lock, or prose repair to hide the evidence failure.
 
@@ -99,6 +105,7 @@ ROLE CARD / PROMPT READ:
 BOUNDARY READ:
 CONTEXT CAPSULE REQUIRED:
 CONTEXT CAPSULE STATUS:
+CORPUS TOPIC / THREAD DISCOVERY REQUIRED:
 CLAIM VERIFICATION REQUIRED:
 MULTI-CONSTRAINT LEDGER REQUIRED:
 EDITORIAL HARM ANTICIPATION REQUIRED:
