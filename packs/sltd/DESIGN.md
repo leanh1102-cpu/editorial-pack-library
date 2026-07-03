@@ -10,16 +10,17 @@ The pack helps the agent:
 - preserve exact source surface before editing;
 - keep Entry as a router, not a maze;
 - enforce structural spine, outline pre-prose, and borderbound before prose work;
+- enforce tracking, logic ledger, and traceability before edits that affect continuity;
 - enforce Vietnamese senior-editor surface reading and pass integrity before readiness claims;
 - protect supernatural event residue and dread amplitude without early deep-lore reveal;
 - control Dai Phong's inquiry, clue chain, and protagonist growth as source-bound development;
-- preserve timeline, POV, folklore, prose craft, scene composition, beat escalation, living world motion, chapter assembly, Vietnamese register, paragraph rhythm, character distinctiveness, scene-first judgment, anti-AI composite checks, agency, and cadence.
+- preserve timeline, POV, folklore, prose craft, scene composition, beat escalation, living world motion, chapter assembly, Vietnamese register, paragraph rhythm, character distinctiveness, scene-first judgment, agency, and cadence.
 
 ## Source of truth
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, source fidelity, structural spine, Vietnamese surface/pass integrity, supernatural residue, protagonist inquiry, protagonist advancement, and prose gates
+GitHub = editorial rules, routing, evidence discipline, source fidelity, structural spine, tracking/logic ledger, Vietnamese surface/pass integrity, supernatural residue, protagonist inquiry, protagonist advancement, and prose gates
 User instruction = current task and final authority for writes
 ```
 
@@ -35,7 +36,8 @@ task_router
 entry route governance check when route, gate budget, or stop condition is unclear
 source surface check when exact source may be missing
 structural spine outline pre-prose check when act/arc/hoi/chapter/scene/outline/card/packet/border/prose permission is in scope
-vietnamese senior editor surface check when exact Vietnamese prose surface, read-aloud friction, semantic load, pass metadata, or readiness trust is in scope
+tracking logic ledger check when state trace, knowledge state, object/residue/thread status, payoff debt, pass trace, downstream risk, or verify target is in scope
+vietnamese senior editor surface check when exact Vietnamese prose surface, semantic load, pass metadata, or readiness trust is in scope
 supernatural event residue check when dread, folklore, beast, relic, fog, forest, shrine, or deep-lore residue is in scope
 protagonist inquiry check when private question, small test, kept detail, clue chain, or small secret is in scope
 protagonist advancement check when gain, cost, knowledge limit, or growth route is in scope
@@ -49,10 +51,10 @@ Use the smallest route that answers the request.
 ## Source fidelity model
 
 ```text
-SOURCE TEXT > STRUCTURAL SOURCE > DERIVED DIGEST > CHAT MEMORY
+SOURCE TEXT > TRACKING SURFACE > STRUCTURAL SOURCE > DERIVED DIGEST > CHAT MEMORY
 ```
 
-Line edit, rewrite, readiness, lock verdict, structural spine, Vietnamese human surface, pass integrity, supernatural residue, protagonist inquiry, and protagonist advancement require the right source surface.
+Line edit, rewrite, readiness, lock verdict, structural spine, tracking logic, Vietnamese human surface, pass integrity, supernatural residue, protagonist inquiry, and protagonist advancement require the right source surface.
 
 ## Structural spine model
 
@@ -64,6 +66,20 @@ OUTLINE_PREFLIGHT = checking Story Outline, Chapter by Chapter Outline, Chapter 
 BORDERBOUND = what the scene/chapter may cover and must not cross
 PROSE_PERMISSION = allowed only when outline and border are adequate
 OUTLINE_REPAIR_REQUIRED = stop prose because detail spine is missing, thin, contradictory, or not source-current
+```
+
+## Tracking, logic ledger, and traceability model
+
+No prose change without tracking impact.
+
+```text
+TRACKING_SURFACE = current source nodes that hold traceable logic: Story Outline, Chapter by Chapter Outline, Chapter Index, Scene Bank, Chapter Card, Plot Threads, canon index, Notes, comments, or exact source excerpt
+LOGIC_LEDGER = compact record of state before/after, who knows what, object/residue/thread status, pass trace, and downstream risk
+STATE_TRACE = before state -> after state for body, family, house, debt, name, paper, route, object, witness, rumor, power, and relation
+KNOWLEDGE_TRACE = what Dai Phong knows, what adults know, what community misreads, what reader suspects, and what must remain hidden
+OBJECT_TRACE = when an object appears, changes function, is hidden, witnessed, paid off, retired, or remains open
+THREAD_TRACE = plant / hold / pay / retire status for foreshadowing, folklore, residue, clue, social pressure, and protagonist method
+CHANGE_TRACE = what an edit changes and what downstream source nodes must be checked afterward
 ```
 
 ## Vietnamese senior-editor surface and pass integrity model
@@ -100,11 +116,13 @@ Dai Phong must not only receive events. He must form child-scale private questio
 - No readiness claim without evidence.
 - Entry is a router, not a maze.
 - Stop at the first real blocker.
-- Story Outline, Chapter by Chapter Outline, Chapter Card, Scene Packet, status notes, Human Chapter Pass, and Publication Lock are structural/status sources when prose permission or readiness is at stake.
+- Story Outline, Chapter by Chapter Outline, Chapter Card, Scene Packet, Plot Threads, status notes, Human Chapter Pass, and Publication Lock are structural/status/tracking sources when prose permission or readiness is at stake.
 - Do not use prose to solve missing structure.
+- Do not edit without tracking impact when continuity is at stake.
 - Do not use formal pass labels as readiness proof.
 - Exact Vietnamese surface verdict requires exact prose.
-- Protagonist gain, supernatural residue, lore, and clue chain must sit inside the current scene/chapter spine.
+- Logic continuity verdict requires current tracking surface.
+- Protagonist gain, supernatural residue, lore, and clue chain must sit inside the current scene/chapter spine and trace.
 - Supernatural pressure must not remain mood only.
 - Deep lore appears early as residue, not explanation.
 - Threads must be planted, held, paid, or retired with evidence.
