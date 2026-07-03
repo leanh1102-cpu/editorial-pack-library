@@ -23,6 +23,8 @@ Review modes change the lens. They do not become roles.
 
 Context Capsule is not a prose, story, line, canon, or readiness role. It is a pre-role source/context gate. If it blocks, later roles must stop instead of continuing from memory or plausible continuity.
 
+Human Surface Polish is not detector bypass, story repair, canon repair, or readiness. It is a late prose role used only after source/context/story/voice constraints are clear enough.
+
 ## Role order principle
 
 ```text
@@ -30,7 +32,8 @@ source and context before canon
 canon before story
 story before intensity
 intensity before line surgery
-line surgery before copyedit
+line surgery before human surface polish
+human surface polish before copyedit
 copyedit before proofread
 proofread before readiness
 readiness before publication lock claim
@@ -235,7 +238,7 @@ MAY DO:
 - split or reorder stiff sentences;
 - reduce abstract phrasing;
 - restore body, object, silence, and action;
-- mark need for line surgery or scene rewrite.
+- mark need for line surgery, human surface polish, or scene rewrite.
 
 MUST NOT DO:
 - solve story failure by pretty prose;
@@ -246,14 +249,15 @@ MUST NOT DO:
 OUTPUT:
 - prose issue;
 - minimal patch;
-- line surgery recommendation;
+- line surgery or human surface polish recommendation;
 - voice risk.
 
 DONE WHEN:
 - prose reads naturally for the scoped passage, or failure is escalated.
 
 HANDOFF TO:
-- Copyeditor if line prose passes;
+- Human Surface Polish if prose is correct but still synthetic, over-clean, same-voiced, or falsely smooth;
+- Copyeditor if line prose and human surface pass;
 - Line Surgery if sentence-level repair is needed;
 - Story Doctor if prose failure is structural.
 
@@ -304,7 +308,8 @@ DONE WHEN:
 - scoped lines pass mouth-read check or are escalated.
 
 HANDOFF TO:
-- Copyeditor if pass;
+- Human Surface Polish if the line set is repaired but still falsely smooth, same-voiced, or synthetic-surface thin;
+- Copyeditor if pass and human surface is already clean;
 - Rewrite Scene if over threshold;
 - Vietnamese Line Editor if broad prose rhythm still needs work.
 
@@ -314,18 +319,75 @@ STOP WHEN:
 - context capsule blocks required source/context;
 - repair load exceeds 30 percent.
 
+## Human Surface Polish
+
+ROLE: Human Surface Polish
+
+START WHEN:
+- exact current prose surface has been read;
+- story, canon, intensity, voice, and line-level permission are settled enough;
+- the passage is correct in meaning but still reads synthetic, over-clean, falsely smooth, same-voiced, symbol-first, or thin in body/object/relationship pressure;
+- user asks for human surface, humanize, anti-synthetic polish, văn nghe người hơn, đúng ý nhưng giả, or mượt giả.
+
+READ BEFORE:
+- source surface result for the exact prose;
+- Context Capsule result when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope;
+- Vietnamese Senior Editor Surface result if human surface or pass integrity is in scope;
+- Character Voice / Dialogue / Staging result if voice, relationship, silence, presence, or location staging is in scope;
+- AUTHOR_TASTE_EXAMPLES.md;
+- `rules/sltd_human_surface_polish_anti_synthetic_gate.md`.
+
+MAY DO:
+- identify false smoothing, same-voice polish, symbolic drift, object/body loss, relationship flattening, or generic emotional polish;
+- propose minimal OLD/NEW patches;
+- restore body, object, silence, action, and read-aloud Vietnamese using only existing source pressure;
+- mark detector-bypass framing as blocked;
+- route back to Line Surgery or Rewrite Scene if repair load is too high.
+
+MUST NOT DO:
+- bypass AI detectors or frame the task as detector evasion;
+- add canon, scene beat, object, relationship, secret, payoff, or metaphor;
+- change scene function, outcome, or reveal timing;
+- make rough characters fluent because polish wants smoothness;
+- call Human Chapter Pass, readiness, or Publication Lock.
+
+OUTPUT:
+- HUMAN_SURFACE_READY;
+- HUMAN_SURFACE_NEEDS_PATCH;
+- HUMAN_SURFACE_BLOCKED;
+- OLD/NEW patches;
+- next node.
+
+DONE WHEN:
+- the scoped passage keeps source meaning, pressure, voice, and reveal locks while reading as lived Vietnamese prose;
+- or the pass blocks and hands back to the earlier role.
+
+HANDOFF TO:
+- Copyeditor if human surface passes;
+- Line Surgery if sentence-level repair remains;
+- Voice / Dialogue / Staging if same-voice or relationship loss remains;
+- Story Doctor or Intensity Editor if the polish exposes structural thinness.
+
+STOP WHEN:
+- exact prose source is missing;
+- context capsule blocks required source/context;
+- repair would change canon, scene function, outcome, or reveal timing;
+- detector-bypass is the goal;
+- repair load exceeds 30 percent.
+
 ## Copyeditor
 
 ROLE: Copyeditor
 
 START WHEN:
-- story, canon, intensity, prose, and reader pull are acceptable;
+- story, canon, intensity, prose, human surface, and reader pull are acceptable;
 - the task is technical consistency.
 
 READ BEFORE:
 - copyedit/proofread rule;
 - current source;
 - term/name/xung ho context;
+- Human Surface Polish result if prose was previously flagged as synthetic, over-clean, same-voiced, or falsely smooth;
 - Context Capsule result if source status, relationship memory, names, terms, or long-range continuity is in scope.
 
 MAY DO:
@@ -335,7 +397,8 @@ MUST NOT DO:
 - change story function;
 - change character voice for style;
 - add scene beats;
-- call readiness.
+- call readiness;
+- smooth prose that Human Surface Polish has intentionally left rough.
 
 OUTPUT:
 - COPYEDIT_PASS;
@@ -347,6 +410,7 @@ DONE WHEN:
 
 HANDOFF TO:
 - Proofreader if clean;
+- Human Surface Polish if prose becomes technically clean but lifeless, same-voiced, or falsely smooth;
 - Vietnamese Line Editor if prose is still unnatural;
 - Canon Guard if term/source conflict appears.
 
@@ -360,7 +424,7 @@ STOP WHEN:
 ROLE: Proofreader
 
 START WHEN:
-- chapter already passes story, prose, canon, intensity, and reader checks;
+- chapter already passes story, prose, human surface, canon, intensity, and reader checks;
 - only final surface errors remain.
 
 READ BEFORE:
@@ -386,10 +450,11 @@ DONE WHEN:
 
 HANDOFF TO:
 - Publishing Readiness Reviewer if all prior layers pass;
-- Copyeditor if consistency issue remains.
+- Copyeditor if consistency issue remains;
+- Human Surface Polish if proofread exposes lifeless smoothing rather than a typo-level issue.
 
 STOP WHEN:
-- line prose or story is still failing;
+- line prose, human surface, or story is still failing;
 - context capsule blocks source-status separation.
 
 ## Publishing Readiness Reviewer
@@ -405,6 +470,7 @@ READ BEFORE:
 - Chapter Review;
 - Scene Bank if needed;
 - Context Capsule result for current source/status, hidden canon, POV knowledge, and source-status separation;
+- Human Surface Polish result if synthetic-surface risk was flagged;
 - Publication Lock / Human Chapter Pass fields;
 - evidence discipline.
 
@@ -431,7 +497,7 @@ DONE WHEN:
 
 HANDOFF TO:
 - Editorial Director if prioritization is needed;
-- Story Doctor, Line Surgery, or Canon Guard depending on blocker.
+- Story Doctor, Human Surface Polish, Line Surgery, or Canon Guard depending on blocker.
 
 STOP WHEN:
 - current status source was not read;
@@ -454,6 +520,7 @@ READ BEFORE:
 - node ledger;
 - context brief for large scope;
 - Context Capsule result if current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope;
+- Human Surface Polish result if the priority is correct-but-synthetic prose;
 - evidence discipline;
 - user priority.
 
@@ -488,7 +555,7 @@ STOP WHEN:
 
 ## Learning and calibration boundary
 
-Failure examples, author taste examples, and future model learning may improve recognition of patterns.
+Failure examples, author taste examples, human-surface samples, and future model learning may improve recognition of patterns.
 
 They do not override:
 
@@ -500,7 +567,7 @@ They do not override:
 - human pass;
 - publication lock.
 
-Use learned taste to choose among safe edits, not to invent facts or force a scene into a preferred style.
+Use learned taste to choose among safe edits, not to invent facts, bypass detectors, or force a scene into a preferred style.
 
 ## Output for role-boundary check
 
@@ -512,6 +579,7 @@ START CONDITION MET: YES / NO
 SOURCE READY: YES / NO
 CONTEXT CAPSULE REQUIRED: YES / NO
 CONTEXT CAPSULE STATUS:
+HUMAN SURFACE POLISH REQUIRED: YES / NO
 MAY DO:
 MUST NOT DO:
 DONE CRITERIA:

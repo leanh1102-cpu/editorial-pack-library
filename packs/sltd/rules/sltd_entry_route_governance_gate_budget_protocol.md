@@ -26,10 +26,10 @@ Run a gate only when the request or evidence makes it necessary.
 - the user asks whether Entry is too large, confusing, or likely to cause route chaos;
 - a task could trigger three or more gates;
 - a rewrite/readiness/packet request risks becoming a full diagnostic cascade;
-- context capsule, tracking, structural, voice, surface, readiness, or matrix routes compete for primary route;
+- context capsule, tracking, structural, voice, surface, human surface polish, readiness, or matrix routes compete for primary route;
 - current source, hidden canon, POV knowledge, source-status separation, or long-range continuity could trigger unnecessary downstream gates;
-- the agent is unsure whether to run scene transition, timeline, craft, composition, beat, living world, character, register, layout, agency, dynamic range, or anti-AI checks;
-- a prior result feels checklist-first, over-routed, slow, or over-repaired;
+- the agent is unsure whether to run scene transition, timeline, craft, composition, beat, living world, character, register, layout, agency, dynamic range, human surface polish, or anti-AI checks;
+- a prior result feels checklist-first, over-routed, slow, over-polished, or over-repaired;
 - source is missing and the agent is tempted to keep analyzing from memory;
 - a task needs route selection before editorial work begins.
 
@@ -50,7 +50,7 @@ role boundary contracts
 
 It does not override a user's explicit request to run a named mode or gate.
 
-It does not authorize skipping source requirements, canon guard, context capsule, or readiness evidence.
+It does not authorize skipping source requirements, canon guard, context capsule, human surface polish blockers, or readiness evidence.
 
 ## Route selection order
 
@@ -67,7 +67,7 @@ Use this order:
 
 If the source is missing, the primary route is source preflight or source surface check. Do not continue into creative gates.
 
-If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, run context capsule preflight before later creative, logic, surface, matrix, or readiness gates.
+If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, run context capsule preflight before later creative, logic, surface, human surface polish, matrix, or readiness gates.
 
 ## Primary route triggers
 
@@ -77,6 +77,7 @@ Use the user's strongest noun or verb as the primary route:
 current / latest / Notion / source status / hidden canon / POV knowledge / long-range continuity -> context capsule preflight
 rewrite / sửa cảnh -> scene rewrite or first-pass editorial workflow
 line / câu / đoạn -> line surgery
+human surface / humanize / polish / đúng mà giả / mượt giả / văn nghe AI nhưng đúng ý -> human surface polish pass
 readiness / lock / pass -> readiness route
 packet / arc / C001-C030 -> chapter/packet/arc review
 timeline / POV / phục bút / folklore -> timeline POV foreshadowing folklore check
@@ -111,6 +112,13 @@ Line surgery:
 - source surface check
 - 1 primary blocker
 - 0-1 secondary dependency
+
+Human surface polish:
+- source surface check when exact prose is patched
+- context capsule preflight if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
+- Vietnamese senior editor surface or voice/staging only if evidence shows surface/voice blocker
+- human surface polish pass
+- stop before copyedit/readiness if repair load exceeds 30 percent, source is missing, or polishing would change scene function/canon/outcome
 
 Scene rewrite:
 - source surface check
@@ -154,6 +162,7 @@ requested rewrite or patch is complete within scope;
 readiness is blocked by a higher-priority gate;
 additional gates would be speculative;
 additional repair would invent canon, timeline, folklore, motive, or source surface;
+human surface polish would smooth away body/object pressure, relationship memory, or useful roughness;
 secondary gate budget has been spent;
 user asked for a specific answer and the answer is complete.
 ```
@@ -183,7 +192,7 @@ GATE BUDGET:
 STOP CONDITION:
 ```
 
-If the edit begins to add body, object, silence, rumor, beat, world texture, character gesture, and line-break changes all at once, stop and run Anti-AI Composite or Scene-First Prose Judgment.
+If the edit begins to add body, object, silence, rumor, beat, world texture, character gesture, line-break changes, and human-surface polish all at once, stop and run Anti-AI Composite or Scene-First Prose Judgment.
 
 ## Failure labels
 
@@ -198,6 +207,7 @@ SECONDARY_GATE_OVERUSE
 STOP_CONDITION_MISSING
 SOURCE_SURFACE_FORGOTTEN
 CONTEXT_CAPSULE_FORGOTTEN
+HUMAN_SURFACE_OVERPOLISH_RISK
 FALSE_PRECISION_ROUTE
 PATCH_OVERFITTING
 EDITORIAL_LATENCY_RISK
@@ -212,6 +222,7 @@ Safe repair may:
 - cap secondary gates;
 - state stop condition before editing;
 - require context capsule before downstream gates when current source, hidden canon, POV knowledge, or long-range continuity is in scope;
+- route correct-but-synthetic prose to Human Surface Polish only after source and prose permission are clear;
 - convert a broad request into context brief plus next node;
 - mark missing source instead of running gates from memory;
 - hand off to the one route that owns the primary blocker.
@@ -221,6 +232,7 @@ Safe repair must not:
 - drop required source checks;
 - skip context capsule when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is at stake;
 - skip canon guard when canon is at stake;
+- use human surface polish to bypass detectors, hide story failure, or smooth away survival pressure;
 - ignore explicit user-requested review modes;
 - use budget rules to avoid a necessary blocker;
 - continue running gates after a stop condition;
@@ -237,6 +249,7 @@ SOURCE USED:
 REQUEST TYPE:
 SOURCE REQUIREMENT:
 CONTEXT CAPSULE REQUIREMENT:
+HUMAN SURFACE POLISH REQUIREMENT:
 PRIMARY BLOCKER:
 PRIMARY ROUTE:
 SECONDARY GATES ALLOWED:
@@ -256,6 +269,8 @@ If source is missing, hand off to Source Preflight or Source Surface Check.
 
 If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, hand off to Context Capsule Preflight before downstream gates.
 
+If the task asks for correct-but-synthetic prose repair, hand off to Human Surface Polish after source surface and earlier blockers are clear.
+
 If current status, lock, readiness, or canon is requested, hand off to current Notion/source-specific route before verdict.
 
 If the task asks for a broad packet/arc review, hand off to Context Brief and Packet Review.
@@ -272,4 +287,5 @@ GATE_CASCADE_BLOCKED
 CHECKLIST_FIRST_REPAIR_BLOCKED
 SOURCE_REQUIRED_BEFORE_ROUTE
 CONTEXT_CAPSULE_REQUIRED_BEFORE_ROUTE
+HUMAN_SURFACE_REQUIRED_BEFORE_COPYEDIT
 ```
