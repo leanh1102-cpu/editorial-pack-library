@@ -26,6 +26,8 @@ Run a gate only when the request or evidence makes it necessary.
 - the user asks whether Entry is too large, confusing, or likely to cause route chaos;
 - a task could trigger three or more gates;
 - a rewrite/readiness/packet request risks becoming a full diagnostic cascade;
+- context capsule, tracking, structural, voice, surface, readiness, or matrix routes compete for primary route;
+- current source, hidden canon, POV knowledge, source-status separation, or long-range continuity could trigger unnecessary downstream gates;
 - the agent is unsure whether to run scene transition, timeline, craft, composition, beat, living world, character, register, layout, agency, dynamic range, or anti-AI checks;
 - a prior result feels checklist-first, over-routed, slow, or over-repaired;
 - source is missing and the agent is tempted to keep analyzing from memory;
@@ -39,6 +41,7 @@ This protocol sits below:
 current user instruction
 current Notion source or user-provided source packet
 source preflight
+context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope
 source fidelity gate
 decision safety
 evidence discipline
@@ -47,7 +50,7 @@ role boundary contracts
 
 It does not override a user's explicit request to run a named mode or gate.
 
-It does not authorize skipping source requirements, canon guard, or readiness evidence.
+It does not authorize skipping source requirements, canon guard, context capsule, or readiness evidence.
 
 ## Route selection order
 
@@ -64,11 +67,14 @@ Use this order:
 
 If the source is missing, the primary route is source preflight or source surface check. Do not continue into creative gates.
 
+If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, run context capsule preflight before later creative, logic, surface, matrix, or readiness gates.
+
 ## Primary route triggers
 
 Use the user's strongest noun or verb as the primary route:
 
 ```text
+current / latest / Notion / source status / hidden canon / POV knowledge / long-range continuity -> context capsule preflight
 rewrite / sửa cảnh -> scene rewrite or first-pass editorial workflow
 line / câu / đoạn -> line surgery
 readiness / lock / pass -> readiness route
@@ -95,6 +101,12 @@ Simple advisory answer:
 - 1 primary route
 - 0-1 secondary gate
 
+Context capsule preflight:
+- source preflight or source surface check when exact/current status is required
+- context capsule preflight
+- 0-2 dependent gates only when capsule exposes a real blocker
+- stop before prose/readiness verdict if source, POV knowledge, hidden canon, object state, or source status is unclear
+
 Line surgery:
 - source surface check
 - 1 primary blocker
@@ -102,12 +114,14 @@ Line surgery:
 
 Scene rewrite:
 - source surface check
+- context capsule preflight if current source, hidden canon, POV knowledge, relationship memory, object state, or long-range continuity is in scope
 - first-pass editorial workflow
 - 1 primary target gate
 - up to 2 secondary gates
 
 Chapter readiness:
 - source surface / current Notion if current status is asked
+- context capsule preflight before status/pass verdict when current source, hidden canon, POV knowledge, or source-status separation is in scope
 - chapter assembly if reader unit is in scope
 - up to 3 issue-specific checks
 - readiness reviewer
@@ -115,11 +129,13 @@ Chapter readiness:
 Packet / arc review:
 - context brief
 - source preflight
+- context capsule preflight when packet scope, canon status, hidden canon, source-status separation, or long-range continuity is in scope
 - 2-4 map-level checks
 - no line edit unless requested
 
 Current lock / canon / publication status:
 - current Notion or exact provided source
+- context capsule preflight
 - relevant status route only
 - stop if evidence is missing
 ```
@@ -132,6 +148,7 @@ Stop when:
 
 ```text
 source is missing or current source was not read for a current-status claim;
+context capsule blocks because POV knowledge, hidden canon, source status, object state, or long-range context is unclear;
 primary blocker has been identified and next node is clear;
 requested rewrite or patch is complete within scope;
 readiness is blocked by a higher-priority gate;
@@ -180,6 +197,7 @@ PRIMARY_ROUTE_UNCLEAR
 SECONDARY_GATE_OVERUSE
 STOP_CONDITION_MISSING
 SOURCE_SURFACE_FORGOTTEN
+CONTEXT_CAPSULE_FORGOTTEN
 FALSE_PRECISION_ROUTE
 PATCH_OVERFITTING
 EDITORIAL_LATENCY_RISK
@@ -193,6 +211,7 @@ Safe repair may:
 - reduce route chain to the smallest useful path;
 - cap secondary gates;
 - state stop condition before editing;
+- require context capsule before downstream gates when current source, hidden canon, POV knowledge, or long-range continuity is in scope;
 - convert a broad request into context brief plus next node;
 - mark missing source instead of running gates from memory;
 - hand off to the one route that owns the primary blocker.
@@ -200,6 +219,7 @@ Safe repair may:
 Safe repair must not:
 
 - drop required source checks;
+- skip context capsule when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is at stake;
 - skip canon guard when canon is at stake;
 - ignore explicit user-requested review modes;
 - use budget rules to avoid a necessary blocker;
@@ -216,6 +236,7 @@ SCOPE:
 SOURCE USED:
 REQUEST TYPE:
 SOURCE REQUIREMENT:
+CONTEXT CAPSULE REQUIREMENT:
 PRIMARY BLOCKER:
 PRIMARY ROUTE:
 SECONDARY GATES ALLOWED:
@@ -233,6 +254,8 @@ NEXT NODE:
 
 If source is missing, hand off to Source Preflight or Source Surface Check.
 
+If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, hand off to Context Capsule Preflight before downstream gates.
+
 If current status, lock, readiness, or canon is requested, hand off to current Notion/source-specific route before verdict.
 
 If the task asks for a broad packet/arc review, hand off to Context Brief and Packet Review.
@@ -248,4 +271,5 @@ ROUTE_OVERLOAD_DETECTED
 GATE_CASCADE_BLOCKED
 CHECKLIST_FIRST_REPAIR_BLOCKED
 SOURCE_REQUIRED_BEFORE_ROUTE
+CONTEXT_CAPSULE_REQUIRED_BEFORE_ROUTE
 ```
