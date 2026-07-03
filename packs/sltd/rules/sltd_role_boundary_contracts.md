@@ -11,6 +11,7 @@ Every role must obey:
 - user current instruction;
 - current Notion source or user-provided current packet;
 - source preflight;
+- context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope;
 - decision safety;
 - evidence discipline;
 - canon guard;
@@ -20,10 +21,13 @@ A role may produce a candidate. It may not silently update Notion, GitHub, or ma
 
 Review modes change the lens. They do not become roles.
 
+Context Capsule is not a prose, story, line, canon, or readiness role. It is a pre-role source/context gate. If it blocks, later roles must stop instead of continuing from memory or plausible continuity.
+
 ## Role order principle
 
 ```text
-source and canon before story
+source and context before canon
+canon before story
 story before intensity
 intensity before line surgery
 line surgery before copyedit
@@ -64,6 +68,7 @@ START WHEN:
 READ BEFORE:
 - current user instruction;
 - source preflight result;
+- context capsule preflight result when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope;
 - current Notion source or user-provided source;
 - relevant canon index if available;
 - evidence discipline.
@@ -98,6 +103,7 @@ HANDOFF TO:
 
 STOP WHEN:
 - current source is missing;
+- context capsule blocks current source, hidden canon, POV knowledge, or source-status separation;
 - canon conflict lacks current decision;
 - user asks for lock but lock source was not read.
 
@@ -114,6 +120,7 @@ START WHEN:
 
 READ BEFORE:
 - Canon Guard result;
+- Context Capsule result if current source, hidden canon, POV knowledge, relationship memory, object state, or long-range continuity is in scope;
 - Scene Bank or chapter source;
 - Story Outline if needed;
 - Webnovel Momentum Benchmark if packet pull is asked.
@@ -148,6 +155,7 @@ HANDOFF TO:
 
 STOP WHEN:
 - source or scope is missing;
+- context capsule blocks required source/context;
 - scene function is unclear;
 - repair would require canon invention.
 
@@ -165,6 +173,7 @@ START WHEN:
 READ BEFORE:
 - Canon Guard result;
 - Story Doctor result if available;
+- Context Capsule result if object/location/body/debt state, relationship memory, hidden canon, or long-range continuity is in scope;
 - intensity rules and targets;
 - author taste examples;
 - current scene source.
@@ -198,6 +207,7 @@ HANDOFF TO:
 STOP WHEN:
 - proposed intensity requires new canon;
 - object/pressure source was not read;
+- context capsule blocks required object/location/body/debt state;
 - more than local patch is needed.
 
 ## Vietnamese Line Editor
@@ -217,7 +227,8 @@ READ BEFORE:
 - anti-AI words;
 - SLTD style rules;
 - author taste examples;
-- line surgery gate if prose smell is line-level.
+- line surgery gate if prose smell is line-level;
+- Context Capsule result if voice, relationship memory, POV knowledge, hidden canon, or source-status separation is in scope.
 
 MAY DO:
 - improve Vietnamese rhythm;
@@ -248,6 +259,7 @@ HANDOFF TO:
 
 STOP WHEN:
 - source/canon/story layer is unsettled;
+- context capsule blocks POV knowledge, hidden canon, relationship memory, or source-status separation;
 - more than 30 percent of excerpt needs surgery;
 - voice cannot be fixed without character source.
 
@@ -267,7 +279,8 @@ READ BEFORE:
 - anti-AI words;
 - SLTD style rules;
 - author taste examples;
-- source excerpt.
+- source excerpt;
+- Context Capsule result if current source, hidden canon, POV knowledge, relationship memory, or source-status separation is in scope.
 
 MAY DO:
 - label line issues;
@@ -298,6 +311,7 @@ HANDOFF TO:
 STOP WHEN:
 - excerpt is too large and no sampling instruction exists;
 - source is missing;
+- context capsule blocks required source/context;
 - repair load exceeds 30 percent.
 
 ## Copyeditor
@@ -311,7 +325,8 @@ START WHEN:
 READ BEFORE:
 - copyedit/proofread rule;
 - current source;
-- term/name/xung ho context.
+- term/name/xung ho context;
+- Context Capsule result if source status, relationship memory, names, terms, or long-range continuity is in scope.
 
 MAY DO:
 - fix names, terms, xung ho, punctuation, repeated words, paragraph breaks, dialogue tags, continuity wording.
@@ -337,7 +352,8 @@ HANDOFF TO:
 
 STOP WHEN:
 - story or prose layer fails;
-- canon/source conflict appears.
+- canon/source conflict appears;
+- context capsule blocks source-status or long-range continuity.
 
 ## Proofreader
 
@@ -349,7 +365,8 @@ START WHEN:
 
 READ BEFORE:
 - copyedit/proofread rule;
-- final source excerpt/chapter.
+- final source excerpt/chapter;
+- Context Capsule result if final status or source-status separation is in scope.
 
 MAY DO:
 - catch typo, missing word, wrong name, repeated line, broken punctuation, spacing, paragraph join error, old draft residue.
@@ -372,7 +389,8 @@ HANDOFF TO:
 - Copyeditor if consistency issue remains.
 
 STOP WHEN:
-- line prose or story is still failing.
+- line prose or story is still failing;
+- context capsule blocks source-status separation.
 
 ## Publishing Readiness Reviewer
 
@@ -386,6 +404,7 @@ READ BEFORE:
 - Chapter Index;
 - Chapter Review;
 - Scene Bank if needed;
+- Context Capsule result for current source/status, hidden canon, POV knowledge, and source-status separation;
 - Publication Lock / Human Chapter Pass fields;
 - evidence discipline.
 
@@ -416,6 +435,7 @@ HANDOFF TO:
 
 STOP WHEN:
 - current status source was not read;
+- context capsule blocks source-status, hidden canon, POV knowledge, or long-range continuity;
 - packet contains unready chapter;
 - Human Chapter Pass or Publication Lock is missing.
 
@@ -433,6 +453,7 @@ READ BEFORE:
 - role outputs already run;
 - node ledger;
 - context brief for large scope;
+- Context Capsule result if current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope;
 - evidence discipline;
 - user priority.
 
@@ -462,6 +483,7 @@ HANDOFF TO:
 
 STOP WHEN:
 - source/evidence is missing;
+- context capsule blocks required source/context;
 - priorities depend on unread nodes.
 
 ## Learning and calibration boundary
@@ -473,6 +495,7 @@ They do not override:
 - current user instruction;
 - current Notion source;
 - canon;
+- context capsule when required;
 - evidence discipline;
 - human pass;
 - publication lock.
@@ -487,6 +510,8 @@ REQUEST:
 ACTIVE ROLE:
 START CONDITION MET: YES / NO
 SOURCE READY: YES / NO
+CONTEXT CAPSULE REQUIRED: YES / NO
+CONTEXT CAPSULE STATUS:
 MAY DO:
 MUST NOT DO:
 DONE CRITERIA:
