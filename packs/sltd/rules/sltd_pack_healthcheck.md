@@ -27,6 +27,21 @@ Verify:
 - the gate blocks chat memory, summary, raw draft, legacy source, hidden canon leakage, unclear POV knowledge, unclear object/location/body/debt state, and unresolved canon conflict from becoming prose or verdict;
 - the gate does not authorize autonomous lore updates, new canon, new databases, workflows, scripts, reports, project boards, automations, or live manuscript copies in GitHub.
 
+## Check narrative feature and structural idiosyncrasy discipline
+
+Verify:
+
+- `rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md` exists and is listed in manifest;
+- `prompts/narrative_feature_audit.md` exists and is listed in manifest;
+- `samples/narrative_feature_calibration.md` exists and is listed in manifest;
+- `narrative_feature_audit` is listed in allowed_tasks;
+- Entry Fast Path places Narrative Feature Audit after source/context/structural/tracking and before draft, line surgery, human surface polish, copyedit, readiness, or publication lock when story-decision AI smell is in scope;
+- task router has a dedicated narrative feature audit route and can call it from rewrite, readiness, packet, author drafting, and human surface polish routes only when evidence requires it;
+- route governance defines budget and stop conditions so the audit does not become gate cascade or detector scoring;
+- role boundary contracts treat Narrative Feature Auditor as a structural-story role, not a detector, prose polish, canon authority, or readiness authority;
+- the gate blocks theme overexplained, causal tidiness, single-track plot risk, protagonist understanding as under-costed resolution, weak reveal/recontextualization, temporal flatness, decorative body/sensory overperformance, setting mirror overfit, and narrative diversity low;
+- the gate does not authorize new canon, invented subplot, detector certainty, decorative percentage, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
+
 ## Check author voice fingerprint and ghostwriter discipline
 
 Verify:
@@ -38,7 +53,7 @@ Verify:
 - `author_voice_fingerprint_check` and `author_aligned_ghostwriter_draft` are listed in allowed_tasks;
 - Entry Fast Path places Author Voice Fingerprint before Author-Aligned Drafting and before Human Surface Polish;
 - task router has dedicated routes for author voice fingerprint and author-aligned ghostwriter draft;
-- role boundary contracts treat Author Voice Fingerprint and Author-Aligned Ghostwriter as bounded roles that do not override source, canon, POV, character voice, Human Chapter Pass, or Publication Lock;
+- role boundary contracts treat Author Voice Fingerprint and Ghostwriter as bounded roles that do not override source, canon, POV, character voice, Human Chapter Pass, or Publication Lock;
 - the rule blocks chat-memory-only style learning, unapproved samples, author voice over character voice, source drift, canon drift, hidden canon leak, and formulaic style overfitting;
 - the rule does not authorize new canon, scene outcome changes, Notion/GitHub/source writes, workflows, scripts, reports, boards, automations, or live manuscript copies.
 
@@ -91,7 +106,7 @@ Verify these gates remain listed and routed when their scope is in play.
 
 ## Check route governance
 
-Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, author voice / ghostwriter requirements when needed, human surface polish requirements when needed, and no gate cascade.
+Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, narrative feature requirements when needed, author voice / ghostwriter requirements when needed, human surface polish requirements when needed, and no gate cascade.
 
 ## Check orphan risk
 
