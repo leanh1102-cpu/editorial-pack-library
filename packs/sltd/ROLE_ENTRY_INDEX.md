@@ -12,6 +12,8 @@ Narrative Claim Verifier may be routed as a prompt-based evidence/source role. I
 
 Narrative Feature Auditor may be routed as a prompt-based structural-story role. It is not an AI detector, canon authority, prose polish role, or readiness authority.
 
+Author Writing Sheet may be routed as a prompt-based claim-evidence style memory role. It is not canon authority, character voice authority, readiness, or publication lock authority.
+
 Author Voice Fingerprint and Author-Aligned Drafting Assistant may be routed as roles through boundary contracts and prompts. They do not become authorial authority, canon authority, character voice authority, or readiness authority.
 
 ## Role cards
@@ -33,6 +35,7 @@ Editorial Director -> roles/editorial_director.md
 ```text
 Narrative Claim Verifier -> prompts/narrative_claim_verification_check.md + rules/sltd_narrative_claim_verification_clipper_discipline.md
 Narrative Feature Auditor -> prompts/narrative_feature_audit.md + rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md
+Author Writing Sheet -> prompts/author_writing_sheet_check.md + rules/sltd_author_writing_sheet_claim_evidence_discipline.md
 Author Voice Fingerprint -> prompts/author_voice_fingerprint_check.md + rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
 Author-Aligned Drafting Assistant -> prompts/author_aligned_ghostwriter_draft.md + rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
 Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_surface_polish_anti_synthetic_gate.md
@@ -48,11 +51,12 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 5. Run context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
 6. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
 7. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
-8. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
-9. Read the requested role card or prompt-routed role.
-10. Read source/evidence files needed by the role.
-11. Execute the smallest safe task.
-12. End with node checkpoint or result report.
+8. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
+9. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
+10. Read the requested role card or prompt-routed role.
+11. Read source/evidence files needed by the role.
+12. Execute the smallest safe task.
+13. End with node checkpoint or result report.
 ```
 
 ## Conflict rule
@@ -64,6 +68,8 @@ If Context Capsule blocks, do not continue into a later role to hide the source/
 If Narrative Claim Verification returns UNCERTAIN or disproves a status/lock/readiness/canon claim, do not continue into readiness, Publication Lock, or prose repair to hide the evidence failure.
 
 If Narrative Feature Audit blocks because story-decision smell remains unresolved, do not continue into Human Surface Polish, Copyedit, Readiness, or Publication Lock to hide the structural failure.
+
+If Author Writing Sheet blocks because author samples or style evidence are missing, do not use style adjectives or chat memory as a substitute.
 
 If Author Voice Fingerprint blocks because samples are missing, do not draft from chat memory or plausible style.
 
@@ -83,6 +89,7 @@ CONTEXT CAPSULE REQUIRED:
 CONTEXT CAPSULE STATUS:
 CLAIM VERIFICATION REQUIRED:
 NARRATIVE FEATURE REQUIRED:
+AUTHOR WRITING SHEET REQUIRED:
 AUTHOR VOICE / DRAFTING REQUIRED:
 SOURCE READY:
 ROUTE:
