@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.35
+
+- Added tracking, logic ledger, and traceability protocol.
+- Added tracking_logic_ledger_check task and prompt.
+- Added tracking / logic ledger calibration samples.
+- Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
+
 ## 1.10.34
 
 - Added Vietnamese senior editor surface, semantic load, and pass integrity protocol.
@@ -33,10 +40,3 @@
 - Added protagonist_inquiry_check task and prompt.
 - Added protagonist inquiry calibration samples.
 - Synced manifest, fast path, router, design, healthcheck, and entry healthcheck.
-
-## 1.10.29
-
-- Added protagonist advancement node and growth route calibration rule.
-- Added protagonist_advancement_check task and prompt.
-- Added protagonist advancement calibration samples.
-- Synced manifest, fast path, router, design, and pack healthcheck.
