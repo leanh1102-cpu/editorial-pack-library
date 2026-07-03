@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.53"
+version: "1.10.54"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -27,6 +27,7 @@ allowed_tasks:
   - evidence_check
   - review_mode_pass
   - source_surface_check
+  - context_memory_lifecycle_check
   - comparative_editorial_feedback_delta_check
   - human_expert_ai_smell_explanation_check
   - multilingual_long_context_retrieval_check
@@ -75,6 +76,7 @@ required_files:
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
   - rules/sltd_context_capsule_lore_retrieval_discipline.md
+  - rules/sltd_agent_native_context_memory_lifecycle_byterover_discipline.md
   - rules/sltd_comparative_editorial_feedback_delta_discipline.md
   - rules/sltd_human_expert_ai_smell_explanation_discipline.md
   - rules/sltd_multilingual_long_context_retrieval_oneruler_discipline.md
@@ -99,6 +101,7 @@ required_files:
   - rules/sltd_pack_healthcheck.md
   - prompts/general_chapter_feedback_matrix_check.md
   - prompts/context_capsule_preflight.md
+  - prompts/context_memory_lifecycle_check.md
   - prompts/comparative_editorial_feedback_delta_check.md
   - prompts/human_expert_ai_smell_explanation_check.md
   - prompts/multilingual_long_context_retrieval_check.md
@@ -124,6 +127,7 @@ required_files:
   - prompts/node_checkpoint.md
   - samples/general_chapter_feedback_matrix_calibration.md
   - samples/context_capsule_calibration.md
+  - samples/context_memory_lifecycle_calibration.md
   - samples/comparative_editorial_feedback_delta_calibration.md
   - samples/human_expert_ai_smell_explanation_calibration.md
   - samples/multilingual_long_context_retrieval_calibration.md
