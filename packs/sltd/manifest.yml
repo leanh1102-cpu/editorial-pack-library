@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.37"
+version: "1.10.38"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -12,6 +12,7 @@ allowed_tasks:
   - line_edit
   - story_arc_audit
   - source_preflight
+  - context_capsule_preflight
   - publishing_readiness
   - editorial_director_review
   - node_checkpoint
@@ -59,6 +60,7 @@ required_files:
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
+  - rules/sltd_context_capsule_lore_retrieval_discipline.md
   - rules/sltd_tracking_logic_ledger_traceability_gate.md
   - rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
   - rules/sltd_character_voice_dialogue_relationship_location_gate.md
@@ -70,6 +72,7 @@ required_files:
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
   - prompts/general_chapter_feedback_matrix_check.md
+  - prompts/context_capsule_preflight.md
   - prompts/tracking_logic_ledger_check.md
   - prompts/character_voice_dialogue_staging_check.md
   - prompts/structural_spine_outline_preprose_check.md
@@ -81,6 +84,7 @@ required_files:
   - prompts/entry_healthcheck.md
   - prompts/node_checkpoint.md
   - samples/general_chapter_feedback_matrix_calibration.md
+  - samples/context_capsule_calibration.md
   - samples/tracking_logic_ledger_calibration.md
   - samples/character_voice_dialogue_staging_calibration.md
   - samples/structural_spine_outline_preprose_calibration.md

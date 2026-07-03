@@ -18,29 +18,45 @@ rules/sltd_decision_safety.md
 
 ```text
 0. Source Preflight
-1. Spine Lock
-2. Tracking / Logic Ledger
-3. Borderbound
-4. Life-Task Bound
-5. Story Movement
-6. Scene-First Prose Judgment
-7. Voice / Dialogue / Staging
-8. Draft / Rewrite
-9. Line / Voice / Rhythm
-10. Composite Risk Check
-11. Feedback Matrix / Report
-12. Seam / Chapter Assembly
-13. Readiness / Lock
+1. Context Capsule
+2. Spine Lock
+3. Tracking / Logic Ledger
+4. Borderbound
+5. Life-Task Bound
+6. Story Movement
+7. Scene-First Prose Judgment
+8. Voice / Dialogue / Staging
+9. Draft / Rewrite
+10. Line / Voice / Rhythm
+11. Composite Risk Check
+12. Feedback Matrix / Report
+13. Seam / Chapter Assembly
+14. Readiness / Lock
 ```
 
-Do not run later gears to hide failure in earlier gears. Do not draft prose before spine, tracking, border, and scene staging are clear when continuity or dialogue is at stake. Stop at the first real blocker.
+Do not run later gears to hide failure in earlier gears. Do not draft prose before source, context capsule, spine, tracking, border, and scene staging are clear when continuity, hidden canon, or dialogue is at stake. Stop at the first real blocker.
 
 ## Fast paths
+
+### Context capsule / lore retrieval discipline
+
+```text
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md
+rules/sltd_tracking_logic_ledger_traceability_gate.md if state, knowledge, object, residue, thread, pass trace, or downstream risk is affected
+rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function, chapter card, scene packet, or border is unclear
+rules/sltd_character_voice_dialogue_relationship_location_gate.md if voice, relationship, silence, presence, or location staging is affected
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface, Human Chapter Pass, or Publication Lock is in scope
+prompts/context_capsule_preflight.md
+prompts/node_checkpoint.md
+```
 
 ### Character voice / dialogue / relationship / location staging
 
 ```text
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, object state, relationship memory, or long-range context is in scope
 rules/sltd_character_voice_dialogue_relationship_location_gate.md
 samples/character_voice_dialogue_staging_calibration.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md if relationship memory, knowledge state, object state, or downstream risk is affected
@@ -56,6 +72,7 @@ prompts/node_checkpoint.md
 
 ```text
 rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, packet scope, canon status, or long-range context is in scope
 rules/sltd_general_chapter_feedback_matrix_output_protocol.md
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if spine/source status is in scope
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state/thread/object/pass/downstream logic is in scope
@@ -69,6 +86,7 @@ prompts/node_checkpoint.md
 
 ```text
 source_surface_check when exact prose or status is required
+context_capsule_preflight when current source, hidden canon, POV knowledge, object state, relationship memory, lore retrieval, or long-range continuity is in scope
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md when spine or border is in scope
 rules/sltd_tracking_logic_ledger_traceability_gate.md when logic continuity is affected
 rules/sltd_character_voice_dialogue_relationship_location_gate.md when voice, relationship, or location staging is affected
@@ -78,6 +96,8 @@ prompts/node_checkpoint.md
 ```
 
 ## Rule
+
+Run `context_capsule_preflight.md` when the task concerns current/latest source, Notion current manuscript, lock, readiness, Human Chapter Pass, Publication Lock, packet verdict, canon conflict, hidden canon, POV knowledge, object/location/body/debt state, relationship memory, lore retrieval, legacy source risk, summary-vs-source risk, or long-range continuity.
 
 Run `character_voice_dialogue_staging_check.md` when the task concerns dialogue, multi-character scenes, character voice, relationship memory, silence, interruptions, location staging, usable objects, tone, comedy, grief, or physical action.
 
