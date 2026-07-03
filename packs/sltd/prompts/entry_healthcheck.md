@@ -14,6 +14,7 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md
+rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md
 rules/sltd_author_writing_sheet_claim_evidence_discipline.md
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
 rules/sltd_narrative_claim_verification_clipper_discipline.md
@@ -30,6 +31,7 @@ rules/sltd_protagonist_advancement_growth_route_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
 prompts/context_capsule_preflight.md
+prompts/multi_constraint_instruction_check.md
 prompts/author_writing_sheet_check.md
 prompts/author_voice_fingerprint_check.md
 prompts/author_aligned_ghostwriter_draft.md
@@ -45,6 +47,7 @@ prompts/supernatural_event_residue_check.md
 prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
 samples/context_capsule_calibration.md
+samples/multi_constraint_instruction_calibration.md
 samples/author_writing_sheet_calibration.md
 samples/author_voice_fingerprint_calibration.md
 samples/narrative_claim_verification_calibration.md
@@ -71,6 +74,7 @@ MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
 CONTEXT CAPSULE / LORE RETRIEVAL CHECK:
+MULTI-CONSTRAINT INSTRUCTION LEDGER / SURI CHECK:
 AUTHOR WRITING SHEET / CLAIM-EVIDENCE STYLE MEMORY CHECK:
 AUTHOR VOICE / GHOSTWRITER CHECK:
 CLAIM VERIFICATION / CLIPPER CHECK:
