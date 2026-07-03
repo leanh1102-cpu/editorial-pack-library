@@ -27,6 +27,21 @@ Verify:
 - the gate blocks chat memory, summary, raw draft, legacy source, hidden canon leakage, unclear POV knowledge, unclear object/location/body/debt state, and unresolved canon conflict from becoming prose or verdict;
 - the gate does not authorize autonomous lore updates, new canon, new databases, workflows, scripts, reports, project boards, automations, or live manuscript copies in GitHub.
 
+## Check narrative claim verification and CLIPPER discipline
+
+Verify:
+
+- `rules/sltd_narrative_claim_verification_clipper_discipline.md` exists and is listed in manifest;
+- `prompts/narrative_claim_verification_check.md` exists and is listed in manifest;
+- `samples/narrative_claim_verification_calibration.md` exists and is listed in manifest;
+- `narrative_claim_verification_check` is listed in allowed_tasks;
+- Entry Fast Path places Narrative Claim Verification after Source/Context and before prose, readiness, lock, or canon verdict when claims control the route;
+- task router has a dedicated narrative claim verification route and can call it from context capsule, readiness, packet, tracking, structural, author drafting, and human surface routes when evidence requires it;
+- route governance defines budget and stop conditions so claim verification does not become readiness, lock, detector scoring, or gate cascade;
+- role boundary contracts treat Narrative Claim Verifier as an evidence/source role, not canon authority, prose polish, or readiness authority;
+- the gate blocks compressed-source-only verdicts, missing false twins, low-level detail risk, misattribution, source conflict, lazy agreement, and claim verification as readiness substitute;
+- the gate does not authorize new canon, invented evidence, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
+
 ## Check narrative feature and structural idiosyncrasy discipline
 
 Verify:
@@ -106,7 +121,7 @@ Verify these gates remain listed and routed when their scope is in play.
 
 ## Check route governance
 
-Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, narrative feature requirements when needed, author voice / ghostwriter requirements when needed, human surface polish requirements when needed, and no gate cascade.
+Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, claim verification requirements when needed, narrative feature requirements when needed, author voice / ghostwriter requirements when needed, human surface polish requirements when needed, and no gate cascade.
 
 ## Check orphan risk
 
