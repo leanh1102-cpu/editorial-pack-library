@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.50"
+version: "1.10.51"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -27,6 +27,7 @@ allowed_tasks:
   - evidence_check
   - review_mode_pass
   - source_surface_check
+  - multilingual_long_context_retrieval_check
   - reference_anchored_story_quality_check
   - corpus_topic_thread_discovery_check
   - editorial_harm_anticipation_check
@@ -72,6 +73,7 @@ required_files:
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
   - rules/sltd_context_capsule_lore_retrieval_discipline.md
+  - rules/sltd_multilingual_long_context_retrieval_oneruler_discipline.md
   - rules/sltd_reference_anchored_longform_quality_polaris_discipline.md
   - rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md
   - rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md
@@ -93,6 +95,7 @@ required_files:
   - rules/sltd_pack_healthcheck.md
   - prompts/general_chapter_feedback_matrix_check.md
   - prompts/context_capsule_preflight.md
+  - prompts/multilingual_long_context_retrieval_check.md
   - prompts/reference_anchored_story_quality_check.md
   - prompts/corpus_topic_thread_discovery_check.md
   - prompts/editorial_harm_anticipation_check.md
@@ -115,6 +118,7 @@ required_files:
   - prompts/node_checkpoint.md
   - samples/general_chapter_feedback_matrix_calibration.md
   - samples/context_capsule_calibration.md
+  - samples/multilingual_long_context_retrieval_calibration.md
   - samples/reference_anchored_story_quality_calibration.md
   - samples/corpus_topic_thread_discovery_calibration.md
   - samples/editorial_harm_anticipation_calibration.md
