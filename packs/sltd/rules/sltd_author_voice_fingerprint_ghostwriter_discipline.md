@@ -2,7 +2,7 @@
 
 This rule lets SLTD learn an author's usable writing fingerprint from source-backed samples, then draft in an author-aligned way without taking authorial authority.
 
-It adapts author-voice and ghostwriter ideas for long-form SLTD editing. It does not replace source discipline, canon guard, character voice, or human approval.
+It adapts author-voice and ghostwriter ideas for long-form SLTD editing. It does not replace source discipline, claim verification, canon guard, character voice, or human approval.
 
 ## Core rule
 
@@ -10,10 +10,12 @@ Ghostwriter may imitate author rhythm. Ghostwriter may not imitate author author
 
 Author voice is evidence, not permission. A style match can guide diction, rhythm, paragraph breath, restraint, and pressure handling, but it cannot decide canon, scene function, reveal timing, Human Chapter Pass, or Publication Lock.
 
+When style claims are used for drafting, prefer Author Writing Sheet claim-evidence memory over vague style adjectives.
+
 ## Use when
 
 - the user asks to decode, learn, match, or preserve the author's voice;
-- the user asks for style guide, voice DNA, author fingerprint, or sample-based style extraction;
+- the user asks for style guide, voice DNA, author fingerprint, Author Writing Sheet, or sample-based style extraction;
 - prose sounds correct but not like the author;
 - AI keeps writing generic Vietnamese prose instead of SLTD taste;
 - the user asks for ghostwriter / viết thay / viết theo giọng tôi / viết như tôi;
@@ -33,6 +35,8 @@ approved manuscript excerpt named by the user
 
 Do not infer author voice from chat memory, summaries, old Workdecks, raw drafts, or generic assumptions unless the user explicitly names them as sample material.
 
+Run Author Writing Sheet first when style claims need claim-evidence support, prompt-specific story rules, or category coverage across Plot / Creativity / Development / Language Use.
+
 Run Author-Aligned Ghostwriter Draft after:
 
 ```text
@@ -40,6 +44,7 @@ source preflight
 source surface when exact prose/source is required
 context capsule when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
 structural / tracking / voice / Vietnamese senior surface gates when their blockers are in scope
+author writing sheet when style claims need evidence
 author voice fingerprint when style matching is in scope
 ```
 
@@ -56,10 +61,11 @@ publication lock claim
 ## Required distinction
 
 ```text
-AUTHOR VOICE FINGERPRINT = extracts author habits from approved samples
+AUTHOR WRITING SHEET = claim-evidence style memory from approved samples
+AUTHOR VOICE FINGERPRINT = compact synthesis of evidence-backed style traits
 AUTHOR STYLE GUIDE = compact operating summary of the fingerprint
 AUTHOR THINKING MODEL = how the author tends to build scene pressure and withhold information
-AUTHOR-ALIGNED GHOSTWRITER DRAFT = drafts prose under source/canon/POV/scene limits using the fingerprint
+AUTHOR-ALIGNED GHOSTWRITER DRAFT = drafts prose under source/canon/POV/scene limits using the fingerprint and task-relevant style memory
 HUMAN SURFACE POLISH = repairs correct-but-synthetic prose after drafting or line work
 ```
 
@@ -79,6 +85,15 @@ Learn only actionable, evidence-backed traits:
 - what the author avoids;
 - repeated AI-like patterns the author dislikes.
 
+When using Author Writing Sheet, classify style evidence into:
+
+```text
+PLOT
+CREATIVITY
+DEVELOPMENT
+LANGUAGE_USE
+```
+
 Do not learn private facts, hidden canon, or unverifiable personal claims from style samples.
 
 ## Ghostwriter permission
@@ -96,6 +111,7 @@ READER EFFECT
 POV
 CHARACTERS PRESENT
 AUTHOR VOICE FINGERPRINT USED
+AUTHOR WRITING SHEET / STYLE CLAIMS USED when style memory is in scope
 DRAFT SCOPE
 ```
 
@@ -110,8 +126,9 @@ The Ghostwriter must not:
 - override character voice with author voice;
 - leak hidden canon because it knows the wider plan;
 - draft from chat memory as if it were source;
-- turn style guide into formulaic repeated phrasing;
+- turn style guide or writing sheet into formulaic repeated phrasing;
 - make prose smoother at the cost of body/object pressure;
+- treat style claims as valid without evidence;
 - call Human Chapter Pass, readiness, or Publication Lock;
 - update Notion, GitHub, or source files without explicit write instruction.
 
@@ -122,6 +139,7 @@ AUTHOR VOICE FINGERPRINT
 SCOPE:
 SOURCE USED:
 AUTHOR SAMPLES USED:
+AUTHOR WRITING SHEET USED:
 SAMPLE STATUS:
 GENRE / MODE:
 NARRATION RHYTHM:
@@ -155,6 +173,7 @@ MUST SHOW:
 MUST NOT REVEAL:
 READER EFFECT:
 AUTHOR VOICE FINGERPRINT USED:
+AUTHOR WRITING SHEET / STORY RULES USED:
 POV:
 CHARACTERS PRESENT:
 DRAFT PERMISSION:
@@ -171,6 +190,7 @@ Do not report a single decorative percentage. Use a bounded diagnostic matrix:
 
 ```text
 AUTHOR RHYTHM MATCH:
+AUTHOR WRITING SHEET EVIDENCE:
 VIETNAMESE MOUTH-FEEL:
 OBJECT / BODY PRESSURE:
 SCENE PRESSURE:
@@ -181,7 +201,7 @@ FALSE SMOOTHING RISK:
 VERDICT:
 ```
 
-A passage can fail even when it sounds author-like if it violates canon, POV, source status, character voice, or scene function.
+A passage can fail even when it sounds author-like if it violates canon, POV, source status, character voice, scene function, or evidence-backed style limits.
 
 ## Failure labels
 
@@ -189,6 +209,8 @@ A passage can fail even when it sounds author-like if it violates canon, POV, so
 AUTHOR_SAMPLE_MISSING
 AUTHOR_SAMPLE_UNAPPROVED
 CHAT_MEMORY_STYLE_RISK
+STYLE_CLAIM_WITHOUT_EVIDENCE
+AUTHOR_WRITING_SHEET_REQUIRED
 STYLE_GUIDE_OVERFITTING
 AUTHOR_VOICE_OVER_CHARACTER_VOICE
 GHOSTWRITER_CANON_DRIFT
@@ -206,6 +228,7 @@ HUMAN_SURFACE_HANDOFF_REQUIRED
 Safe repair may:
 
 - request approved author samples;
+- build an Author Writing Sheet;
 - extract a compact fingerprint;
 - compare a passage against the fingerprint;
 - produce a bounded source-safe draft;
@@ -218,7 +241,7 @@ Safe repair must not:
 - convert sample analysis into permanent canon;
 - update style guides in source memory without explicit write permission;
 - use detector-bypass framing;
-- treat author voice match as readiness.
+- treat author voice match or writing sheet match as readiness.
 
 ## Output labels
 
@@ -226,6 +249,7 @@ Safe repair must not:
 AUTHOR_VOICE_FINGERPRINT_OK
 AUTHOR_VOICE_FINGERPRINT_PARTIAL
 AUTHOR_VOICE_FINGERPRINT_BLOCKED
+AUTHOR_WRITING_SHEET_HANDOFF
 AUTHOR_ALIGNED_DRAFT_READY
 AUTHOR_ALIGNED_DRAFT_BLOCKED
 GHOSTWRITER_SOURCE_SAFE
