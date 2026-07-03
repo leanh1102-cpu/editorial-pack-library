@@ -27,13 +27,28 @@ rules/sltd_decision_safety.md
 7. Draft / Rewrite
 8. Line / Voice / Rhythm
 9. Composite Risk Check
-10. Seam / Chapter Assembly
-11. Readiness / Lock
+10. Feedback Matrix / Report
+11. Seam / Chapter Assembly
+12. Readiness / Lock
 ```
 
 Do not run later gears to hide failure in earlier gears. Do not draft prose before spine, tracking, and border are clear when logic continuity is at stake. Stop at the first real blocker.
 
 ## Fast paths
+
+### General + chapter feedback matrix
+
+```text
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_general_chapter_feedback_matrix_output_protocol.md
+rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if spine/source status is in scope
+rules/sltd_tracking_logic_ledger_traceability_gate.md if state/thread/object/pass/downstream logic is in scope
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if human surface or pass integrity is in scope
+rules/sltd_supernatural_event_residue_dread_amplitude_gate.md if supernatural residue is a packet issue
+rules/sltd_protagonist_advancement_growth_route_gate.md if protagonist route is a packet issue
+prompts/general_chapter_feedback_matrix_check.md
+prompts/node_checkpoint.md
+```
 
 ### Tracking / logic ledger / traceability
 
@@ -50,44 +65,14 @@ prompts/tracking_logic_ledger_check.md
 prompts/node_checkpoint.md
 ```
 
-### Structural spine / outline pre-prose / borderbound
+### Structural spine / Vietnamese surface / prose work
 
 ```text
-rules/sltd_source_fidelity_anti_compression.md
+source_surface_check when exact prose or status is required
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
-rules/sltd_tracking_logic_ledger_traceability_gate.md if state/thread/object/knowledge tracking affects prose permission
-prompts/structural_spine_outline_preprose_check.md
-prompts/node_checkpoint.md
-```
-
-### Vietnamese senior editor surface / pass integrity
-
-```text
-rules/sltd_source_fidelity_anti_compression.md
-rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
-rules/sltd_tracking_logic_ledger_traceability_gate.md if pass/status trace, object logic, or downstream risk is unclear
-prompts/vietnamese_senior_editor_surface_check.md
-prompts/node_checkpoint.md
-```
-
-### Supernatural / protagonist / thread checks
-
-```text
-rules/sltd_source_fidelity_anti_compression.md
-rules/sltd_tracking_logic_ledger_traceability_gate.md if residue, object, knowledge, gain, or thread state must carry forward
-relevant primary gate: supernatural_event_residue / protagonist_inquiry / protagonist_advancement / timeline_pov_foreshadowing_folklore
-prompts/node_checkpoint.md
-```
-
-### First-pass / rewrite / line work
-
-```text
-prompts/source_surface_check.md
-rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
-rules/sltd_tracking_logic_ledger_traceability_gate.md
-rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
-rules/sltd_first_pass_editorial_workflow.md
-additional gates only when evidence requires them
+rules/sltd_tracking_logic_ledger_traceability_gate.md when logic continuity is affected
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md when human surface or pass integrity is affected
+relevant primary gate only when evidence requires it
 prompts/node_checkpoint.md
 ```
 
@@ -98,13 +83,16 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
+rules/sltd_general_chapter_feedback_matrix_output_protocol.md if output should be general + chapter matrix
 other gates only when the primary route exposes a real blocker
 prompts/context_brief.md
+prompts/general_chapter_feedback_matrix_check.md or prompts/result_report.md
 prompts/node_checkpoint.md
-prompts/result_report.md
 ```
 
 ## Rule
+
+Run `general_chapter_feedback_matrix_check.md` when the task asks for general feedback plus chapter-by-chapter feedback, packet/arc/hồi review, or matrix-style review output.
 
 Run `tracking_logic_ledger_check.md` when the task concerns logic continuity, state trace, knowledge state, object/residue/thread tracking, payoff debt, status/pass trace, downstream risk, or verify target.
 
