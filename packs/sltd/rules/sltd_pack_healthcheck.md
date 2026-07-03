@@ -12,6 +12,19 @@ Verify version, required files, allowed tasks, source priority, and fail-closed 
 
 Verify source fidelity rule and source surface prompt exist and exact prose/status routes require source surface before patching or verdict.
 
+## Check context capsule and lore retrieval discipline
+
+Verify:
+
+- `rules/sltd_context_capsule_lore_retrieval_discipline.md` exists and is listed in manifest;
+- `prompts/context_capsule_preflight.md` exists and is listed in manifest;
+- `samples/context_capsule_calibration.md` exists and is listed in manifest;
+- `context_capsule_preflight` is listed in allowed_tasks;
+- Entry Fast Path places Context Capsule after Source Preflight and before Spine, Tracking, Voice/Staging, Rewrite, Matrix, and Readiness when source status or long-range context is in scope;
+- task router calls Context Capsule for current/latest source, Notion current manuscript, lock, readiness, Publication Lock, Human Chapter Pass, packet verdict, canon conflict, hidden canon, POV knowledge, legacy source risk, summary-vs-source risk, and long-range continuity;
+- the gate blocks chat memory, summary, raw draft, legacy source, hidden canon leakage, unclear POV knowledge, unclear object/location/body/debt state, and unresolved canon conflict from becoming prose or verdict;
+- the gate does not authorize autonomous lore updates, new canon, new databases, workflows, scripts, reports, project boards, automations, or live manuscript copies in GitHub.
+
 ## Check character voice, dialogue, relationship memory, and location staging
 
 Verify:

@@ -11,6 +11,7 @@ ENTRY_FAST_PATH.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md
 rules/sltd_character_voice_dialogue_relationship_location_gate.md
 rules/sltd_general_chapter_feedback_matrix_output_protocol.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md
@@ -21,6 +22,7 @@ rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 rules/sltd_protagonist_advancement_growth_route_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
+prompts/context_capsule_preflight.md
 prompts/character_voice_dialogue_staging_check.md
 prompts/general_chapter_feedback_matrix_check.md
 prompts/tracking_logic_ledger_check.md
@@ -29,6 +31,7 @@ prompts/vietnamese_senior_editor_surface_check.md
 prompts/supernatural_event_residue_check.md
 prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
+samples/context_capsule_calibration.md
 samples/character_voice_dialogue_staging_calibration.md
 samples/general_chapter_feedback_matrix_calibration.md
 samples/tracking_logic_ledger_calibration.md
@@ -37,7 +40,7 @@ samples/vietnamese_senior_editor_surface_calibration.md
 samples/supernatural_event_residue_calibration.md
 samples/protagonist_inquiry_calibration.md
 samples/protagonist_advancement_calibration.md
-CHANGELOG.md
+CHANGELOG.md if present
 ```
 
 Output:
@@ -49,6 +52,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+CONTEXT CAPSULE / LORE RETRIEVAL CHECK:
 CHARACTER VOICE / DIALOGUE / STAGING CHECK:
 GENERAL + CHAPTER FEEDBACK MATRIX CHECK:
 TRACKING / LOGIC LEDGER CHECK:
