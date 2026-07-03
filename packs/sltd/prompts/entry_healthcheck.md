@@ -11,6 +11,7 @@ ENTRY_FAST_PATH.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
+rules/sltd_character_voice_dialogue_relationship_location_gate.md
 rules/sltd_general_chapter_feedback_matrix_output_protocol.md
 rules/sltd_tracking_logic_ledger_traceability_gate.md
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
@@ -20,6 +21,7 @@ rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
 rules/sltd_protagonist_advancement_growth_route_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
+prompts/character_voice_dialogue_staging_check.md
 prompts/general_chapter_feedback_matrix_check.md
 prompts/tracking_logic_ledger_check.md
 prompts/structural_spine_outline_preprose_check.md
@@ -27,6 +29,7 @@ prompts/vietnamese_senior_editor_surface_check.md
 prompts/supernatural_event_residue_check.md
 prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
+samples/character_voice_dialogue_staging_calibration.md
 samples/general_chapter_feedback_matrix_calibration.md
 samples/tracking_logic_ledger_calibration.md
 samples/structural_spine_outline_preprose_calibration.md
@@ -46,6 +49,7 @@ STATUS:
 MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
+CHARACTER VOICE / DIALOGUE / STAGING CHECK:
 GENERAL + CHAPTER FEEDBACK MATRIX CHECK:
 TRACKING / LOGIC LEDGER CHECK:
 STRUCTURAL SPINE / OUTLINE PRE-PROSE CHECK:
