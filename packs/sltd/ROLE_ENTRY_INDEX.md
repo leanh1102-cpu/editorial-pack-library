@@ -8,6 +8,8 @@ Role entry cards do not replace `rules/sltd_role_boundary_contracts.md`. They ar
 
 Context Capsule is not a role card. It is a pre-role source/context gate used when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
 
+Multilingual Long-Context Source Retrieval may be routed as a prompt-based retrieval and absence discipline role. It is not source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
+
 Reference-Anchored Longform Story Quality may be routed as a prompt-based quality stress-test role. It is not source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
 
 Corpus Topic / Thread Discovery may be routed as a prompt-based map-level navigation role. It is not source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
@@ -41,6 +43,7 @@ Editorial Director -> roles/editorial_director.md
 ## Prompt-routed roles without standalone role cards
 
 ```text
+Multilingual Long-Context Source Retrieval -> prompts/multilingual_long_context_retrieval_check.md + rules/sltd_multilingual_long_context_retrieval_oneruler_discipline.md
 Reference-Anchored Longform Story Quality -> prompts/reference_anchored_story_quality_check.md + rules/sltd_reference_anchored_longform_quality_polaris_discipline.md
 Corpus Topic / Thread Discovery -> prompts/corpus_topic_thread_discovery_check.md + rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md
 Narrative Claim Verifier -> prompts/narrative_claim_verification_check.md + rules/sltd_narrative_claim_verification_clipper_discipline.md
@@ -61,18 +64,19 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 3. Read role boundary contracts.
 4. Run source preflight / source surface as required.
 5. Run context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
-6. Run reference-anchored longform story quality when long rewrite/chapter/packet quality, length adherence, bloat, drift, over-summary, or late-output collapse needs source-backed stress testing.
-7. Run corpus topic / thread discovery when packet/arc/series map, motif clusters, repeated AI-smell clusters, topic gaps, or thread drift need quote/evidence anchors.
-8. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
-9. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
-10. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
-11. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
-12. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
-13. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
-14. Read the requested role card or prompt-routed role.
-15. Read source/evidence files needed by the role.
-16. Execute the smallest safe task.
-17. End with node checkpoint or result report.
+6. Run multilingual long-context source retrieval when found/not-found/absence/aggregation across long Vietnamese source needs source-backed checking.
+7. Run reference-anchored longform story quality when long rewrite/chapter/packet quality, length adherence, bloat, drift, over-summary, or late-output collapse needs source-backed stress testing.
+8. Run corpus topic / thread discovery when packet/arc/series map, motif clusters, repeated AI-smell clusters, topic gaps, or thread drift need quote/evidence anchors.
+9. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
+10. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
+11. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
+12. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
+13. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
+14. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
+15. Read the requested role card or prompt-routed role.
+16. Read source/evidence files needed by the role.
+17. Execute the smallest safe task.
+18. End with node checkpoint or result report.
 ```
 
 ## Conflict rule
@@ -80,6 +84,8 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 If a role card and role boundary contracts disagree, use `rules/sltd_role_boundary_contracts.md`.
 
 If Context Capsule blocks, do not continue into a later role to hide the source/context failure.
+
+If Multilingual Long-Context Source Retrieval blocks because source, scope, target, segment coverage, exact surface, or aggregation coverage is missing, do not answer not-found, absence, canon, readiness, or lock from memory or summary.
 
 If Reference-Anchored Longform Story Quality blocks because source, output, anchor authorization, Must Show source, or exact output is missing, do not use the quality check as readiness, lock, canon verdict, or rewrite permission.
 
@@ -111,6 +117,7 @@ ROLE CARD / PROMPT READ:
 BOUNDARY READ:
 CONTEXT CAPSULE REQUIRED:
 CONTEXT CAPSULE STATUS:
+MULTILINGUAL LONG-CONTEXT RETRIEVAL REQUIRED:
 REFERENCE-ANCHORED STORY QUALITY REQUIRED:
 CORPUS TOPIC / THREAD DISCOVERY REQUIRED:
 CLAIM VERIFICATION REQUIRED:
