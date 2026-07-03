@@ -28,13 +28,14 @@ rules/sltd_decision_safety.md
 8. Voice / Dialogue / Staging
 9. Draft / Rewrite
 10. Line / Voice / Rhythm
-11. Composite Risk Check
-12. Feedback Matrix / Report
-13. Seam / Chapter Assembly
-14. Readiness / Lock
+11. Human Surface Polish
+12. Composite Risk Check
+13. Feedback Matrix / Report
+14. Seam / Chapter Assembly
+15. Readiness / Lock
 ```
 
-Do not run later gears to hide failure in earlier gears. Do not draft prose before source, context capsule, spine, tracking, border, and scene staging are clear when continuity, hidden canon, or dialogue is at stake. Stop at the first real blocker.
+Do not run later gears to hide failure in earlier gears. Do not draft or polish prose before source, context capsule, spine, tracking, border, and scene staging are clear when continuity, hidden canon, object state, relationship memory, or dialogue is at stake. Stop at the first real blocker.
 
 ## Fast paths
 
@@ -91,7 +92,23 @@ rules/sltd_structural_spine_outline_preprose_borderbound_gate.md when spine or b
 rules/sltd_tracking_logic_ledger_traceability_gate.md when logic continuity is affected
 rules/sltd_character_voice_dialogue_relationship_location_gate.md when voice, relationship, or location staging is affected
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md when human surface or pass integrity is affected
+rules/sltd_human_surface_polish_anti_synthetic_gate.md when exact prose is source-safe but still reads synthetic, over-clean, same-voiced, or falsely smooth
 relevant primary gate only when evidence requires it
+prompts/node_checkpoint.md
+```
+
+### Human surface polish / anti-synthetic prose
+
+```text
+source_surface_check when exact prose is being patched
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
+rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or prose permission is unclear
+rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
+rules/sltd_character_voice_dialogue_relationship_location_gate.md if voice, relationship, silence, presence, dialogue, or location staging is in scope
+rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
+rules/sltd_human_surface_polish_anti_synthetic_gate.md
+prompts/human_surface_polish_pass.md
 prompts/node_checkpoint.md
 ```
 
@@ -108,3 +125,5 @@ Run `tracking_logic_ledger_check.md` when the task concerns logic continuity, st
 Run `structural_spine_outline_preprose_check.md` when act/arc/hồi/chapter/scene, Story Outline, Chapter by Chapter Outline, Chapter Card, Scene Packet, borderbound, or prose permission is in scope.
 
 Run `vietnamese_senior_editor_surface_check.md` when senior Vietnamese reading, từng chữ, semantic load, repeated AI smell, pass metadata, Human Chapter Pass, candidate-ready, or Publication Lock is in scope.
+
+Run `human_surface_polish_pass.md` when exact prose is source-safe and story/voice constraints are settled enough, but the passage still reads synthetic, over-clean, falsely smooth, same-voiced, symbol-first, or human-surface thin. Do not use it for detector bypass, structure repair, canon repair, or readiness.
