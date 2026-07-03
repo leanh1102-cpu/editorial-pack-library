@@ -102,6 +102,34 @@ A held item must still create pressure, uncertainty, cost, altered behavior, or 
 
 If it no longer does work, retire it, pay it, or mark forgotten-risk.
 
+## Foreshadowing distribution map
+
+When the user asks to distribute phục bút across act / arc / chapter / scene, use:
+
+```text
+PLANT:
+PRESSURE:
+PAYOFF:
+MUST NOT REVEAL:
+RELATED CHAPTERS:
+SCENE OBJECT:
+SOURCE SURFACE:
+PAYOFF ROUTE:
+RISK OF FORGETTING:
+NEXT PRESSURE:
+```
+
+Use existing Proser databases only:
+
+```text
+Worldbuilding Index = lore pressure function
+Plot Threads & Foreshadowing = plant / payoff / mystery / Chekhov
+Chapter Index = chapter execution fields
+Scene Bank = scene-level object / body / witness / choice
+```
+
+Do not create a new database, view, gate, or workflow for foreshadowing distribution.
+
 ## Folklore thread test
 
 Folklore should move through community behavior before explanation.
@@ -256,32 +284,4 @@ WHAT WAS CLARIFIED:
 WHAT WAS HELD / PAID / RETIRED:
 POV RISK:
 THREAD RISK:
-```
-
-If exact source text is missing, do not patch. Run Source Surface Check.
-
-## Handoff
-
-If event order or canon truth is unclear, hand off to Canon Guard.
-
-If the issue is promise/payoff or off-POV conflict returning as pressure, hand off to Narrative Beat Escalation & Aftershock Check.
-
-If folklore moves through community behavior, hand off to Living World & Community Motion Check.
-
-If material layer is a craft problem, hand off to Prose Craft / Style / Material Check.
-
-If chapter or packet reader unit is affected, hand off to Chapter Assembly & Split Check or packet review.
-
-## Output labels
-
-```text
-THREAD_MANAGEMENT_OK
-THREAD_MANAGEMENT_PARTIAL
-TIMELINE_RISK_DETECTED
-POV_BOUNDARY_LEAK_DETECTED
-FORESHADOWING_LEDGER_REQUIRED
-FOLKLORE_THREAD_RISK
-MATERIAL_THREAD_RISK
-SOURCE_SURFACE_REQUIRED
-CANON_GAP_BLOCKED
 ```
