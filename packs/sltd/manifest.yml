@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.45"
+version: "1.10.46"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -29,6 +29,7 @@ allowed_tasks:
   - source_surface_check
   - narrative_claim_verification_check
   - narrative_feature_audit
+  - author_writing_sheet_check
   - tracking_logic_ledger_check
   - general_chapter_feedback_matrix_check
   - character_voice_dialogue_staging_check
@@ -68,6 +69,7 @@ required_files:
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
   - rules/sltd_context_capsule_lore_retrieval_discipline.md
   - rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
+  - rules/sltd_author_writing_sheet_claim_evidence_discipline.md
   - rules/sltd_narrative_claim_verification_clipper_discipline.md
   - rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md
   - rules/sltd_human_surface_polish_anti_synthetic_gate.md
@@ -85,6 +87,7 @@ required_files:
   - prompts/context_capsule_preflight.md
   - prompts/author_voice_fingerprint_check.md
   - prompts/author_aligned_ghostwriter_draft.md
+  - prompts/author_writing_sheet_check.md
   - prompts/narrative_claim_verification_check.md
   - prompts/narrative_feature_audit.md
   - prompts/human_surface_polish_pass.md
@@ -101,6 +104,7 @@ required_files:
   - samples/general_chapter_feedback_matrix_calibration.md
   - samples/context_capsule_calibration.md
   - samples/author_voice_fingerprint_calibration.md
+  - samples/author_writing_sheet_calibration.md
   - samples/narrative_claim_verification_calibration.md
   - samples/narrative_feature_calibration.md
   - samples/human_surface_polish_calibration.md
