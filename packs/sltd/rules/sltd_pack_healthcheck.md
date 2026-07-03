@@ -67,7 +67,7 @@ Verify Human Surface Polish files exist, task is allowed, route runs after sourc
 
 ## Check role boundary and role entry index
 
-Verify Role Entry Index and role boundary contracts include Context Capsule, Multilingual Long-Context Source Retrieval, Reference-Anchored Longform Story Quality, Corpus Topic / Thread Discovery, Narrative Claim Verifier, Multi-Constraint Instruction Ledger, Editorial Harm Anticipation, Narrative Feature Auditor, Author Writing Sheet, Author Voice Fingerprint, Author-Aligned Drafting, and Human Surface Polish boundaries, and still prevent silent Notion/GitHub/source writes and role mixing.
+Verify Role Entry Index includes Multilingual Long-Context Source Retrieval, Reference-Anchored Longform Story Quality, Corpus Topic / Thread Discovery, Narrative Claim Verifier, Multi-Constraint Instruction Ledger, Editorial Harm Anticipation, Narrative Feature Auditor, Author Writing Sheet, Author Voice Fingerprint, Author-Aligned Drafting, and Human Surface Polish as prompt-routed roles where applicable, and role boundary contracts still prevent silent Notion/GitHub/source writes and role mixing.
 
 ## Check character voice, dialogue, relationship memory, and location staging
 
