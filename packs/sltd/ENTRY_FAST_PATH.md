@@ -22,28 +22,44 @@ rules/sltd_decision_safety.md
 2. Narrative Claim Verification when status/canon/continuity/lock claim is in scope
 3. Multi-Constraint Instruction Ledger when rewrite/audit/readiness has multiple controlling constraints
 4. Editorial Harm Anticipation when REDTEAM/PREMORTEM/readiness/lock/large-rewrite harm risk is in scope
-5. Spine Lock
-6. Tracking / Logic Ledger
-7. Borderbound
-8. Life-Task Bound
-9. Story Movement
-10. Scene-First Prose Judgment
-11. Narrative Feature / Structural Idiosyncrasy Audit when story-decision AI smell is in scope
-12. Voice / Dialogue / Staging
-13. Author Writing Sheet when claim-evidence style memory is in scope
-14. Author Voice Fingerprint when author style matching is in scope
-15. Draft / Rewrite / Author-Aligned Ghostwriter Draft
-16. Line / Voice / Rhythm
-17. Human Surface Polish
-18. Composite Risk Check
-19. Feedback Matrix / Report
-20. Seam / Chapter Assembly
-21. Readiness / Lock
+5. Corpus Topic / Thread Discovery when packet/arc/series map-level navigation is in scope
+6. Spine Lock
+7. Tracking / Logic Ledger
+8. Borderbound
+9. Life-Task Bound
+10. Story Movement
+11. Scene-First Prose Judgment
+12. Narrative Feature / Structural Idiosyncrasy Audit when story-decision AI smell is in scope
+13. Voice / Dialogue / Staging
+14. Author Writing Sheet when claim-evidence style memory is in scope
+15. Author Voice Fingerprint when author style matching is in scope
+16. Draft / Rewrite / Author-Aligned Ghostwriter Draft
+17. Line / Voice / Rhythm
+18. Human Surface Polish
+19. Composite Risk Check
+20. Feedback Matrix / Report
+21. Seam / Chapter Assembly
+22. Readiness / Lock
 ```
 
-Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, polish, copyedit, or claim readiness before source, context capsule, claim verification, multi-constraint ledger, harm anticipation when relevant, spine, tracking, border, narrative-feature, scene staging, author writing sheet, and author fingerprint are clear when continuity, hidden canon, object state, relationship memory, author voice, dialogue, reveal, status, lock, style evidence, task constraints, editorial harm, or story-decision smell is at stake. Stop at the first real blocker.
+Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, polish, copyedit, or claim readiness before source, context capsule, claim verification, multi-constraint ledger, harm anticipation when relevant, topic/thread discovery when map-level navigation is relevant, spine, tracking, border, narrative-feature, scene staging, author writing sheet, and author fingerprint are clear when continuity, hidden canon, object state, relationship memory, author voice, dialogue, reveal, status, lock, style evidence, task constraints, editorial harm, topic/thread map, or story-decision smell is at stake. Stop at the first real blocker.
 
 ## Fast paths
+
+### Corpus topic / thread discovery map
+
+```text
+rules/sltd_source_preflight.md
+rules/sltd_source_fidelity_anti_compression.md
+rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, reveal timing, or long-range continuity is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md
+rules/sltd_narrative_claim_verification_clipper_discipline.md if topic assignment depends on factual/status/canon evidence
+rules/sltd_tracking_logic_ledger_traceability_gate.md if thread state, object state, or payoff debt is in scope
+rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if repeated structural AI smell, narrative diversity, or thematic drift is in scope
+rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if topic/thread drift creates downstream harm
+prompts/corpus_topic_thread_discovery_check.md
+prompts/node_checkpoint.md
+```
 
 ### Context capsule / lore retrieval discipline
 
@@ -54,6 +70,7 @@ rules/sltd_context_capsule_lore_retrieval_discipline.md
 rules/sltd_narrative_claim_verification_clipper_discipline.md if current status, canon, continuity, readiness, lock, or source conflict claim is in scope
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if rewrite/audit/readiness has multiple controlling constraints
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if REDTEAM/PREMORTEM/readiness/lock/large rewrite harm risk is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if packet/arc/series map-level navigation is in scope
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, knowledge, object, residue, thread, pass trace, or downstream risk is affected
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function, chapter card, scene packet, or border is unclear
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if story-decision AI smell, reveal value, thematic explicitness, or causal tidiness is in scope
@@ -71,6 +88,7 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
 rules/sltd_narrative_claim_verification_clipper_discipline.md if a harm depends on factual/status/canon evidence
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if constraints control output or harm prevention
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if harm comes from packet/arc/series topic/thread drift
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if structural AI smell may cause harm
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if voice/relationship harm is in scope
@@ -88,6 +106,7 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
 rules/sltd_narrative_claim_verification_clipper_discipline.md if a constraint depends on factual/status/canon evidence
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if constraint failure needs REDTEAM/PREMORTEM harm vignette
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if constraints come from packet/arc/series topic/thread map
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene/chapter function or prose permission is unclear
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
@@ -108,6 +127,7 @@ rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, re
 rules/sltd_narrative_claim_verification_clipper_discipline.md
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if the verified claim becomes a draft/rewrite constraint
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if a false/uncertain claim may cause readiness/canon/editorial harm
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if the claim concerns topic/thread assignment
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if the claim concerns story-decision AI smell or structural idiosyncrasy
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if Human Chapter Pass, Publication Lock, or exact Vietnamese surface is in scope
 prompts/narrative_claim_verification_check.md
@@ -123,6 +143,7 @@ rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidde
 rules/sltd_narrative_claim_verification_clipper_discipline.md if a story-decision verdict depends on a testable claim or false twin
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if story-decision findings become draft constraints
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if structural AI smell may create downstream harm
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if packet/arc topic clusters or narrative diversity are in scope
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene/chapter function or prose permission is unclear
 rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, reveal, or downstream risk is affected
 rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue function, character presence, or relationship pressure is in scope
@@ -133,75 +154,12 @@ prompts/narrative_feature_audit.md
 prompts/node_checkpoint.md
 ```
 
-### Character voice / dialogue / relationship / location staging
-
-```text
-rules/sltd_source_fidelity_anti_compression.md
-rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, object state, relationship memory, or long-range context is in scope
-rules/sltd_narrative_claim_verification_clipper_discipline.md if a voice/knowledge/status claim needs evidence
-rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if character voice is one of several controlling constraints
-rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if voice/relationship harm is in scope
-rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if dialogue is structurally decorative, causality is too tidy, or body/sensory pressure performs without consequence
-rules/sltd_character_voice_dialogue_relationship_location_gate.md
-samples/character_voice_dialogue_staging_calibration.md
-rules/sltd_tracking_logic_ledger_traceability_gate.md if relationship memory, knowledge state, object state, or downstream risk is affected
-rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or border is unclear
-rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese dialogue surface is in scope
-rules/sltd_author_writing_sheet_claim_evidence_discipline.md if author style may overwrite character voice or needs claim-evidence memory
-rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice may overwrite character voice
-rules/sltd_character_distinctiveness_iceberg_gate.md if voice profile is unclear
-rules/sltd_living_world_community_motion_gate.md if group presence or community motion is in scope
-prompts/character_voice_dialogue_staging_check.md
-prompts/node_checkpoint.md
-```
-
-### Author writing sheet / claim-evidence style memory
-
-```text
-rules/sltd_source_preflight.md
-rules/sltd_source_fidelity_anti_compression.md
-AUTHOR_WORKING_PROFILE.md
-AUTHOR_TASTE_EXAMPLES.md
-rules/sltd_narrative_claim_verification_clipper_discipline.md if a style claim depends on a factual/status/canon claim
-rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if style is one of several draft constraints
-rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if style-over-character harm is in scope
-rules/sltd_author_writing_sheet_claim_evidence_discipline.md
-rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
-rules/sltd_character_voice_dialogue_relationship_location_gate.md if character voice may be affected
-rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface is being compared
-prompts/author_writing_sheet_check.md
-prompts/node_checkpoint.md
-```
-
-### Author voice fingerprint / ghostwriter discipline
-
-```text
-rules/sltd_source_preflight.md
-rules/sltd_source_fidelity_anti_compression.md
-AUTHOR_WORKING_PROFILE.md
-AUTHOR_TASTE_EXAMPLES.md
-rules/sltd_author_writing_sheet_claim_evidence_discipline.md if style claims need evidence or prompt-specific story rules
-rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
-rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
-rules/sltd_narrative_claim_verification_clipper_discipline.md if author-aligned draft depends on status/canon/continuity claim
-rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if author-aligned draft must preserve multiple constraints
-rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if author-aligned draft has high downstream harm risk
-rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md if author-aligned prose may be structurally AI-shaped
-rules/sltd_structural_spine_outline_preprose_borderbound_gate.md if scene function or prose permission is unclear
-rules/sltd_tracking_logic_ledger_traceability_gate.md if state, object, debt, residue, thread, or downstream risk is affected
-rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, character voice, relationship, silence, presence, or staging is in scope
-rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if exact Vietnamese surface is in scope
-prompts/author_writing_sheet_check.md if no claim-evidence style memory exists
-prompts/author_voice_fingerprint_check.md for sample/style extraction or voice match
-prompts/author_aligned_ghostwriter_draft.md for bounded source-safe drafting
-prompts/node_checkpoint.md
-```
-
-### General + chapter feedback matrix
+### Packet / arc / feedback matrix
 
 ```text
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md if current source, packet scope, canon status, or long-range context is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md if topic/thread discovery, motif clustering, repeated AI-smell clusters, or series navigation is in scope
 rules/sltd_narrative_claim_verification_clipper_discipline.md if packet/status/canon/continuity claims need TRUE/FALSE/UNCERTAIN verdicts
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md if packet/readiness/audit has multiple controlling constraints
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md if packet/readiness/REDTEAM/PREMORTEM harm risk is in scope
@@ -213,6 +171,7 @@ rules/sltd_character_voice_dialogue_relationship_location_gate.md if dialogue, r
 rules/sltd_author_writing_sheet_claim_evidence_discipline.md if author-style claims need evidence in packet review
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md if author voice match is a packet issue
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md if human surface or pass integrity is in scope
+prompts/corpus_topic_thread_discovery_check.md if map-level topic/thread output is requested
 prompts/general_chapter_feedback_matrix_check.md
 prompts/node_checkpoint.md
 ```
@@ -222,6 +181,7 @@ prompts/node_checkpoint.md
 ```text
 source_surface_check when exact prose or status is required
 context_capsule_preflight when current source, hidden canon, POV knowledge, object state, relationship memory, lore retrieval, or long-range continuity is in scope
+rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md only when map-level topic/thread navigation is in scope
 rules/sltd_narrative_claim_verification_clipper_discipline.md when a status/canon/continuity/source-conflict claim controls the route
 rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md when rewrite/audit/polish/readiness has multiple constraints
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md when REDTEAM/PREMORTEM/harm vignettes are required
@@ -261,6 +221,8 @@ prompts/node_checkpoint.md
 ## Rule
 
 Run `context_capsule_preflight.md` when the task concerns current/latest source, Notion current manuscript, lock, readiness, Human Chapter Pass, Publication Lock, packet verdict, canon conflict, hidden canon, POV knowledge, object/location/body/debt state, relationship memory, lore retrieval, legacy source risk, summary-vs-source risk, or long-range continuity.
+
+Run `corpus_topic_thread_discovery_check.md` when the task concerns TopicGPT-style topic modeling, corpus topic discovery, thread discovery, motif clusters, repeated AI-smell clusters, packet/arc/series map, topic gaps, thread drift, or source assignments with quote anchors. Use for map-level navigation, not line edit or readiness.
 
 Run `narrative_claim_verification_check.md` when the task concerns CLIPPER-style claim verification, true/false claims, false twins, status claims, canon claims, continuity claims, POV knowledge claims, source conflicts, readiness claims, Human Chapter Pass, Publication Lock, or whether a claim is TRUE/FALSE/UNCERTAIN.
 
