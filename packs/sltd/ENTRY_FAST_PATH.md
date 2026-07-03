@@ -44,6 +44,8 @@ rules/sltd_decision_safety.md
 
 Do not run later gears to hide failure in earlier gears. Choose one primary route, add only evidence-required secondary gates, and stop at the first real blocker. Detailed gate budget and no-cascade rules live in `rules/sltd_entry_route_governance_gate_budget_protocol.md`.
 
+Extra explanations about AI behavior cannot replace source evidence, stop conditions, and visible output checks.
+
 ## Fast paths
 
 ### Corpus topic / thread discovery map
