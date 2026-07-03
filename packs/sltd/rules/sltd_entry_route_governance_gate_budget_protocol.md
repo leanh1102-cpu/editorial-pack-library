@@ -2,7 +2,7 @@
 
 This protocol keeps Entry Fast Path and Task Router usable as routing tools, not diagnostic mazes.
 
-It prevents gate cascade, checklist-first repair, false precision, map bloat, and over-editing caused by running every related gate.
+It prevents gate cascade, checklist-first repair, false precision, map bloat, quality-score overreach, and over-editing caused by running every related gate.
 
 ## Core rule
 
@@ -12,180 +12,90 @@ Choose one primary route. Add only necessary secondary gates. Stop when the requ
 PRIMARY ROUTE = the smallest route that directly answers the user's request
 SECONDARY GATE = a dependent check added only when the primary route exposes a real blocker
 GATE BUDGET = the maximum number of gates allowed before the task must stop, report, or ask for source/scope
-STOP CONDITION = the point where enough evidence, verdict, map, constraint decision, harm decision, or rewrite output has been produced
-GATE CASCADE = running every related gate because it is available rather than required
-CHECKLIST-FIRST REPAIR = editing to satisfy gates before reading the scene as lived prose
+STOP CONDITION = the point where enough evidence, verdict, map, quality decision, constraint decision, harm decision, or rewrite output has been produced
 ```
 
 Run a gate only when the request or evidence makes it necessary.
-
-## Use when
-
-- the user asks whether Entry is too large, confusing, or likely to cause route chaos;
-- a task could trigger three or more gates;
-- context capsule, corpus topic/thread discovery, claim verification, multi-constraint ledger, editorial harm anticipation, tracking, structural, narrative feature, voice, author writing sheet, author voice, author-aligned drafting, surface, human surface polish, readiness, or matrix routes compete for primary route;
-- current source, hidden canon, POV knowledge, source-status separation, status claim, canon claim, style claim, topic/thread map, task constraint, editorial harm, readiness claim, lock claim, or long-range continuity could trigger unnecessary downstream gates;
-- a prior result feels checklist-first, over-routed, slow, over-polished, map-bloated, over-stylized, structurally too clean, claim-loose, constraint-loose, harm-matrix-overloaded, topic-label-only, style-adjective-only, or over-repaired;
-- source is missing and the agent is tempted to keep analyzing from memory.
-
-## Authority
-
-This protocol sits below:
-
-```text
-current user instruction
-current Notion source or user-provided source packet
-source preflight
-context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope
-source fidelity gate
-decision safety
-evidence discipline
-role boundary contracts
-```
-
-It does not authorize skipping source requirements, canon guard, context capsule, topic evidence anchors, claim evidence, multi-constraint ledger when constraints control output, editorial harm anticipation when REDTEAM/PREMORTEM/high-risk readiness is in scope, narrative-feature blockers, author sample requirements, author writing sheet evidence, author-aligned draft blockers, human surface polish blockers, or readiness evidence.
-
-## Route selection order
-
-```text
-1. Classify request type.
-2. Identify exact source requirement.
-3. Choose one primary route.
-4. Add at most the allowed secondary gates.
-5. Stop when the stop condition is reached.
-6. Report blockers and NEXT NODE instead of expanding scope.
-```
-
-If source is missing, the primary route is source preflight or source surface check.
-
-If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, run context capsule preflight before later creative, topic/thread discovery, claim verification, multi-constraint ledger, harm anticipation, logic, narrative feature, author writing sheet, author voice, author-aligned drafting, surface, human surface polish, matrix, or readiness gates.
 
 ## Primary route triggers
 
 ```text
 current / latest / Notion / source status / hidden canon / POV knowledge / long-range continuity -> context capsule preflight
-TopicGPT / topic map / thread discovery / motif cluster / repeated AI-smell cluster / packet map / arc map / series map -> corpus topic thread discovery check
-claim / true false / false twin / CLIPPER / đúng sai / canon claim / continuity claim / source conflict -> narrative claim verification check
-multi-constraint / Suri / constraint ledger / corrupted constraint / ràng buộc / giữ nhiều điều cùng lúc -> multi-constraint instruction check
+POLARIS / longform quality / reference anchored quality / length adherence / bloat / drift / over-summary / over-explanation / late-output collapse -> reference anchored story quality check
+TopicGPT / topic map / thread discovery / motif cluster / repeated pattern cluster / packet map / arc map / series map -> corpus topic thread discovery check
+claim / true false / false twin / CLIPPER / canon claim / continuity claim / source conflict -> narrative claim verification check
+multi-constraint / Suri / constraint ledger / corrupted constraint / giữ nhiều điều cùng lúc -> multi-constraint instruction check
 AHA / harm / REDTEAM / PREMORTEM / false readiness / reveal leak / over-polish harm / failure vignette -> editorial harm anticipation check
 Author Writing Sheet / claim-evidence style memory / style claim evidence / prompt-specific story rules -> author writing sheet check
-rewrite / sửa cảnh -> scene rewrite or first-pass editorial workflow, with multi-constraint ledger when more than one controlling constraint exists and harm anticipation when failure cost is high
+rewrite / sửa cảnh -> scene rewrite or first-pass editorial workflow, with constraint ledger, harm, and reference-quality checks only when their blockers are real
 line / câu / đoạn -> line surgery
 StoryScope / narrative feature / structural AI smell / theme quá rõ / nhân quả quá sạch / tuyến đơn / reread value -> narrative feature audit
 author voice / voice DNA / style guide / giọng tôi / giống giọng / học cách viết -> author voice fingerprint check
-ghostwriter / viết thay / viết theo giọng tôi / draft như tôi -> author aligned ghostwriter draft
 human surface / humanize / polish / đúng mà giả / mượt giả / văn nghe AI nhưng đúng ý -> human surface polish pass
-readiness / lock / pass -> readiness route, with claim verification, multi-constraint ledger, and harm anticipation for status/lock risk
-packet / arc / C001-C030 -> packet/arc review, with corpus topic/thread discovery only when map-level navigation is requested
+readiness / lock / pass -> readiness route, with claim verification, constraint ledger, harm anticipation, and optional reference-quality check only as risk evidence
+packet / arc / C001-C030 -> packet/arc review, with topic/thread discovery only when map-level navigation is requested
 ```
 
 ## Gate budget
 
 ```text
-Simple advisory answer:
-- 1 primary route
-- 0-1 secondary gate
+Reference-anchored story quality:
+- source preflight or source surface when exact output is judged
+- context capsule when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
+- claim verification only if quality depends on factual/status/canon evidence
+- multi-constraint ledger only if output constraints control the draft
+- harm anticipation only if false quality/readiness harm is in scope
+- corpus topic/thread discovery only if packet/arc map-level quality is in scope
+- reference quality check
+- narrative feature or human surface only if quality findings expose those blockers
+- stop before readiness/lock; quality checks do not grant those permissions
 
 Corpus topic / thread discovery:
 - context brief for packet/arc/part/series scope
 - source preflight or source surface when current/source-status topic assignment is required
 - context capsule when hidden canon, POV knowledge, source-status separation, reveal timing, or long-range continuity is in scope
-- corpus topic/thread discovery
+- topic/thread discovery
 - claim verification only if a topic assignment depends on factual/status/canon evidence
 - tracking ledger only if thread state/object/payoff debt is in scope
-- narrative feature audit only if repeated structural AI smell or narrative diversity is the blocker
-- harm anticipation only if topic/thread drift creates downstream harm
-- return top clusters/topic gaps unless user asks for full map
+- reference quality only if map-level output quality is in scope
 - stop before rewrite/readiness/lock; topic maps do not grant those permissions
 
-Editorial harm anticipation:
-- source preflight or source surface when exact/current status or output anchor is required
-- context capsule when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
-- claim verification only if a harm depends on factual/status/canon evidence
-- multi-constraint ledger only if constraints control output or harm prevention
-- corpus topic/thread discovery only if harm is map-level topic/thread drift
-- harm matrix
-- top 3 harms by severity unless user asks for full matrix
-- stop before rewrite/readiness/lock if harm depends on missing source, invented canon, or review overload
-
-Context capsule preflight:
-- source preflight or source surface check when exact/current status is required
-- context capsule preflight
-- claim verification only if the capsule contains a testable current/status/canon/continuity claim
-- multi-constraint ledger only if downstream output must preserve multiple constraints
-- harm anticipation only if REDTEAM/PREMORTEM/readiness/lock/large rewrite harm risk is in scope
-- corpus topic/thread discovery only if packet/arc/series map-level navigation is in scope
-- author writing sheet only if a style claim controls the route
-- 0-2 dependent gates only when capsule exposes a real blocker
-
 Narrative claim verification:
-- source preflight or source surface when exact/current status is required
-- context capsule preflight if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, claim anchor, or long-range continuity is in scope
-- compressed source may be used only to locate evidence
-- narrative claim verification
-- corpus topic/thread discovery only if the claim concerns topic/thread assignment
-- multi-constraint ledger only if the verified claim becomes an output constraint
-- harm anticipation only if a false/uncertain claim could cause editorial harm
+- source/context as required
+- claim verification
+- reference quality only if a quality verdict depends on verified evidence
 - stop with TRUE / FALSE / UNCERTAIN; do not continue into readiness, polish, or rewrite from claim verification alone
 
 Multi-constraint instruction ledger:
-- source preflight or source surface when exact/current status or output anchor is required
-- context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
+- source/context as required
 - claim verification only if a constraint depends on factual/status/canon evidence
-- corpus topic/thread discovery only if constraints come from packet/arc/series topic/thread map
 - multi-constraint ledger
-- harm anticipation only if a failed constraint has high reader/canon/readiness/downstream harm
-- 0-2 dependent gates only if a constraint exposes a structural/tracking/voice/style/surface blocker
-- stop before draft/rewrite/readiness if constraints conflict, high-risk corrupted constraints are missing, or output anchors are unclear
+- reference quality only if length/quality is an output constraint
+- stop before draft/rewrite/readiness if constraints conflict, corrupted constraints are missing, or output anchors are unclear
 
-Author writing sheet:
-- approved/current author samples or AUTHOR_TASTE_EXAMPLES / AUTHOR_WORKING_PROFILE
-- author writing sheet check
-- multi-constraint ledger only if style is one of several output constraints
-- corpus topic/thread discovery only if author-style clusters are map-level
-- 0-1 dependent gate only if a style claim depends on source/canon evidence, character voice, or exact Vietnamese surface
-- stop if samples are missing, unapproved, generated-only, legacy-only, chat-memory-only, or style-adjective-only
-
-Author voice fingerprint:
-- approved/current author samples or AUTHOR_TASTE_EXAMPLES / AUTHOR_WORKING_PROFILE
-- author writing sheet first if style claims need evidence
-- author voice fingerprint check
-- corpus topic/thread discovery only if style clusters are map-level and explicitly requested
-- 0-1 dependent gate only if dialogue/character voice or Vietnamese surface is the comparison issue
+Editorial harm anticipation:
+- source/context as required
+- claim verification and constraint ledger only if needed
+- reference quality only if harm is false longform quality or late collapse
+- top 3 harms by severity unless full matrix is requested
 
 Author-aligned drafting:
 - source surface or current scene packet
-- context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
-- claim verification if draft depends on a status/canon/continuity/POV/object/reveal claim
+- context capsule when required
+- claim verification if draft depends on source claim
 - multi-constraint ledger for source/canon/POV/scene/style/surface/wordcount constraints
-- harm anticipation if the draft has high REDTEAM/PREMORTEM risk
-- author writing sheet if style memory or prompt-specific story rules are used
-- narrative feature audit only if draft risk includes theme overexplained, causal tidiness, single-track plot, weak reveal, or decorative sensory pressure
-- structural/tracking/voice gate only if scene function, state, or character voice is unclear
+- harm anticipation if failure cost is high
+- reference quality if longform quality or length adherence is in scope
+- author writing sheet if style memory is used
 - bounded draft
-- human surface polish only if synthetic-surface risk remains
-- stop before draft if source/canon/scene controls, constraints, author samples, or required harm check are missing
-
-Human surface polish:
-- source surface check when exact prose is patched
-- context capsule preflight if current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope
-- claim verification if patch depends on a factual/canon/continuity claim
-- multi-constraint ledger if polish must preserve multiple source/canon/POV/scene/style constraints
-- harm anticipation if over-polish/false-surface harm is in scope
-- corpus topic/thread discovery only if the surface issue is actually map-level repetition/thread drift
-- narrative feature audit if polish may hide structural AI smell or decorative body/sensory overperformance
-- author writing sheet only if style memory is used for polish
-- stop before copyedit/readiness if repair load exceeds 30 percent, source is missing, constraints conflict, story-decision smell remains, or polishing would change scene function/canon/outcome
 
 Chapter readiness:
 - source surface / current Notion if current status is asked
-- context capsule preflight before status/pass verdict when current source, hidden canon, POV knowledge, or source-status separation is in scope
+- context capsule before status/pass verdict when needed
 - claim verification for Human Chapter Pass / Publication Lock / packet lock / source-conflict claims
-- multi-constraint ledger for readiness constraints and corrupted constraints
-- harm anticipation for false readiness / lock / downstream harm vignettes
-- corpus topic/thread discovery only if packet/arc thread map is explicitly requested
-- narrative feature audit if false readiness may come from clean-but-AI-shaped story structure
-- author writing sheet only as style evidence, never as readiness evidence
+- multi-constraint ledger for readiness constraints
+- harm anticipation for false readiness / lock / downstream harm
+- reference quality only as risk evidence, never as readiness evidence by itself
 - readiness reviewer
 ```
 
@@ -198,122 +108,25 @@ Stop when:
 ```text
 source is missing or current source was not read for a current-status claim;
 context capsule blocks because POV knowledge, hidden canon, source status, object state, or long-range context is unclear;
+reference quality blocks because source, output, anchor authorization, Must Show source, or exact output is missing;
+reference quality is being used as readiness, lock, canon verdict, or rewrite permission;
 topic/thread discovery blocks because scope, source, quote/evidence anchor, or current assignment evidence is missing;
-topic map tries to delete low-frequency topic without canon/reveal/payoff check;
 topic map is being used as readiness, lock, canon verdict, or rewrite permission;
-claim verification returns UNCERTAIN because evidence, exact source, anchor, or false twin is missing;
-claim verification proves a readiness/lock/status claim false;
+claim verification returns UNCERTAIN or false on a controlling claim;
 multi-constraint ledger blocks because constraints are missing, corrupted constraints are missing, output anchors are missing, or constraints conflict;
 harm anticipation blocks because scope/source/impact target/failure behavior is missing, harm depends on unverified claim, vignette would invent canon, or matrix overload hides the top blocker;
 author writing sheet blocks because style evidence, approved samples, category coverage, or task fit is missing;
-narrative feature audit blocks because story-decision AI smell, theme overexplicitness, causal tidiness, weak reveal, or decorative sensory pressure remains unresolved;
-author samples are missing, unapproved, generated-only, legacy-only, or chat-memory-only;
-author-aligned drafting would invent canon, scene function, object, relation, route, payoff, or reveal timing;
+narrative feature audit blocks because story-decision smell remains unresolved;
 primary blocker has been identified and next node is clear;
-requested rewrite or patch is complete within scope;
-readiness is blocked by a higher-priority gate;
 additional gates would be speculative;
-additional repair would invent canon, timeline, folklore, motive, or source surface;
-human surface polish would smooth away body/object pressure, relationship memory, or useful roughness;
 secondary gate budget has been spent.
-```
-
-## No-cascade rule
-
-Do not run this chain by default:
-
-```text
-topic map -> transition -> timeline -> craft -> composition -> beat -> living world -> character -> layout -> register -> scene-first -> anti-AI -> agency -> dynamic range
-```
-
-Use only the nodes required by the primary blocker.
-
-## Checklist-first repair prevention
-
-Before patching, name:
-
-```text
-PRIMARY BLOCKER:
-PRIMARY ROUTE:
-GATE BUDGET:
-STOP CONDITION:
-```
-
-If the edit begins to add topic mapping, claim verification, multi-constraint ledger, harm matrix, author writing sheet, body, object, silence, rumor, beat, world texture, character gesture, line-break changes, author voice imitation, author-aligned drafting, narrative-feature repair, and human-surface polish all at once, stop and run Anti-AI Composite or Scene-First Prose Judgment.
-
-## Failure labels
-
-```text
-ROUTE_OVERLOAD
-GATE_CASCADE_RISK
-CHECKLIST_FIRST_REPAIR_RISK
-PRIMARY_ROUTE_UNCLEAR
-SECONDARY_GATE_OVERUSE
-STOP_CONDITION_MISSING
-SOURCE_SURFACE_FORGOTTEN
-CONTEXT_CAPSULE_FORGOTTEN
-CORPUS_TOPIC_MAP_FORGOTTEN
-TOPIC_WITHOUT_EVIDENCE
-SUMMARY_ONLY_TOPIC_RISK
-LOW_FREQUENCY_IMPORTANT_UNCHECKED
-CLAIM_VERIFICATION_FORGOTTEN
-FALSE_TWIN_FORGOTTEN
-MULTI_CONSTRAINT_LEDGER_FORGOTTEN
-CORRUPTED_CONSTRAINT_FORGOTTEN
-EDITORIAL_HARM_MATRIX_FORGOTTEN
-HARM_OVERLOAD_RISK
-VIGNETTE_CANON_DRIFT
-CONSTRAINT_CONFLICT_IGNORED
-AUTHOR_WRITING_SHEET_FORGOTTEN
-STYLE_CLAIM_WITHOUT_EVIDENCE
-STRUCTURAL_AI_SMELL_IGNORED
-AUTHOR_SAMPLE_FORGOTTEN
-AUTHOR_ALIGNED_DRAFT_PERMISSION_FORGOTTEN
-AUTHOR_VOICE_OVER_CHARACTER_VOICE
-HUMAN_SURFACE_OVERPOLISH_RISK
-MAP_USED_AS_READINESS
-MAP_USED_AS_REWRITE_PERMISSION
-FALSE_PRECISION_ROUTE
-PATCH_OVERFITTING
-EDITORIAL_LATENCY_RISK
 ```
 
 ## Safe repair
 
-Safe repair may:
+Safe repair may select one primary route, cap secondary gates, require source/context, route longform quality tasks to Reference-Anchored Story Quality, route packet/arc/series maps to Corpus Topic / Thread Discovery, route disputed claims to Narrative Claim Verification, route multi-constraint output tasks to Multi-Constraint Ledger, route high-cost failures to Editorial Harm Anticipation, and stop at the first real blocker.
 
-- select one primary route;
-- reduce route chain to the smallest useful path;
-- cap secondary gates;
-- state stop condition before editing;
-- require context capsule before downstream gates when current source, hidden canon, POV knowledge, or long-range continuity is in scope;
-- route TopicGPT-style packet/arc/series requests to Corpus Topic / Thread Discovery with quote/evidence anchors;
-- mark low-frequency topics as important/uncertain instead of deleting them;
-- route disputed status/canon/continuity claims to Narrative Claim Verification before prose, readiness, or lock;
-- route multi-constraint rewrite/draft/polish/readiness tasks to Multi-Constraint Instruction Ledger before output;
-- route REDTEAM/PREMORTEM/readiness/lock/large-rewrite risk to Editorial Harm Anticipation and return top 3 harms when overloaded;
-- route StoryScope/narrative feature requests to Narrative Feature Audit before surface repair;
-- route author-style claim requests to Author Writing Sheet before fingerprint/drafting;
-- route author voice requests to fingerprint check after style evidence is clear;
-- route author-aligned drafting only after source, scene controls, claim verification when needed, multi-constraint ledger when needed, harm anticipation when needed, author writing sheet when needed, and author fingerprint are clear;
-- route correct-but-synthetic prose to Human Surface Polish only after source, claim verification, multi-constraint ledger, harm anticipation when relevant, narrative feature, style evidence when used, and prose permission are clear.
-
-Safe repair must not:
-
-- drop required source checks;
-- skip context capsule when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is at stake;
-- create topic maps without quote/evidence anchors;
-- delete low-frequency topics without canon/reveal/payoff check;
-- use topic map as source truth, readiness, lock, canon verdict, or rewrite permission;
-- skip claim verification when a factual/canon/status/readiness claim controls the route;
-- skip Multi-Constraint Instruction Ledger when multiple constraints control output;
-- skip Editorial Harm Anticipation when REDTEAM/PREMORTEM/readiness/lock/high-risk failure vignette is the primary blocker;
-- skip Author Writing Sheet when author-style claims control the route;
-- skip narrative feature audit when story-decision AI smell is the primary blocker;
-- use author style match to invent source truth, override character voice, or call readiness;
-- use human surface polish to hide story failure or smooth away survival pressure;
-- continue running gates after a stop condition;
-- create scripts, workflows, reports, issues, boards, or project-management files.
+Safe repair must not drop required source checks, create topic maps without evidence anchors, use quality checks or topic maps as readiness/lock/canon/rewrite permission, skip claim verification when factual claims control the route, skip constraint ledger when multiple constraints control output, skip harm anticipation when failure risk is the primary blocker, continue running gates after stop condition, or create scripts, workflows, reports, issues, boards, or project-management files.
 
 ## Route governance audit
 
@@ -324,6 +137,7 @@ SOURCE USED:
 REQUEST TYPE:
 SOURCE REQUIREMENT:
 CONTEXT CAPSULE REQUIREMENT:
+REFERENCE-ANCHORED STORY QUALITY REQUIREMENT:
 CORPUS TOPIC / THREAD DISCOVERY REQUIREMENT:
 CLAIM VERIFICATION REQUIREMENT:
 MULTI-CONSTRAINT LEDGER REQUIREMENT:
@@ -345,26 +159,6 @@ ROUTE DECISION:
 NEXT NODE:
 ```
 
-## Handoff
-
-If source is missing, hand off to Source Preflight or Source Surface Check.
-
-If current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope, hand off to Context Capsule Preflight before downstream gates.
-
-If packet/arc/series map-level topic/thread navigation is in scope, hand off to Corpus Topic / Thread Discovery before packet map verdict.
-
-If a claim is true/false/current/canon/ready/locked, hand off to Narrative Claim Verification before prose/readiness/lock.
-
-If a task has multiple source/canon/POV/scene/style/surface/wordcount/readiness constraints, hand off to Multi-Constraint Instruction Check before drafting, polish, or readiness.
-
-If REDTEAM/PREMORTEM/readiness/lock/high-risk failure vignette is in scope, hand off to Editorial Harm Anticipation before rewrite/readiness/lock.
-
-If the task asks for Author Writing Sheet, claim-evidence style memory, sample-backed author profile, or prompt-specific story rules, hand off to Author Writing Sheet Check.
-
-If the task asks for author voice, voice DNA, style guide, or voice match, hand off to Author Voice Fingerprint Check after evidence/source gaps are clear.
-
-If the task asks for author-aligned drafting, hand off to Author-Aligned Draft only after current source, scene controls, claim verification when relevant, multi-constraint ledger when relevant, harm anticipation when relevant, narrative feature blockers when relevant, author writing sheet when relevant, and author fingerprint are clear.
-
 ## Output labels
 
 ```text
@@ -375,6 +169,7 @@ GATE_CASCADE_BLOCKED
 CHECKLIST_FIRST_REPAIR_BLOCKED
 SOURCE_REQUIRED_BEFORE_ROUTE
 CONTEXT_CAPSULE_REQUIRED_BEFORE_ROUTE
+REFERENCE_QUALITY_REQUIRED_FOR_LONGFORM
 CORPUS_TOPIC_MAP_REQUIRED_FOR_PACKET
 CLAIM_VERIFICATION_REQUIRED_BEFORE_VERDICT
 MULTI_CONSTRAINT_LEDGER_REQUIRED_BEFORE_DRAFT
