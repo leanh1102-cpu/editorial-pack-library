@@ -22,8 +22,20 @@ Verify:
 - `context_capsule_preflight` is listed in allowed_tasks;
 - Entry Fast Path places Context Capsule after Source Preflight and before Spine, Tracking, Voice/Staging, Rewrite, Matrix, and Readiness when source status or long-range context is in scope;
 - task router calls Context Capsule for current/latest source, Notion current manuscript, lock, readiness, Publication Lock, Human Chapter Pass, packet verdict, canon conflict, hidden canon, POV knowledge, legacy source risk, summary-vs-source risk, and long-range continuity;
+- route governance requires Context Capsule before downstream gates when current source, hidden canon, POV knowledge, source-status separation, or long-range continuity is in scope;
+- role boundary contracts require Context Capsule before later roles when source/context scope needs it;
 - the gate blocks chat memory, summary, raw draft, legacy source, hidden canon leakage, unclear POV knowledge, unclear object/location/body/debt state, and unresolved canon conflict from becoming prose or verdict;
 - the gate does not authorize autonomous lore updates, new canon, new databases, workflows, scripts, reports, project boards, automations, or live manuscript copies in GitHub.
+
+## Check role boundary and role entry index
+
+Verify:
+
+- `ROLE_ENTRY_INDEX.md` exists and is listed in manifest;
+- `rules/sltd_role_boundary_contracts.md` exists and is listed in manifest;
+- Role Entry Index states Context Capsule is not a role card and must run before role cards when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope;
+- role boundary contracts include Context Capsule in the global contract, role order, key role READ BEFORE / STOP WHEN clauses, learning boundary, and role-boundary output;
+- role boundaries still prevent silent Notion/GitHub/source writes and role mixing.
 
 ## Check character voice, dialogue, relationship memory, and location staging
 
@@ -49,7 +61,7 @@ Verify these gates remain listed and routed when their scope is in play.
 
 ## Check route governance
 
-Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, and no gate cascade.
+Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, and no gate cascade.
 
 ## Check orphan risk
 
