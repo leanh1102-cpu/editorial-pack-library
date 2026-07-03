@@ -12,58 +12,29 @@ Verify version, required files, allowed tasks, source priority, and fail-closed 
 
 Verify source fidelity rule and source surface prompt exist and exact prose/status routes require source surface before patching or verdict.
 
-## Check tracking, logic ledger, and traceability
+## Check general + chapter feedback matrix
 
 Verify:
 
-- `rules/sltd_tracking_logic_ledger_traceability_gate.md` exists and is listed in manifest;
-- `prompts/tracking_logic_ledger_check.md` exists and is listed in manifest;
-- `samples/tracking_logic_ledger_calibration.md` exists and is listed in manifest;
-- tracking_logic_ledger_check is listed in allowed_tasks;
-- tracking route ends with node checkpoint;
-- rewrite, line surgery, readiness, and packet/arc routes reference tracking when state, knowledge, object, residue, thread, pass, or downstream logic is at stake;
-- the gate defines tracking surface, logic ledger, state trace, knowledge trace, object trace, thread trace, change trace, and verify target;
-- the gate blocks missing tracking surface, untracked state change, unclear knowledge state, missing object/residue/thread ledger, untracked payoff debt, pass trace conflict, missing downstream dependency, and missing verify target;
-- the gate does not authorize new source-unsupported logic, canon, payoff, witness, clue, or source status.
+- `rules/sltd_general_chapter_feedback_matrix_output_protocol.md` exists and is listed in manifest;
+- `prompts/general_chapter_feedback_matrix_check.md` exists and is listed in manifest;
+- `samples/general_chapter_feedback_matrix_calibration.md` exists and is listed in manifest;
+- general_chapter_feedback_matrix_check is listed in allowed_tasks;
+- matrix route ends with node checkpoint;
+- matrix output requires source used, source status, general feedback, chapter feedback, evidence check, node ledger, and next node;
+- the matrix does not authorize readiness claims, source writes, canon changes, or prose edits without relevant gates.
 
-## Check structural spine, outline pre-prose, and borderbound
+## Check tracking, logic ledger, and traceability
 
-Verify structural spine rule/prompt/sample exist, task is allowed, routes end with node checkpoint, and rewrite/readiness routes reference structural spine when outline, card, packet, or borderbound affects prose permission.
+Verify tracking rule/prompt/sample exist, task is allowed, route ends with node checkpoint, and the gate blocks missing tracking surface, untracked state change, unclear knowledge state, missing object/residue/thread ledger, pass trace conflict, downstream dependency risk, and missing verify target.
 
-## Check Vietnamese senior editor surface and pass integrity
+## Check structural spine, Vietnamese surface, supernatural residue, and protagonist route
 
-Verify Vietnamese surface rule/prompt/sample exist, task is allowed, route ends with node checkpoint, and the gate blocks false readiness from pass labels, candidate-ready notes, formal status updates, conflicting notes, Human Chapter Pass NO, and Publication Lock Not Ready.
+Verify these gates remain listed and routed when their scope is in play.
 
-## Check supernatural event residue and dread amplitude
-
-Verify supernatural residue rule/prompt/sample, allowed task, source fidelity route, node checkpoint, and blockers for mood-only fog/cold/silence, underpowered dread, folklore without incident, generic beast threat, relic decoration, and early deep-lore reveal.
-
-## Check protagonist inquiry and advancement
-
-Verify protagonist inquiry and advancement rule/prompt/sample files, allowed tasks, source fidelity routes, node checkpoints, and blockers for passive protagonist, adult system reasoning, source-unsupported growth, and Notion-label prose.
-
-## Check entry route governance
+## Check route governance
 
 Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, and no gate cascade.
-
-## Check routes
-
-Verify each allowed task has a route or prompt, node-changing routes end with node checkpoint or result report, and routes reference required gate files:
-
-```text
-source-surface routes -> sltd_source_fidelity_anti_compression.md
-entry governance routes -> sltd_entry_route_governance_gate_budget_protocol.md
-tracking routes -> sltd_tracking_logic_ledger_traceability_gate.md
-structural spine routes -> sltd_structural_spine_outline_preprose_borderbound_gate.md
-Vietnamese surface routes -> sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
-supernatural residue routes -> sltd_supernatural_event_residue_dread_amplitude_gate.md
-protagonist inquiry routes -> sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
-protagonist advancement routes -> sltd_protagonist_advancement_growth_route_gate.md
-```
-
-## Check role boundaries
-
-Verify later roles do not overwrite earlier-layer blockers and learned gates do not override current source, canon, evidence, or human lock.
 
 ## Check orphan risk
 
