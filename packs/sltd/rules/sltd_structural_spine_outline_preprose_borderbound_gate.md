@@ -77,6 +77,36 @@ SAFE NEXT ACTION:
 NEXT NODE:
 ```
 
+## Proser outline routing addendum
+
+For current SLTD Proser work, outline-to-prose descent must use the existing Notion route:
+
+```text
+Story Outline
+-> Series Planning / Quyển Bank
+-> Packet Beat Ledger
+-> Chapter Index fields
+-> Scene Bank fields
+-> prose
+```
+
+Do not jump from Quyển / macro outline directly to prose.
+
+Before scene expansion, confirm:
+
+```text
+source anchor or approved candidate source
+Chapter Function
+Map Zone
+Access Gate
+Cost
+Payoff Debt
+Must Not Reveal
+Reader Effect or Scene Question
+```
+
+If any item is missing, return NODE MISSING / OUTLINE_REPAIR_REQUIRED and ask for source-lock or candidate fill before prose.
+
 ## Borderbound rule
 
 A prose task is blocked when any of these is missing or contradictory for the requested scope:
