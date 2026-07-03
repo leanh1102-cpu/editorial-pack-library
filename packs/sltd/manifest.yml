@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.32"
+version: "1.10.33"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -46,6 +46,7 @@ allowed_tasks:
   - calibration_case_check
   - source_surface_check
   - first_pass_editorial_workflow
+  - structural_spine_outline_preprose_check
   - protagonist_advancement_check
   - protagonist_inquiry_check
   - supernatural_event_residue_check
@@ -72,6 +73,7 @@ required_files:
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
+  - rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
   - rules/sltd_supernatural_event_residue_dread_amplitude_gate.md
   - rules/sltd_protagonist_advancement_growth_route_gate.md
   - rules/sltd_protagonist_inquiry_inner_reasoning_clue_chain_gate.md
@@ -94,6 +96,7 @@ required_files:
   - rules/sltd_source_fidelity_anti_compression.md
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
+  - prompts/structural_spine_outline_preprose_check.md
   - prompts/protagonist_advancement_check.md
   - prompts/protagonist_inquiry_check.md
   - prompts/supernatural_event_residue_check.md
@@ -116,6 +119,7 @@ required_files:
   - prompts/source_surface_check.md
   - prompts/entry_healthcheck.md
   - prompts/node_checkpoint.md
+  - samples/structural_spine_outline_preprose_calibration.md
   - samples/protagonist_advancement_calibration.md
   - samples/protagonist_inquiry_calibration.md
   - samples/supernatural_event_residue_calibration.md
