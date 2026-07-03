@@ -12,6 +12,8 @@ Narrative Claim Verifier may be routed as a prompt-based evidence/source role. I
 
 Multi-Constraint Instruction Ledger may be routed as a prompt-based constraint tracking role. It is not source authority, canon authority, prose polish, Human Chapter Pass, readiness, or publication lock authority.
 
+Editorial Harm Anticipation may be routed as a prompt-based REDTEAM/PREMORTEM vignette role. It is not source authority, canon authority, prose polish, Human Chapter Pass, readiness, or publication lock authority.
+
 Narrative Feature Auditor may be routed as a prompt-based structural-story role. It is not an AI detector, canon authority, prose polish role, or readiness authority.
 
 Author Writing Sheet may be routed as a prompt-based claim-evidence style memory role. It is not canon authority, character voice authority, readiness, or publication lock authority.
@@ -37,6 +39,7 @@ Editorial Director -> roles/editorial_director.md
 ```text
 Narrative Claim Verifier -> prompts/narrative_claim_verification_check.md + rules/sltd_narrative_claim_verification_clipper_discipline.md
 Multi-Constraint Instruction Ledger -> prompts/multi_constraint_instruction_check.md + rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md
+Editorial Harm Anticipation -> prompts/editorial_harm_anticipation_check.md + rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md
 Narrative Feature Auditor -> prompts/narrative_feature_audit.md + rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md
 Author Writing Sheet -> prompts/author_writing_sheet_check.md + rules/sltd_author_writing_sheet_claim_evidence_discipline.md
 Author Voice Fingerprint -> prompts/author_voice_fingerprint_check.md + rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
@@ -54,13 +57,14 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 5. Run context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
 6. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
 7. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
-8. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
-9. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
-10. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
-11. Read the requested role card or prompt-routed role.
-12. Read source/evidence files needed by the role.
-13. Execute the smallest safe task.
-14. End with node checkpoint or result report.
+8. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
+9. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
+10. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
+11. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
+12. Read the requested role card or prompt-routed role.
+13. Read source/evidence files needed by the role.
+14. Execute the smallest safe task.
+15. End with node checkpoint or result report.
 ```
 
 ## Conflict rule
@@ -72,6 +76,8 @@ If Context Capsule blocks, do not continue into a later role to hide the source/
 If Narrative Claim Verification returns UNCERTAIN or disproves a status/lock/readiness/canon claim, do not continue into readiness, Publication Lock, or prose repair to hide the evidence failure.
 
 If Multi-Constraint Instruction Ledger blocks because constraints conflict, high-risk corrupted constraints are missing, or output anchors are missing, do not draft, polish, or call readiness to hide the constraint failure.
+
+If Editorial Harm Anticipation blocks because scope/source is missing, a vignette would invent canon, or the matrix overloads the task, do not continue into rewrite, readiness, or lock to hide the harm failure.
 
 If Narrative Feature Audit blocks because story-decision smell remains unresolved, do not continue into Human Surface Polish, Copyedit, Readiness, or Publication Lock to hide the structural failure.
 
@@ -95,6 +101,7 @@ CONTEXT CAPSULE REQUIRED:
 CONTEXT CAPSULE STATUS:
 CLAIM VERIFICATION REQUIRED:
 MULTI-CONSTRAINT LEDGER REQUIRED:
+EDITORIAL HARM ANTICIPATION REQUIRED:
 NARRATIVE FEATURE REQUIRED:
 AUTHOR WRITING SHEET REQUIRED:
 AUTHOR VOICE / DRAFTING REQUIRED:
