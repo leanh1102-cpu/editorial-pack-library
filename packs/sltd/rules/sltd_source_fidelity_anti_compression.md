@@ -16,6 +16,72 @@ A digest can guide navigation, prioritization, or map-level audit. It cannot be 
 
 Chat memory can provide context. It cannot be used as current source evidence or prose surface.
 
+## A-source survival rawness guard
+
+When A-source material is used as benchmark / draft-material reference, do not compress away its raw survival pressure.
+
+A-source is not automatically live canon, but its rough life-force can be a protected source signal. Editorial prose must not become prettier, cleaner, more symbolic, or more lore-labeled by removing the survival impulse that caused the action.
+
+```text
+SURVIVAL IMPULSE > LORE LABEL
+RAW LIFE COST > BEAUTIFUL SURFACE
+ACTION FROM NEED > ACTION FROM THEME
+OBJECT / BODY / HUNGER / DEBT / FEAR > ABSTRACT EXPLANATION
+```
+
+For SLTD, the visible urge should usually come from survival first:
+
+- hunger;
+- medicine shortage;
+- breath failure;
+- cold / fog / rain / mud;
+- debt pressure;
+- family body-cost;
+- someone watching or misnaming;
+- food, water, fire, tool, road, paper, animal, or witness pressure;
+- the need to hide, carry, trade, refuse, ask, or delay.
+
+The underlying lore law may shape the world, but scene action should not look like characters moving to illustrate lore. A scene fails if every beat is correct in outline but the human body has no immediate reason to move.
+
+## Editorial smoothing failure
+
+Flag an editorial draft when it:
+
+```text
+A_SOURCE_RAWNESS_COMPRESSED
+SURVIVAL_IMPULSE_LOST
+ROUGH_LIFE_COST_REMOVED
+LORE_LAW_OVER_SURVIVAL_ACTION
+SYMBOLIC_POLISH_OVER_BODY_NEED
+PRETTY_SCENE_FALSE_GAIN
+ACTION_FROM_THEME_NOT_NEED
+A_SOURCE_BEAT_BEAUTIFIED_AWAY
+```
+
+This failure is especially dangerous in chapters where the source contains poverty, hunger, illness, rough trade, dirty medicine, animal signs, mud, torn tools, unpaid debt, family embarrassment, small theft/temptation, or a physically ugly survival choice.
+
+## A-source-to-editorial check
+
+Before accepting an editorial rewrite derived from A-source or old draft material, check:
+
+```text
+A-SOURCE SURVIVAL CHECK
+SOURCE USED:
+EDITORIAL VERSION USED:
+RAW SURVIVAL DRIVER IN A-SOURCE:
+WHAT BODY / OBJECT / DEBT / HUNGER / FEAR MOVES THE ACTION:
+WHAT THE EDITORIAL VERSION REMOVED:
+WHAT WAS BEAUTIFIED OR SYMBOLIZED:
+LORE LAW PRESENT: YES / NO
+LORE LAW OVERWRITES SURVIVAL: YES / NO
+SCENE ACTION STILL STARTS FROM NEED: YES / NO
+SAFE REPAIR:
+```
+
+Safe repair should restore pressure through concrete need before adding lore clarity.
+
+Do not solve the problem by adding explanation. Restore the missing object, body cost, hunger, debt, family risk, witness risk, route pressure, or dirty practical choice.
+
 ## Use when
 
 - the user asks to audit many chapters at once;
@@ -23,6 +89,7 @@ Chat memory can provide context. It cannot be used as current source evidence or
 - the user asks rewrite or patch without exact excerpt;
 - the source is summary, digest, old chat memory, or legacy Workdeck;
 - the AI is at risk of compressing prose into plot summary;
+- the editorial version may have smoothed, prettified, or symbolized rough A-source survival pressure;
 - context window limits may affect source fidelity.
 
 ## Task level rule
@@ -215,7 +282,10 @@ Flag high risk when:
 - patch is proposed without exact OLD;
 - readiness is inferred from prose quality;
 - current status is inferred from chat memory;
-- scene rhythm is judged from summary.
+- scene rhythm is judged from summary;
+- A-source survival material is replaced by cleaner symbolic editorial prose;
+- scene action is explained by lore law before body/object survival need exists;
+- rough living details are removed because they look dirty, repetitive, ordinary, or not elegant enough.
 
 ## Stop rule
 
@@ -229,6 +299,9 @@ MEMORY_USED_AS_CURRENT_STATUS
 LINE_TASK_OVER_PACKET_SCOPE
 REWRITE_WITHOUT_SCENE_SOURCE
 READINESS_WITHOUT_CURRENT_NOTION
+A_SOURCE_RAWNESS_COMPRESSED
+SURVIVAL_IMPULSE_LOST
+LORE_LAW_OVER_SURVIVAL_ACTION
 ```
 
 ## Output labels
@@ -240,4 +313,6 @@ SOURCE_SURFACE_MISSING
 COMPRESSION_RISK_HIGH
 COMPRESSION_BLOCKED
 SAFE_DOWNGRADE_REQUIRED
+A_SOURCE_SURVIVAL_RESTORE_REQUIRED
+EDITORIAL_SMOOTHING_BLOCKED
 ```
