@@ -14,6 +14,7 @@ rules/sltd_role_boundary_contracts.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md
+rules/sltd_multilingual_long_context_retrieval_oneruler_discipline.md
 rules/sltd_reference_anchored_longform_quality_polaris_discipline.md
 rules/sltd_corpus_topic_thread_discovery_topicgpt_discipline.md
 rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md
@@ -34,6 +35,7 @@ rules/sltd_protagonist_advancement_growth_route_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
 prompts/context_capsule_preflight.md
+prompts/multilingual_long_context_retrieval_check.md
 prompts/reference_anchored_story_quality_check.md
 prompts/corpus_topic_thread_discovery_check.md
 prompts/editorial_harm_anticipation_check.md
@@ -53,6 +55,7 @@ prompts/supernatural_event_residue_check.md
 prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
 samples/context_capsule_calibration.md
+samples/multilingual_long_context_retrieval_calibration.md
 samples/reference_anchored_story_quality_calibration.md
 samples/corpus_topic_thread_discovery_calibration.md
 samples/editorial_harm_anticipation_calibration.md
@@ -83,6 +86,7 @@ MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
 CONTEXT CAPSULE / LORE RETRIEVAL CHECK:
+MULTILINGUAL LONG-CONTEXT RETRIEVAL / ONERULER CHECK:
 REFERENCE-ANCHORED LONGFORM STORY QUALITY / POLARIS CHECK:
 CORPUS TOPIC / THREAD DISCOVERY / TOPICGPT CHECK:
 EDITORIAL HARM ANTICIPATION / AHA VIGNETTE MATRIX CHECK:
