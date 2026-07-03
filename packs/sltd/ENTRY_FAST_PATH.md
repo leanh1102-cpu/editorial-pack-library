@@ -42,7 +42,7 @@ rules/sltd_decision_safety.md
 22. Readiness / Lock
 ```
 
-Do not run later gears to hide failure in earlier gears. Do not draft, ghostwrite, polish, copyedit, or claim readiness before source, context capsule, claim verification, multi-constraint ledger, harm anticipation when relevant, topic/thread discovery when map-level navigation is relevant, spine, tracking, border, narrative-feature, scene staging, author writing sheet, and author fingerprint are clear when continuity, hidden canon, object state, relationship memory, author voice, dialogue, reveal, status, lock, style evidence, task constraints, editorial harm, topic/thread map, or story-decision smell is at stake. Stop at the first real blocker.
+Do not run later gears to hide failure in earlier gears. Choose one primary route, add only evidence-required secondary gates, and stop at the first real blocker. Detailed gate budget and no-cascade rules live in `rules/sltd_entry_route_governance_gate_budget_protocol.md`.
 
 ## Fast paths
 
