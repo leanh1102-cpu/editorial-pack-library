@@ -72,6 +72,7 @@ required_files:
   - AUTHOR_TASTE_EXAMPLES.md
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
+  - roles/publishing_readiness_reviewer.md
   - rules/sltd_role_boundary_contracts.md
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
@@ -99,6 +100,7 @@ required_files:
   - rules/sltd_source_fidelity_anti_compression.md
   - rules/sltd_task_router.md
   - rules/sltd_pack_healthcheck.md
+  - rules/sltd_publishing_readiness.md
   - prompts/general_chapter_feedback_matrix_check.md
   - prompts/context_capsule_preflight.md
   - prompts/context_memory_lifecycle_check.md
@@ -124,6 +126,7 @@ required_files:
   - prompts/supernatural_event_residue_check.md
   - prompts/source_surface_check.md
   - prompts/entry_healthcheck.md
+  - prompts/chapter_readiness_check.md
   - prompts/node_checkpoint.md
   - samples/general_chapter_feedback_matrix_calibration.md
   - samples/context_capsule_calibration.md
