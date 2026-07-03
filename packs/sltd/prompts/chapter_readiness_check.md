@@ -29,7 +29,7 @@ Use this prompt to check whether a chapter can move to the next human review ste
 ```text
 SCOPE:
 SOURCE USED:
-PACK: sltd@1.6.0
+PACK: sltd@manifest_version
 READINESS LABEL:
 BLOCKERS:
 PASSING AREAS:
@@ -42,7 +42,7 @@ NEXT ACTION:
 NOT_READY
 READY_FOR_REWRITE
 READY_FOR_READER_PASS
-READY_FOR_HUMAN_REVIEW
+READY_FOR_HUMAN_FINAL_REVIEW
 LOCKED_BY_HUMAN
 ```
 
