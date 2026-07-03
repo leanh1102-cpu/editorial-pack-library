@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.41"
+version: "1.10.42"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -30,6 +30,7 @@ allowed_tasks:
   - tracking_logic_ledger_check
   - general_chapter_feedback_matrix_check
   - character_voice_dialogue_staging_check
+  - human_surface_polish_pass
   - first_pass_editorial_workflow
   - structural_spine_outline_preprose_check
   - vietnamese_senior_editor_surface_check
@@ -62,6 +63,7 @@ required_files:
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
   - rules/sltd_context_capsule_lore_retrieval_discipline.md
+  - rules/sltd_human_surface_polish_anti_synthetic_gate.md
   - rules/sltd_tracking_logic_ledger_traceability_gate.md
   - rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
   - rules/sltd_character_voice_dialogue_relationship_location_gate.md
@@ -74,6 +76,7 @@ required_files:
   - rules/sltd_pack_healthcheck.md
   - prompts/general_chapter_feedback_matrix_check.md
   - prompts/context_capsule_preflight.md
+  - prompts/human_surface_polish_pass.md
   - prompts/tracking_logic_ledger_check.md
   - prompts/character_voice_dialogue_staging_check.md
   - prompts/structural_spine_outline_preprose_check.md
@@ -86,6 +89,7 @@ required_files:
   - prompts/node_checkpoint.md
   - samples/general_chapter_feedback_matrix_calibration.md
   - samples/context_capsule_calibration.md
+  - samples/human_surface_polish_calibration.md
   - samples/tracking_logic_ledger_calibration.md
   - samples/character_voice_dialogue_staging_calibration.md
   - samples/structural_spine_outline_preprose_calibration.md
