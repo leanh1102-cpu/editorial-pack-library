@@ -15,6 +15,7 @@ rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md
 rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
+rules/sltd_narrative_claim_verification_clipper_discipline.md
 rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md
 rules/sltd_human_surface_polish_anti_synthetic_gate.md
 rules/sltd_character_voice_dialogue_relationship_location_gate.md
@@ -30,6 +31,7 @@ prompts/source_surface_check.md
 prompts/context_capsule_preflight.md
 prompts/author_voice_fingerprint_check.md
 prompts/author_aligned_ghostwriter_draft.md
+prompts/narrative_claim_verification_check.md
 prompts/narrative_feature_audit.md
 prompts/human_surface_polish_pass.md
 prompts/character_voice_dialogue_staging_check.md
@@ -42,6 +44,7 @@ prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
 samples/context_capsule_calibration.md
 samples/author_voice_fingerprint_calibration.md
+samples/narrative_claim_verification_calibration.md
 samples/narrative_feature_calibration.md
 samples/human_surface_polish_calibration.md
 samples/character_voice_dialogue_staging_calibration.md
@@ -66,6 +69,7 @@ ENTRY CHECK:
 SOURCE FIDELITY CHECK:
 CONTEXT CAPSULE / LORE RETRIEVAL CHECK:
 AUTHOR VOICE / GHOSTWRITER CHECK:
+CLAIM VERIFICATION / CLIPPER CHECK:
 NARRATIVE FEATURE / STRUCTURAL IDIOSYNCRASY CHECK:
 HUMAN SURFACE POLISH CHECK:
 CHARACTER VOICE / DIALOGUE / STAGING CHECK:
