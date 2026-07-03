@@ -11,6 +11,7 @@ ENTRY_FAST_PATH.md
 rules/sltd_pack_healthcheck.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
+rules/sltd_tracking_logic_ledger_traceability_gate.md
 rules/sltd_structural_spine_outline_preprose_borderbound_gate.md
 rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
 rules/sltd_supernatural_event_residue_dread_amplitude_gate.md
@@ -19,11 +20,13 @@ rules/sltd_protagonist_advancement_growth_route_gate.md
 rules/sltd_task_router.md
 prompts/source_surface_check.md
 prompts/entry_route_governance_check.md
+prompts/tracking_logic_ledger_check.md
 prompts/structural_spine_outline_preprose_check.md
 prompts/vietnamese_senior_editor_surface_check.md
 prompts/supernatural_event_residue_check.md
 prompts/protagonist_inquiry_check.md
 prompts/protagonist_advancement_check.md
+samples/tracking_logic_ledger_calibration.md
 samples/structural_spine_outline_preprose_calibration.md
 samples/vietnamese_senior_editor_surface_calibration.md
 samples/supernatural_event_residue_calibration.md
@@ -42,6 +45,7 @@ MANIFEST CHECK:
 ENTRY CHECK:
 SOURCE FIDELITY CHECK:
 ENTRY ROUTE GOVERNANCE CHECK:
+TRACKING / LOGIC LEDGER CHECK:
 STRUCTURAL SPINE / OUTLINE PRE-PROSE CHECK:
 VIETNAMESE SENIOR EDITOR SURFACE CHECK:
 SUPERNATURAL EVENT RESIDUE CHECK:
