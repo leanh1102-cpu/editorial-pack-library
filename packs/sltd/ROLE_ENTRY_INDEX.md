@@ -8,6 +8,8 @@ Role entry cards do not replace `rules/sltd_role_boundary_contracts.md`. They ar
 
 Context Capsule is not a role card. It is a pre-role source/context gate used when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
 
+Comparative Editorial Feedback Delta may be routed as a prompt-based feedback translation role. It is not source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
+
 Human Expert AI-Smell Explanation may be routed as a prompt-based reader-effect explanation role. It is not an AI detector, authorship authority, source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
 
 Multilingual Long-Context Source Retrieval may be routed as a prompt-based retrieval and absence discipline role. It is not source authority, canon authority, prose polish, rewrite permission, Human Chapter Pass, readiness, or publication lock authority.
@@ -45,6 +47,7 @@ Editorial Director -> roles/editorial_director.md
 ## Prompt-routed roles without standalone role cards
 
 ```text
+Comparative Editorial Feedback Delta -> prompts/comparative_editorial_feedback_delta_check.md + rules/sltd_comparative_editorial_feedback_delta_discipline.md
 Human Expert AI-Smell Explanation -> prompts/human_expert_ai_smell_explanation_check.md + rules/sltd_human_expert_ai_smell_explanation_discipline.md
 Multilingual Long-Context Source Retrieval -> prompts/multilingual_long_context_retrieval_check.md + rules/sltd_multilingual_long_context_retrieval_oneruler_discipline.md
 Reference-Anchored Longform Story Quality -> prompts/reference_anchored_story_quality_check.md + rules/sltd_reference_anchored_longform_quality_polaris_discipline.md
@@ -67,20 +70,21 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 3. Read role boundary contracts.
 4. Run source preflight / source surface as required.
 5. Run context capsule preflight when current source, hidden canon, POV knowledge, source-status separation, object/location/body/debt state, relationship memory, or long-range continuity is in scope.
-6. Run human expert AI-smell explanation when a span needs reader-effect explanation for synthetic, detector-like, over-clean, same-voiced, outline-labeled, or keyword-only AI-smell risk.
-7. Run multilingual long-context source retrieval when found/not-found/absence/aggregation across long Vietnamese source needs source-backed checking.
-8. Run reference-anchored longform story quality when long rewrite/chapter/packet quality, length adherence, bloat, drift, over-summary, or late-output collapse needs source-backed stress testing.
-9. Run corpus topic / thread discovery when packet/arc/series map, motif clusters, repeated AI-smell clusters, topic gaps, or thread drift need quote/evidence anchors.
-10. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
-11. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
-12. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
-13. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
-14. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
-15. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
-16. Read the requested role card or prompt-routed role.
-17. Read source/evidence files needed by the role.
-18. Execute the smallest safe task.
-19. End with node checkpoint or result report.
+6. Run comparative editorial feedback delta when user/editor feedback must become bounded increase/decrease/preserve/prohibit revision directions.
+7. Run human expert AI-smell explanation when a span needs reader-effect explanation for synthetic, detector-like, over-clean, same-voiced, outline-labeled, or keyword-only AI-smell risk.
+8. Run multilingual long-context source retrieval when found/not-found/absence/aggregation across long Vietnamese source needs source-backed checking.
+9. Run reference-anchored longform story quality when long rewrite/chapter/packet quality, length adherence, bloat, drift, over-summary, or late-output collapse needs source-backed stress testing.
+10. Run corpus topic / thread discovery when packet/arc/series map, motif clusters, repeated AI-smell clusters, topic gaps, or thread drift need quote/evidence anchors.
+11. Run narrative claim verification when status/canon/continuity/POV/object/reveal/readiness/lock/source-conflict claims need TRUE/FALSE/UNCERTAIN evidence.
+12. Run multi-constraint instruction ledger when rewrite/draft/polish/readiness must preserve several constraints together.
+13. Run editorial harm anticipation when REDTEAM/PREMORTEM/readiness/lock/large rewrite risks need concrete failure vignettes.
+14. Run narrative feature audit before surface repair when story-decision AI smell, thematic overexplicitness, causal tidiness, weak reveal, decorative body/sensory pressure, or narrative diversity is in scope.
+15. Run author writing sheet when style claims, sample-backed author profile, or prompt-specific story rules need claim-evidence support.
+16. Run author voice fingerprint before author-aligned drafting when style matching is in scope.
+17. Read the requested role card or prompt-routed role.
+18. Read source/evidence files needed by the role.
+19. Execute the smallest safe task.
+20. End with node checkpoint or result report.
 ```
 
 ## Conflict rule
@@ -88,6 +92,8 @@ Human Surface Polish -> prompts/human_surface_polish_pass.md + rules/sltd_human_
 If a role card and role boundary contracts disagree, use `rules/sltd_role_boundary_contracts.md`.
 
 If Context Capsule blocks, do not continue into a later role to hide the source/context failure.
+
+If Comparative Editorial Feedback Delta blocks because scope, target, source, comparison target, preserve/prohibit list, or feedback dimension is missing, do not rewrite, polish, call readiness, or convert feedback into generic style law.
 
 If Human Expert AI-Smell Explanation blocks because source, exact span, false-positive risk, or source/canon/voice separation is missing, do not output AI score, authorship claim, keyword-only verdict, readiness, or surface repair.
 
@@ -123,6 +129,7 @@ ROLE CARD / PROMPT READ:
 BOUNDARY READ:
 CONTEXT CAPSULE REQUIRED:
 CONTEXT CAPSULE STATUS:
+COMPARATIVE EDITORIAL FEEDBACK DELTA REQUIRED:
 HUMAN EXPERT AI-SMELL EXPLANATION REQUIRED:
 MULTILINGUAL LONG-CONTEXT RETRIEVAL REQUIRED:
 REFERENCE-ANCHORED STORY QUALITY REQUIRED:
