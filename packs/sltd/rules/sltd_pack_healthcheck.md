@@ -18,50 +18,34 @@ Verify Context Capsule files exist, task is allowed, Entry and Router place Cont
 
 ## Check narrative claim verification and CLIPPER discipline
 
-Verify:
-
-- `rules/sltd_narrative_claim_verification_clipper_discipline.md` exists and is listed in manifest;
-- `prompts/narrative_claim_verification_check.md` exists and is listed in manifest;
-- `samples/narrative_claim_verification_calibration.md` exists and is listed in manifest;
-- `narrative_claim_verification_check` is listed in allowed_tasks;
-- Entry and Router place Narrative Claim Verification after Source/Context and before prose, readiness, lock, or canon verdict when claims control the route;
-- route governance blocks claim verification from becoming readiness, lock, detector scoring, or gate cascade.
+Verify Narrative Claim Verification rule/prompt/sample exist, task is allowed, Entry and Router place it after Source/Context and before prose/readiness/lock/canon verdict when claims control the route, and route governance blocks claim verification from becoming readiness, lock, detector scoring, or gate cascade.
 
 ## Check multi-constraint instruction ledger and Suri discipline
 
+Verify Multi-Constraint Ledger rule/prompt/sample exist, task is allowed, Entry and Router place it after Source/Context/Claim Verification and before rewrite, author-aligned drafting, human surface polish, readiness, or lock when multiple constraints control output, and the gate blocks unnamed constraints, missing corrupted constraints, conflicts, missing anchors, and AI constraint satisfaction as Human Chapter Pass.
+
+## Check editorial harm anticipation and AHA vignette matrix
+
 Verify:
 
-- `rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md` exists and is listed in manifest;
-- `prompts/multi_constraint_instruction_check.md` exists and is listed in manifest;
-- `samples/multi_constraint_instruction_calibration.md` exists and is listed in manifest;
-- `multi_constraint_instruction_check` is listed in allowed_tasks;
-- Entry Fast Path places Multi-Constraint Instruction Ledger after Source/Context/Claim Verification and before rewrite, author-aligned drafting, human surface polish, readiness, or lock when multiple constraints control output;
-- task router has a dedicated multi-constraint route and can call it from context capsule, claim verification, narrative feature, voice, author writing sheet, author drafting, matrix, tracking, structural, senior surface, human surface, readiness, and packet routes only when evidence requires it;
-- route governance defines budget and stop conditions so the ledger does not become gate cascade or AI self-approval;
-- role boundary contracts treat Multi-Constraint Instruction Ledger as constraint tracking, not source authority, canon authority, prose polish, Human Chapter Pass, readiness, or Publication Lock;
-- the gate blocks unnamed constraints, missing corrupted constraints, constraint conflicts, missing output anchors, uncertain high-risk constraints, wordcount overrepair, and AI constraint satisfaction as Human Chapter Pass;
-- the gate does not authorize new canon, invented source constraints, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
+- `rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md` exists and is listed in manifest;
+- `prompts/editorial_harm_anticipation_check.md` exists and is listed in manifest;
+- `samples/editorial_harm_anticipation_calibration.md` exists and is listed in manifest;
+- `editorial_harm_anticipation_check` is listed in allowed_tasks;
+- Entry Fast Path places Editorial Harm Anticipation after Source/Context/Claim Verification/Multi-Constraint when harm risk is in scope and before large rewrite, REDTEAM/PREMORTEM, readiness, lock, or packet decision;
+- task router has a dedicated editorial harm route and can call it from context capsule, claim verification, multi-constraint ledger, narrative feature, character voice, author writing sheet, author drafting, matrix, tracking, structural, senior surface, human surface, readiness, and packet routes only when evidence requires it;
+- route governance defines budget and stop conditions so harm anticipation does not become review overload, prose repair, Human Chapter Pass, readiness, or Publication Lock;
+- role boundary contracts treat Editorial Harm Anticipation as AHA-style risk/vignette analysis, not source authority, canon authority, prose polish, Human Chapter Pass, readiness, or publication lock;
+- the gate blocks missing scope, missing source for current/readiness/lock claims, invented canon vignettes, unverified harm claims, matrix overload, and harm anticipation as readiness substitute;
+- the gate does not authorize new canon, invented future events, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
 
 ## Check narrative feature and structural idiosyncrasy discipline
 
-Verify:
-
-- `rules/sltd_narrative_feature_structural_idiosyncrasy_audit.md` exists and is listed in manifest;
-- `prompts/narrative_feature_audit.md` exists and is listed in manifest;
-- `samples/narrative_feature_calibration.md` exists and is listed in manifest;
-- `narrative_feature_audit` is listed in allowed_tasks;
-- Entry and Router place Narrative Feature Audit before draft, line surgery, human surface polish, copyedit, readiness, or publication lock when story-decision AI smell is in scope.
+Verify Narrative Feature rule/prompt/sample exist, task is allowed, and Entry/Router place it before draft, line surgery, human surface polish, copyedit, readiness, or publication lock when story-decision AI smell is in scope.
 
 ## Check author writing sheet and claim-evidence style memory
 
-Verify:
-
-- `rules/sltd_author_writing_sheet_claim_evidence_discipline.md` exists and is listed in manifest;
-- `prompts/author_writing_sheet_check.md` exists and is listed in manifest;
-- `samples/author_writing_sheet_calibration.md` exists and is listed in manifest;
-- `author_writing_sheet_check` is listed in allowed_tasks;
-- Entry Fast Path places Author Writing Sheet before Author Voice Fingerprint and Author-Aligned Drafting when style claims or prompt-specific story rules are in scope;
-- the gate blocks style claims without evidence, chat-memory-only samples, generated-only samples, plot/development claims with weak evidence, phrase mining, author voice over character voice, and style-memory canon drift.
+Verify Author Writing Sheet rule/prompt/sample exist, task is allowed, Entry places it before Author Voice Fingerprint and Author-Aligned Drafting when style claims or prompt-specific story rules are in scope, and it blocks style claims without evidence, chat-memory-only samples, generated-only samples, phrase mining, author voice over character voice, and style-memory canon drift.
 
 ## Check author voice fingerprint and ghostwriter discipline
 
@@ -69,11 +53,11 @@ Verify Author Voice / Author-Aligned Drafting files exist, tasks are allowed, Au
 
 ## Check human surface polish and anti-synthetic prose discipline
 
-Verify Human Surface Polish files exist, task is allowed, route runs after source/context/story/voice/style/constraint blockers, and it cannot authorize new canon, scene outcome changes, readiness, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
+Verify Human Surface Polish files exist, task is allowed, route runs after source/context/story/voice/style/constraint/harm blockers, and it cannot authorize new canon, scene outcome changes, readiness, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
 
 ## Check role boundary and role entry index
 
-Verify Role Entry Index and role boundary contracts include Context Capsule, Narrative Claim Verifier, Multi-Constraint Instruction Ledger, Narrative Feature Auditor, Author Writing Sheet, Author Voice Fingerprint, Author-Aligned Drafting, and Human Surface Polish boundaries, and still prevent silent Notion/GitHub/source writes and role mixing.
+Verify Role Entry Index and role boundary contracts include Context Capsule, Narrative Claim Verifier, Multi-Constraint Instruction Ledger, Editorial Harm Anticipation, Narrative Feature Auditor, Author Writing Sheet, Author Voice Fingerprint, Author-Aligned Drafting, and Human Surface Polish boundaries, and still prevent silent Notion/GitHub/source writes and role mixing.
 
 ## Check character voice, dialogue, relationship memory, and location staging
 
@@ -89,7 +73,7 @@ Verify these gates remain listed and routed when their scope is in play.
 
 ## Check route governance
 
-Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements, claim verification requirements, multi-constraint ledger requirements, narrative feature requirements, author writing sheet requirements, author voice / drafting requirements, human surface polish requirements, and no gate cascade.
+Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements, claim verification requirements, multi-constraint ledger requirements, editorial harm requirements, narrative feature requirements, author writing sheet requirements, author voice / drafting requirements, human surface polish requirements, and no gate cascade.
 
 ## Check orphan risk
 

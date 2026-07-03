@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.47"
+version: "1.10.48"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -27,6 +27,7 @@ allowed_tasks:
   - evidence_check
   - review_mode_pass
   - source_surface_check
+  - editorial_harm_anticipation_check
   - multi_constraint_instruction_check
   - narrative_claim_verification_check
   - narrative_feature_audit
@@ -69,6 +70,7 @@ required_files:
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
   - rules/sltd_context_capsule_lore_retrieval_discipline.md
+  - rules/sltd_editorial_harm_anticipation_aha_vignette_matrix.md
   - rules/sltd_multi_constraint_instruction_ledger_suri_discipline.md
   - rules/sltd_author_voice_fingerprint_ghostwriter_discipline.md
   - rules/sltd_author_writing_sheet_claim_evidence_discipline.md
@@ -87,6 +89,7 @@ required_files:
   - rules/sltd_pack_healthcheck.md
   - prompts/general_chapter_feedback_matrix_check.md
   - prompts/context_capsule_preflight.md
+  - prompts/editorial_harm_anticipation_check.md
   - prompts/multi_constraint_instruction_check.md
   - prompts/author_voice_fingerprint_check.md
   - prompts/author_aligned_ghostwriter_draft.md
@@ -106,6 +109,7 @@ required_files:
   - prompts/node_checkpoint.md
   - samples/general_chapter_feedback_matrix_calibration.md
   - samples/context_capsule_calibration.md
+  - samples/editorial_harm_anticipation_calibration.md
   - samples/multi_constraint_instruction_calibration.md
   - samples/author_voice_fingerprint_calibration.md
   - samples/author_writing_sheet_calibration.md
