@@ -8,7 +8,9 @@ Read:
 manifest.yml
 DESIGN.md
 ENTRY_FAST_PATH.md
+ROLE_ENTRY_INDEX.md
 rules/sltd_pack_healthcheck.md
+rules/sltd_role_boundary_contracts.md
 rules/sltd_source_fidelity_anti_compression.md
 rules/sltd_entry_route_governance_gate_budget_protocol.md
 rules/sltd_context_capsule_lore_retrieval_discipline.md
@@ -63,6 +65,7 @@ PROTAGONIST INQUIRY CHECK:
 PROTAGONIST ADVANCEMENT CHECK:
 ROUTE CHECK:
 ROLE BOUNDARY CHECK:
+ROLE ENTRY INDEX CHECK:
 EVIDENCE CHECK:
 ORPHAN RISK:
 SMOKE TEST RESULT:

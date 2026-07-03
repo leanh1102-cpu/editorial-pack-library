@@ -1,6 +1,6 @@
 package_id: sltd
 package_name: "SLTD Editorial Pack"
-version: "1.10.40"
+version: "1.10.41"
 pack_type: project_pack
 inherits:
   - ../../core/vietnamese_prose
@@ -58,6 +58,7 @@ required_files:
   - AUTHOR_TASTE_EXAMPLES.md
   - ENTRY_FAST_PATH.md
   - ROLE_ENTRY_INDEX.md
+  - rules/sltd_role_boundary_contracts.md
   - rules/sltd_entry_route_governance_gate_budget_protocol.md
   - rules/sltd_general_chapter_feedback_matrix_output_protocol.md
   - rules/sltd_context_capsule_lore_retrieval_discipline.md
