@@ -27,6 +27,21 @@ Verify:
 - the gate blocks chat memory, summary, raw draft, legacy source, hidden canon leakage, unclear POV knowledge, unclear object/location/body/debt state, and unresolved canon conflict from becoming prose or verdict;
 - the gate does not authorize autonomous lore updates, new canon, new databases, workflows, scripts, reports, project boards, automations, or live manuscript copies in GitHub.
 
+## Check human surface polish and anti-synthetic prose discipline
+
+Verify:
+
+- `rules/sltd_human_surface_polish_anti_synthetic_gate.md` exists and is listed in manifest;
+- `prompts/human_surface_polish_pass.md` exists and is listed in manifest;
+- `samples/human_surface_polish_calibration.md` exists and is listed in manifest;
+- `human_surface_polish_pass` is listed in allowed_tasks;
+- Entry Fast Path places Human Surface Polish after source/context/structure/tracking/voice/Vietnamese surface blockers and before copyedit, proofread, readiness, or publication lock;
+- task router has a dedicated human surface polish route and can call it in readiness only when source-safe prose still has synthetic-surface risk;
+- route governance defines budget and stop conditions so Human Surface Polish does not become gate cascade, detector bypass, structure repair, or over-polish;
+- role boundary contracts treat Human Surface Polish as a role between Line Surgery and Copyeditor;
+- the gate blocks detector-bypass framing, false smoothing, same-voice polish, object/body loss, relationship flattening, hidden canon leak, and repair load above 30 percent;
+- the gate does not authorize new canon, scene outcome changes, readiness, Human Chapter Pass, Publication Lock, workflows, scripts, reports, boards, automations, or live manuscript copies.
+
 ## Check role boundary and role entry index
 
 Verify:
@@ -61,7 +76,7 @@ Verify these gates remain listed and routed when their scope is in play.
 
 ## Check route governance
 
-Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, and no gate cascade.
+Verify one primary route before secondary gates, evidence-backed secondary gates, explicit stop conditions, context capsule requirements when needed, human surface polish requirements when needed, and no gate cascade.
 
 ## Check orphan risk
 
