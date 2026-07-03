@@ -12,23 +12,25 @@ Verify version, required files, allowed tasks, source priority, and fail-closed 
 
 Verify source fidelity rule and source surface prompt exist and exact prose/status routes require source surface before patching or verdict.
 
-## Check general + chapter feedback matrix
+## Check character voice, dialogue, relationship memory, and location staging
 
 Verify:
 
-- `rules/sltd_general_chapter_feedback_matrix_output_protocol.md` exists and is listed in manifest;
-- `prompts/general_chapter_feedback_matrix_check.md` exists and is listed in manifest;
-- `samples/general_chapter_feedback_matrix_calibration.md` exists and is listed in manifest;
-- general_chapter_feedback_matrix_check is listed in allowed_tasks;
-- matrix route ends with node checkpoint;
-- matrix output requires source used, source status, general feedback, chapter feedback, evidence check, node ledger, and next node;
-- the matrix does not authorize readiness claims, source writes, canon changes, or prose edits without relevant gates.
+- `rules/sltd_character_voice_dialogue_relationship_location_gate.md` exists and is listed in manifest;
+- `prompts/character_voice_dialogue_staging_check.md` exists and is listed in manifest;
+- `samples/character_voice_dialogue_staging_calibration.md` exists and is listed in manifest;
+- character_voice_dialogue_staging_check is listed in allowed_tasks;
+- voice/staging route ends with node checkpoint;
+- rewrite, readiness, packet review, and matrix routes call the gate when dialogue, relationship, multi-character presence, location staging, or tone integrity is at stake;
+- the gate defines character voice, dialogue weight, unsaid content, relationship memory, presence trace, location stage, usable objects, task-while-speaking, and tone integrity;
+- the gate blocks same-voice dialogue, static talk, character dropout, silence without reason, missing relationship memory, location as backdrop, vague scene input, and style-mismatched sound/action handling;
+- the gate does not authorize invented voice profiles, relationships, secrets, habits, location objects, or canon.
 
-## Check tracking, logic ledger, and traceability
+## Check general + chapter feedback matrix
 
-Verify tracking rule/prompt/sample exist, task is allowed, route ends with node checkpoint, and the gate blocks missing tracking surface, untracked state change, unclear knowledge state, missing object/residue/thread ledger, pass trace conflict, downstream dependency risk, and missing verify target.
+Verify matrix rule/prompt/sample exist, task is allowed, route ends with node checkpoint, and matrix output requires source used, source status, general feedback, chapter feedback, evidence check, node ledger, and next node.
 
-## Check structural spine, Vietnamese surface, supernatural residue, and protagonist route
+## Check tracking, structural spine, Vietnamese surface, supernatural residue, and protagonist route
 
 Verify these gates remain listed and routed when their scope is in play.
 
