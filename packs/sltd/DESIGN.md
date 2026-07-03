@@ -10,6 +10,7 @@ The pack helps the agent:
 - preserve exact source surface before editing;
 - keep Entry as a router, not a maze;
 - choose one primary route and cap secondary gates;
+- enforce structural spine, outline pre-prose, and borderbound before prose work;
 - protect supernatural event residue and dread amplitude without early deep-lore reveal;
 - control Dai Phong's inquiry, private reasoning, clue chain, and small tests as source-bound exploration;
 - control Dai Phong's protagonist advancement as source-bound growth, not Notion labels or AI fantasy;
@@ -29,13 +30,13 @@ The pack helps the agent:
 - preserve character agency;
 - preserve dynamic range and cadence;
 - keep canon stable;
-- route by chapter, scene, packet, role, and node.
+- route by act, arc, hồi, chapter, scene, packet, role, and node.
 
 ## Source of truth
 
 ```text
 Notion = live manuscript state
-GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, entry route governance, supernatural event residue/dread amplitude, protagonist inquiry/clue-chain pressure, protagonist advancement/growth route calibration, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
+GitHub = editorial rules, routing, evidence discipline, role entries, calibration, source fidelity, entry route governance, structural spine/outline pre-prose/borderbound, supernatural event residue/dread amplitude, protagonist inquiry/clue-chain pressure, protagonist advancement/growth route calibration, first-pass workflow, scene transition/skiptime/event-cluster continuity, timeline/POV/foreshadowing/folklore thread management, prose craft/style/material calibration, scene composition and component balance, narrative beat escalation and aftershock, chapter assembly and split control, Vietnamese register and Viet Dao calibration, webnovel paragraphing and layout rhythm, character distinctiveness and iceberg profiles, living world and community motion, scene-first prose judgment, anti-AI composite checks, character agency, dynamic range, handoff continuity
 User instruction = current task and final authority for writes
 ```
 
@@ -50,6 +51,7 @@ task_intake
 task_router
 entry route governance check when primary route, gate budget, or stop condition is unclear
 source surface check when exact source may be missing
+structural spine outline pre-prose check when act, arc, hồi, chapter, scene, Story Outline, Chapter by Chapter Outline, Chapter Card, Scene Packet, Replacement Spine, borderbound, or prose permission is in scope
 supernatural event residue check when supernatural residue, dread amplitude, folklore incident, beast residue, relic trace, old battlefield leak, Mê Thúy Lâm, Hồn sương, Trọc khí, or deep-lore residue is in scope
 protagonist inquiry check when Dai Phong's private question, inner reasoning, small test, kept detail, clue chain, small secret, supernatural pressure, or inquiry route is in scope
 protagonist advancement check when Dai Phong's development path, gain type, cost, knowledge limit, forbidden gain, or world-rule sensitivity is in scope
@@ -71,10 +73,10 @@ Use the smallest route that answers the request.
 ## Source fidelity model
 
 ```text
-SOURCE TEXT > DERIVED DIGEST > CHAT MEMORY
+SOURCE TEXT > STRUCTURAL SOURCE > DERIVED DIGEST > CHAT MEMORY
 ```
 
-Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, current seam, skiptime, event-cluster, timeline, POV, thread ledger, supernatural event residue, protagonist inquiry, protagonist advancement, route selection when current status is at stake, and lock verdicts require the right source surface.
+Line edit, line surgery, copyedit, proofread, rewrite, exact patch, readiness, current seam, skiptime, event-cluster, timeline, POV, thread ledger, structural spine, outline pre-prose, borderbound, supernatural event residue, protagonist inquiry, protagonist advancement, route selection when current status is at stake, and lock verdicts require the right source surface.
 
 ## Entry route governance and gate budget model
 
@@ -90,6 +92,22 @@ CHECKLIST-FIRST REPAIR = editing to satisfy gates before reading the scene as li
 ```
 
 The agent must choose one primary route, add secondary gates only when evidence requires them, and stop when the answer, patch, or blocker is complete. If three or more gates seem necessary, create a context brief or prioritized node ledger instead of running a cascade.
+
+## Structural spine, outline pre-prose, and borderbound model
+
+Do not use prose to solve missing structure.
+
+```text
+STRUCTURAL_SPINE = the source-backed hierarchy from story premise -> act/arc/hồi -> chapter function -> scene function -> prose permission
+OUTLINE_PREFLIGHT = reading and checking Story Outline, Chapter by Chapter Outline, Chapter Index, and relevant Scene Bank / Chapter Card before prose work
+BORDERBOUND = what the scene/chapter is allowed to cover and what it must not cross
+CHAPTER_CARD_LOCK = chapter goal, engine, changed state, aftertaste, continuity, risk flags, and beat map are present enough to guide prose
+SCENE_PACKET_LOCK = scene question, pressure, character want/fear, object anchor, canon in/out, must show, must not reveal, and reader effect are present enough to guide prose
+PROSE_PERMISSION = allowed only when outline and border are adequate for the requested scope
+OUTLINE_REPAIR_REQUIRED = prose must stop because outline/detail spine is missing, thin, contradictory, or not source-current
+```
+
+A scene may be vivid and still fail if it answers the wrong chapter question. A chapter may read smoothly and still fail if it does not advance the act/arc/hồi spine. Protagonist gain, supernatural residue, lore, and clue chain must be slotted into the current scene/chapter spine before prose work.
 
 ## Supernatural event residue and dread amplitude model
 
@@ -154,6 +172,10 @@ A protagonist gain must be shown through object, body, relation, witness/social 
 - Choose one primary route before adding secondary gates.
 - Secondary gates require evidence, not adjacency.
 - Stop when the answer, blocker, patch, or budget is complete.
+- Do not use prose to solve missing structure.
+- Story Outline, Chapter by Chapter Outline, Chapter Card, and Scene Packet are structural sources when prose permission is at stake.
+- Prose is blocked when borderbound is missing.
+- Protagonist gain, supernatural residue, lore, and clue chain must sit inside the current scene/chapter spine.
 - Supernatural pressure must not remain mood only.
 - Canon discipline must not overclamp dread amplitude.
 - Deep lore appears early as residue, not explanation.
