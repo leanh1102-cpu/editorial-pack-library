@@ -2,7 +2,7 @@
 
 Use this rule to check SLTD pack health after version changes.
 
-This is a manual agent check. It does not create scripts, workflow files, issues, boards, or reports.
+This is a manual agent check. It does not create management artifacts.
 
 ## Check manifest
 
@@ -12,22 +12,27 @@ Verify version, required files, allowed tasks, source priority, and fail-closed 
 
 Verify source fidelity rule and source surface prompt exist and exact prose/status routes require source surface before patching or verdict.
 
-## Check structural spine, outline pre-prose, and borderbound
-
-Verify rule/prompt/sample exist, are listed in manifest, task is allowed, routes end with node checkpoint, and rewrite/readiness routes reference structural spine when outline, card, packet, or borderbound affects prose permission.
-
-## Check Vietnamese senior editor surface and pass integrity
+## Check tracking, logic ledger, and traceability
 
 Verify:
 
-- `rules/sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md` exists and is listed in manifest;
-- `prompts/vietnamese_senior_editor_surface_check.md` exists and is listed in manifest;
-- `samples/vietnamese_senior_editor_surface_calibration.md` exists and is listed in manifest;
-- vietnamese_senior_editor_surface_check is listed in allowed_tasks;
-- Vietnamese surface route ends with node checkpoint;
-- the gate defines Vietnamese surface, semantic load, pass integrity, read-aloud friction, object-function visibility, and human breath space;
-- the gate blocks false readiness from Anti-AI Pass, candidate-ready notes, formal status updates, conflicting notes, Human Chapter Pass NO, and Publication Lock Not Ready;
-- the gate requires exact prose for sentence-level verdict or repair.
+- `rules/sltd_tracking_logic_ledger_traceability_gate.md` exists and is listed in manifest;
+- `prompts/tracking_logic_ledger_check.md` exists and is listed in manifest;
+- `samples/tracking_logic_ledger_calibration.md` exists and is listed in manifest;
+- tracking_logic_ledger_check is listed in allowed_tasks;
+- tracking route ends with node checkpoint;
+- rewrite, line surgery, readiness, and packet/arc routes reference tracking when state, knowledge, object, residue, thread, pass, or downstream logic is at stake;
+- the gate defines tracking surface, logic ledger, state trace, knowledge trace, object trace, thread trace, change trace, and verify target;
+- the gate blocks missing tracking surface, untracked state change, unclear knowledge state, missing object/residue/thread ledger, untracked payoff debt, pass trace conflict, missing downstream dependency, and missing verify target;
+- the gate does not authorize new source-unsupported logic, canon, payoff, witness, clue, or source status.
+
+## Check structural spine, outline pre-prose, and borderbound
+
+Verify structural spine rule/prompt/sample exist, task is allowed, routes end with node checkpoint, and rewrite/readiness routes reference structural spine when outline, card, packet, or borderbound affects prose permission.
+
+## Check Vietnamese senior editor surface and pass integrity
+
+Verify Vietnamese surface rule/prompt/sample exist, task is allowed, route ends with node checkpoint, and the gate blocks false readiness from pass labels, candidate-ready notes, formal status updates, conflicting notes, Human Chapter Pass NO, and Publication Lock Not Ready.
 
 ## Check supernatural event residue and dread amplitude
 
@@ -48,6 +53,7 @@ Verify each allowed task has a route or prompt, node-changing routes end with no
 ```text
 source-surface routes -> sltd_source_fidelity_anti_compression.md
 entry governance routes -> sltd_entry_route_governance_gate_budget_protocol.md
+tracking routes -> sltd_tracking_logic_ledger_traceability_gate.md
 structural spine routes -> sltd_structural_spine_outline_preprose_borderbound_gate.md
 Vietnamese surface routes -> sltd_vietnamese_senior_editor_surface_pass_integrity_gate.md
 supernatural residue routes -> sltd_supernatural_event_residue_dread_amplitude_gate.md
