@@ -1,0 +1,57 @@
+project: SLTD
+project_name: "Sương Lạc Tiên Đạo"
+
+source_policy:
+  current_manuscript:
+    system: Notion
+    role: "live manuscript state"
+    rule: "Fetch current Notion page before readiness, lock, canon, or manuscript verdict."
+  rule_memory:
+    system: GitHub
+    role: "editorial rules, role cards, schemas, templates"
+    path: "packs/sltd/"
+  historical_reference:
+    system: Google Drive
+    role: "flat exports, Workdecks, reference packets"
+    rule: "Use only when explicitly named, clearly marked current by user, or needed as historical comparison."
+  raw_draft:
+    role: "material"
+    rule: "Not current manuscript unless the user explicitly says so."
+
+source_priority:
+  - "current_user_instruction"
+  - "current_notion_live_source"
+  - "current_user_provided_scene_or_chapter_packet"
+  - "github_sltd_editorial_pack"
+  - "google_drive_or_workdeck_when_explicitly_named"
+
+known_notion_nodes:
+  research_dossier_parent:
+    id: "392cb6db-eb83-81fd-b8c3-d19e01cadeb9"
+    role: "AI Writing Long-Form Vietnamese Fiction — Research Dossier"
+  thesis_chapter_5_closure:
+    id: "393cb6db-eb83-8121-9769-f7e82b08c7ea"
+    status: "THESIS_CLOSED / ORIGINAL_PURPOSE_NOT_FEASIBLE / ARCHIVE_AS_NEGATIVE_RESULT"
+  c030_chapter:
+    id: "38ecb6db-eb83-81b8-a9ea-e39dfe36f43d"
+    role: "current C030 chapter hub"
+  c030_scene_01:
+    id: "38ecb6db-eb83-81cc-bbef-f50441245898"
+    role: "current SC-030-01 scene page"
+
+forbidden:
+  - "Do not copy live manuscript into GitHub."
+  - "Do not create GitHub Actions or workflows."
+  - "Do not create project boards or issues for this operating layer."
+  - "Do not claim Publication Lock without current Notion evidence."
+  - "Do not treat AI scaffold prose as final authorial prose."
+
+allowed_outputs:
+  - "source audit"
+  - "canon risk note"
+  - "scene-function audit"
+  - "AI-smell extraction"
+  - "voice risk audit"
+  - "AI scaffold with NOT_FINAL_PROSE label"
+  - "human verdict sheet"
+  - "sample card"
