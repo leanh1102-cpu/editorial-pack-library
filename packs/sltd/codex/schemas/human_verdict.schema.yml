@@ -1,0 +1,44 @@
+verdict_id: string
+scope: string
+source_ref:
+  system:
+    enum:
+      - Notion
+      - GitHub
+      - GoogleDrive
+      - UserProvided
+  url_or_id: string
+verdict_type:
+  enum:
+    - ACCEPT_AUTHORIAL
+    - REJECT_AI
+    - KEEP_AS_SCAFFOLD
+    - NEEDS_HUMAN_REWRITE
+    - SOURCE_BLOCKED
+    - CANON_BLOCKED
+    - READY_FOR_NEXT_NODE
+human_decision: string
+reason: string
+allowed_ai_actions:
+  type: list
+  allowed_examples:
+    - AUDIT_ONLY
+    - SOURCE_CHECK_ONLY
+    - AI_SMELL_EXTRACTION
+    - SCAFFOLD_GENERATION
+    - PHRASE_LEVEL_SUGGESTION
+forbidden_ai_actions:
+  type: list
+  allowed_examples:
+    - FINAL_PROSE_AUTHORITY
+    - AUTHORIAL_VOICE_OVERRIDE
+    - SILENT_NOTION_UPDATE
+    - CANON_ADDITION
+    - READINESS_CLAIM
+proofstate:
+  enum:
+    - HUMAN_VERDICT_RECORDED
+    - AUTHORIAL_SIGNATURE_CONFIRMED
+    - AI_SCAFFOLD_ACCEPTED_AS_SCAFFOLD_ONLY
+    - HUMAN_REWRITE_REQUIRED
+    - BLOCKED

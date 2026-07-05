@@ -1,0 +1,33 @@
+# AI-Smell Extraction
+
+SCOPE:
+
+SOURCE USED:
+
+TEXT INSPECTED:
+
+EXTRACTED AI-SMELL CANDIDATES:
+
+| Span | Label | Why flagged | Hard blocker or advisory? | Human decision needed |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+
+AUTHORIAL SIGNATURE POSSIBLE:
+
+SOURCE / CANON ERROR:
+
+SCENE-FUNCTION DAMAGE:
+
+ADVISORY RISKS:
+
+DO NOT REWRITE WITHOUT HUMAN REQUEST:
+
+```text
+YES
+```
+
+PROOFSTATE:
+
+```text
+AI_SMELL_RISK_MAPPED / ADVISORY_ONLY / HUMAN_DECISION_REQUIRED / NOT_REWRITE
+```

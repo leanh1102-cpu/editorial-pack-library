@@ -1,0 +1,33 @@
+# Source Audit
+
+SCOPE:
+
+SOURCE USED:
+
+SOURCE CLASSIFICATION:
+
+```text
+Notion current / GitHub rule / Google Drive historical / user packet / unknown
+```
+
+CURRENT SOURCE READ:
+
+```text
+YES / NO
+```
+
+EVIDENCE:
+
+BLOCKERS:
+
+SAFE CLAIM:
+
+UNSAFE CLAIMS TO AVOID:
+
+NEXT SOURCE NODE:
+
+PROOFSTATE:
+
+```text
+SOURCE_READ / SOURCE_NOT_READ / CURRENT_SOURCE_REQUIRED / READINESS_CLAIM_BLOCKED
+```
