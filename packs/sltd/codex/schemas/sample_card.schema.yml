@@ -1,0 +1,55 @@
+sample_id: string
+status:
+  enum:
+    - ACCEPTED_AUTHORIAL
+    - REJECTED_AI
+    - AI_OVERCORRECTION
+    - HUMAN_REVISION
+    - AI_SCAFFOLD
+scene_type: string
+character: string
+source_ref:
+  system:
+    enum:
+      - Notion
+      - GitHub
+      - GoogleDrive
+      - UserProvided
+  url_or_id: string
+  current_status:
+    enum:
+      - CURRENT
+      - HISTORICAL
+      - USER_PACKET
+      - RULE_MEMORY
+      - UNKNOWN
+text: string
+operation_tags:
+  type: list
+  allowed_examples:
+    - OPEN_BY_WORK
+    - BODY_REACTION
+    - DOMESTIC_SCOLD
+    - WRONG_CALL
+    - HIDE_OBJECT
+    - RETURN_TO_WORK
+    - COST_VISIBLE
+    - WITNESS_PRESSURE
+why_it_works: string
+what_not_to_copy: string
+ai_false_positive_risk: string
+human_verdict:
+  enum:
+    - KEEP
+    - REJECT
+    - KEEP_WITH_CAUTION
+    - AUTHORIAL_SIGNATURE
+    - SCAFFOLD_ONLY
+notes: string
+proofstate:
+  enum:
+    - SAMPLE_READY
+    - HUMAN_VERDICT_REQUIRED
+    - AUTHORIAL_SIGNATURE_CONFIRMED
+    - REJECTED_AI_ARCHIVED
+    - AI_SCAFFOLD_ONLY
