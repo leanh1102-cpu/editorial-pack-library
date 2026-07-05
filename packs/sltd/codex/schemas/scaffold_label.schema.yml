@@ -1,0 +1,25 @@
+label: "AI_SCAFFOLD / NOT_FINAL_PROSE / HUMAN_REWRITE_REQUIRED"
+required_fields:
+  - SCOPE
+  - SOURCE_USED
+  - SCENE_FUNCTION
+  - MUST_SHOW
+  - MUST_NOT_REVEAL
+  - READER_EFFECT
+  - SCAFFOLD_TEXT
+  - KNOWN_WEAKNESS
+  - HUMAN_REWRITE_SPACE
+  - PROOFSTATE
+forbidden_claims:
+  - "final prose"
+  - "publication ready"
+  - "Human Chapter Pass"
+  - "Publication Lock"
+  - "authorial voice matched"
+  - "ready to merge"
+allowed_proofstates:
+  - AI_SCAFFOLD_ONLY
+  - NOT_MANUSCRIPT_PATCH
+  - HUMAN_REWRITE_REQUIRED
+  - SOURCE_SAFE_DRAFT_ONLY
+  - SOURCE_NOT_READ
