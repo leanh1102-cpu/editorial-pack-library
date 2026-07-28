@@ -50,6 +50,6 @@ Không dùng trí nhớ để bù canon.
 
 ## Khi sửa thư viện
 
-Nếu người dùng yêu cầu sửa thư viện, đọc `CHANGE_POLICY.md` trước. Mọi thay đổi phải thuộc một trong bốn loại: PATCH, MINOR, MAJOR, PROJECT_LOCAL.
+Nếu người dùng yêu cầu sửa thư viện, đọc `GOVERNANCE.md` rồi đọc `CHANGE_POLICY.md`. Mọi thay đổi phải thuộc một trong bốn loại: PATCH, MINOR, MAJOR, PROJECT_LOCAL và đồng thời tuân thủ `SYSTEM-ENGINEERING-CHARTER-V1`.
 
-Không tự tạo file, folder, issue, workflow, board, report, script, hoặc cấu trúc quản trị.
+Không tự tạo file, folder, issue, workflow, board, report, script, hoặc cấu trúc quản trị, trừ khi Owner yêu cầu rõ ràng như lần phát hành Hiến chương này.
