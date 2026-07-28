@@ -48,4 +48,13 @@ AI phải bắt đầu từ `AI_ENTRY.md`. Nếu không đọc được pack, AI
 
 ## Khi sửa thư viện
 
-Đọc `CHANGE_POLICY.md` trước. Mọi thay đổi phải thuộc PATCH, MINOR, MAJOR, hoặc PROJECT_LOCAL.
+Đọc `GOVERNANCE.md`, sau đó đọc `CHANGE_POLICY.md`. Mọi thay đổi phải thuộc PATCH, MINOR, MAJOR, hoặc PROJECT_LOCAL.
+
+## Governance
+
+Repository áp dụng `SYSTEM-ENGINEERING-CHARTER-V1` từ ngày 28/07/2026 theo `PARALLEL_CHANGE`.
+
+- Charter: `docs/governance/SYSTEM_ENGINEERING_CHARTER_V1.md`
+- Adoption receipt: `docs/governance/CHARTER_ADOPTION_RECEIPT.yaml`
+
+`AI_ENTRY.md` và `CHANGE_POLICY.md` là local profile nghiêm ngặt hơn; Hiến chương không biến repository thành hệ thống task, workflow hoặc bản thảo sống.
