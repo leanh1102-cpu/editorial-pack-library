@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - pai-app01-postgresql-bootstrap-20260807
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -60,7 +63,6 @@ jobs:
         run: |
           set -euo pipefail
           ARCHIVE="postgresql-${PG_VERSION}-${PG_TARGET}.tar.gz"
-          ROOT="$RUNNER_TEMP/pai-app01/postgresql-${PG_VERSION}-${PG_TARGET}"
           mkdir -p "$RUNNER_TEMP/pai-app01/extract"
           tar -xzf "$RUNNER_TEMP/pai-app01/$ARCHIVE" -C "$RUNNER_TEMP/pai-app01/extract"
           ROOT="$RUNNER_TEMP/pai-app01/extract/postgresql-${PG_VERSION}-${PG_TARGET}"
