@@ -1,0 +1,44 @@
+name: PAI OPR-01 exact Debian QCOW2 handoff
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/pai-opr01-exact-qcow2.yml
+
+permissions:
+  contents: read
+
+jobs:
+  exact-qcow2:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Download and verify exact Debian QCOW2
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT=/tmp/pai-opr01
+          mkdir -p "$ROOT"
+          OUT="$ROOT/debian-13-genericcloud-amd64-20260712-2537.qcow2"
+          URL=https://cloud.debian.org/cdimage/cloud/trixie/20260712-2537/debian-13-genericcloud-amd64-20260712-2537.qcow2
+          EXPECTED_SHA512=7ae53e9dbee282bfc16f289dec483dde3a8598769c38a267948310f7a2a52c662620198603bc52c142627efba379863d16079698a10b34102d55bcedd40e8d32
+          EXPECTED_SIZE=340393984
+          curl --fail --show-error --location \
+            --retry 5 --retry-delay 2 --retry-all-errors \
+            --connect-timeout 20 --max-time 600 \
+            --output "$OUT" "$URL"
+          printf '%s  %s\n' "$EXPECTED_SHA512" "$OUT" | sha512sum --check --strict
+          test "$(stat -c '%s' "$OUT")" = "$EXPECTED_SIZE"
+          sha512sum "$OUT" | tee "$ROOT/SHA512SUM"
+          sha256sum "$OUT" | tee "$ROOT/SHA256SUM"
+          printf 'PAI_OPR01_EXACT_QCOW2_REACQUIRE_PASS\n' | tee "$ROOT/decision.txt"
+
+      - name: Upload verified image handoff
+        uses: actions/upload-artifact@v4
+        with:
+          name: pai-opr01-exact-debian-qcow2
+          path: /tmp/pai-opr01/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
