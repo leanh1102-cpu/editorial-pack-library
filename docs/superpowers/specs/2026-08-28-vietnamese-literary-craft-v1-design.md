@@ -4,6 +4,10 @@
 
 Materialize the validated Notion staging stack as a portable `vietnamese-literary-craft/` Agent Skill candidate in this repository, without mixing SLTD-specific canon/taste into the general skill.
 
+## Change classification
+
+`MINOR` — standalone general-purpose skill addition. This migration adds a new isolated package root and does **not** change the existing `AI_ENTRY.md` read order, project-pack priority, core rules, or SLTD router. Runtime integration into PAI remains a separate gated step because changing loader/read order would have a larger blast radius.
+
 ## Validated source state
 
 - Runtime source: Operational Layer v0.1.
@@ -15,7 +19,7 @@ Materialize the validated Notion staging stack as a portable `vietnamese-literar
 
 ## Package boundary
 
-This migration creates a usable v1 behavioral/curriculum package, not a claim that the entire frozen knowledge architecture is complete. Specialized `theory/`, `forms/`, `register/`, `analysis/`, `craft/`, and `corpus/` coverage remains source-gated where content has not been validated.
+This migration creates a usable v1 behavioral/curriculum candidate, not a claim that the entire frozen knowledge architecture is complete. Specialized `theory/`, `forms/`, `register/`, `analysis/`, `craft/`, and `corpus/` coverage remains source-gated where content has not been validated.
 
 ## Target root
 
@@ -39,7 +43,12 @@ The initial physical package contains:
 - `drills/revision/README.md`
 - `drills/composition/README.md`
 - `drills/transfer/README.md`
+- `harness/benchmark-contract.md`
 - `harness/INDEX.md`
+- `harness/suites/baseline-36-runner.md`
+- `harness/golden-cases/baseline-36.md`
+- `harness/regression/sensory-mediation-runner.md`
+- `harness/regression/sensory-mediation-evaluator.md`
 - `maintenance/promotion-rules.md`
 
 ## Runtime contract
@@ -74,8 +83,8 @@ Core invariants:
 ## Migration and verification
 
 1. Create the exact Markdown package on an isolated feature branch.
-2. Verify required files, frontmatter, internal references, forbidden SLTD leakage, pass-5 cap, sensory-mediation scope, and source-scope locks with deterministic static checks.
-3. Review the branch diff before runtime testing.
+2. Verify required files, frontmatter, internal references, forbidden SLTD leakage, pass-5 cap, sensory-mediation scope, source-scope locks, and runner/evaluator ID parity with deterministic static checks.
+3. Review the branch contents before runtime testing.
 4. Load the physical candidate in the actual PAI Linux runtime.
 5. Run `BASELINE-36`, sensory-mediation repair regressions, routing sentinels, and compact cross-layer load sentinels.
 6. Reject the candidate if any new preservation, epistemic, voice/register, routing, source-attribution, pass-cap, or curriculum-routing regression appears.
