@@ -1,6 +1,6 @@
 # KX7 — Point of View and Access
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Point of view is the organization of narrative information through narrator position, focal/access frame, perceptual and cognitive availability, and shifts in who can know or perceive what. A POV diagnosis must distinguish legitimate information control from accidental leakage of author-only knowledge.
