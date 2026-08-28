@@ -1,6 +1,6 @@
 # KX4 — Sentence Craft
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Sentence craft is the control of information, relation, rhythm, reference, compression, and emphasis at sentence scale. A sentence is judged by what its structure does in context, not by a preferred length or a generic smoothness target.
