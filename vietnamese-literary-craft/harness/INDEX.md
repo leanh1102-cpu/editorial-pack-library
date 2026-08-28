@@ -14,7 +14,9 @@ Keep runner and evaluator artifacts separate.
 - WRITER_SELF_REVIEW-INTEGRATION v0.3: 31/32, hard fail 0; targeted closure v0.3.1: 12/12, hard fail 0.
 
 ## Knowledge Expansion Wave 1
-- `suites/knowledge-wave1-red-24-runner.md` + `golden-cases/knowledge-wave1-red-24-evaluator.md`: `RED / DIAGNOSTIC / NOT A PROMOTION GATE`; 24 blind pressure cases, scoring `2/1/0`, max 48. Raw clean baseline must be frozen before KX1–KX10 rule authoring.
+- `suites/knowledge-wave1-red-24-runner.md` + `golden-cases/knowledge-wave1-red-24-evaluator.md`: `RED / DIAGNOSTIC / NOT A PROMOTION GATE`; 24 blind pressure cases, scoring `2/1/0`, max 48.
+- CLEAN RAW RUN received 2026-08-29: hard fail `0`; all 24 responses preserved the intended literary/evidence mechanism. Four cases (`KR-02`, `KR-03`, `KR-10`, `KR-13`) conflict with the evaluator's single action-label expectation while retaining the intended effect; `KR-03` is underdetermined because the runner does not supply the intended signer. Do not treat the resulting action-strict `<47` score as a literary-mechanism failure.
+- `suites/knowledge-wave1-red-action-closure-runner.md` + `golden-cases/knowledge-wave1-red-action-closure-evaluator.md`: targeted 4-case closure to calibrate action taxonomy without injecting Wave 1 knowledge rules. KX1–KX10 authoring remains blocked until this closure passes.
 
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
