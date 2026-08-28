@@ -1,6 +1,6 @@
 # KX3 — Functional Deviation and Foregrounding
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Literary style often creates effect by departing from an expected local pattern or by intensifying a pattern through parallelism/repetition. A marked feature must therefore be judged relative to context and function, not by automatic normalization.
