@@ -1,6 +1,6 @@
 # KX2 — Implicature, Reference, and Inference
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Literary language operates across several epistemic layers at once: what a sentence explicitly says, what an utterance plausibly does in context, what a character or narrator claims, what a reader infers, and what the story has actually established.
