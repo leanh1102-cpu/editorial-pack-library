@@ -1,6 +1,6 @@
 # KX1 — Close Reading
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED / COMPOSITE EVIDENCE`
 
 ## CONCEPT
 Close reading is evidence-led analysis of how specific textual choices produce local and larger effects. In this skill it is a route from observable language to bounded interpretation and then, when useful, to craft transfer.
