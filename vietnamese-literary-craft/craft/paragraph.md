@@ -1,6 +1,6 @@
 # KX5 — Paragraph Craft
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Paragraph craft controls how information, reference, time, causality, focus, and pressure develop across several sentences. Cohesion is a relation among sentences, not a quota of transition words.
