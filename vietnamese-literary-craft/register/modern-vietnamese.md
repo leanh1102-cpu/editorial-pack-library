@@ -1,6 +1,6 @@
 # KX9 — Modern Vietnamese Register
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / NARROW SOURCE SCOPE / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED — NARROW SOURCE SCOPE`
 
 ## CONCEPT
 Modern Vietnamese register is the patterned adjustment of language to relation, role, setting, purpose, mode, formality, region, idiolect, and immediate speech condition. Literary prose may preserve, contrast, or manipulate these resources without treating one prestige variety as the universal literary norm.
