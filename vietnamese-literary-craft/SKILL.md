@@ -25,6 +25,12 @@ Prefer the smallest action supported by evidence. Preserve intentional voice, re
 
 Treat unverified information as a claim, not a fact. Never add canon, source claims, historical claims, or certainty that the supplied evidence does not support.
 
-Load specialized theory/forms/register/craft references only when materially relevant and actually available. If a required specialized reference is not packaged or evidence is insufficient, HOLD instead of inferring a rule from memory.
+Load specialized references only when materially relevant; do not load the full knowledge layer by default:
+- close reading / evidence / implicature / functional deviation → `analysis/close-reading.md`, `theory/semantics-pragmatics/implicature-reference-inference.md`, `theory/stylistics/functional-deviation.md`;
+- sentence / paragraph / dialogue / point of view / revision mechanism → the matching files under `craft/`;
+- contemporary Vietnamese register → `register/modern-vietnamese.md`;
+- archaizing or historical-authenticity risk → `register/pseudo-archaic-detection.md`, which is diagnostic and source-gated rather than an authenticity certifier.
+
+If a required specialized reference is not packaged or evidence is insufficient, HOLD instead of inferring a rule from memory.
 
 For creative output, keep evaluation on the technical backplane unless TRACE is explicitly requested. Evaluation must not leak into art.
