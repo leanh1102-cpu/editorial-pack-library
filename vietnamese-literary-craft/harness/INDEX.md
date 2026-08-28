@@ -15,8 +15,10 @@ Keep runner and evaluator artifacts separate.
 
 ## Knowledge Expansion Wave 1
 - `suites/knowledge-wave1-red-24-runner.md` + `golden-cases/knowledge-wave1-red-24-evaluator.md`: `RED / DIAGNOSTIC / NOT A PROMOTION GATE`; 24 blind pressure cases, scoring `2/1/0`, max 48.
-- CLEAN RAW RUN received 2026-08-29: hard fail `0`; all 24 responses preserved the intended literary/evidence mechanism. Four cases (`KR-02`, `KR-03`, `KR-10`, `KR-13`) conflict with the evaluator's single action-label expectation while retaining the intended effect; `KR-03` is underdetermined because the runner does not supply the intended signer. Do not treat the resulting action-strict `<47` score as a literary-mechanism failure.
-- `suites/knowledge-wave1-red-action-closure-runner.md` + `golden-cases/knowledge-wave1-red-action-closure-evaluator.md`: targeted 4-case closure to calibrate action taxonomy without injecting Wave 1 knowledge rules. KX1–KX10 authoring remains blocked until this closure passes.
+- CLEAN RAW RUN received 2026-08-29: hard fail `0`; all 24 responses preserved the intended literary/evidence mechanism. Four cases (`KR-02`, `KR-03`, `KR-10`, `KR-13`) conflicted with the evaluator's single action-label expectation while retaining the intended effect; `KR-03` was underdetermined because the runner did not supply the intended signer. This was treated as test-contract calibration rather than literary-mechanism failure.
+- `suites/knowledge-wave1-red-action-closure-runner.md` + `golden-cases/knowledge-wave1-red-action-closure-evaluator.md`: `7/8`, hard fail `0`; KC-01/KC-02/KC-04 full credit, KC-03 mechanism correct but action labeled `REVISE` instead of local `MIN_EDIT`.
+- `suites/knowledge-wave1-red-minedit-closure-runner.md` + `golden-cases/knowledge-wave1-red-minedit-closure-evaluator.md`: `2/2`, hard fail `0`; final local-scope action boundary calibrated.
+- TASK 1 STATUS: `MECHANISM BASELINE STRONG / ACTION TAXONOMY CALIBRATED / CLOSED`. No Wave 1 knowledge rule was injected to obtain closure. Proceed to source-claim ledger before KX1–KX10 authoring.
 
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
