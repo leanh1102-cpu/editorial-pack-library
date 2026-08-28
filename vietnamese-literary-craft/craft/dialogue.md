@@ -1,6 +1,6 @@
 # KX6 — Dialogue Craft
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Dialogue is social action performed through language under specific relations, goals, constraints, and pressure. Literary dialogue should therefore be judged by what speakers are trying to do to or with one another, not by whether their sentences share one polished register.
