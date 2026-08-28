@@ -1,6 +1,6 @@
 # KX10 — Pseudo-Archaic Detection
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / NARROW SOURCE SCOPE / DIAGNOSTIC ONLY / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED — NARROW SOURCE SCOPE / DIAGNOSTIC ONLY`
 
 ## CONCEPT
 Pseudo-archaic detection identifies risk that language looks superficially old without sufficient historical/textual support. It is a conservative diagnostic module: it can flag unsupported archaizing, anachronism candidates, and textual-status problems, but it cannot authenticate period correctness from model memory or lexical appearance alone.
