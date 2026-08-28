@@ -13,6 +13,9 @@ Keep runner and evaluator artifacts separate.
 - ADVANCED-INTEGRATION v0.3: 32/32, hard fail 0.
 - WRITER_SELF_REVIEW-INTEGRATION v0.3: 31/32, hard fail 0; targeted closure v0.3.1: 12/12, hard fail 0.
 
+## Knowledge Expansion Wave 1
+- `suites/knowledge-wave1-red-24-runner.md` + `golden-cases/knowledge-wave1-red-24-evaluator.md`: `RED / DIAGNOSTIC / NOT A PROMOTION GATE`; 24 blind pressure cases, scoring `2/1/0`, max 48. Raw clean baseline must be frozen before KX1–KX10 rule authoring.
+
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
 2. Run `suites/baseline-36-runner.md` blind; score against `golden-cases/baseline-36.md` only after raw output is frozen.
