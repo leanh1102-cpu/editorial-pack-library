@@ -1,6 +1,6 @@
 # KX8 — Revision Craft
 
-**Status:** `SOURCE-BACKED CANDIDATE / WAVE 1 / UNVALIDATED`
+**Status:** `CANDIDATE-STABLE / VALIDATED`
 
 ## CONCEPT
 Revision is diagnosis-guided change: identify a material problem, name the mechanism causing it, define the intended effect, make the smallest useful intervention, and reject local improvements that create broader regressions.
