@@ -24,6 +24,14 @@ Keep runner and evaluator artifacts separate.
 - Cross-layer blast radius: original 28/30, hard fail 0; `knowledge-wave1-cross-layer-action-closure` 4/4, hard fail 0.
 - Task 7: `KNOWLEDGE-WAVE1-INTEGRATED v0.1 / BLAST-RADIUS COMPOSITE PASS / HARD FAIL 0`.
 
+## Compatible-loader runtime validation · 2026-08-29
+- Runtime install snapshot: `install/vietnamese-literary-craft-wave1-runtime` @ `c50bc5f4316c3b85ce707c84616bda9347d3f280`; installed bundle excludes `harness/` so evaluator/golden material stays outside the skill under test.
+- Runtime smoke v0.1: `RS-01…RS-08 = 8/8 behavior checks / HARD FAIL 0`.
+- Full installed-loader regression: `BASELINE-36 = 72/72`, `SENSORY-MEDIATION = 24/24`, `CROSS-LAYER = 29/30`, hard fail 0. The only miss was XR-05 action scale (`REVISE` vs sentence-local `MIN_EDIT`); causal mechanism remained correct.
+- Installed-loader targeted closure: `XA-01 = 2/2`, `XA-02 = 2/2`; total `4/4`, hard fail 0.
+- Runtime verdict: `RUNTIME-VALIDATED / COMPOSITE PASS / HARD FAIL 0` for the current Wave 1 runtime snapshot and validated source scope.
+- This verdict does not imply full frozen knowledge-architecture completion; specialized source debt remains separately gated.
+
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
 2. Run `suites/baseline-36-runner.md` blind; score against `golden-cases/baseline-36.md` only after raw output is frozen.
