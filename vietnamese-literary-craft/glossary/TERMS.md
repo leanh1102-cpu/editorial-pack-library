@@ -12,6 +12,8 @@ Vietnamese-first terminology is preferred. Add an international term on first us
 - **tiêu điểm / focus** — information made especially relevant/contrasted in a communicative context.
 - **tỉnh lược / ellipsis** — omitted material recoverable only when context/information structure licenses recovery.
 - **đánh dấu / markedness** — departure from a neutral/default pattern that may be functional rather than erroneous.
+- **tiền cảnh hóa / foregrounding** — increased textual prominence produced by deviation from a relevant expectation or by patterning/parallelism; prominence alone does not prove quality or correctness.
+- **chuẩn nội tại / internal norm** — a locally established textual pattern used as the relevant background for judging markedness or deviation inside that text.
 - **nhịp / rhythm** — patterned timing/pressure produced by sentence length, pause, fracture, repetition, syntax, and arrangement.
 - **giọng / voice** — patterned linguistic behavior associated with narrator/speaker plus current speech condition.
 - **register / phong cách-ngữ vực** — language selection shaped by role, relation, setting, purpose, institution, period, and social conditions; not reducible to vocabulary density.
@@ -24,6 +26,7 @@ Vietnamese-first terminology is preferred. Add an international term on first us
 - **đọc gần / close reading** — evidence-led examination of textual signals, relations, form, and effects before interpretation.
 - **chuyển giao thủ pháp / craft transfer** — preserving a mechanism/effect under new constraints while changing surface diction, imagery, and syntax.
 - **rủi ro bắt chước / imitation risk** — danger that a transfer copies signature surface style instead of abstracting mechanism.
+- **giả cổ cơ học / pseudo-archaic inflation** — surface archaizing produced by unsupported lexical substitution, register mixture, or similar signals without sufficient historical evidence; a diagnostic warning, not an authenticity verdict.
 
 ## Intermediate terms
 - **khung truy cập / access frame** — locally licensed range of perception, thought, knowledge, or reporting available to narrator/focalizer.
