@@ -2,7 +2,7 @@
 
 **Status:** `CANDIDATE-STABLE / VALIDATED`
 
-**Dialogue-texture extension:** `CANDIDATE / PRODUCTION-SOAK GROUNDED / REGRESSION PENDING`
+**Dialogue-texture extension:** `VALIDATED / PRODUCTION-SOAK GROUNDED / COMPOSITE PASS / HARD FAIL 0`
 
 ## CONCEPT
 Dialogue is social action performed through language under specific relations, goals, constraints, and pressure. Literary dialogue should therefore be judged by what speakers are trying to do to or with one another, not by whether their sentences share one polished register.
