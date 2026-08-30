@@ -38,7 +38,10 @@ Keep runner and evaluator artifacts separate.
 - Targeted regression: `dialogue-texture-terse-saturation = 24/24`, hard fail 0. Promotion interpretation: `FUNCTIONAL BREVITY PRESERVED / EXCHANGE-LEVEL TERSE SATURATION REPAIRED / NO LENGTH QUOTA`.
 - Candidate blast radius: `BASELINE-36 = 72/72`, hard fail 0; `SENSORY-MEDIATION = 22/24`, hard fail 1 from R-02 adding an unsupported weather source; `CROSS-LAYER = 29/30`, hard fail 0 from XR-05 action scale (`REVISE` vs local `MIN_EDIT`). Neither miss demonstrated a Dialogue Texture mechanism failure.
 - Targeted blast-radius closure: `DB-01 = 2/2`, `DB-02 = 2/2`; total `4/4`, hard fail 0. Composite verdict: no demonstrated residual regression on sensory source preservation or sentence-local causal repair.
-- Promotion status: `DIALOGUE-TEXTURE v0.1 / VALIDATED / COMPOSITE PASS / HARD FAIL 0`, pending PR merge and runtime snapshot refresh.
+- Promotion status: `DIALOGUE-TEXTURE v0.1 / VALIDATED / COMPOSITE PASS / HARD FAIL 0`.
+- PR #29 squash-merged to `main` at `bc047fefc11ed0dd856e22538f7df0b0ab8dd09f`.
+- Official runtime snapshot: `install/vietnamese-literary-craft-dialogue-texture-v0.1-runtime` @ `b4a64b0845e7006837cea864fb9bbac5c0f68f06`. This branch is byte-identical to the candidate runtime bundle used for targeted and blast-radius execution; it intentionally excludes `harness/`.
+- Runtime interpretation: Dialogue Texture v0.1 behavior is `RUNTIME-VALIDATED / COMPOSITE PASS` on the tested bundle. The `main` module contains a metadata-only promotion-status update after the runtime run; no behavior rule changed after testing.
 
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
