@@ -32,6 +32,14 @@ Keep runner and evaluator artifacts separate.
 - Runtime verdict: `RUNTIME-VALIDATED / COMPOSITE PASS / HARD FAIL 0` for the current Wave 1 runtime snapshot and validated source scope.
 - This verdict does not imply full frozen knowledge-architecture completion; specialized source debt remains separately gated.
 
+## Production-soak patch · Dialogue Texture v0.1 · 2026-08-29
+- Trigger: real reader feedback during manuscript soak identified repeated proposition-only clipped dialogue as a material readability/voice problem; the existing KX6 dialogue module protected functional brevity but did not explicitly diagnose exchange-level terse saturation.
+- Scope: bounded patch to `craft/dialogue.md` + `evaluation/ai-writing-rubric.md`; no change to `CONSTITUTION.md`, curriculum, runtime stop policy, `core/`, or `packs/sltd/`.
+- Targeted regression: `dialogue-texture-terse-saturation = 24/24`, hard fail 0. Promotion interpretation: `FUNCTIONAL BREVITY PRESERVED / EXCHANGE-LEVEL TERSE SATURATION REPAIRED / NO LENGTH QUOTA`.
+- Candidate blast radius: `BASELINE-36 = 72/72`, hard fail 0; `SENSORY-MEDIATION = 22/24`, hard fail 1 from R-02 adding an unsupported weather source; `CROSS-LAYER = 29/30`, hard fail 0 from XR-05 action scale (`REVISE` vs local `MIN_EDIT`). Neither miss demonstrated a Dialogue Texture mechanism failure.
+- Targeted blast-radius closure: `DB-01 = 2/2`, `DB-02 = 2/2`; total `4/4`, hard fail 0. Composite verdict: no demonstrated residual regression on sensory source preservation or sentence-local causal repair.
+- Promotion status: `DIALOGUE-TEXTURE v0.1 / VALIDATED / COMPOSITE PASS / HARD FAIL 0`, pending PR merge and runtime snapshot refresh.
+
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
 2. Run `suites/baseline-36-runner.md` blind; score against `golden-cases/baseline-36.md` only after raw output is frozen.
