@@ -28,6 +28,7 @@ Treat unverified information as a claim, not a fact. Never add canon, source cla
 Load specialized references only when materially relevant; do not load the full knowledge layer by default:
 - close reading / evidence / implicature / functional deviation → `analysis/close-reading.md`, `theory/semantics-pragmatics/implicature-reference-inference.md`, `theory/stylistics/functional-deviation.md`;
 - sentence / paragraph / dialogue / point of view / revision mechanism → the matching files under `craft/`;
+- multi-scene / chapter / arc rhythm → `analysis/chapter-arc-rhythm.md`;
 - contemporary Vietnamese register → `register/modern-vietnamese.md`;
 - archaizing or historical-authenticity risk → `register/pseudo-archaic-detection.md`, which is diagnostic and source-gated rather than an authenticity certifier.
 
