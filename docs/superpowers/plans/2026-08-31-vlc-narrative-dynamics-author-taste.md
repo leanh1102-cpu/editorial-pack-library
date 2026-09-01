@@ -22,6 +22,107 @@
 - No quota rules for sentence length, dialogue length, beat count, climax count, or quiet beats.
 - Existing `SKILL.md` router changes are deferred until all new validation gates pass.
 
+## Execution Freeze Ledger — 2026-09-01
+
+This ledger is authoritative over the older unchecked implementation steps below whenever TDD evidence has superseded the original implementation intent. Do not recreate a skipped module merely because an old checkbox still says `Create`.
+
+General freeze rule:
+
+`FROZEN CLOSED NODE ≠ REOPEN ON NEW COMMIT`
+
+Reopen a closed node only when:
+- fresh independent regression evidence demonstrates a failure in that node;
+- the user explicitly changes the locked scope or behavior contract; or
+- a downstream validation gate proves the node itself is the causal regression source.
+
+Do **not** reopen a node because branch HEAD moved, files were committed later, or a subsequent task is still pending.
+
+### Node 1 — Author-Taste Vietnamese Prose
+
+Status: `FROZEN CLOSED / PASS / NO-OP BY TDD`
+
+Evidence state:
+- frozen ATP suite completed at `28/28 / HARD FAIL 0`;
+- sanitized candidate corpus is materialized and remains `CANDIDATE / SANITIZED / NOT GOLDEN`;
+- runtime behavior already covered the targeted prose/relational-texture failure boundaries.
+
+Execution consequence:
+- do **not** create `craft/prose-naturalness.md`;
+- do **not** modify the prose layer merely to satisfy Task 3's original file list;
+- retain the frozen ATP evidence unless a new independent regression specifically breaks it.
+
+### Node 2 — Scene Dynamics
+
+Status: `FROZEN CLOSED / COMPOSITE PASS / NO-OP BY TDD`
+
+Evidence state:
+- frozen parent suite: `22/24 / HARD FAIL 0`;
+- the only misses were action-scale classification, not scene-dynamics mechanism failures;
+- targeted action-scale closure satisfied its contract at `4/4 / HARD FAIL 0`.
+
+Execution consequence:
+- do **not** create `craft/scene-dynamics.md`;
+- preserve current runtime handling of useful quiet, aftermath, fake escalation, pressure recovery, and cadence saturation;
+- do not rerun the parent suite merely because later nodes change.
+
+### Node 3 — Chapter / Arc Rhythm
+
+Status: `CANDIDATE / TDD TARGETED GREEN / HOLDOUT PENDING`
+
+Evidence state:
+- frozen parent RED baseline exposed the first material gap: `13/20 / HARD FAIL 0`;
+- the minimal source-grounded intervention policy raised the targeted rerun to `18/20 / HARD FAIL 0`;
+- remaining misses were `REVISE vs HOLD` over-restraint when structural repair remained possible without inventing a new mechanism;
+- policy-closure runner/evaluator now exist in the repository;
+- historical user output satisfied the closure contract, but must **not** be retroactively described as a frozen-evaluator `4/4` run because the evaluator was not frozen before that execution.
+
+Execution consequence:
+- keep `analysis/chapter-arc-rhythm.md` at `CANDIDATE / TDD TARGETED GREEN / HOLDOUT PENDING`;
+- do not call it `VALIDATED` yet;
+- do not rerun the whole chapter-rhythm suite solely to replace the earlier evidence chain.
+
+### Node 4 — Author-Taste Holdout
+
+Status: `ACTIVE GATE / FROZEN HOLDOUT FAMILY / TARGETED CLOSURE PENDING`
+
+Evidence state:
+- holdout runner and evaluator were frozen before the blind run;
+- blind holdout result: `19/20 / HARD FAIL 0`;
+- sole miss: `ATH-04`, where mechanism/source discipline was correct but action was `PRESERVE` instead of evidence-blocked `HOLD-INSUFFICIENT_EVIDENCE`;
+- production patch is deliberately narrow: requested-task disposition now distinguishes sufficient-evidence `PRESERVE` from evidence-blocked `HOLD`;
+- targeted `ATC-01/ATC-02` closure runner and evaluator are frozen before execution.
+
+Required next evidence:
+- run only `author-taste-holdout-action-boundary-closure-v0.1-runner.md` in a clean isolated conversation;
+- gate: `4/4 + HARD FAIL 0`;
+- do **not** rerun `ATH-01…ATH-10` if the targeted closure passes;
+- do **not** self-run the closure in a context where its evaluator has already been exposed.
+
+### Node 5 — Blast Radius
+
+Status: `READY / BLOCKED BY NODE 4`
+
+Frozen suites already confirmed present:
+- `BASELINE-36`;
+- `SENSORY-MEDIATION-REPAIR-REGRESSION`;
+- `KNOWLEDGE-WAVE1-CROSS-LAYER-SENTINELS`;
+- `DIALOGUE-TEXTURE / TERSE-SATURATION`.
+
+Execution consequence:
+- do not create replacement blast-radius harnesses;
+- do not run Task 7 before Node 4 closes;
+- after Node 4 closes, run only the existing frozen suites in the locked order and use targeted closure only for a demonstrated narrow miss.
+
+### Nodes 6–7 — Promotion / Runtime Snapshot / Downstream Contract
+
+Status: `NOT OPEN`
+
+Do not:
+- modify `SKILL.md` before validation evidence demonstrates a routing need;
+- create a runtime snapshot before blast-radius closure;
+- write the PAI downstream consumer contract before a validated runtime snapshot exists;
+- treat candidate or composite targeted-green evidence as `RUNTIME-VALIDATED`.
+
 ---
 
 ### Task 1: Materialize the sanitized author-taste corpus boundary
