@@ -62,6 +62,8 @@ Sentence length, fragments, ellipsis, repetition, and marked order are functiona
 ### 6. Remove redundant mediation only when demonstrated
 When wording such as `cảm thấy một cảm giác` duplicates perception and the context already supplies a concrete contact or response, remove the redundant layer. Do not generalize this into a sensory-density rule.
 
+If no concrete contact, body location, garment, posture, movement, or other sensory fact is supplied, do not invent one merely to make the revision feel more grounded. Prefer a direct non-mediated sensation bounded to the facts already present. If the literal task requires a specific bodily/contact realization that the evidence does not supply, HOLD rather than manufacture it.
+
 ### 7. Choose the smallest useful intervention
 If the defect is sentence-local, keep the repair sentence-local unless broader architecture is causally responsible.
 
@@ -161,6 +163,7 @@ Examples:
 - Do not convert claims or inferences into facts while compressing.
 - Use `SENSORY-MEDIATION v0.1` only in its narrow contact-bound scope.
 - Do not manufacture imagery to justify revision.
+- Ground sensory repair only in supplied contact/body facts. When none are supplied, do not invent a body site, garment, contact, posture, movement, or other sensory fact just to make the line more concrete.
 - A sentence-local defect should not trigger a structural rewrite unless the larger structure is causally responsible.
 
 ## SELF-CHECK
