@@ -46,15 +46,19 @@ Keep runner and evaluator artifacts separate.
 ## Narrative Dynamics + Author-Taste v0.1 · 2026-09-01
 - Author-Taste Prose: `28/28 / HARD FAIL 0`; `FROZEN CLOSED / PASS / NO-OP BY TDD`. No `craft/prose-naturalness.md` created.
 - Scene Dynamics: parent `22/24 / HARD FAIL 0` plus targeted action-scale closure `4/4 / HARD FAIL 0`; `FROZEN CLOSED / COMPOSITE PASS / NO-OP BY TDD`. No `craft/scene-dynamics.md` created.
-- Chapter / Arc Rhythm: targeted behavior is green; production module remains candidate until compatible runtime validation completes.
+- Chapter / Arc Rhythm: targeted behavior green; Author-Taste holdout and blast-radius composite passes closed; runtime-focused and runtime-smoke gates below validate the installed package route. Status: `VALIDATED / RUNTIME-VALIDATED`.
 - Author-Taste Holdout: frozen parent `19/20 / HARD FAIL 0`; targeted action-boundary closure `ATC-01..02 = 4/4 / HARD FAIL 0`; verdict `FROZEN CLOSED / COMPOSITE PASS`. The original holdout remains historically 19/20 rather than being rewritten as 20/20.
-- Blast-radius BASELINE-36: parent `71/72 / HARD FAIL 0`; sole `PC-002` sensory-grounding miss is covered by the post-fix sensory no-invention closure below. Composite-pass eligible; parent score remains historical.
-- Blast-radius SENSORY-MEDIATION: parent `22/24 / HARD FAIL 1`; the failure localized to unsupported sensory/body invention and propagation handling. Post-fix `sensory-no-invention-closure-v0.1 = 6/6 / HARD FAIL 0`; verdict `COMPOSITE PASS`. The parent hard-fail result remains preserved as pre-fix evidence.
+- Blast-radius BASELINE-36: parent `71/72 / HARD FAIL 0`; sole `PC-002` sensory-grounding miss is covered by the post-fix sensory no-invention closure below. Parent score remains historical.
+- Blast-radius SENSORY-MEDIATION: parent `22/24 / HARD FAIL 1`; failure localized to unsupported sensory/body invention and propagation handling. Post-fix `sensory-no-invention-closure-v0.1 = 6/6 / HARD FAIL 0`; verdict `COMPOSITE PASS`. The parent hard-fail result remains preserved as pre-fix evidence.
 - Blast-radius CROSS-LAYER: parent `29/30 / HARD FAIL 0`; sole `XR-05` action-scale miss closed by `knowledge-wave1-cross-layer-action-closure = 4/4 / HARD FAIL 0`; verdict `COMPOSITE PASS`.
 - Blast-radius DIALOGUE TEXTURE: `24/24 / HARD FAIL 0`; `FROZEN CLOSED / PASS`.
-- Blast-radius aggregate: `COMPOSITE PASS / CURRENT HARD FAIL 0`; no parent suite rerun required after the targeted closures.
-- Routing gate: validated need for one minimal router entry, `multi-scene / chapter / arc rhythm → analysis/chapter-arc-rhythm.md`.
-- Next gate: build a package-only runtime snapshot excluding `harness/`, then run compatible-loader runtime smoke + focused Narrative Dynamics / Author-Taste validation before promotion.
+- Blast-radius aggregate: `COMPOSITE PASS / CURRENT HARD FAIL 0`; no parent suite rerun required after targeted closures.
+- Routing gate: `multi-scene / chapter / arc rhythm → analysis/chapter-arc-rhythm.md` added to `SKILL.md`.
+- Runtime snapshot: `install/vietnamese-literary-craft-narrative-dynamics-author-taste-v0.1-runtime` @ `40608c73103dab76d83b7fc3b34b4b1dea293f84`; package-only root, `harness/` and candidate corpus excluded; `CONSTITUTION.md` blob remains `1b3727dbfc41691b973d02d767b97f3b0b8aa63e`.
+- Runtime-focused blind validation: `RV-01..RV-08 = 16/16 / HARD FAIL 0`; verdict `RUNTIME-FOCUSED PASS / FROZEN CLOSED`.
+- Runtime install smoke: `RS-01..RS-04 = 8/8 / HARD FAIL 0`; verdict `RUNTIME-SMOKE PASS / FROZEN CLOSED`.
+- Runtime aggregate: `RUNTIME-VALIDATED / COMPOSITE PASS / HARD FAIL 0` for Narrative Dynamics + Author-Taste v0.1 on the tested installed snapshot.
+- Freeze consequence: do not rerun ATP, Scene Dynamics, Holdout, parent blast-radius suites, runtime-focused, or runtime-smoke unless fresh independent evidence demonstrates a regression in that closed node.
 
 ## Physical-load regression order
 1. Load this physical skill candidate using the actual runtime directory/path order.
