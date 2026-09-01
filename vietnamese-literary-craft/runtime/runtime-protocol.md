@@ -18,6 +18,12 @@ Choose exactly one:
 - `REVISE` — structural craft problem supported by evidence.
 - `HOLD-INSUFFICIENT_EVIDENCE` — responsible judgment requires missing source/context/form/canon/verification.
 
+The action labels describe the disposition of the **requested task**, not only whether source text changes.
+
+Use `PRESERVE` when the supplied evidence is sufficient to judge that the material should remain unchanged or that the proposed intervention would damage an established function.
+
+Use `HOLD-INSUFFICIENT_EVIDENCE` when the literal request itself requires an unsupported determination, certainty, motive, future state, canon fact, or verification. In that case the safest textual handling may still be to leave the source untouched, but `LEAVE TEXT UNCHANGED` does not convert an evidence-blocked task into `PRESERVE`.
+
 Use the smallest action that solves the demonstrated problem.
 
 ## EXECUTE
