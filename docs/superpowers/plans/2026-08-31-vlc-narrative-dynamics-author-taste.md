@@ -67,61 +67,69 @@ Execution consequence:
 
 ### Node 3 — Chapter / Arc Rhythm
 
-Status: `CANDIDATE / TDD TARGETED GREEN / HOLDOUT PENDING`
+Status: `FROZEN CLOSED / VALIDATED / RUNTIME-VALIDATED`
 
 Evidence state:
 - frozen parent RED baseline exposed the first material gap: `13/20 / HARD FAIL 0`;
 - the minimal source-grounded intervention policy raised the targeted rerun to `18/20 / HARD FAIL 0`;
 - remaining misses were `REVISE vs HOLD` over-restraint when structural repair remained possible without inventing a new mechanism;
-- policy-closure runner/evaluator now exist in the repository;
-- historical user output satisfied the closure contract, but must **not** be retroactively described as a frozen-evaluator `4/4` run because the evaluator was not frozen before that execution.
+- historical user output satisfied the policy-closure concept, but is still **not** retroactively described as a frozen-evaluator `4/4` run because the evaluator was not frozen before that execution;
+- Author-Taste holdout later closed by frozen composite evidence;
+- blast-radius closed by composite evidence with current hard fail 0;
+- installed runtime focused gate closed at `16/16 / HARD FAIL 0` and runtime smoke at `8/8 / HARD FAIL 0`.
 
 Execution consequence:
-- keep `analysis/chapter-arc-rhythm.md` at `CANDIDATE / TDD TARGETED GREEN / HOLDOUT PENDING`;
-- do not call it `VALIDATED` yet;
-- do not rerun the whole chapter-rhythm suite solely to replace the earlier evidence chain.
+- `analysis/chapter-arc-rhythm.md` is now `VALIDATED / RUNTIME-VALIDATED` for the tested package boundary;
+- do not rerun the historical chapter-rhythm parent suite merely to manufacture a cleaner evidence chain;
+- reopen only on fresh independent regression evidence.
 
 ### Node 4 — Author-Taste Holdout
 
-Status: `ACTIVE GATE / FROZEN HOLDOUT FAMILY / TARGETED CLOSURE PENDING`
+Status: `FROZEN CLOSED / COMPOSITE PASS / HARD FAIL 0`
 
 Evidence state:
 - holdout runner and evaluator were frozen before the blind run;
-- blind holdout result: `19/20 / HARD FAIL 0`;
-- sole miss: `ATH-04`, where mechanism/source discipline was correct but action was `PRESERVE` instead of evidence-blocked `HOLD-INSUFFICIENT_EVIDENCE`;
-- production patch is deliberately narrow: requested-task disposition now distinguishes sufficient-evidence `PRESERVE` from evidence-blocked `HOLD`;
-- targeted `ATC-01/ATC-02` closure runner and evaluator are frozen before execution.
+- blind parent holdout result remains `19/20 / HARD FAIL 0`;
+- sole parent miss was `ATH-04`, where mechanism/source discipline was correct but action was `PRESERVE` instead of evidence-blocked `HOLD-INSUFFICIENT_EVIDENCE`;
+- targeted `ATC-01/ATC-02` closure was frozen before execution and passed at `4/4 / HARD FAIL 0`.
 
-Required next evidence:
-- run only `author-taste-holdout-action-boundary-closure-v0.1-runner.md` in a clean isolated conversation;
-- gate: `4/4 + HARD FAIL 0`;
-- do **not** rerun `ATH-01…ATH-10` if the targeted closure passes;
-- do **not** self-run the closure in a context where its evaluator has already been exposed.
+Execution consequence:
+- preserve the historical parent result as `19/20`; do not rewrite it as `20/20`;
+- treat the holdout family as composite-pass closed;
+- do not rerun `ATH-01…ATH-10` or ATC unless fresh independent evidence demonstrates a regression.
 
 ### Node 5 — Blast Radius
 
-Status: `READY / BLOCKED BY NODE 4`
+Status: `FROZEN CLOSED / COMPOSITE PASS / CURRENT HARD FAIL 0`
 
-Frozen suites already confirmed present:
-- `BASELINE-36`;
-- `SENSORY-MEDIATION-REPAIR-REGRESSION`;
-- `KNOWLEDGE-WAVE1-CROSS-LAYER-SENTINELS`;
-- `DIALOGUE-TEXTURE / TERSE-SATURATION`.
+Evidence state:
+- `BASELINE-36`: parent `71/72 / HARD FAIL 0`; the `PC-002` sensory-grounding miss is covered by the post-fix sensory no-invention closure;
+- `SENSORY-MEDIATION`: parent `22/24 / HARD FAIL 1`; failure localized to unsupported sensory/body invention and propagation handling; post-fix `sensory-no-invention-closure-v0.1 = 6/6 / HARD FAIL 0`;
+- `CROSS-LAYER`: parent `29/30 / HARD FAIL 0`; `XR-05` action-scale miss closed by `knowledge-wave1-cross-layer-action-closure = 4/4 / HARD FAIL 0`;
+- `DIALOGUE TEXTURE`: `24/24 / HARD FAIL 0`.
 
 Execution consequence:
-- do not create replacement blast-radius harnesses;
-- do not run Task 7 before Node 4 closes;
-- after Node 4 closes, run only the existing frozen suites in the locked order and use targeted closure only for a demonstrated narrow miss.
+- parent scores remain historical evidence; do not rerun them to overwrite the record;
+- do not rerun ATP, Scene Dynamics, Holdout, BASELINE-36, SENSORY, CROSS-LAYER, or Dialogue Texture unless fresh independent regression evidence identifies a causal failure in that closed node.
 
 ### Nodes 6–7 — Promotion / Runtime Snapshot / Downstream Contract
 
-Status: `NOT OPEN`
+Status: `RUNTIME VALIDATION FROZEN CLOSED / DOWNSTREAM CONTRACT MATERIALIZED / PR PENDING`
 
-Do not:
-- modify `SKILL.md` before validation evidence demonstrates a routing need;
-- create a runtime snapshot before blast-radius closure;
-- write the PAI downstream consumer contract before a validated runtime snapshot exists;
-- treat candidate or composite targeted-green evidence as `RUNTIME-VALIDATED`.
+Evidence state:
+- minimal router entry is present: `multi-scene / chapter / arc rhythm → analysis/chapter-arc-rhythm.md`;
+- package-only runtime snapshot: `install/vietnamese-literary-craft-narrative-dynamics-author-taste-v0.1-runtime` @ `40608c73103dab76d83b7fc3b34b4b1dea293f84`;
+- runtime snapshot excludes `harness/` and candidate corpus material;
+- `CONSTITUTION.md` blob remains unchanged at `1b3727dbfc41691b973d02d767b97f3b0b8aa63e`;
+- runtime-focused blind validation: `16/16 / HARD FAIL 0`;
+- runtime install smoke: `8/8 / HARD FAIL 0`;
+- downstream-only `maintenance/pai-git-consumer-contract.md` is materialized; no PAI repository write occurred.
+
+Execution consequence:
+- current tested package status is `RUNTIME-VALIDATED / COMPOSITE PASS / HARD FAIL 0`;
+- do not rebuild or rerun the runtime snapshot gates because feature-branch metadata commits move;
+- only fresh behavior-bearing package changes require a new runtime snapshot/validation cycle;
+- remaining integration work is fresh scope verification, PR, and merge/handoff decision; do not merge without the owner's integration decision.
 
 ---
 
