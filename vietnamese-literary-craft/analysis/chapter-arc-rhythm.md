@@ -1,6 +1,6 @@
 # Chapter / Arc Rhythm — Source-Grounded Structural Judgment v0.1
 
-**Status:** `CANDIDATE / TDD TARGETED GREEN / HOLDOUT PENDING`
+**Status:** `CANDIDATE / HOLDOUT COMPOSITE PASS / BLAST-RADIUS COMPOSITE PASS / RUNTIME PENDING`
 
 ## CONCEPT
 
