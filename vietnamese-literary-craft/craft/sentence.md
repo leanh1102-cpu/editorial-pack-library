@@ -64,6 +64,8 @@ When wording such as `cảm thấy một cảm giác` duplicates perception and 
 
 If no concrete contact, body location, garment, posture, movement, or other sensory fact is supplied, do not invent one merely to make the revision feel more grounded. Prefer a direct non-mediated sensation bounded to the facts already present. If the literal task requires a specific bodily/contact realization that the evidence does not supply, HOLD rather than manufacture it.
 
+Treat the sentence being diagnosed as **material under repair**, not as independent evidence that every detail in its defective formulation is true. In particular, `len lỏi trong cơ thể`, `lan khắp người`, or similar body-wide propagation inside the target sentence is not a fact that must be preserved when the packet independently supplies only the stimulus plus a cold/hot/burning sensation. Preserve the supported stimulus and sensation; remove unsupported propagation. A body-wide effect becomes preservable only when the surrounding packet independently establishes it.
+
 ### 7. Choose the smallest useful intervention
 If the defect is sentence-local, keep the repair sentence-local unless broader architecture is causally responsible.
 
@@ -163,7 +165,8 @@ Examples:
 - Do not convert claims or inferences into facts while compressing.
 - Use `SENSORY-MEDIATION v0.1` only in its narrow contact-bound scope.
 - Do not manufacture imagery to justify revision.
-- Ground sensory repair only in supplied contact/body facts. When none are supplied, do not invent a body site, garment, contact, posture, movement, or other sensory fact just to make the line more concrete.
+- Ground sensory repair only in independently supplied contact/body facts. When none are independently supplied, do not invent a body site, garment, contact, posture, movement, or other sensory fact just to make the line more concrete.
+- Do not treat unsupported body-wide wording inside the sentence under repair as an independently established fact; preserve only the stimulus/sensation the packet actually supports.
 - A sentence-local defect should not trigger a structural rewrite unless the larger structure is causally responsible.
 
 ## SELF-CHECK
@@ -174,6 +177,7 @@ Examples:
 - Is the unusual rhythm functional against its context?
 - Did compression alter source status or certainty?
 - Did I expand sensation beyond supplied evidence?
+- Am I preserving a sensory detail because the packet establishes it, or merely because the defective target sentence contains it?
 - Can the repair remain sentence-local?
 
 ## SOURCES
